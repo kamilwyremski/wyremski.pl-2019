@@ -1,0 +1,79 @@
+#contact{
+	background: #0e0e0e url("/upload/images/contact.jpg") no-repeat fixed center bottom / cover; color: #dfdfdf; padding-top: 50px; padding-bottom: 50px;
+}
+#contact p a{
+	color: white;
+}
+#contact .has-error label, #contact .text-danger{
+  color: #dd5858;
+}
+#contact .row{
+  display: flex; flex-wrap: wrap;
+}
+#contact .row .col-form-label{
+  flex: 0 0 30%; text-align: right; font-size: 0.9em; padding: 22px 10px 5px; font-weight: bold;
+}
+#contact .row .col{
+  flex: 0 0 70%; padding: 10px;
+}
+#contact .invalid-feedback{
+  color: #eb3434; margin-top: 5px; margin-bottom:0;
+}
+#contact .hidden{
+  display: none;
+}
+#contact .alert-success{
+	background-color: #4dd06c; color: white; padding: 5px 10px; margin-top: 10px; font-size: 1em;
+}
+#contact .alert-danger{
+	background-color: #eb3434; color: white; padding: 5px 10px; margin-top: 10px; font-size: 1em;
+}
+#contact input[type=text], #contact input[type=email], #contact textarea{
+	background-color: transparent; color: white; border: none; border-bottom: solid 1px white; display: block; width: 100%; padding: 10px 0; margin-bottom: 5px; resize: none; font: inherit; font-size: 0.95em;
+}
+#contact input[type=text]:focus, #contact input[type=email]:focus, #contact textarea:focus{
+  outline: none; border-bottom: solid 2px #8b3aca; margin-bottom: 4px;
+}
+#contact input:-webkit-autofill, #contact textarea:-webkit-autofill{
+  background-color: transparent !important; color: white !important;
+}
+#contact input[type=checkbox]{
+  position: absolute;  opacity: 0;  cursor: pointer;  height: 0;  width: 0;
+}
+#contact .checkmark {
+  position: absolute;  top: -2px;  left: 0;  height: 20px;  width: 20px;  background-color: #eee;
+}
+#contact input[type=checkbox]:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+#contact .checkmark:after {
+  content: "";  position: absolute;  display: none;
+}
+#contact input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+}
+#contact .checkmark:after {
+  left: 7px;  top: 3px;  width: 5px;  height: 10px;  border: solid white;  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+#contact .label-checkbox{
+  position: relative; padding-left: 30px; font-size: 0.9em;
+}
+#contact [type=submit]{
+	background-color: rgba(0,0,0,0.2); transition: all 0.4s; border: solid 2px #8b3aca; padding: 12px 24px; text-transform: uppercase; color: white; cursor: pointer;
+}
+#contact [type=submit]:hover{
+	background-color: #8b3aca;
+}
+#contact [type=submit]:disabled{
+  background-color: rgba(0,0,0,0.2); opacity: 0.5;
+}
+/* style mobile */
+@media(max-width: 650px) {
+	#contact .row{
+	  display: block;
+	}
+	#contact .row .col-form-label{
+	  text-align: left;
+	}
+}

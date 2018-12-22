@@ -1,15 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Kamil Wyremski - tworzenie stron www",
+  "name": "Tworzenie nowoczesnych, zgodnych z SEO, bezpiecznych oraz responsywnych stron internetowych. Gotowe skrypty stron www.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "upload/images/favicon/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#3f5a6f"
 }

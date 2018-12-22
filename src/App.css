@@ -1,32 +1,155 @@
-.App {
+*{
+  margin: 0; padding:0; box-sizing: border-box;
+}
+body{
+  font-family: 'Arial', sans-serif; color: #333;
+}
+.modal-open{
+  overflow: hidden;
+}
+.link{
+  background: none; border:none; cursor: pointer;
+}
+.container{
+  width: 1200px; max-width: 100%; margin: auto;
+}
+.section{
+  padding: 50px 30px;
+}
+.text-center{
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.d-none{
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.d-flex{
+  display: flex; flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
+.background-light{
+	background-color: #ededed;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.background-dark{
+  background-color: #232323;
+}
+.color-light{
+	color: #ededed;
+}
+h1{
+  font-size: 2.2em; margin-bottom: 10px;
+}
+h2{
+  font-size: 2.2em; line-height: 1.6;  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-size: 1.5em;
+}
+h4{
+  font-size: 1.2em; line-height: 1.7; font-family: 'Montserrat', sans-serif;
+}
+p, ul, ol{
+  font-size: 0.85em; margin: 0 0 10px; line-height: 1.7;
+}
+a{
+  text-decoration: none;
+}
+a:active, a:focus {
+  outline: 0;  border: none;  -moz-outline-style: none;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.LazyLoad, .LazyLoad img{
+  max-width: 100%;
+}
+/* animations */
+.animatable{
+	visibility: hidden;	animation-play-state: paused;
+}
+.animated{
+	visibility: visible;  animation-fill-mode: both;  animation-duration: 1s; animation-play-state: running;
+}
+@keyframes fadeInUp {
+	0% {		opacity: 0;		transform: translateY(40px);	}
+	100% {		opacity: 1;		transform: translateY(0);	}
+}
+@keyframes showHide {
+	65% {		opacity: 0;		}
+	75% {		opacity: 1;		}
+}
+.animated.fadeInUp {
+	animation-name: fadeInUp;
+}
+/* scrollbar */
+body::-webkit-scrollbar {
+	width: 13px;	height: 13px;
+}
+body::-webkit-scrollbar-track {
+	background-color: #f3f6f6;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #313131;	border-radius: 4px;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+}
+body::-webkit-scrollbar-corner {
+	background: #2F3336 url(assets/scroll/corner.png) 2px 2px no-repeat;
+}
+body::-webkit-scrollbar-button:vertical:decrement {
+	background: #f3f6f6 url(assets/scroll/up.png) 2px 2px no-repeat;
+}
+body::-webkit-scrollbar-button:vertical:increment {
+	background: #f3f6f6 url(assets/scroll/down.png) 2px 3px no-repeat;
+}
+body::-webkit-scrollbar-button:horizontal:decrement {
+	background: #2F3336 url(assets/scroll/left.png) 1px 2px no-repeat;
+}
+body::-webkit-scrollbar-button:horizontal:increment {
+	background: #2F3336 url(assets/scroll/right.png) 3px 2px no-repeat;
+}
+/* :: 3.5.0 Preloader CSS */
+.preloader {
+  background-color: #ffffff; padding: 200px 0; justify-content: center; align-items:center;
+}
+.preloader .cssload-container {
+  display: block;  width: 97px;
+}
+.preloader .cssload-loading i {
+  width: 19px;   height: 19px; display: inline-block;  border-radius: 50%; background: #8b3aca;
+}
+.preloader .cssload-loading i:first-child {
+  opacity: 0; animation: cssload-loading-ani2 0.58s linear infinite; transform: translate(-19px);
+}
+.preloader .cssload-loading i:nth-child(2), .preloader .cssload-loading i:nth-child(3) {
+  animation: cssload-loading-ani3 0.58s linear infinite;
+}
+.preloader .cssload-loading i:last-child {
+  animation: cssload-loading-ani1 0.58s linear infinite;
+}
+@keyframes cssload-loading-ani1{
+  100% {
+    transform: translate(39px);  opacity: 0;
+	}
+}
+@keyframes cssload-loading-ani2 {
+  100% {
+    transform: translate(19px);  opacity: 1;
+	}
+}
+@keyframes cssload-loading-ani3 {
+  100% {
+    transform: translate(19px);
+	}
+}
+/* style mobile */
+@media(max-width: 768px) {
+  h1{
+    font-size: 1.8em;
   }
-  to {
-    transform: rotate(360deg);
+  h2{
+    font-size: 1.8em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  h4{
+    font-size: 1.1em;
   }
 }

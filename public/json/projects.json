@@ -1,0 +1,110 @@
+{"projects":[
+	{
+	    "name" : "MAX Plus KALISZ",
+	    "description" : {
+			"pl" : "Strona firmy z Kalisza świadczącej usługi rachunkowe oraz poligraficzne (agencja reklamowa)",
+			"en" : "Accounting and advertising company from city Kalisz / Poland"
+		},
+		"url" : "maxplus.kalisz.pl",
+		"image" : "upload/projects/maxplus.jpg"
+	},
+	{
+	    "name" : "Fundacja Przystań",
+		"description" : {
+			"pl" : "Strona internetowa Fundacji Przystań z Dąbrowy Górniczej, zajmującej się szeroko pojętą ochroną zdrowia psychicznego",
+			"en" : "Website of the Przystań Foundation, dealing with broadly understood mental health protection"
+		},
+		"url" : "fundacjaprzystan.com",
+		"image" : "upload/projects/fundacjaprzystan.jpg"
+	},
+	{
+	    "name" : "Strefa.co.uk",
+		"description" : {
+			"pl" : "Jeden z pierwszych portali ogłoszeniowych dla Polaków mieszkających w Wielkiej Brytanii, ułatwiający znalezienie pracy, mieszkania, samochodu...",
+			"en" : "This is one of the first advertising portals aimed at Poles living in the UK, which aim is to help them get started, find a job or find an apartment."
+		},
+		"url" : "strefa.co.uk",
+		"image" : "upload/projects/strefa.jpg"
+	},
+	{
+	    "name" : "Ogoloshennya.pl",
+		"description" : {
+			"pl" : "Darmowy serwis z ogłoszeniami lokalnymi po polsku, rosyjsku i ukraińsku w kategoriach: Praca, Mieszkanie, Usługi, Kupię/Sprzedam, Motoryzacja i Towarzyskie",
+			"en" : "Free website with offers in Polish, Russian and Ukrainian"
+		},
+		"url" : "ogoloshennya.pl",
+		"image" : "upload/projects/ogoloshennya.jpg"
+	},
+	{
+	    "name" : "Bioskin Kalisz",
+		"description" : {
+			"pl" : "Strona internetowa profesjonalnego gabinetu kosmetycznego i fryzjerskiego.",
+			"en" : "BIOSKIN is a combination of modern podology, trichology and services offered by a professional beauty and hairdressing salon."
+		},
+		"url" : "bioskin-kalisz.pl",
+		"image" : "upload/projects/bioskin.jpg"
+	},
+	{
+	    "name" : "serwisnaprawa24.pl",
+		"description" : {
+			"pl" : "Wirtualne miejsce spotkań zleceniodawców z wykonawcami świadczącymi różne usługi, np. naprawa RTV i AGD",
+			"en" : "The site is a virtual meeting place for customers with contractors providing various services"
+		},
+		"url" : "serwisnaprawa24.pl",
+		"image" : "upload/projects/serwisnaprawa24.jpg"
+	},
+	{
+		"name" : "Świat Kamienia",
+		"description" : {
+			"pl" : "Strona jednego z większych składów kamienia naturalnego w Południowej Wielkopolsce.",
+			"en" : "Company from city Kalisz / Poland"
+		},
+		"url" : "skamienia.pl",
+		"image" : "upload/projects/skamienia.jpg"
+	},
+	{
+	    "name" : "Zaradny Polak",
+		"description" : {
+			"pl" : "Portal z darmowymi ogłoszeniami dla Polaków z wszystkich krajów europejskich",
+			"en" : "Portal with free ads for polish around the world"
+		},
+		"url" : "zaradnypolak.eu",
+		"image" : "upload/projects/zaradnypolak.jpg"
+	},
+	{
+	    "name" : "Lulanie",
+		"description" : {
+			"pl" : "Strona z ogłoszeniami noclegowymi i ofertami usługowymi. W tym serwisie znajdziesz także opisy atrakcji turystycznych, które warto zobaczyć w Polsce",
+			"en" : "We present accommodation ads and service offers. On our website you will find also descriptions of tourist attractions that are worth seeing in Poland."
+		},
+		"url" : "lulanie.pl",
+		"image" : "upload/projects/lulanie.jpg"
+	},
+	{
+	    "name" : "Sklep Sattel.pl",
+		"description" : {
+			"pl" : "Internetowy sklep z elektroniką. Strona oparta o skrypt Wordpress Woocomerce",
+			"en" : "Online electronics store. Created with Wordpress Woocomerce."
+		},
+		"url" : "sklep.sattel.pl",
+		"image" : "upload/projects/sattel.jpg"
+	},
+	{
+	    "name" : "Oglaszamy24h.pl",
+		"description" : {
+			"pl" : "Nowoczesny serwis darmowych ogłoszeń drobnych: sprzedam, kupię, oddam, wymienię",
+			"en" : "Free classified ads: sell, buy, donate, exchange"
+		},
+		"url" : "oglaszamy24h.pl",
+		"image" : "upload/projects/oglaszamy24h.jpg"
+	},
+	{
+	    "name" : "Turystyka.Zaradnypolak.eu",
+		"description" : {
+			"pl" : "Strona umożliwiająca znalezienie osób do wspólnej podróży do każdego kraju świata",
+			"en" : "A page that allows people to find a trip to every country in the world"
+		},
+		"url" : "turystyka.zaradnypolak.eu",
+		"image" : "upload/projects/turystyka_zaradny.jpg"
+	}
+]}

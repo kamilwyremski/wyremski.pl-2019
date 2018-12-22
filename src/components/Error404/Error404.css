@@ -1,0 +1,32 @@
+#error404{
+  background: #0e0e0e url("/upload/images/background_desk.jpg") no-repeat fixed center bottom / cover; padding: 50px 0; color: white;
+}
+#error404 h1{
+  font-size: 10em; color: #c665fd; margin: 20px auto; font-family:'Lucida Console';
+}
+.error404--tag{
+  color: white; font-size: 0.7em; position: relative; top:-20px;
+}
+#error404--code{
+  color: white; text-align: left; font-weight: bold; width: 250px; max-width: 100%; margin: auto; font-family:'Lucida Console';
+}
+.error404--color1{
+  color: #96cbfe;
+}
+.error404--color2{
+  color: #c665fd;
+}
+.error404--color3{
+  color: #a8f13e;
+}
+/* style mobile */
+@media(max-width: 640px) {
+	#error404 h1{
+  	font-size: 6em;
+	}
+}
+@media(max-width: 350px) {
+	#error404 h1{
+  	font-size: 4em;
+	}
+}

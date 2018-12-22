@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://wyremski.pl/</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypty</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/projekty</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/kontakt</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypt/notice2</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypt/demoty2</loc>
+  <lastmod>2018-07-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypt/cuadro</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypt/festa</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/scripts</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypt/holmes</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/skrypt/empresa</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/projects</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/contact</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/notice2</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/demoty2</loc>
+  <lastmod>2018-07-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/cuadro</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/festa</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/holmes</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/empresa</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+</urlset>
