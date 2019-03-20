@@ -4,11 +4,12 @@
     "buy_url": "https://skrypty.sattel.pl/strona-glowna/9-skrypt-ogloszeniowy-notice2.html",
     "photos": 12,
     "list_domains": [
-      "w40.pl",
-      "otosell.pl",
       "zaradnypolak.eu",
-      "gieldamam.pl",
-      "lulanie.pl"
+	    "turystyka.zaradnypolak.eu",
+      "targowisko.org",
+      "lulanie.pl",
+	    "gielda-agro.pl",
+	    "malpino.pl"
     ]
   },
   "pl": {
@@ -20,7 +21,7 @@
     "script.function.1": "<h4>Płatności</h4><p>Obsługa <strong>systemów płatności <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, <strong><a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a></strong> oraz <strong><a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a></strong> za wystawianie i promowanie ogłoszenia, automatyczne potwierdzanie płatności</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
     "script.function.3": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie ofert na mapie, łatwe ich znalezienie oraz <strong>wyszukiwanie ogłoszeń wg odległości</strong></p>",
-    "script.function.4": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (panel Facebook, logowanie przez Facebook-a oraz przez konto Google, przyciski &bdquo;Lubię to&rdquo;,  &bdquo;Udostępnij&rdquo;, &bdquo;Tweetnij&rdquo;, \"Wykop\" i &bdquo;+1&rdquo;)</p>",
+    "script.function.4": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (panel Facebook, logowanie przez Facebook-a oraz przez konto Google, przyciski &bdquo;Lubię to&rdquo;,  &bdquo;Udostępnij&rdquo;, &bdquo;Tweetnij&rdquo; i \"Wykop\")</p>",
     "script.function.5": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> (możliwość dodania do 6 banerów reklamowych, edycji slidera na stronie głównej oraz stopki serwisu)</p>",
     "script.function.6": "<h4>Kanał RSS</h4><p>Wbudowany <strong>kanał RSS</strong> (FEED) wyświetlający ostatnio dodane ogłoszenia.</p>",
     "script.function.7": "<h4>SEO</h4><p>Do każdej strony info w serwisie istnieje możliwość ustalenia osobnych słów kluczowych i opisów SEO - bardzo przydatne przy pozycjonowaniu witryny</p>",
@@ -48,7 +49,7 @@
     "script.function.1": "<h4>Payments</h4><p>Supports <strong>payment systems <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, <strong><a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a></strong> and <strong><a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a></strong> for added and promoting offers, automatic confirmation of payments</p>",
     "script.function.2": "<h4>RWD</h4><p><strong>Responsive template</strong> compatible with HTML5 - the page is displayed correctly on the mobile devices (such as mobile phones, tablets)</p>",
     "script.function.3": "<h4>Google Maps</h4><p>Integration with Google Map lets you select offers from the map, easy to find or <strong>search offers by the distance</strong></p>",
-    "script.function.4": "<h4>Social Network</h4><p>Integration with social network: Facebook (possibility to login by FB and Google), Tweet, Wykop.pl, Google Plus</p>",
+    "script.function.4": "<h4>Social Network</h4><p>Integration with social network: Facebook (possibility to login by FB and Google), Tweet, Wykop.pl</p>",
     "script.function.5": "<h4>ADS</h4><p>Many website sections to include ads (You can edit: 6 banners, slider on home page and footer)</p>",
     "script.function.6": "<h4>RSS Channel</h4><p><strong>RSS channel</strong> displays the most recently added announcements.</p>",
     "script.function.7": "<h4>SEO</h4><p>You can set up separate keyword and SEO description for each page - very useful to positioning Your site</p>",

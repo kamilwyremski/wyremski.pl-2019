@@ -89,7 +89,7 @@ class Home extends Component {
       					<span itemProp="homeLocation">Poland, Września</span>
       				</div>
       				<a href="https://www.facebook.com/wyremskipl/" title="My profile on Facebook" target="_blank" rel="noopener noreferrer"><i className="icon-facebook-official"></i></a>
-      				<a href="https://plus.google.com/u/0/102325004299979143485?rel=author" title="My profile on  Google Plus" target="_blank" rel="publisher noopener noreferrer"><i className="icon-gplus-squared"></i></a>
+							<a href="https://github.com/kamilwyremski" title="My profile on GitHub" target="_blank" rel="noopener noreferrer" itemProp="sameAs"><i className="icon-github-squared"></i></a>
       				<a href="skype:kamil.wyremski" title="Call me by Skype!"><i className="icon-skype"></i></a>
       				<a href="mailto:kamil.wyremski@gmail.com" title="Write to me!"><i className="icon-mail-alt"></i></a>
       				<a href="http://blog.wyremski.pl" title="My blog" target="_blank" rel="noopener noreferrer"><i className="icon-link-ext-alt"></i></a>

@@ -33,7 +33,7 @@ class Scripts extends Component {
   render() {
     return (
       <main className="section container">
-        {!this.state.scripts &&
+        {!this.state.scripts.length &&
           <div className="preloader d-flex">
             <div className="cssload-container">
               <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>

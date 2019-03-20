@@ -4,8 +4,7 @@
     "buy_url": "https://skrypty.sattel.pl/strona-glowna/12-skrypt-katalogu-firm-empresa.html",
     "photos": 12,
     "list_domains": [
-      "exivacompany.com",
-      "znajdzstolarza.com.pl"
+      "dobrehurtownie.pl"
     ]
   },
   "pl": {
@@ -17,7 +16,7 @@
     "script.function.1": "<h4>Płatności</h4><p>Automatyczna obsługa <strong>systemu płatności <a href=\"http://www.dotpay.pl/\" title=\"DotPay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, bez potrzeby ingerencji administratora.</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
     "script.function.3": "<h4>Automatyzacja</h4><p><strong>Pełna automatyzacja</strong>, m.in. dzięki zadaniom cron-a i cachowaniu danych, w celu utrzymania maksymalnej wydajności systemu</p>",
-    "script.function.4": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (slider Facebook, logowanie przez Facebook-a, przyciski &bdquo;Lubię to&rdquo;,  &bdquo;Udostępnij&rdquo;, &bdquo;Tweetnij&rdquo;, \"Wykop\", &bdquo;+1&rdquo;)</p>",
+    "script.function.4": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (slider Facebook, logowanie przez Facebook-a, przyciski &bdquo;Lubię to&rdquo;,  &bdquo;Udostępnij&rdquo;, &bdquo;Tweetnij&rdquo;, \"Wykop\")</p>",
     "script.function.5": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> (możliwość dodania kilku banerów reklamowych, edycji slidera na stronie głównej oraz stopki serwisu)</p>",
     "script.function.6": "<h4>Kanał RSS</h4><p>Wbudowany <strong>kanał RSS</strong> (FEED) wyświetlający ostatnio dodane oferty w serwisie.</p>",
     "script.function.7": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie firm na mapie, łatwe ich znalezienie oraz <strong>wyszukiwanie firm wg odległości</strong></p>",
@@ -45,7 +44,7 @@
     "script.function.1": "<h4>Payments</h4><p>Automatic confirmation of payment from <strong><a href=\"http://www.dotpay.pl/\" title=\"DotPay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, without the need administrator intervention.</p>",
     "script.function.2": "<h4>RWD</h4><p><strong>Responsive template</strong> compatible with HTML5 - the page is displayed correctly on the mobile devices (such as mobile phones, tablets)</p>",
     "script.function.3": "<h4>Automation</h4><p><strong>Full automation</strong> - cron schedule and data caching in order to maintain maximum system performance</p>",
-    "script.function.4": "<h4>Social Network</h4><p>Integration with social network: Facebook (possibility to login by FB), Tweet, Wykop.pl, Google Plus</p>",
+    "script.function.4": "<h4>Social Network</h4><p>Integration with social network: Facebook (possibility to login by FB), Tweet, Wykop.pl</p>",
     "script.function.5": "<h4>ADS</h4><p>A lot of place for advertising (You can edit: baners, slider on home page and footer)</p>",
     "script.function.6": "<h4>RSS Channel</h4><p><strong>RSS channel</strong> displays the most recently added offers in website.</p>",
     "script.function.7": "<h4>Google Maps</h4><p>Integration with Google Map lets you select companies on the map, easy to find them and <strong>search companies by distance</strong></p>",
