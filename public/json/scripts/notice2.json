@@ -4,12 +4,13 @@
     "buy_url": "https://skrypty.sattel.pl/strona-glowna/9-skrypt-ogloszeniowy-notice2.html",
     "photos": 12,
     "list_domains": [
-      "zaradnypolak.eu",
-	    "turystyka.zaradnypolak.eu",
+      "rentflex.pl",
+	    "w40.pl",
       "targowisko.org",
       "lulanie.pl",
 	    "gielda-agro.pl",
-	    "malpino.pl"
+	    "malpino.pl",
+      "tu-sprzedaj.pl"
     ]
   },
   "pl": {
@@ -17,7 +18,7 @@
     "description": "NOTICE2 to uniwersalny, nowoczesny skrypt pozwalający stworzyć stronę z ogłoszeniami online",
     "script.header": "Skrypt strony z ogłoszeniami Notice2",
     "script.subheader": "Stwórz własny nowoczesny portal z ogłoszeniami online",
-    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>NOTICE2 to uniwersalny skrypt umożliwiający stworzenie własnej strony z ogłoszeniami online w łatwy i szybki sposób. Jest on zbudowany zgodnie z obecnymi standardami tworzenia stron www. Notice2 jest bardzo łatwy w obsłudze, zarówno przez administratora, jak i klientów serwisu.</p><p>Skrypt umożliwia stworzenie strony z ogłoszeniami w każdej kategorii lokalnej, ogólnopolskiej lub międzynarodowej. Dostępnych jest bardzo wiele opcji konfiguracyjnych, dzięki czemu można dostosować go do indywidualnych wymagań. Obsługuje <strong>automatyczne płatności</strong> za wystawianie i promowanie ogłoszeń w systemach <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a>, <a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a> oraz <a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a>.</p>",
+    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>NOTICE2 to uniwersalny skrypt umożliwiający stworzenie własnej strony z ogłoszeniami online w łatwy i szybki sposób. Jest on zbudowany zgodnie z obecnymi standardami tworzenia stron www. Notice2 jest bardzo łatwy w obsłudze, zarówno przez administratora, jak i klientów serwisu.</p><p>Skrypt umożliwia stworzenie strony z ogłoszeniami w każdej kategorii lokalnej, ogólnopolskiej lub międzynarodowej. Może być użyty także jako <strong>strona z bazą noclegów, nieruchomości</strong> lub <strong>katalog firm</strong>. Dostępnych jest bardzo wiele opcji konfiguracyjnych, dzięki czemu można dostosować go do indywidualnych wymagań. Obsługuje <strong>automatyczne płatności</strong> za wystawianie i promowanie ogłoszeń w systemach <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a>, <a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a> oraz <a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a>.</p>",
     "script.function.1": "<h4>Płatności</h4><p>Obsługa <strong>systemów płatności <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, <strong><a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a></strong> oraz <strong><a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a></strong> za wystawianie i promowanie ogłoszenia, automatyczne potwierdzanie płatności</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
     "script.function.3": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie ofert na mapie, łatwe ich znalezienie oraz <strong>wyszukiwanie ogłoszeń wg odległości</strong></p>",
@@ -25,7 +26,7 @@
     "script.function.5": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> (możliwość dodania do 6 banerów reklamowych, edycji slidera na stronie głównej oraz stopki serwisu)</p>",
     "script.function.6": "<h4>Kanał RSS</h4><p>Wbudowany <strong>kanał RSS</strong> (FEED) wyświetlający ostatnio dodane ogłoszenia.</p>",
     "script.function.7": "<h4>SEO</h4><p>Do każdej strony info w serwisie istnieje możliwość ustalenia osobnych słów kluczowych i opisów SEO - bardzo przydatne przy pozycjonowaniu witryny</p>",
-    "script.function.8": "<h4>Bezpieczeństwo</h4><p><strong>Bezpieczny panel logowania</strong>, zabezpieczenie przed zatruciem sesji (Session Poisoning), kodowanie i hashowanie haseł w bcrypt, unikalne tokeny dla akcji użytkownika<p>",
+    "script.function.8": "<h4>Bezpieczeństwo</h4><p><strong>Bezpieczny panel logowania</strong>, zabezpieczenie przed zatruciem sesji (Session Poisoning), hashowanie haseł w bcrypt, unikalne tokeny dla akcji użytkownika, integracja z <strong>reCAPTCHA</strong><p>",
     "script.function.9": "<h4>Dostosowanie</h4><p>Możliwość <strong>dostosowania</strong> serwisu do własnych potrzeb, rozbudowane możliwości konfiguracji strony - dzięki czemu dostosujesz skrypt do swoich własnych potrzeb!<p>",
     "script.function.10": "<h4>Mikrodane</h4><p><strong>Mikrodane</strong> w spisie ogłoszeń - mają duży wpływ na podwyższenie pozycji witryny w wyszukiwarce Google, zgodne ze standardami <a href=\"http://schema.org/\" title=\"MicroDate\" target=\"_blank\" rel=\"nofollow\">schema.org</a></p>",
     "script.function.11": "<h4>Statystyki</h4><p>Podgląd szczegółowych <strong>statystyk systemu</strong> w Panelu Administracyjnym wraz z generatorem wykresów - dzięki niemu dowiesz się czego jeszcze potrzeba Twojej stronie!</p>",
@@ -53,7 +54,7 @@
     "script.function.5": "<h4>ADS</h4><p>Many website sections to include ads (You can edit: 6 banners, slider on home page and footer)</p>",
     "script.function.6": "<h4>RSS Channel</h4><p><strong>RSS channel</strong> displays the most recently added announcements.</p>",
     "script.function.7": "<h4>SEO</h4><p>You can set up separate keyword and SEO description for each page - very useful to positioning Your site</p>",
-    "script.function.8": "<h4>Security</h4><p><strong>Secure login panel</strong>, protection against poisoning session, coding i hashing passwords in bcrypt, generating unique tokens to user actions</p>",
+    "script.function.8": "<h4>Security</h4><p><strong>Secure login panel</strong>, protection against poisoning session, coding i hashing passwords in bcrypt, generating unique tokens to user actions, integrations with <strong>reCAPTCHA</strong></p>",
     "script.function.9": "<h4>Adjustment</h4><p>The possibility of <strong>adapt site</strong> to your needs by Admin Panel - so you can adjust the script fully for Your own needs!<p>",
     "script.function.10": "<h4>Microdata</h4><p>Microdata is a WHATWG HTML specification used to nest metadata within existing content on web pages. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users. This will help your website to be ranked higher</p>",
     "script.function.11": "<h4>Statistics</h4><p>View detailed <strong>statistics system</strong> in the Admin Panel with the generator charts. Now you can see detailed information on your users and improvements you can make</p>",

@@ -52,7 +52,7 @@ class Contact extends Component {
   verifyCallback(recaptchaToken) {
     var data = new FormData();
     data.append( "recaptchaToken", recaptchaToken );
-    fetch('contact.php', {
+    fetch('/contact.php', {
       method: 'post',
       body: data
     })
@@ -170,64 +170,66 @@ class Contact extends Component {
 
   render() {
     return (
-      <main id="contact">
-        <div className="container section">
-          <div className="text-center">
-            <h1><FormattedMessage id="contact.title"/></h1>
+      <main>
+        <div id="contact">
+          <div className="container section">
+            <div className="text-center">
+              <h1><FormattedMessage id="contact.title"/></h1>
+              <br />
+              <p><FormattedHTMLMessage id="contact.subtitle"/></p>
+            </div>
             <br />
-            <p><FormattedHTMLMessage id="contact.subtitle"/></p>
+            <form method="post" onSubmit={this.handleSubmit} id="contact--form">
+              <input type="hidden" name="action" value="send_message" />
+              <div className="row">
+                <label htmlFor="email" className="col-form-label"><FormattedMessage id="contact.email"/></label>
+                <div className="col">
+                  <input type="email" className="form-control" id="email" name="email" placeholder="example@domain.com" value={this.state.email} onChange={this.handleInputChange}/>
+                  <p className={this.state.alertEmail ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertEmail"/></p>
+                  <p><FormattedMessage id="contact.email.info"/></p>
+                </div>
+              </div>
+              <div className="row">
+                <label htmlFor="subject" className="col-form-label"><FormattedMessage id="contact.subject"/></label>
+                <div className="col">
+                  <input type="text" className="form-control" id="subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}/>
+                  <p className={this.state.alertSubject ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertSubject"/></p>
+                </div>
+              </div>
+              <div className="row">
+                <label htmlFor="message" className="col-form-label"><FormattedMessage id="contact.message"/></label>
+                <div className="col">
+                  <textarea className="form-control" rows="4" name="message" id="message" value={this.state.message} onChange={this.handleInputChange}></textarea>
+                  <p className={this.state.alertMessage ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertMessage"/></p>
+                </div>
+              </div>
+              <div className="row">
+                <label className="col-form-label">&nbsp;</label>
+                <div className="col">
+                  <label className="label-checkbox"><input type="checkbox" name="rules" checked={this.state.rules} onChange={this.handleInputChange}/><span className="checkmark"></span> <FormattedMessage id="contact.privacy"/></label>
+                  <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertRules"/></p>
+                </div>
+              </div>
+              <div className="row">
+                <label className="col-form-label">&nbsp;</label>
+                <div className="col">
+                  <button name="submit" type="submit" className="btn btn-primary"><FormattedMessage id="contact.send"/></button>
+                  <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertCaptcha"/></p>
+                  <br />
+                  <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'}><FormattedMessage id="contact.messageSend"/></h4>
+                  <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'}><FormattedMessage id="contact.messageNoSend"/></h4>
+                </div>
+              </div>
+              <ReCaptcha
+                ref={(el) => {this.captchaDemo = el;}}
+                size="invisible"
+                render="explicit"
+                sitekey="6Ld66YAUAAAAACgwCy8Nv91JIeiXb4lzQnEKLvey"
+                onloadCallback={this.onLoadRecaptcha}
+                verifyCallback={this.verifyCallback}
+              />
+            </form>
           </div>
-          <br />
-          <form method="post" onSubmit={this.handleSubmit} id="contact--form">
-            <input type="hidden" name="action" value="send_message" />
-            <div className="row">
-              <label htmlFor="email" className="col-form-label"><FormattedMessage id="contact.email"/></label>
-              <div className="col">
-                <input type="email" className="form-control" id="email" name="email" placeholder="example@domain.com" value={this.state.email} onChange={this.handleInputChange}/>
-                <p className={this.state.alertEmail ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertEmail"/></p>
-                <p><FormattedMessage id="contact.email.info"/></p>
-              </div>
-            </div>
-            <div className="row">
-              <label htmlFor="subject" className="col-form-label"><FormattedMessage id="contact.subject"/></label>
-              <div className="col">
-                <input type="text" className="form-control" id="subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}/>
-                <p className={this.state.alertSubject ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertSubject"/></p>
-              </div>
-            </div>
-            <div className="row">
-              <label htmlFor="message" className="col-form-label"><FormattedMessage id="contact.message"/></label>
-              <div className="col">
-                <textarea className="form-control" rows="4" name="message" id="message" value={this.state.message} onChange={this.handleInputChange}></textarea>
-                <p className={this.state.alertMessage ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertMessage"/></p>
-              </div>
-            </div>
-            <div className="row">
-              <label className="col-form-label">&nbsp;</label>
-              <div className="col">
-                <label className="label-checkbox"><input type="checkbox" name="rules" checked={this.state.rules} onChange={this.handleInputChange}/><span className="checkmark"></span> <FormattedMessage id="contact.privacy"/></label>
-                <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertRules"/></p>
-              </div>
-            </div>
-            <div className="row">
-              <label className="col-form-label">&nbsp;</label>
-              <div className="col">
-                <button name="submit" type="submit" className="btn btn-primary"><FormattedMessage id="contact.send"/></button>
-                <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertCaptcha"/></p>
-                <br />
-                <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'}><FormattedMessage id="contact.messageSend"/></h4>
-                <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'}><FormattedMessage id="contact.messageNoSend"/></h4>
-              </div>
-            </div>
-            <ReCaptcha
-              ref={(el) => {this.captchaDemo = el;}}
-              size="invisible"
-              render="explicit"
-              sitekey="6Ld66YAUAAAAACgwCy8Nv91JIeiXb4lzQnEKLvey"
-              onloadCallback={this.onLoadRecaptcha}
-              verifyCallback={this.verifyCallback}
-            />
-          </form>
         </div>
       </main>
     );

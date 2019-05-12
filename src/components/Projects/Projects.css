@@ -17,7 +17,7 @@
 	text-align: center;
 }
 .project img{
-	opacity:0.2; transition: opacity 0.2s;
+	opacity:0.2; transition: opacity 0.2s; height: 100%;
 }
 .project:hover img{
 	opacity: 1;

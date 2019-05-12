@@ -52,7 +52,7 @@ class Nav extends Component {
     return(
       <nav id="nav" style={{top : this.state.nav_top}}>
         <div className="container d-flex">
-          <Link to={messages[language]['nav.link.home']} className="navbar--brand" title=<FormattedMessage id="home.title" defaultMessage="Kamil Wyremski - Web Designer" />>Kamil Wyremski</Link>
+          <Link to={messages[language]['nav.link.home']} className="navbar--brand" title="Kamil Wyremski - Web Designer">Kamil Wyremski</Link>
           <div id="nav--burger" onClick={this.showHideMenu} className={ this.state.active_mobile_menu ? "open" : "" }>
             <span></span>
             <span></span>

@@ -7,8 +7,14 @@ class Footer extends Component {
     super();
     this.state = {
       show_privacy: false,
-      cookies_accepted: localStorage.cookies_accepted
+      cookies_accepted: false
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      cookies_accepted: localStorage.cookies_accepted
+    });
   }
 
   clickOutsideModal = (event) => {
@@ -45,7 +51,7 @@ class Footer extends Component {
         	<div className="container d-flex" id="footer--top">
         		<div className="footer--top">
         			<p>Kamil Wyremski</p>
-        			<p><FormattedMessage id="footer.text"/></p>
+        			<p><FormattedHTMLMessage id="footer.text"/></p>
         		</div>
         		<div className="footer--top text-center">
         			<p><i className="icon-mail-alt"></i> <a href="mailto:kamil.wyremski@gmail.com" title="Write to me">kamil.wyremski@gmail.com</a></p>
@@ -64,7 +70,8 @@ class Footer extends Component {
         				<a href="https://www.youtube.com/channel/UCR1g4AKZ2Swr4YCApWQKkpQ" title="My profile on Youtube" target="_blank" rel="noopener noreferrer" itemProp="sameAs"><i className="icon-youtube-squared"></i></a>
                 <a href="https://www.freecodecamp.org/kamil.wyremski" title="My profile on Free Code Camp" target="_blank" rel="publisher noopener noreferrer" itemProp="sameAs"><i className="icon-free-code-camp" style={{position: 'relative', left:'-3px'}}></i></a>
         				<a href="https://stackoverflow.com/users/8337251/kamil-wyremski" title="My profile on StackOverflow" target="_blank" rel="noopener noreferrer" itemProp="sameAs"><i className="icon-stackoverflow"></i></a>
-        				<a href="http://blog.wyremski.pl" title="View my blog!" target="_blank" rel="noopener noreferrer"><i className="icon-link-ext-alt"></i></a>
+        				<a href="https://blog.wyremski.pl" title="View my blog!" target="_blank" rel="noopener noreferrer"><i className="icon-link-ext-alt"></i></a>
+                <a href="https://skrypty.sattel.pl" title="Online shop with web scripts" target="_blank" rel="noopener noreferrer"><i className="icon-shopping-basket" style={{fontSize: '0.85em',position: 'relative', top:'-3px'}}></i></a>
         			</div>
         		</div>
           </div>

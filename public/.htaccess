@@ -8,17 +8,36 @@ RewriteRule ^en/script/notice/?$ https://wyremski.pl/en/script/notice2 [L,R=301]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{THE_REQUEST} ^GET.*index\.html [NC]
-RewriteRule (.*?)index\.html/*(.*) /$1$2 [R=301,NE,L]
-
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
 
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule ^([^/]+)/$ /$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^(.+)\.html([#?][^\ ]*)?\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+RewriteRule ^projekty/?$ /projekty.html [NC,L,QSA]
+RewriteRule ^skrypty/?$ /skrypty.html  [NC,L,QSA]
+RewriteRule ^skrypt/cuadro/?$ /skrypt/cuadro.html  [NC,L,QSA]
+RewriteRule ^skrypt/demoty2/?$ /skrypt/demoty2.html  [NC,L,QSA]
+RewriteRule ^skrypt/empresa/?$ /skrypt/empresa.html  [NC,L,QSA]
+RewriteRule ^skrypt/festa/?$ /skrypt/festa.html  [NC,L,QSA]
+RewriteRule ^skrypt/holmes/?$ /skrypt/holmes.html  [NC,L,QSA]
+RewriteRule ^skrypt/notice2/?$ /skrypt/notice2.html  [NC,L,QSA]
+RewriteRule ^kontakt/?$ /kontakt.html  [NC,L,QSA]
+RewriteRule ^en/?$ /en.html  [NC,L,QSA]
+RewriteRule ^en/projects/?$ /en/projects.html  [NC,L,QSA]
+RewriteRule ^en/scripts/?$ /en/scripts.html  [NC,L,QSA]
+RewriteRule ^en/scripts/cuadro/?$ /en/scripts/cuadro.html  [NC,L,QSA]
+RewriteRule ^en/scripts/demoty2/?$ /en/scripts/demoty2.html  [NC,L,QSA]
+RewriteRule ^en/scripts/empresa/?$ /en/scripts/empresa.html  [NC,L,QSA]
+RewriteRule ^en/scripts/festa/?$ /en/scripts/festa.html  [NC,L,QSA]
+RewriteRule ^en/scripts/holmes/?$ /en/scripts/holmes.html  [NC,L,QSA]
+RewriteRule ^en/scripts/notice2/?$ /en/scripts/notice2.html  [NC,L,QSA]
+RewriteRule ^en/contact/?$ /en/contact.html  [NC,L,QSA]
+
+ErrorDocument 404 /404.html
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import './assets/css/fontello.css';
+import './assets/css/fonts.css';
 import { loadReCaptcha } from 'react-recaptcha-google'
 
 import {IntlProvider} from "react-intl";

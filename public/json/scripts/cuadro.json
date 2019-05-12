@@ -3,7 +3,9 @@
     "functions": 12,
     "buy_url": "https://skrypty.sattel.pl/strona-glowna/34-skrypt-strony-z-obrazkami-i-filmami-cuadro.html",
     "photos": 12,
-    "list_domains": []
+    "list_domains": [
+      "oznaczamyznajomych.pl"
+    ]
   },
   "pl": {
     "title": "CUADRO - obrazki, filmy i zdjęcia",
