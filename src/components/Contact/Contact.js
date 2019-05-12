@@ -139,7 +139,7 @@ class Contact extends Component {
       data.append( "email", this.state.email );
       data.append( "subject", this.state.subject );
       data.append( "message", this.state.message );
-      fetch('contact.php', {
+      fetch('/contact.php', {
         method: 'post',
         body: data
       })
