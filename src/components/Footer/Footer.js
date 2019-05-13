@@ -51,7 +51,7 @@ class Footer extends Component {
         	<div className="container d-flex" id="footer--top">
         		<div className="footer--top">
         			<p>Kamil Wyremski</p>
-        			<p><FormattedHTMLMessage id="footer.text"/></p>
+        			<FormattedHTMLMessage id="footer.text"/>
         		</div>
         		<div className="footer--top text-center">
         			<p><i className="icon-mail-alt"></i> <a href="mailto:kamil.wyremski@gmail.com" title="Write to me">kamil.wyremski@gmail.com</a></p>
