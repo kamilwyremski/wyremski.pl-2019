@@ -162,3 +162,27 @@
 		display: block;
 	}
 }
+/* style print */
+@media print {
+	#header{
+		padding: 40px 0 0; text-shadow: none; color: inherit; text-align: center;
+	}
+	#header--inside{
+		padding:0; margin:0; border: none;
+	}
+	#home--about_me{
+		padding:0; color: inherit;
+	}
+	#home--about_me h2, #home--about_me--desc h4{
+		color: inherit;
+	}
+	#home--about_me .d-flex{
+		display: block;
+	}
+	#header--typed, .home--skills--image, .home--technologies--image, #home--about_me a{
+	  	display: none;
+	}
+	.home--skills, .home--technologies{
+	  	color: inherit; border: none; margin:0; padding:0;
+	}
+  }

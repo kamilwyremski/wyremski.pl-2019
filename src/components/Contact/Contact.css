@@ -77,3 +77,21 @@
 	  text-align: left;
 	}
 }
+/* style print */
+@media print {
+  #contact{
+    padding:0; color: inherit;
+  }
+  #contact p a, #contact [type=submit]{
+    color: inherit;
+  }
+  #contact input[type=text], #contact input[type=email], #contact textarea{
+    border-color: black;
+  }
+  #contact .checkmark{
+    border: solid 1px black;
+  }
+  #g-recaptcha{
+    display: none;
+  }
+}

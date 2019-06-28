@@ -18,7 +18,7 @@ class Scripts extends Component {
       .then(response => response.json())
       .then(data => {
         this.setState({ scripts: data.scripts });
-        window.scrollTo(0, 1);
+        window.scrollTo(0, 4);
       }
     );
     let meta = {
@@ -34,6 +34,10 @@ class Scripts extends Component {
     return (
       <main>
         <div className="section container">
+          <div className="section text-center">
+            <h1><FormattedMessage id="scripts.title"/></h1>
+            <h3><FormattedMessage id="scripts.subtitle"/></h3>
+          </div>
           {!this.state.scripts.length &&
             <div className="preloader d-flex">
               <div className="cssload-container">
@@ -41,10 +45,6 @@ class Scripts extends Component {
               </div>
             </div>
           }
-          <div className="section text-center">
-            <h1><FormattedMessage id="scripts.title"/></h1>
-            <h3><FormattedMessage id="scripts.subtitle"/></h3>
-          </div>
           <div id="scripts">
             {this.state.scripts.map((item,i) =>
               <div className="animatable fadeInUp" key={i}>

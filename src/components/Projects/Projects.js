@@ -16,8 +16,10 @@ class Projects extends Component {
     fetch('/json/projects.json')
       .then(response => response.json())
       .then(data => {
-        this.setState({ projects: data.projects });
-        window.scrollTo(0, 2);
+        setTimeout(() => {
+          this.setState({ projects: data.projects });
+          window.scrollTo(0, 4);
+        }, 1000);
       });
     let meta = {
       'title': messages[language]['projects.title']+' - '+messages[language]['home.title'],
@@ -36,9 +38,16 @@ class Projects extends Component {
             <h1><FormattedMessage id="projects.title"/></h1>
             <h3><FormattedMessage id="projects.subtitle"/></h3>
           </div>
+          {!this.state.projects.length &&
+            <div className="preloader d-flex">
+              <div className="cssload-container">
+                <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          }
           <div className="d-flex" id="projects--list">
             {this.state.projects.map((item,i) =>
-              <div key={i} className="project animatable fadeInUp" itemScope itemType="http://schema.org/Product">
+              <div key={i} className="project animatable fadeInUp" itemScope itemType="http://schema.org/CollectionPage">
                 <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer">
                   <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
                     src: '/'+item.image,

@@ -55,3 +55,12 @@
 	  display: block; text-align: center;
 	}
 }
+/* style print */
+@media print {
+	#footer, #footer a{
+    color: black;
+  }
+  #footer .link, #footer--social{
+    display: none;
+  }
+}

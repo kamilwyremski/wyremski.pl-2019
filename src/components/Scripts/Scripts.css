@@ -37,3 +37,12 @@
 		padding-top: 30px; padding-bottom: 30px; border-bottom: solid 1px grey;
 	}
 }
+/* style print */
+@media print{
+	.scripts--description h4{
+		display: none;
+	}
+	#scripts .scripts--description{
+		border: none; padding:0;
+	}
+}

@@ -153,3 +153,18 @@ body::-webkit-scrollbar-button:horizontal:increment {
     font-size: 1.1em;
   }
 }
+/* style print */
+@media print {
+  .animatable{
+    visibility: visible;
+  }
+  .section{
+    padding: 20px;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+  }
+  .color-light{
+    color: inherit;
+  }
+}

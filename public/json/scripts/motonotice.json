@@ -1,27 +1,21 @@
 {
   "data": {
     "functions": 12,
-    "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/9-skrypt-ogloszeniowy-notice2.html",
+    "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/122-skrypt-ogloszen-motoryzacyjnych-motonotice.html",
     "photos": 12,
     "list_domains": [
-      "up-to-you.pl",
-      "handluj.com",
-	    "w40.pl",
-      "lulanie.pl",
-	    "gielda-agro.pl",
-	    "malpino.pl",
-      "tu-sprzedaj.pl"
+      "motonotice.wyremski.pl"
     ]
   },
   "pl": {
-    "title": "NOTICE2 - skrypt ogłoszeń",
-    "description": "NOTICE2 to uniwersalny, nowoczesny skrypt pozwalający stworzyć stronę z ogłoszeniami online",
-    "script.header": "Skrypt strony z ogłoszeniami Notice2",
-    "script.subheader": "Stwórz własny nowoczesny portal z ogłoszeniami online",
-    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>NOTICE2 to uniwersalny skrypt umożliwiający stworzenie własnej strony z ogłoszeniami online w łatwy i szybki sposób. Jest on zbudowany zgodnie z obecnymi standardami tworzenia stron www. Notice2 jest bardzo łatwy w obsłudze, zarówno przez administratora, jak i klientów serwisu.</p><p>Skrypt umożliwia stworzenie strony z ogłoszeniami w każdej kategorii lokalnej, ogólnopolskiej lub międzynarodowej. Może być użyty także jako <strong>strona z bazą noclegów, nieruchomości</strong> lub <strong>katalog firm</strong>. Dostępnych jest bardzo wiele opcji konfiguracyjnych, dzięki czemu można dostosować go do indywidualnych wymagań. Obsługuje <strong>automatyczne płatności</strong> za wystawianie i promowanie ogłoszeń w systemach <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a>, <a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a> oraz <a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a>.</p>",
+    "title": "MOTONOTICE - skrypt ogłoszeń motoryzacyjnych",
+    "description": "MOTONOTICE to skrypt strony www z ogłoszeniami w każdej kategorii związanej z motoryzacją: z samochodami, motocyklami, ciężarówkami, autobusami, rolnictwem albo po prostu z częściami samochodowymi",
+    "script.header": "Skrypt strony z ogłoszeniami motoryzacyjnymi MotoNotice",
+    "script.subheader": "Stwórz własny portal z ogłoszeniami motoryzacyjnymi",
+    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>MOTONOTICE to skrypt umożliwiający stworzenie własnej strony z ogłoszeniami online w każdej kategorii związanej z motoryzacją: z samochodami, motocyklami, ciężarówkami, autobusami, rolnictwem albo po prostu z częściami samochodowymi. Jest on zbudowany zgodnie z obecnymi standardami tworzenia stron www. MotoNotice jest bardzo łatwy w obsłudze, zarówno przez administratora, jak i klientów serwisu.</p><p>Skrypt umożliwia stworzenie strony lokalnej, ogólnopolskiej lub międzynarodowej. Dostępnych jest bardzo wiele opcji konfiguracyjnych, dzięki czemu można dostosować go do indywidualnych wymagań. Obsługuje <strong>automatyczne płatności</strong> za wystawianie i promowanie ogłoszeń w systemach <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a>, <a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a> oraz <a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a>.</p>",
     "script.function.1": "<h4>Płatności</h4><p>Obsługa <strong>systemów płatności <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, <strong><a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a></strong> oraz <strong><a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a></strong> za wystawianie i promowanie ogłoszenia, automatyczne potwierdzanie płatności</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
-    "script.function.3": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie ofert na mapie, łatwe ich znalezienie oraz <strong>wyszukiwanie ogłoszeń wg odległości</strong></p>",
+    "script.function.3": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie lokalizacji ogłoszeń na mapie oraz <strong>wyszukiwanie wg odległości</strong></p>",
     "script.function.4": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (panel Facebook, logowanie przez Facebook-a oraz przez konto Google, przyciski &bdquo;Lubię to&rdquo;,  &bdquo;Udostępnij&rdquo;, &bdquo;Tweetnij&rdquo; i \"Wykop\")</p>",
     "script.function.5": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> (możliwość dodania do 6 banerów reklamowych, edycji slidera na stronie głównej oraz stopki serwisu)</p>",
     "script.function.6": "<h4>Kanał RSS</h4><p>Wbudowany <strong>kanał RSS</strong> (FEED) wyświetlający ostatnio dodane ogłoszenia.</p>",
@@ -36,17 +30,17 @@
     "script.requirements.3": "Możliwość ustawienia zadań CronTab",
     "script.requirements_bottom": "Skrypt jest stworzony na bardzo szybkim i łatwym w modyfikacjach <strong>systemie szablonów Twig2</strong>.",
     "script.admin_panel_description": "Do skryptu dołączony jest bardzo rozbudowany Panel Administracyjny, który umożliwia zarządzanie ustawieniami strony, podgląd szczegółowych statystyk oraz logów systemu",
-    "script.demo.desc": "<h4>DEMO skryptu: <strong><a href=\"http://notice2.wyremski.pl\" target=\"_blank\" title=\"NOTICE2\">notice2.wyremski.pl</a></strong></h4><p>DEMO Panelu Administracyjnego: <strong><a href=\"http://notice2.wyremski.pl/admin\" target=\"_blank\" title=\"Pokazowa strona z ogłoszeniami\">notice2.wyremski.pl/admin</a></strong><br>login: test hasło: 1234</p>",
+    "script.demo.desc": "<h4>DEMO skryptu: <strong><a href=\"https://motonotice.wyremski.pl\" target=\"_blank\" title=\"MOTONOTICE\">motonotice.wyremski.pl</a></strong></h4><p>DEMO Panelu Administracyjnego: <strong><a href=\"https://motonotice.wyremski.pl/admin\" target=\"_blank\" title=\"Pokazowa strona z ogłoszeniami motoryzacyjnymi\">motonotice.wyremski.pl/admin</a></strong><br>login: test hasło: 1234</p>",
     "script.demo.manual": "<p>Zobacz także <a href=\"http://blog.wyremski.pl/instrukcja-instalacji-i-konfiguracji-skryptow/\" title=\"Instrukcja instalacji i konfiguracji skryptów\" target=\"_blank\">instrukcję instalacji i konfiguracji skryptów</a></p>",
-    "script.desc2": "Notice2 jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
-    "script.desc3": "<p>Znalazłeś lepszy skrypt ogłoszeniowy?<br>...na pewno nie! Po prostu takiego nie ma...</p><br /><h3>Notice2 już dziś może być Twój!</h3>"
+    "script.desc2": "MOTONOTICE jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
+    "script.desc3": "<p>Znalazłeś lepszy skrypt dla ogłoszeń motoryzacyjnych?<br>...na pewno nie! Po prostu takiego nie ma...</p><br /><h3>MotoNotice już dziś może być Twój!</h3>"
   },
   "en":{
-    "title": "NOTICE2 - script of announcements",
-    "description": "NOTICE2 is a modern script that allows you to create website with ads",
-    "script.header": "Script website with announcements - Notice2",
-    "script.subheader": "Create your own modern website with announcements!",
-    "script.desc1": "<h2>Join to satisfied users!</h2><p>NOTICE2 allows you to easily create your own website with online announcements. This is not an update to NOTICE, it’s an independent project, built according to current web development requirements.</p><p>NOTICE2 allows you to <strong>create a website with announcement pages</strong> for separate categories, with options for local or national users. Offers a lot of configuration options so you can customize it to individual requirements. Includes added and promo ads selling system which supports <strong>automatic payments</strong> via <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a>, <a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a> and <a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a>.</p>",
+    "title": "MOTONOTICE - script of automotive announcements",
+    "description": "MOTONOTICE is a modern script that allows you to create website with automotive announcements",
+    "script.header": "Website script with automotive announcements",
+    "script.subheader": "Create your own modern website with automotive announcements!",
+    "script.desc1": "<h2>Join to satisfied users!</h2><p>MOTONOTICE allows you to easily create your own website with online automotive announcements.</p><p>With MOTONOTICE you can create website with classifieds in every category related to the automotive industry: with cars, motorcycles, trucks, buses, agriculture or simply with car parts. There is a lof of configuration options so you can customize it to individual requirements. Includes added and promo ads selling system which supports <strong>automatic payments</strong> via <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a>, <a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a> and <a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a>.</p>",
     "script.function.1": "<h4>Payments</h4><p>Supports <strong>payment systems <a href=\"http://www.dotpay.pl/\" title=\"Dotpay\" rel=\"nofollow\" target=\"_blank\">Dotpay.pl</a></strong>, <strong><a href=\"https://www.przelewy24.pl/\" title=\"Przelewy24\" rel=\"nofollow\" target=\"_blank\">Przelewy24.pl</a></strong> and <strong><a href=\"http://www.paypal.com/\" title=\"Paypal\" rel=\"nofollow\" target=\"_blank\">Paypal.com</a></strong> for added and promoting offers, automatic confirmation of payments</p>",
     "script.function.2": "<h4>RWD</h4><p><strong>Responsive template</strong> compatible with HTML5 - the page is displayed correctly on the mobile devices (such as mobile phones, tablets)</p>",
     "script.function.3": "<h4>Google Maps</h4><p>Integration with Google Map lets you select offers from the map, easy to find or <strong>search offers by the distance</strong></p>",
@@ -56,7 +50,7 @@
     "script.function.7": "<h4>SEO</h4><p>You can set up separate keyword and SEO description for each page - very useful to positioning Your site</p>",
     "script.function.8": "<h4>Security</h4><p><strong>Secure login panel</strong>, protection against poisoning session, coding i hashing passwords in bcrypt, generating unique tokens to user actions, integrations with <strong>reCAPTCHA</strong></p>",
     "script.function.9": "<h4>Adjustment</h4><p>The possibility of <strong>adapt site</strong> to your needs by Admin Panel - so you can adjust the script fully for Your own needs!<p>",
-    "script.function.10": "<h4>Microdata</h4><p>Microdata is a WHATWG HTML specification used to nest metadata within existing content on web pages. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users. This will help your website to be ranked higher</p>",
+    "script.function.10": "<h4>Microdata</h4><p>Microdata is a WHATWG HTML specification used to nest metadata within existing content on web pages. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users.</p>",
     "script.function.11": "<h4>Statistics</h4><p>View detailed <strong>statistics system</strong> in the Admin Panel with the generator charts. Now you can see detailed information on your users and improvements you can make</p>",
     "script.function.12": "<h4>SMTP and attachments</h4><p>Ability to send an e mail through SMTP and with attachments from contact form. Ability to send mailings to all registered users</p>",
     "script.requirements.1": "PHP version min 7.0",
@@ -64,9 +58,9 @@
     "script.requirements.3": "Ability to set the tasks crontab",
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig2</strong>.",
     "script.admin_panel_description": "To script is included very extensive Admin Panel that allows to manage settings page, view detailed statistics and edit added announcements",
-    "script.demo.desc": "<p>DEMO version: <strong><a href=\"http://notice2.wyremski.pl\" target=\"_blank\" title=\"NOTICE2\">notice2.wyremski.pl</a></strong></p><p>DEMO version of Admin Panel: <strong><a href=\"http://notice2.wyremski.pl/admin\" target=\"_blank\" title=\"Test version of Notice2\">notice2.scripts.pl/admin</a></strong><br>login: test password: 1234</p>",
+    "script.demo.desc": "<p>DEMO version: <strong><a href=\"http://motonotice.wyremski.pl\" target=\"_blank\" title=\"MOTONOTICE\">motonotice.wyremski.pl</a></strong></p><p>DEMO version of Admin Panel: <strong><a href=\"http://motonotice.wyremski.pl/admin\" target=\"_blank\" title=\"Test version of MotoNotice\">motonotice.scripts.pl/admin</a></strong><br>login: test password: 1234</p>",
     "script.demo.manual": " ",
     "script.desc2": "The script have a lot of tools that are not available in other similar scripts!",
-    "script.desc3": "<p>You will not find better script with announcements!<br>We Guarantee!</p><br><h3>If you are interested, you can buy this script:</h3>"
+    "script.desc3": "<p>You will not find better script with automotive classifieds!<br>We Guarantee!</p><br><h3>If you are interested, you can buy this script:</h3>"
   }
 }

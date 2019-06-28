@@ -30,3 +30,12 @@
   	font-size: 4em;
 	}
 }
+/* style print */
+@media print {
+  #error404{
+    padding:0; color: inherit;
+  }
+  .error404--tag{
+    color: inherit;
+  }
+}

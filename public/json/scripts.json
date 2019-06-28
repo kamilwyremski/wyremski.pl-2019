@@ -4,7 +4,15 @@
 		"url" : "notice2",
 		"description" : {
 			"pl" : "NOTICE2 to uniwersalny, nowoczesny skrypt pozwalający stworzyć stronę z ogłoszeniami online",
-			"en" : "NOTICE2 is a modern script that allows you to create website with ads"
+			"en" : "NOTICE2 is a modern script that allows you to create website with classifieds"
+		}
+	},
+	{
+  	"name" : "MOTONOTICE",
+		"url" : "motonotice",
+		"description" : {
+			"pl" : "MOTONOTICE to skrypt dla strony www z ogłoszeniami w każdej kategorii związanej z motoryzacją",
+			"en" : "MOTONOTICE is a script for a website with classifieds in each category related to the automotive industry"
 		}
   },
 	{

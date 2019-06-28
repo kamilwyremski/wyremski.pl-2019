@@ -1,14 +1,13 @@
 {
   "data": {
     "functions": 12,
-    "buy_url": "https://skrypty.sattel.pl/strona-glowna/11-skrypt-nieruchomosci-holmes.html",
+    "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/11-skrypt-nieruchomosci-holmes.html",
     "photos": 12,
     "list_domains": [
-      "samdom.pl",
       "kontaktsc.pl",
       "alfabetnieruchomosci.pl",
-	    "heroshome.pl",
-	    "skyhomes.pl"
+      "skyhomes.pl",
+      "mieszkaj.suwalki.pl"
     ]
   },
   "pl": {
