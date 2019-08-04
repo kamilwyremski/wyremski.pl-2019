@@ -60,7 +60,7 @@
 	#footer, #footer a{
     color: black;
   }
-  #footer .link, #footer--social{
-    display: none;
+  #footer .link, #footer--social, #cookies-message{
+    display: none !important;
   }
 }
