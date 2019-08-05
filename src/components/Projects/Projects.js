@@ -16,9 +16,13 @@ class Projects extends Component {
     fetch('/json/projects.json')
       .then(response => response.json())
       .then(data => {
-        this.setState({ projects: data.projects });
-        window.scrollTo(0, 50);
-        window.scrollTo(0, 0);
+        setTimeout(() => {
+          this.setState({ projects: data.projects });
+          if(!window.scrollY){
+            window.scrollTo(0, 50);
+            window.scrollTo(0, 0);
+          }
+        }, 100);
       });
     let meta = {
       'title': messages[language]['projects.title']+' - '+messages[language]['home.title'],
@@ -46,23 +50,21 @@ class Projects extends Component {
           }
           <div className="d-flex" id="projects--list">
             {this.state.projects.map((item,i) =>
-              <div key={i} className="project animatable fadeInUp" itemScope itemType="http://schema.org/CollectionPage">
-                <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer">
-                  <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
-                    src: '/'+item.image,
-                    alt: item.name,
-                    ref: "image",
-                    itemProp: "image"
-                  }} />
-                </a>
+              <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project animatable fadeInUp" itemScope itemType="http://schema.org/CollectionPage">
+                <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
+                  src: '/'+item.image,
+                  alt: item.name,
+                  ref: "image",
+                  itemProp: "image"
+                }} />
                 <div className="project--description text-center">
                   <div>
-                    <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer"><h4 itemProp="name" className="text-uppercase">{item.name}</h4></a>
+                    <h4 itemProp="name" className="text-uppercase">{item.name}</h4>
                     <p itemProp="description">{item.description[language]}</p>
-                    <a href={"http://" + item.url} title={item.name} target="_blank" itemProp="url" rel="nofollow noopener noreferrer">{item.url}</a>
+                    <p className="project--description--link">{item.url}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             )}
           </div>
           <div className="container text-center section">

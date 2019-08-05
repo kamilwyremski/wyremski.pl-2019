@@ -5,7 +5,7 @@
 	margin-left: 10%; border-bottom: solid 1px grey; padding-bottom: 20px; padding-right: 20px;
 }
 #header--typed{
-  margin-top: 30px; margin-bottom: 40px; font-size: 3.4em;
+	margin-top: 30px; margin-bottom: 40px; font-size: 3.4em;
 }
 #header--typed--cursor{
 	color: #8b3aca; animation-name: showHide; animation-duration: 0.8s; animation-iteration-count: infinite;
@@ -142,7 +142,7 @@
 }
 @media(max-width: 768px) {
 	#header--typed{
-	 font-size: 2.7em;
+		font-size: 2.7em;
 	}
 	#home--introductio--text{
 		column-count: 1;
@@ -180,9 +180,9 @@
 		display: block;
 	}
 	#header--typed, .home--skills--image, .home--technologies--image, #home--about_me a{
-	  	display: none;
+		display: none;
 	}
 	.home--skills, .home--technologies{
-	  	color: inherit; border: none; margin:0; padding:0;
+		color: inherit; border: none; margin:0; padding:0;
 	}
-  }
+}

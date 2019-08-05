@@ -52,14 +52,20 @@ p, ul, ol{
 a{
   text-decoration: none;
 }
-a:active, a:focus {
-  outline: 0;  border: none;  -moz-outline-style: none;
+:active{
+  outline: 0;
+}
+:focus {
+  outline: 2px #8b3aca dashed;
 }
 .text-uppercase{
   text-transform: uppercase;
 }
 .LazyLoad, .LazyLoad img{
   max-width: 100%;
+}
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0
 }
 /* animations */
 .animatable{

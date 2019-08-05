@@ -17,9 +17,13 @@ class Scripts extends Component {
     fetch('/json/scripts.json')
       .then(response => response.json())
       .then(data => {
-        this.setState({ scripts: data.scripts });
-       window.scrollTo(0, 50);
-       window.scrollTo(0, 0);
+        setTimeout(() => {
+          this.setState({ scripts: data.scripts });
+          if(!window.scrollY){
+            window.scrollTo(0, 50);
+            window.scrollTo(0, 0);
+          }
+        }, 100);
       }
     );
     let meta = {

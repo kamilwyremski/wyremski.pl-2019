@@ -104,6 +104,7 @@ class Contact extends Component {
   }
 
   handleSubmit(event) {
+    event.target.blur();
     let is_valid = true;
     this.setState({
       alertEmail: false,
@@ -166,6 +167,10 @@ class Contact extends Component {
   validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
+  }
+
+  onClickContactSubmit = (event) => {
+    event.currentTarget.blur();
   }
 
   render() {
@@ -254,7 +259,7 @@ class Contact extends Component {
               <div className="row">
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
-                  <button name="submit" type="submit" className="btn btn-primary"><FormattedMessage id="contact.send"/></button>
+                  <button name="contact--submit" type="submit" className="btn btn-primary" onClick={this.onClickContactSubmit}><FormattedMessage id="contact.send"/></button>
                   <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertCaptcha"/></p>
                   <br />
                   <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'} role="alert"><FormattedMessage id="contact.messageSend"/></h4>
