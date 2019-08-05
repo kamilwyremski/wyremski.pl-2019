@@ -182,32 +182,73 @@ class Contact extends Component {
             <form method="post" onSubmit={this.handleSubmit} id="contact--form">
               <input type="hidden" name="action" value="send_message" />
               <div className="row">
-                <label htmlFor="email" className="col-form-label"><FormattedMessage id="contact.email"/></label>
+                <label htmlFor="contact--email" className="col-form-label"><FormattedMessage id="contact.email"/></label>
                 <div className="col">
-                  <input type="email" className="form-control" id="email" name="email" placeholder="example@domain.com" value={this.state.email} onChange={this.handleInputChange}/>
-                  <p className={this.state.alertEmail ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertEmail"/></p>
+                  <input type="email" 
+                    className="form-control" 
+                    id="contact--email" 
+                    name="email" 
+                    placeholder="example@domain.com" 
+                    value={this.state.email} 
+                    onChange={this.handleInputChange}
+                    aria-required="true"
+                    aria-label={messages[language]['contact.email']}
+                    aria-invalid={this.state.alertEmail}
+                    aria-describedby="contact--alert--email"
+                  />
+                  <p className={this.state.alertEmail ? 'invalid-feedback' : 'hidden'} id="contact--alert--email"><FormattedMessage id="contact.alertEmail"/></p>
                   <p><FormattedMessage id="contact.email.info"/></p>
                 </div>
               </div>
               <div className="row">
-                <label htmlFor="subject" className="col-form-label"><FormattedMessage id="contact.subject"/></label>
+                <label htmlFor="contact--subject" className="col-form-label"><FormattedMessage id="contact.subject"/></label>
                 <div className="col">
-                  <input type="text" className="form-control" id="subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}/>
-                  <p className={this.state.alertSubject ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertSubject"/></p>
+                  <input type="text" 
+                    className="form-control" 
+                    id="contact--subject" 
+                    name="subject" 
+                    value={this.state.subject} 
+                    onChange={this.handleInputChange} 
+                    aria-required="true" 
+                    aria-label={messages[language]['contact.subject']}
+                    aria-invalid={this.state.alertSubject}
+                    aria-describedby="contact--alert--subject"
+                  />
+                  <p className={this.state.alertSubject ? 'invalid-feedback' : 'hidden'} id="contact--alert--subject"><FormattedMessage id="contact.alertSubject"/></p>
                 </div>
               </div>
               <div className="row">
-                <label htmlFor="message" className="col-form-label"><FormattedMessage id="contact.message"/></label>
+                <label htmlFor="contact--message" className="col-form-label"><FormattedMessage id="contact.message"/></label>
                 <div className="col">
-                  <textarea className="form-control" rows="4" name="message" id="message" value={this.state.message} onChange={this.handleInputChange}></textarea>
-                  <p className={this.state.alertMessage ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertMessage"/></p>
+                  <textarea className="form-control" 
+                    rows="4" 
+                    name="message" 
+                    id="contact--message" 
+                    value={this.state.message} 
+                    onChange={this.handleInputChange} 
+                    aria-required="true" 
+                    aria-label={messages[language]['contact.message']}
+                    aria-invalid={this.state.alertMessage}
+                    aria-describedby="contact--alert--message"
+                  ></textarea>
+                  <p className={this.state.alertMessage ? 'invalid-feedback' : 'hidden'} id="contact--alert--message"><FormattedMessage id="contact.alertMessage"/></p>
                 </div>
               </div>
               <div className="row">
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
-                  <label className="label-checkbox"><input type="checkbox" name="rules" checked={this.state.rules} onChange={this.handleInputChange}/><span className="checkmark"></span> <FormattedMessage id="contact.privacy"/></label>
-                  <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertRules"/></p>
+                  <label className="label-checkbox">
+                    <input type="checkbox" 
+                      name="rules" 
+                      checked={this.state.rules} 
+                      onChange={this.handleInputChange} 
+                      aria-label={messages[language]['contact.privacy']}
+                      aria-invalid={this.state.alertRules}
+                      aria-describedby="contact--alert--rules"
+                    />
+                    <span className="checkmark"></span> <FormattedMessage id="contact.privacy"/>
+                  </label>
+                  <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'} id="contact--alert--rules"><FormattedMessage id="contact.alertRules"/></p>
                 </div>
               </div>
               <div className="row">
@@ -216,8 +257,8 @@ class Contact extends Component {
                   <button name="submit" type="submit" className="btn btn-primary"><FormattedMessage id="contact.send"/></button>
                   <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertCaptcha"/></p>
                   <br />
-                  <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'}><FormattedMessage id="contact.messageSend"/></h4>
-                  <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'}><FormattedMessage id="contact.messageNoSend"/></h4>
+                  <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'} role="alert"><FormattedMessage id="contact.messageSend"/></h4>
+                  <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'} role="alert"><FormattedMessage id="contact.messageNoSend"/></h4>
                 </div>
               </div>
               <ReCaptcha

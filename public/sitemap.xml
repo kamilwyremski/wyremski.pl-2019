@@ -35,6 +35,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://wyremski.pl/skrypt/motonotice</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://wyremski.pl/skrypt/demoty2</loc>
   <lastmod>2018-07-15T23:50:51+00:00</lastmod>
   <priority>0.80</priority>
@@ -60,7 +65,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://wyremski.pl/skrypt/empresa</loc>
+  <loc>https://wyremski.pl/skrypt/empresa2</loc>
   <lastmod>2018-03-15T23:50:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -76,6 +81,11 @@
 </url>
 <url>
   <loc>https://wyremski.pl/en/script/notice2</loc>
+  <lastmod>2018-03-15T23:50:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wyremski.pl/en/script/motonotice</loc>
   <lastmod>2018-03-15T23:50:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -100,7 +110,7 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://wyremski.pl/en/script/empresa</loc>
+  <loc>https://wyremski.pl/en/script/empresa2</loc>
   <lastmod>2018-03-15T23:50:51+00:00</lastmod>
   <priority>0.51</priority>
 </url>

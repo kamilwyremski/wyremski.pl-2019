@@ -16,10 +16,9 @@ class Projects extends Component {
     fetch('/json/projects.json')
       .then(response => response.json())
       .then(data => {
-        setTimeout(() => {
-          this.setState({ projects: data.projects });
-          window.scrollTo(0, 4);
-        }, 1000);
+        this.setState({ projects: data.projects });
+        window.scrollTo(0, 50);
+        window.scrollTo(0, 0);
       });
     let meta = {
       'title': messages[language]['projects.title']+' - '+messages[language]['home.title'],

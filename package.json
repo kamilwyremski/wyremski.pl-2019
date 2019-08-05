@@ -42,13 +42,13 @@
     "include": [
       "/skrypt/cuadro",
       "/skrypt/demoty2",
-      "/skrypt/empresa",
+      "/skrypt/empresa2",
       "/skrypt/festa",
       "/skrypt/holmes",
       "/skrypt/notice2",
       "/en/script/cuadro",
       "/en/script/demoty2",
-      "/en/script/empresa",
+      "/en/script/empresa2",
       "/en/script/festa",
       "/en/script/holmes",
       "/en/script/notice2"

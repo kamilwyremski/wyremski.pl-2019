@@ -16,8 +16,8 @@
 			"pl" : "MOTONOTICE to skrypt dla strony www z ogłoszeniami w każdej kategorii związanej z motoryzacją",
 			"en" : "MOTONOTICE is a script for a website with classifieds in each category related to the automotive industry"
 		},
-		"ratingValue": 0,
-		"ratingCount": 0
+		"ratingValue": 5,
+		"ratingCount": 1
 	},
 	{
 		"name" : "DEMOTY2",
@@ -36,8 +36,8 @@
 			"pl" : "Empresa2 to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
 			"en" : "Empresa2 is a script for online business directories - allows you to create website with a list of local, national or international companies"
 		},
-		"ratingValue": 0,
-		"ratingCount": 0
+		"ratingValue": 5,
+		"ratingCount": 1
 	},
 	{
 		"name" : "CUADRO",
@@ -46,8 +46,8 @@
 			"pl" : "CUADRO to uniwersalny skrypt dla stron internetowych z obrazkami, zdjęciami i filmami video",
 			"en" : "CUADRO is a script that allows you to create website with pictures, photos and movies"
 		},
-		"ratingValue": 0,
-		"ratingCount": 0
+		"ratingValue": 5,
+		"ratingCount": 1
 	},
 	{
 		"name" : "FESTA",
@@ -66,7 +66,7 @@
 			"pl" : "Holmes to skrypt stron internetowych z ofertą nieruchomości, dla osób prywatnych lub agencji real estate",
 			"en" : "Real estate website for small or big real estate agencies"
 		},
-		"ratingValue": 0,
-		"ratingCount": 0
+		"ratingValue": 5,
+		"ratingCount": 1
 	}
 ]}

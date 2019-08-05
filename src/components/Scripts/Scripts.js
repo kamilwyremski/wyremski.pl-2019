@@ -18,7 +18,8 @@ class Scripts extends Component {
       .then(response => response.json())
       .then(data => {
         this.setState({ scripts: data.scripts });
-        window.scrollTo(0, 4);
+       window.scrollTo(0, 50);
+       window.scrollTo(0, 0);
       }
     );
     let meta = {

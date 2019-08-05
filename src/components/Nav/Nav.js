@@ -51,28 +51,33 @@ class Nav extends Component {
   render() {
     return(
       <nav id="nav" style={{top : this.state.nav_top}}>
-        <div className="container d-flex">
+        <div className="container d-flex" role="navigation" aria-label={messages[language]['nav.title.navigation']}>
           <Link to={messages[language]['nav.link.home']} className="navbar--brand" title="Kamil Wyremski - Web Designer">Kamil Wyremski</Link>
-          <div id="nav--burger" onClick={this.showHideMenu} className={ this.state.active_mobile_menu ? "open" : "" }>
+          <div id="nav--burger" 
+            onClick={this.showHideMenu} 
+            className={ this.state.active_mobile_menu ? "open" : "" }
+            aria-controls="nav--menu" 
+            aria-expanded={this.state.active_mobile_menu} 
+            aria-label={messages[language]['nav.title.toogle']}>
             <span></span>
             <span></span>
             <span></span>
           </div>
           <ul id="nav--menu" className={ this.state.active_mobile_menu ? "open d-flex" : "d-flex" }>
             <li className="hide">
-              <NavLink to={messages[language]['nav.link.home']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu}>Home</NavLink>
+              <NavLink to={messages[language]['nav.link.home']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu} title={messages[language]['nav.title.home']}>Home</NavLink>
             </li>
             <li className="hide">
-              <NavLink to={messages[language]['nav.link.scripts']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu}><FormattedMessage id="nav.scripts"/></NavLink>
+              <NavLink to={messages[language]['nav.link.scripts']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu} title={messages[language]['nav.title.scripts']}><FormattedMessage id="nav.scripts"/></NavLink>
             </li>
             <li className="hide">
-              <NavLink to={messages[language]['nav.link.projects']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu}><FormattedMessage id="nav.projects"/></NavLink>
+              <NavLink to={messages[language]['nav.link.projects']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu} title={messages[language]['nav.title.projects']}><FormattedMessage id="nav.projects"/></NavLink>
             </li>
             <li className="hide">
-              <NavLink to={messages[language]['nav.link.contact']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu}><FormattedMessage id="nav.contact"/></NavLink>
+              <NavLink to={messages[language]['nav.link.contact']} className="nav--link" exact activeClassName='is-active' onClick={this.showHideMenu} title={messages[language]['nav.title.contact']}><FormattedMessage id="nav.contact"/></NavLink>
             </li>
             <li className="hide">
-              <a href={language==='pl' ? '/en' : '/'} className="nav--link" id="nav--link-lang">{language==='pl' ? 'en' : 'pl'}&nbsp;&#9656;</a>
+              <a href={language==='pl' ? '/en' : '/'} className="nav--link" id="nav--link-lang" title={messages[language]['nav.title.lang']}>{language==='pl' ? 'en' : 'pl'}&nbsp;&#9656;</a>
             </li>
           </ul>
         </div>
