@@ -90,13 +90,13 @@
 		"image" : "upload/projects/skamienia.jpg"
 	},
 	{
-	    "name" : "Lulanie",
+	    "name" : "Up To You",
 		"description" : {
-			"pl" : "Strona z ogłoszeniami noclegowymi i ofertami usługowymi. W tym serwisie znajdziesz także opisy atrakcji turystycznych, które warto zobaczyć w Polsce",
-			"en" : "We present accommodation ads and service offers. On our website you will find also descriptions of tourist attractions that are worth seeing in Poland."
+			"pl" : "Strona z ogłoszeniami nieruchomości na terenie całej Polski. Posiada zaawansowaną wyszukiwarkę obiektów.",
+			"en" : "A page with real estate classifieds in Poland. Has an advanced search engine for announcements."
 		},
-		"url" : "lulanie.pl",
-		"image" : "upload/projects/lulanie.jpg"
+		"url" : "up-to-you.pl",
+		"image" : "upload/projects/uptoyou.jpg"
 	},
 	{
 	    "name" : "Sklep Sattel.pl",

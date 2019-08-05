@@ -25,6 +25,9 @@
 #scripts .scripts a:hover{
 	color: #8b3aca;
 }
+#scripts .script--rating{
+	display: none;
+}
 /* style mobile */
 @media(max-width: 640px) {
 	#scripts .scripts{

@@ -77,6 +77,11 @@ class Scripts extends Component {
                     </Link>
                   }
                 </div>
+                <div itemProp="aggregateRating" itemScope itemType="http://schema.org/AggregateRating" className="script--rating">
+                  <span itemProp="ratingValue">{item.ratingValue}</span>
+                  <span itemProp="bestRating">5</span>
+                  <span itemProp="ratingCount">{item.ratingCount}</span>
+                </div>
               </div>
             )}
           </div>
