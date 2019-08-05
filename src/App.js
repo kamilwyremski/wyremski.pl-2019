@@ -49,7 +49,7 @@ class App extends Component {
                 <Route exact path={path} component={Scripts} key={index} />
               )}
               {[messages['pl']['nav.link.script'], messages['en']['nav.link.script']].map((path, index) =>
-                <Route exact path={path+"/:script_slug(cuadro|demoty2|empresa|festa|holmes|motonotice|notice2)"} component={Script} key={index} />
+                <Route exact path={path+"/:script_slug(cuadro|demoty2|empresa2|festa|holmes|motonotice|notice2)"} component={Script} key={index} />
               )}
               {[messages['pl']['nav.link.projects'], messages['en']['nav.link.projects']].map((path, index) =>
                 <Route exact path={path} component={Projects} key={index} />

@@ -4,6 +4,8 @@ RewriteRule ^skrypt/demoty/?$ https://wyremski.pl/skrypt/demoty2 [L,R=301]
 RewriteRule ^en/script/demotivators/?$ https://wyremski.pl/en/script/demoty2 [L,R=301]
 RewriteRule ^skrypt/notice/?$ https://wyremski.pl/skrypt/notice2 [L,R=301]
 RewriteRule ^en/script/notice/?$ https://wyremski.pl/en/script/notice2 [L,R=301]
+RewriteRule ^skrypt/empresa/?$ https://wyremski.pl/skrypt/empresa2 [L,R=301]
+RewriteRule ^en/script/empresa/?$ https://wyremski.pl/en/script/empresa2 [L,R=301]
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

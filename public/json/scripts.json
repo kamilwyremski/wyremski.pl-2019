@@ -30,6 +30,16 @@
 		"ratingCount": 10
 	},
 	{
+		"name" : "EMPRESA2",
+		"url" : "empresa2",
+		"description" : {
+			"pl" : "Empresa2 to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
+			"en" : "Empresa2 is a script for online business directories - allows you to create website with a list of local, national or international companies"
+		},
+		"ratingValue": 0,
+		"ratingCount": 0
+	},
+	{
 		"name" : "CUADRO",
 		"url" : "cuadro",
 		"description" : {
@@ -55,16 +65,6 @@
 		"description" : {
 			"pl" : "Holmes to skrypt stron internetowych z ofertą nieruchomości, dla osób prywatnych lub agencji real estate",
 			"en" : "Real estate website for small or big real estate agencies"
-		},
-		"ratingValue": 0,
-		"ratingCount": 0
-	},
-	{
-		"name" : "EMPRESA",
-		"url" : "empresa",
-		"description" : {
-			"pl" : "Empresa to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
-			"en" : "Empresa is a script for online business directories - allows you to create website with a list of local, national or international companies"
 		},
 		"ratingValue": 0,
 		"ratingCount": 0
