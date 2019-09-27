@@ -30,11 +30,11 @@
 		"ratingCount": 10
 	},
 	{
-		"name" : "EMPRESA2",
-		"url" : "empresa2",
+		"name" : "FESTA2",
+		"url" : "festa2",
 		"description" : {
-			"pl" : "Empresa2 to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
-			"en" : "Empresa2 is a script for online business directories - allows you to create website with a list of local, national or international companies"
+			"pl" : "Festa2 to nowoczesny skrypt umożliwiający stworzenie strony www z bazą miejsc noclegowych",
+			"en" : "Festa2 is a modern script that allows you to create a website with a base of accommodation"
 		},
 		"ratingValue": 5,
 		"ratingCount": 1
@@ -50,14 +50,14 @@
 		"ratingCount": 1
 	},
 	{
-		"name" : "FESTA",
-		"url" : "festa",
+		"name" : "EMPRESA2",
+		"url" : "empresa2",
 		"description" : {
-			"pl" : "Festa to nowoczesny skrypt umożliwiający stworzenie strony www z bazą miejsc noclegowych",
-			"en" : "Festa is a modern script that allows you to create a website with a base of accommodation"
+			"pl" : "Empresa2 to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
+			"en" : "Empresa2 is a script for online business directories - allows you to create website with a list of local, national or international companies"
 		},
 		"ratingValue": 5,
-		"ratingCount": 3
+		"ratingCount": 1
 	},
 	{
 		"name" : "HOLMES",
