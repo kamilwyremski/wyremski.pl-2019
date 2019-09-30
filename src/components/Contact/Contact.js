@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Contact.css';
+import './Contact.scss';
 import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 import { ReCaptcha } from 'react-recaptcha-google';
 import { language, messages, setMetaTags } from './../../Lang';

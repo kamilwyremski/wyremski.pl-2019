@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Projects.css';
+import './Projects.scss';
 import {FormattedMessage} from 'react-intl';
 import { language, messages, setMetaTags } from './../../Lang';
 import LazyLoad from 'react-image-lazy-load';

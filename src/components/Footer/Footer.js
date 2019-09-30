@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import './Footer.scss';
 import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 import { language, messages } from './../../Lang';
 
@@ -66,7 +66,7 @@ class Footer extends Component {
     return (
       <div>
         <footer id="footer">
-          <div className="container d-flex" id="footer--top">
+          <div className="container d-flex footer--top--box">
             <div className="footer--top">
               <p>Kamil Wyremski</p>
               <FormattedHTMLMessage id="footer.text"/>
@@ -134,7 +134,7 @@ class Footer extends Component {
           <button className="link" id="accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
         </div>
         <div id="privacy_policy" onClick={this.clickOutsideModal} className={ this.state.show_privacy ? "open" : "" } role="dialog" aria-labelledby="privacy_policy_title">
-          <div id="privacy_policy--inside" className="container">
+          <div className="container">
             <div className="d-flex">
               <h3 id="privacy_policy_title"><FormattedMessage id="privacy_policy"/></h3>
               <button type="button" className="close link" onClick={this.onClickClosePrivacy} aria-label={messages[language]['privacy_policy.close']}><span aria-hidden="true">&times;</span></button>

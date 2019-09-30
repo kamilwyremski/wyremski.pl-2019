@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import {FormattedMessage} from 'react-intl';
 import { language, messages, setMetaTags } from './../../Lang';
-import './Scripts.css';
+import './Scripts.scss';
 import LazyLoad from 'react-image-lazy-load';
 
 class Scripts extends Component {

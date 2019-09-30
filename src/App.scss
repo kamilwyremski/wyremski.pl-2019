@@ -1,14 +1,13 @@
+@import 'assets/scss/colors';
+
 *{
   margin: 0; padding:0; box-sizing: border-box;
 }
 body{
-  font-family: 'Arial', sans-serif; color: #333;
+  font-family: 'Arial', sans-serif; color: $color-dark;
 }
 .modal-open{
   overflow: hidden;
-}
-.link{
-  background: none; border:none; cursor: pointer;
 }
 .container{
   width: 1200px; max-width: 100%; margin: auto;
@@ -25,14 +24,17 @@ body{
 .d-flex{
   display: flex; flex-wrap: wrap;
 }
+.link{
+  background: none; border:none; cursor: pointer;
+}
 .background-light{
-	background-color: #ededed;
+	background-color: $color-light;
 }
 .background-dark{
-  background-color: #232323;
+  background-color: $color-dark;
 }
 .color-light{
-	color: #ededed;
+	color: $color-light;
 }
 h1{
   font-size: 2.2em; margin-bottom: 10px;
@@ -56,7 +58,7 @@ a{
   outline: 0;
 }
 :focus {
-  outline: 2px #8b3aca dashed;
+  outline: 2px $color-primary dashed;
 }
 .text-uppercase{
   text-transform: uppercase;
@@ -112,22 +114,22 @@ body::-webkit-scrollbar-button:horizontal:increment {
 }
 /* :: 3.5.0 Preloader CSS */
 .preloader {
-  background-color: #ffffff; padding: 200px 0; justify-content: center; align-items:center;
-}
-.preloader .cssload-container {
-  display: block;  width: 97px;
-}
-.preloader .cssload-loading i {
-  width: 19px;   height: 19px; display: inline-block;  border-radius: 50%; background: #8b3aca;
-}
-.preloader .cssload-loading i:first-child {
-  opacity: 0; animation: cssload-loading-ani2 0.58s linear infinite; transform: translate(-19px);
-}
-.preloader .cssload-loading i:nth-child(2), .preloader .cssload-loading i:nth-child(3) {
-  animation: cssload-loading-ani3 0.58s linear infinite;
-}
-.preloader .cssload-loading i:last-child {
-  animation: cssload-loading-ani1 0.58s linear infinite;
+  background-color: $color-white; padding: 200px 0; justify-content: center; align-items:center;
+  .cssload-container {
+    display: block;  width: 97px;
+  }
+  .cssload-loading i {
+    width: 19px;   height: 19px; display: inline-block;  border-radius: 50%; background: $color-primary;
+    &:first-child {
+      opacity: 0; animation: cssload-loading-ani2 0.58s linear infinite; transform: translate(-19px);
+    }
+    &:nth-child(2), &:nth-child(3) {
+      animation: cssload-loading-ani3 0.58s linear infinite;
+    }
+    &:last-child {
+      animation: cssload-loading-ani1 0.58s linear infinite;
+    }
+  }
 }
 @keyframes cssload-loading-ani1{
   100% {

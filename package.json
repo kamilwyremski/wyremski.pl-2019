@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://wyremski.pl",
   "dependencies": {
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-ga": "^2.6.0",
@@ -43,13 +44,13 @@
       "/skrypt/cuadro",
       "/skrypt/demoty2",
       "/skrypt/empresa2",
-      "/skrypt/festa",
+      "/skrypt/festa2",
       "/skrypt/holmes",
       "/skrypt/notice2",
       "/en/script/cuadro",
       "/en/script/demoty2",
       "/en/script/empresa2",
-      "/en/script/festa",
+      "/en/script/festa2",
       "/en/script/holmes",
       "/en/script/notice2"
     ]

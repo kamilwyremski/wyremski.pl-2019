@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import {FormattedMessage} from 'react-intl';
 import { language, messages } from './../../Lang';
-import './Nav.css';
+import './Nav.scss';
 
 class Nav extends Component {
   constructor(props) {

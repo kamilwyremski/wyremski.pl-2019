@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Error404.css';
+import './Error404.scss';
 import { language, messages, setMetaTags } from './../../Lang';
 import {FormattedMessage} from 'react-intl';
 

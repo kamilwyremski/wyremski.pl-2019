@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
+import './App.scss';
 import './assets/css/fontello.css';
 import './assets/css/fonts.css';
 import { loadReCaptcha } from 'react-recaptcha-google'

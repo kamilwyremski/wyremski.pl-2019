@@ -1,26 +1,28 @@
+@import './../../assets/scss/_colors.scss';
+
 #projects{
 	padding-top: 50px;
-}
-#projects a{
-	color: black;
-}
-#projects a:hover{
-	text-decoration: underline;
+	a{
+		color: $color-black;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }
 #projects--list{
 	width: 1400px; max-width: 100%; margin: auto; flex-wrap: wrap;
 }
 .project{
 	position: relative; overflow: hidden; flex: 0 0 25%;
-}
-.project .LazyLoad{
-	text-align: center;
-}
-.project img{
-	opacity:0.2; transition: opacity 0.2s; height: 100%;
-}
-.project:hover img{
-	opacity: 1;
+	.LazyLoad{
+		text-align: center;
+	}
+	img{
+		opacity:0.2; transition: opacity 0.2s; height: 100%;
+	}
+	&:hover img{
+		opacity: 1;
+	}
 }
 .project--description{
 	position: absolute; display: flex; justify-content: center; align-items: center;top:10px; left:10px; right:10px; bottom:10px; transition: all 0.2s;

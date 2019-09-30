@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-image-lazy-load';
-import './Home.css';
+import './Home.scss';
 import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 import { language, messages } from './../../Lang';
 
 class Home extends Component {
 
-  constructor(props) {
-    super();
-    this.state = {
-      header_typed: messages[language]['home.header.types'],
-    };
-  }
+	constructor(props) {
+		super();
+		this.state = {
+			header_typed: messages[language]['home.header.types'],
+		};
+	}
 
 	componentDidMount() {
 		let header_types_texts = messages[language]['home.header.types'].split(' ');
@@ -65,7 +65,7 @@ class Home extends Component {
 						<br />
 						<h4><FormattedHTMLMessage id="home.introduction.subheader"/></h4>
 					</div>
-					<div id="home--introductio--text">
+					<div id="home--introductiom--text">
 						<FormattedHTMLMessage id="home.introduction.text"/>
 					</div>
 				</section>
