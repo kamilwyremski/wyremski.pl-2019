@@ -3,10 +3,10 @@
 #footer{
 	background-color: black; padding: 30px 10px 10px; color: #dfdfdf;
 	.footer--top--box{
-	flex-wrap: wrap; 
+		flex-wrap: wrap; 
 	}
 	.footer--top{
-	flex: 0 0 calc(33% - 30px); margin: 15px; padding-bottom: 15px;
+		flex: 0 0 calc(33% - 30px); margin: 15px; padding-bottom: 15px;
 	}
 	a, .link{
 		color: #dfdfdf; transition: all 0.2s;
@@ -53,7 +53,7 @@
 }
 /* style mobile */
 @media(max-width: 768px) {
-	#footer--top{
+	#footer .footer--top--box{
 		display: block; text-align: center;
 	}
 }

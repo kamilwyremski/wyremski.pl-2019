@@ -13,4 +13,8 @@ if (rootElement.hasChildNodes()) {
   render(<App />, rootElement);
 }
 
+window.snapSaveState = () => {
+  document.querySelector("#root").setAttribute("data-server-rendered", "true");
+};
+
 serviceWorker.unregister();

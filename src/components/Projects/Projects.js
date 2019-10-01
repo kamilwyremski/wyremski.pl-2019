@@ -67,7 +67,7 @@ class Projects extends Component {
               </a>
             )}
           </div>
-          <div className="container text-center section">
+          <div className="container text-center section test">
             <p>
               {this.state.projects.map((item,i,arr) => {
                 if(arr.length - 1 === i)
