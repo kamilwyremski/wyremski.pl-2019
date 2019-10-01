@@ -84,7 +84,7 @@ class Footer extends Component {
                   <i className="icon-facebook-official"></i>
                   <span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
                 </a>
-        				<a href="http://linkedin.com/in/kamil-wyremski" title={messages[language]['footer.linkedin']} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+        				<a href="https://linkedin.com/in/kamil-wyremski" title={messages[language]['footer.linkedin']} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
                   <i className="icon-linkedin-squared"></i>
                   <span className="sr-only"><FormattedMessage id="footer.linkedin"/></span>
                 </a>

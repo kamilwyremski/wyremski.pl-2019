@@ -11,7 +11,7 @@
     "react-image-lazy-load": "^1.3.0",
     "react-image-lightbox": "^5.1.0",
     "react-intl": "^2.9.0",
-    "react-recaptcha-google": "^1.1.1",
+    "react-recaptcha-google": "https://github.com/azizali/react-recaptcha-google.git",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
     "yarn": "^1.17.3"

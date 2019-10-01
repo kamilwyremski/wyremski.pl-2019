@@ -28,10 +28,10 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    if (this.captchaDemo) {
-      this.captchaDemo.reset();
-      this.captchaDemo.execute();
-    }
+    /*if (this.recaptchaInstance) {
+      this.recaptchaInstance.reset();
+      this.recaptchaInstance.execute();
+    }*/
     let meta = {
       'title': messages[language]['contact.title']+' - '+messages[language]['home.title'],
       'description': messages[language]['contact.description'],
@@ -42,9 +42,9 @@ class Contact extends Component {
   }
 
   onLoadRecaptcha() {
-    if (this.captchaDemo) {
-      this.captchaDemo.reset();
-      this.captchaDemo.execute();
+    if (this.recaptchaInstance) {
+      this.recaptchaInstance.reset();
+      this.recaptchaInstance.execute();
     }
   }
 
@@ -266,12 +266,12 @@ class Contact extends Component {
                 </div>
               </div>
               <ReCaptcha
-                ref={(el) => {this.captchaDemo = el;}}
+                ref={(el) => {this.recaptchaInstance = el;}}
                 size="invisible"
                 render="explicit"
                 sitekey="6Ld66YAUAAAAACgwCy8Nv91JIeiXb4lzQnEKLvey"
-                onloadCallback={this.onLoadRecaptcha}
-                verifyCallback={this.verifyCallback}
+                onLoad={this.onLoadRecaptcha}
+                onSuccess={this.verifyCallback}
               />
             </form>
           </div>
