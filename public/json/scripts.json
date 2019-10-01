@@ -5,9 +5,7 @@
 		"description" : {
 			"pl" : "NOTICE2 to uniwersalny, nowoczesny skrypt pozwalający stworzyć stronę z ogłoszeniami online",
 			"en" : "NOTICE2 is a modern script that allows you to create website with classifieds"
-		},
-		"ratingValue": 104,
-		"ratingCount": 21
+		}
 	},
 	{
 		"name" : "MOTONOTICE",
@@ -15,9 +13,7 @@
 		"description" : {
 			"pl" : "MOTONOTICE to skrypt dla strony www z ogłoszeniami w każdej kategorii związanej z motoryzacją",
 			"en" : "MOTONOTICE is a script for a website with classifieds in each category related to the automotive industry"
-		},
-		"ratingValue": 5,
-		"ratingCount": 1
+		}
 	},
 	{
 		"name" : "DEMOTY2",
@@ -25,9 +21,7 @@
 		"description" : {
 			"pl" : "Demoty2 to skrypt dla strony pozwalającej tworzyć demotywatory, demoty oraz memy",
 			"en" : "Demoty2 is a script for a website with demotivators, demots and memes"
-		},
-		"ratingValue": 49,
-		"ratingCount": 10
+		}
 	},
 	{
 		"name" : "FESTA2",
@@ -35,9 +29,7 @@
 		"description" : {
 			"pl" : "Festa2 to nowoczesny skrypt umożliwiający stworzenie strony www z bazą miejsc noclegowych",
 			"en" : "Festa2 is a modern script that allows you to create a website with a base of accommodation"
-		},
-		"ratingValue": 5,
-		"ratingCount": 1
+		}
 	},
 	{
 		"name" : "CUADRO",
@@ -45,9 +37,7 @@
 		"description" : {
 			"pl" : "CUADRO to uniwersalny skrypt dla stron internetowych z obrazkami, zdjęciami i filmami video",
 			"en" : "CUADRO is a script that allows you to create website with pictures, photos and movies"
-		},
-		"ratingValue": 5,
-		"ratingCount": 1
+		}
 	},
 	{
 		"name" : "EMPRESA2",
@@ -55,9 +45,7 @@
 		"description" : {
 			"pl" : "Empresa2 to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
 			"en" : "Empresa2 is a script for online business directories - allows you to create website with a list of local, national or international companies"
-		},
-		"ratingValue": 5,
-		"ratingCount": 1
+		}
 	},
 	{
 		"name" : "HOLMES",
@@ -65,8 +53,6 @@
 		"description" : {
 			"pl" : "Holmes to skrypt stron internetowych z ofertą nieruchomości, dla osób prywatnych lub agencji real estate",
 			"en" : "Real estate website for small or big real estate agencies"
-		},
-		"ratingValue": 5,
-		"ratingCount": 1
+		}
 	}
 ]}

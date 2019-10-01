@@ -25,6 +25,10 @@ class App extends Component {
     loadReCaptcha();
   }
 
+  componentDidUnMount(){
+    window.removeEventListener('scroll', this.doAnimations);
+  }
+
   doAnimations = (event) => {
     let offset = document.documentElement.scrollTop + window.innerHeight;
     document.querySelectorAll(".animatable").forEach(animatable => {

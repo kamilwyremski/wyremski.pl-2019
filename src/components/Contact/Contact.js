@@ -39,7 +39,6 @@ class Contact extends Component {
       'alternate_en': messages['en']['nav.link.contact']
     }
     setMetaTags(meta);
-    window.scrollTo(0, 0);
   }
 
   onLoadRecaptcha() {

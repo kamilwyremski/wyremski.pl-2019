@@ -53,39 +53,32 @@ class Scripts extends Component {
           <div id="scripts">
             {this.state.scripts.map((item,i) =>
               <div className="animatable fadeInUp" key={i}>
-                <div className="d-flex scripts" itemScope itemType="http://schema.org/Product">
+                <div className="d-flex scripts">
                   {i%2===0 &&
                     <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name} className="scripts--half scripts--image">
                       <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
                         src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
                         alt: item.name,
-                        ref: "image",
-                        itemProp: "image"
+                        ref: "image"
                       }} />
                     </Link>
                   }
                   <div className="scripts--description scripts--half text-center">
-                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name}><h2 itemProp="name">{item.name}</h2></Link>
+                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name}><h2>{item.name}</h2></Link>
                     <hr />
-                    <p itemProp="description">{item.description[language]}</p>
+                    <p>{item.description[language]}</p>
                     <br />
-                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name} itemProp="url"><h4><FormattedMessage id="scripts.see"/></h4></Link>
+                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name}><h4><FormattedMessage id="scripts.see"/></h4></Link>
                   </div>
                   {i%2===1 &&
                     <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name} className="scripts--half scripts--image">
                       <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
                         src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
                         alt: item.name,
-                        ref: "image",
-                        itemProp: "image"
+                        ref: "image"
                       }} />
                     </Link>
                   }
-                </div>
-                <div itemProp="aggregateRating" itemScope itemType="http://schema.org/AggregateRating" className="script--rating">
-                  <span itemProp="ratingValue">{item.ratingValue}</span>
-                  <span itemProp="bestRating">5</span>
-                  <span itemProp="ratingCount">{item.ratingCount}</span>
                 </div>
               </div>
             )}
