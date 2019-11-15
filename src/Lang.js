@@ -1,9 +1,5 @@
-import { addLocaleData } from "react-intl";
-import locale_en from 'react-intl/locale-data/en';
-import locale_pl from 'react-intl/locale-data/pl';
 import messages_pl from "./translations/pl.json";
 import messages_en from "./translations/en.json";
-addLocaleData([...locale_en, ...locale_pl]);
 
 const messages = {
   'pl': messages_pl,

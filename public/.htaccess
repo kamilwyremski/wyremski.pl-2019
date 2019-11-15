@@ -8,6 +8,8 @@ RewriteRule ^skrypt/empresa/?$ https://wyremski.pl/skrypt/empresa2 [L,R=301]
 RewriteRule ^en/script/empresa/?$ https://wyremski.pl/en/script/empresa2 [L,R=301]
 RewriteRule ^skrypt/festa/?$ https://wyremski.pl/skrypt/festa2 [L,R=301]
 RewriteRule ^en/script/festa/?$ https://wyremski.pl/en/script/festa2 [L,R=301]
+RewriteRule ^skrypt/holmes/?$ https://wyremski.pl/skrypt/holmes2 [L,R=301]
+RewriteRule ^en/script/holmes/?$ https://wyremski.pl/en/script/holmes2 [L,R=301]
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

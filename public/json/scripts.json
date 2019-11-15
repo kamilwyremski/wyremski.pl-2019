@@ -48,10 +48,10 @@
 		}
 	},
 	{
-		"name" : "HOLMES",
-		"url" : "holmes",
+		"name" : "HOLMES2",
+		"url" : "holmes2",
 		"description" : {
-			"pl" : "Holmes to skrypt stron internetowych z ofertą nieruchomości, dla osób prywatnych lub agencji real estate",
+			"pl" : "Holmes2 to skrypt stron internetowych z bazą nieruchomości, dla osób prywatnych lub agencji real estate",
 			"en" : "Real estate website for small or big real estate agencies"
 		}
 	}
