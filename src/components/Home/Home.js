@@ -65,7 +65,7 @@ class Home extends Component {
 						<br />
 						<h4><FormattedHTMLMessage id="home.introduction.subheader"/></h4>
 					</div>
-					<div id="home--introductiom--text">
+					<div id="home--introduction--text">
 						<FormattedHTMLMessage id="home.introduction.text"/>
 					</div>
 				</section>

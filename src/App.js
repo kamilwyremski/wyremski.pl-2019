@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.scss';
 import './assets/css/fontello.css';
 import './assets/css/fonts.css';
-import { loadReCaptcha } from 'react-recaptcha-google'
 
 import {IntlProvider} from "react-intl";
 import { language, messages } from './Lang';
@@ -22,7 +21,6 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.doAnimations);
     this.doAnimations();
-    loadReCaptcha();
   }
 
   componentDidUnMount(){

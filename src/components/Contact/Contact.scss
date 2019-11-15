@@ -67,6 +67,9 @@
   [type=submit]:disabled{
     background-color: rgba(0,0,0,0.2); opacity: 0.5;
   }
+  #contact--preloader{
+    background-color: transparent; padding: 20px 0; justify-content: left; align-items:left;
+  }
 }
 /* style mobile */
 @media(max-width: 650px) {

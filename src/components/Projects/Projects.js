@@ -48,7 +48,7 @@ class Projects extends Component {
               </div>
             </div>
           }
-          <div className="d-flex" id="projects--list">
+          <div id="projects--list" className="d-flex">
             {this.state.projects.map((item,i) =>
               <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project animatable fadeInUp" itemScope itemType="http://schema.org/CollectionPage">
                 <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
@@ -67,18 +67,18 @@ class Projects extends Component {
               </a>
             )}
           </div>
-          <div className="container text-center section test">
-            <p>
-              {this.state.projects.map((item,i,arr) => {
-                if(arr.length - 1 === i)
-                return <a href={"http://" + item.url} key={i} title={item.name} target="_blank" rel="nofollow noopener noreferrer">{item.name}</a>
-                return <span key={i}><a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer">{item.name}</a>, </span>
-              })}
-            </p>
-            <br />
-            <p id="projects--thankyou"><FormattedMessage id="projects.thankyou"/></p>
-            <p><FormattedMessage id="projects.thankyou2"/></p>
-          </div>
+        </div>
+        <div className="text-center section container" id="projects--thankyou--box">
+          <p>
+            {this.state.projects.map((item,i,arr) => {
+              if(arr.length - 1 === i)
+              return <a href={"http://" + item.url} key={i} title={item.name} target="_blank" rel="nofollow noopener noreferrer">{item.name}</a>
+              return <span key={i}><a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer">{item.name}</a>, </span>
+            })}
+          </p>
+          <br />
+          <p id="projects--thankyou"><FormattedMessage id="projects.thankyou"/></p>
+          <p><FormattedMessage id="projects.thankyou2"/></p>
         </div>
       </main>
     );

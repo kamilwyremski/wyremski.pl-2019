@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './Contact.scss';
 import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
-import { ReCaptcha } from 'react-recaptcha-google';
+import ReCAPTCHA from "react-google-recaptcha";
 import { language, messages, setMetaTags } from './../../Lang';
+
+const recaptchaRef = React.createRef();
 
 class Contact extends Component {
   constructor(props, context) {
@@ -23,15 +25,10 @@ class Contact extends Component {
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
-    this.verifyCallback = this.verifyCallback.bind(this);
+    this.verifyRecaptchaCallback = this.verifyRecaptchaCallback.bind(this);
   }
 
   componentDidMount() {
-    /*if (this.recaptchaInstance) {
-      this.recaptchaInstance.reset();
-      this.recaptchaInstance.execute();
-    }*/
     let meta = {
       'title': messages[language]['contact.title']+' - '+messages[language]['home.title'],
       'description': messages[language]['contact.description'],
@@ -39,16 +36,10 @@ class Contact extends Component {
       'alternate_en': messages['en']['nav.link.contact']
     }
     setMetaTags(meta);
+    recaptchaRef.current.execute();
   }
 
-  onLoadRecaptcha() {
-    if (this.recaptchaInstance) {
-      this.recaptchaInstance.reset();
-      this.recaptchaInstance.execute();
-    }
-  }
-
-  verifyCallback(recaptchaToken) {
+  verifyRecaptchaCallback(recaptchaToken) {
     var data = new FormData();
     data.append( "recaptchaToken", recaptchaToken );
     fetch('/contact.php', {
@@ -98,7 +89,6 @@ class Contact extends Component {
           this.setState({alertRules: true});
         }
         break;
-      default:
     }
   }
 
@@ -112,7 +102,8 @@ class Contact extends Component {
       alertRules: false,
       alertCaptcha: false,
       messageSend: false,
-      messageNoSend: false
+      messageNoSend: false,
+      showPreloader: false
     })
     if(!this.validateEmail(this.state.email)){
       this.setState({alertEmail: true});
@@ -129,6 +120,11 @@ class Contact extends Component {
     if(!this.state.rules){
       this.setState({alertRules: true});
       is_valid = false;
+    }
+    if(is_valid){
+      this.setState({
+        showPreloader: true
+      })
     }
     if(!this.state.verifyCaptcha){
       this.setState({alertCaptcha: true});
@@ -151,11 +147,13 @@ class Contact extends Component {
             email: '',
             subject: '',
             message: '',
-            rules: false
+            rules: false,
+            showPreloader: false
           });
         }else{
           this.setState({
-            messageNoSend: true
+            messageNoSend: true,
+            showPreloader: false
           });
         }
       });
@@ -259,19 +257,24 @@ class Contact extends Component {
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
                   <button name="contact--submit" type="submit" className="btn btn-primary" onClick={this.onClickContactSubmit}><FormattedMessage id="contact.send"/></button>
+                  <div className={this.state.showPreloader ? '' : 'hidden'} >
+                    <div className="preloader d-flex" id="contact--preloader">
+                      <div className="cssload-container">
+                        <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
+                      </div>
+                    </div>
+                  </div>
                   <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertCaptcha"/></p>
                   <br />
                   <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'} role="alert"><FormattedMessage id="contact.messageSend"/></h4>
                   <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'} role="alert"><FormattedMessage id="contact.messageNoSend"/></h4>
                 </div>
               </div>
-              <ReCaptcha
-                ref={(el) => {this.recaptchaInstance = el;}}
+              <ReCAPTCHA
+                ref={recaptchaRef}
                 size="invisible"
-                render="explicit"
                 sitekey="6Ld66YAUAAAAACgwCy8Nv91JIeiXb4lzQnEKLvey"
-                onLoad={this.onLoadRecaptcha}
-                onSuccess={this.verifyCallback}
+                onChange={this.verifyRecaptchaCallback}
               />
             </form>
           </div>
