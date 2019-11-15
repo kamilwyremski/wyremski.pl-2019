@@ -13,14 +13,17 @@
     "react-intl": "^3.4.0",
     "react-recaptcha-google": "git+https://github.com/azizali/react-recaptcha-google.git",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^3.2.0",
+    "serve": "^11.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "generate-sw": "sw-precache --root=build --config scripts/sw-precache-config.js && uglifyjs build/service-worker.js -o build/service-worker.js",
+    "build-snap": "react-scripts build && react-snap && yarn run generate-sw"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,19 +42,6 @@
     "typescript": "^3.6.4"
   },
   "reactSnap": {
-    "include": [
-      "/skrypt/cuadro",
-      "/skrypt/demoty2",
-      "/skrypt/empresa2",
-      "/skrypt/festa2",
-      "/skrypt/holmes2",
-      "/skrypt/notice2",
-      "/en/script/cuadro",
-      "/en/script/demoty2",
-      "/en/script/empresa2",
-      "/en/script/festa2",
-      "/en/script/holmes2",
-      "/en/script/notice2"
-    ]
+    "cacheAjaxRequests": true
   }
 }

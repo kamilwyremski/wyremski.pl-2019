@@ -6,8 +6,8 @@ Więcej informacji na blogu: https://blog.wyremski.pl/nowe-portfolio-wyremski-pl
 
 In the project directory, you can run:
 
-### `yarn install`
+### `npm install`
 
-### `yarn start`
+### `npm start`
 
-### `yarn build`
+### `npm run build`
