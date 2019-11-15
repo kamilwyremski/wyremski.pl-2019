@@ -40,14 +40,27 @@
 	}
 }
 #cookies-message{
-	color: $color-white; padding: 12px; text-align: center; position: fixed; bottom:0px; left:0; right:0; background-color: rgba(0,0,0,0.8); z-index: 100; box-shadow: 0 0 5px rgba(0,0,0,0.4); display: none; line-height: 1.8;
+	color: $color-white; 
+	padding: 12px; 
+	position: fixed; 
+	bottom:0px; 
+	right:0; 
+	background-color: rgba(0,0,0,0.8); 
+	z-index: 100; 
+	display: none;
+	font-family:'Lucida Console';
+	p{
+		font-size: 11px;
+	}
 	&.open{
 		display: block;
 	}
 	#accept-cookies-checkbox{
-		background-color: $color-primary; color: $color-white; border: solid 1px $color-primary; transition: all 0.3s; padding: 3px 6px; border-radius: 4px; display: inline-block; margin-left: 10px; position: relative; top:-1px;
+		color: $color-white;
+		font-size: 11px;
+		font-family:'Lucida Console';
 		&:hover{
-			background-color: transparent; border-color: white
+			text-decoration: underline;
 		}
 	}
 }

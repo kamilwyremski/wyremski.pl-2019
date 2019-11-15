@@ -124,13 +124,13 @@ class Footer extends Component {
             </div>
           </div>
           <div className="container text-center">
-            <p>Copyright © 2013 - 2019 by Kamil Wyremski. All rights reserved</p>
+            <p>Copyright © 2013 - 2020 by Kamil Wyremski. All rights reserved</p>
           </div>
         </footer>
         <div id="cookies-message" className={ this.state.cookies_accepted ? "" : "open"}>
-          <span>
+          <p>
             <FormattedMessage id="cookies_message"/>
-          </span>
+          </p>
           <button className="link" id="accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
         </div>
         <div id="privacy_policy" onClick={this.clickOutsideModal} className={ this.state.show_privacy ? "open" : "" } role="dialog" aria-labelledby="privacy_policy_title">
