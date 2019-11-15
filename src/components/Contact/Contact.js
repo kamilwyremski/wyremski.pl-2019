@@ -121,11 +121,9 @@ class Contact extends Component {
       this.setState({alertRules: true});
       is_valid = false;
     }
-    if(is_valid){
-      this.setState({
-        showPreloader: true
-      })
-    }
+    this.setState({
+      showPreloader: is_valid
+    })
     if(!this.state.verifyCaptcha){
       this.setState({alertCaptcha: true});
       is_valid = false;
