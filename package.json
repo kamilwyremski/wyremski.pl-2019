@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "postbuild": "react-snap",
     "generate-sw": "sw-precache --root=build --config scripts/sw-precache-config.js && uglifyjs build/service-worker.js -o build/service-worker.js",
-    "build-snap": "react-scripts build && react-snap && yarn run generate-sw"
+    "build-snap": "react-scripts build && react-snap && sw-precache --config=sw-precache-config.js"
   },
   "eslintConfig": {
     "extends": "react-app"
