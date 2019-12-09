@@ -247,7 +247,7 @@ class Contact extends Component {
                       aria-invalid={this.state.alertRules}
                       aria-describedby="contact--alert--rules"
                     />
-                    <span className="checkmark"></span> <FormattedMessage id="contact.privacy"/>
+                    <span className="checkmark"></span> <FormattedMessage id="contact.privacy"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={messages[language]['contact.privacy.link']} target="_blank" rel="noopener noreferrer"><FormattedMessage id="contact.privacy.link"/></a>
                   </label>
                   <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'} id="contact--alert--rules"><FormattedMessage id="contact.alertRules"/></p>
                 </div>
