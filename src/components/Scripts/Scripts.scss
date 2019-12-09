@@ -10,7 +10,7 @@
 	}
 	.scripts{
 		hr{
-			width: 50px; height: 2px; border-color: $color-primary; margin: 3px auto 6px;
+			width: 50px; height: 2px; border-color: $color-primary; margin: 5px auto 12px;
 		}
 		img{
 			width:100%; transition: all 0.3s; height: 100%;
@@ -31,22 +31,26 @@
 }
 /* style mobile */
 @media(max-width: 640px) {
-	#scripts .scripts{
-		display: block;
-	}
-	#scripts .scripts--image{
-		display: none !important;
-	}
-	#scripts .scripts--description{
-		padding-top: 30px; padding-bottom: 30px; border-bottom: solid 1px grey;
+	#scripts{
+		.scripts{
+			display: block;
+		}
+		.scripts--image{
+			display: none !important;
+		}
+		.scripts--description{
+			padding-top: 30px; padding-bottom: 30px; border-bottom: solid 1px grey;
+		}
 	}
 }
 /* style print */
 @media print{
-	.scripts--description h4{
-		display: none;
-	}
-	#scripts .scripts--description{
-		border: none; padding:0;
+	#scripts{
+		.scripts--description h4{
+			display: none;
+		}
+		.scripts--description{
+			border: none; padding:0;
+		}
 	}
 }
