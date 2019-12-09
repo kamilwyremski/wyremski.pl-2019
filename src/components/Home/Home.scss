@@ -39,8 +39,10 @@
 #home--skills--box{
 	flex-wrap: wrap;
 	.home--skills{
-		background-color: $color-black; margin: 15px; padding: 30px 20px; color: $color-white; border-bottom: solid 4px $color-primary;
-		flex: 0 0 calc(25% - 30px); text-align: center;
+		background-color: $color-black; margin: 15px; padding: 30px 20px; color: $color-white; border-bottom: solid 4px $color-primary; flex: 0 0 calc(25% - 30px); text-align: center; transition: all 0.4s; position: relative; top:0;
+		&:hover{
+			top:-10px;
+		}
 		.home--skills--image{
 			background-image: url('/upload/images/skills.png'); width: 60px; height: 60px; margin: 0 auto 30px;
 		}
