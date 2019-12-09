@@ -1,42 +1,21 @@
 @import './../../assets/scss/_colors.scss';
 
 #footer{
-	background-color: black; padding: 30px 10px 10px; color: #dfdfdf;
+	background-color: $color-black; padding: 30px 10px 10px; color: $color-light;
 	.footer--top--box{
 		flex-wrap: wrap; 
 	}
 	.footer--top{
 		flex: 0 0 calc(33% - 30px); margin: 15px; padding-bottom: 15px;
 	}
-	a, .link{
-		color: #dfdfdf; transition: all 0.2s;
+	a{
+		color: $color-light; transition: all 0.2s;
 	}
-	a:hover, a:focus, .link:hover{
-		color: white;
+	a:hover, a:focus{
+		color: $color-white; 
 	}
 	#footer--social{
 		font-size: 2em;
-	}
-}
-#privacy_policy{
-	background-color: rgba(0,0,0,0.8); position: fixed; z-index: 110; top:0; left:0; right:0; bottom:0; display: none;
-	&.open{
-		display: block;
-	}
-	.container{
-		background-color: $color-white; padding: 15px 30px 45px; margin: 15px auto; box-shadow: 1px, 1px, 5px, $color-black; border-radius: 5px; overflow-y: scroll;  height: calc(100% - 30px);
-		.d-flex{
-			justify-content: space-between; 	border-bottom: solid 1px #d4d4d4; padding-bottom: 5px; margin-bottom: 15px;
-		}
-		.close{
-			font-size: 21px;  font-weight: bold; line-height: 1;  text-shadow: 0 1px 0 #fff; color: #8b8b8b;
-			&:hover{
-				color: black;
-			}
-		}
-		ol{
-			margin-left: 15px;
-		}
 	}
 }
 #cookies-message{
@@ -54,6 +33,13 @@
 	}
 	&.open{
 		display: block;
+	}
+	a{
+		color: $color-light;
+	}
+	a:hover, a:focus{
+		color: $color-white; 
+		text-decoration: underline;
 	}
 	#accept-cookies-checkbox{
 		color: $color-white;
@@ -75,7 +61,7 @@
 	#footer, #footer a{
 		color: $color-black;
 	}
-	#footer .link, #footer--social, #cookies-message{
+	#footer--social, #cookies-message{
 		display: none !important;
 	}
 }

@@ -89,6 +89,7 @@ class Contact extends Component {
           this.setState({alertRules: true});
         }
         break;
+      default:
     }
   }
 

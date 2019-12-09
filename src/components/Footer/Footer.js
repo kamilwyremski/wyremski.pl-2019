@@ -7,52 +7,14 @@ class Footer extends Component {
   constructor(props) {
     super();
     this.state = {
-      show_privacy: false,
       cookies_accepted: false
     };
-    this.escFunction = this.escFunction.bind(this);
   }
 
   componentDidMount() {
     this.setState({
       cookies_accepted: localStorage.cookies_accepted
     });
-    document.addEventListener("keydown", this.escFunction, false);
-  }
-
-  escFunction(event){
-    if(event.keyCode === 27) {
-      this.closePrivacy();
-    }
-  }
-
-  componentWillUnmount(){
-    document.removeEventListener("keydown", this.escFunction, false);
-  }
-
-  clickOutsideModal = (event) => {
-    if(event.target.id==="privacy_policy"){
-      this.closePrivacy();
-    }
-  }
-
-  closePrivacy = () => {
-    this.setState({
-      show_privacy: false
-    });
-    document.querySelector('body').classList.remove('modal-open');
-  }
-
-  onClickClosePrivacy = (event) => {
-    this.closePrivacy();
-    event.target.blur();
-  }
-
-  openPrivacy = () => {
-    this.setState({
-      show_privacy: true
-    });
-    document.querySelector('body').classList.add('modal-open');
   }
 
   closeCookie = () => {
@@ -75,7 +37,7 @@ class Footer extends Component {
               <p><i className="icon-mail-alt" aria-hidden="true"></i> <a href="mailto:kamil.wyremski@gmail.com" title={messages[language]['footer.write_to_me']}>kamil.wyremski@gmail.com</a></p>
               <p><i className="icon-skype" aria-hidden="true"></i> <a href="skype:kamil.wyremski" title={messages[language]['footer.skype']}>kamil.wyremski</a></p>
               <p><i className="icon-whatsapp" aria-hidden="true"></i> <a href="tel:+51990600447" title={messages[language]['footer.phone']}>+51 990600447</a></p>
-              <p><button onClick={this.openPrivacy} className="link"><FormattedMessage id="privacy_policy"/></button></p>
+              <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={messages[language]['privacy_policy']} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>
           	</div>
         		<div className="footer--top text-center">
         			<div itemScope itemType="http://schema.org/Organization" id="footer--social">
@@ -128,19 +90,9 @@ class Footer extends Component {
           </div>
         </footer>
         <div id="cookies-message" className={ this.state.cookies_accepted ? "" : "open"}>
-          <p>
-            <FormattedMessage id="cookies_message"/>
-          </p>
+          <p><FormattedMessage id="cookies_message"/></p>
+          <p><FormattedMessage id="cookies_message.bottom"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={messages[language]['cookies_message.privacy_policy']} target="_blank" rel="noopener noreferrer"><FormattedMessage id="cookies_message.privacy_policy"/></a></p>
           <button className="link" id="accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
-        </div>
-        <div id="privacy_policy" onClick={this.clickOutsideModal} className={ this.state.show_privacy ? "open" : "" } role="dialog" aria-labelledby="privacy_policy_title">
-          <div className="container">
-            <div className="d-flex">
-              <h3 id="privacy_policy_title"><FormattedMessage id="privacy_policy"/></h3>
-              <button type="button" className="close link" onClick={this.onClickClosePrivacy} aria-label={messages[language]['privacy_policy.close']}><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div><FormattedHTMLMessage id="privacy_policy.text" /></div>
-          </div>
         </div>
       </div>
     );
