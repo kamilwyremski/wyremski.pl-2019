@@ -50,7 +50,7 @@ class Projects extends Component {
           }
           <div id="projects--list" className="d-flex">
             {this.state.projects.map((item,i) =>
-              <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project animatable fadeInUp" itemScope itemType="http://schema.org/CollectionPage">
+              <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project" itemScope itemType="http://schema.org/CollectionPage">
                 <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
                   src: '/'+item.image,
                   alt: item.name,

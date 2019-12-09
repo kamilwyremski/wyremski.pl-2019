@@ -58,10 +58,7 @@
 		flex: 0 0 50%;
 	}
 }
-@media(max-width: 480px) {
-	#projects--list{
-		display: block;
-	}
+@media(max-width: 500px) {
 	.project{
 		flex: 0 0 100%;
 	}

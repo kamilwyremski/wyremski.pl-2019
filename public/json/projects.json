@@ -126,6 +126,15 @@
 		"image" : "upload/projects/oglaszamy24h.jpg"
 	},
 	{
+		"name" : "Skrypty Sattel",
+		  "description" : {
+			  "pl" : "Sklep internetowy (oparty o oprogramowaie Prestashop) ze skryptami stron internetowych",
+			  "en" : "Online store based on the Prestashop software with web scripts"
+		  },
+		  "url" : "skrypty.sattel.pl",
+		  "image" : "upload/projects/skrypty.jpg"
+	},
+	{
 	  "name" : "Film Podobny do...",
 		"description" : {
 			"pl" : "Baza filmów i seriali wraz z wyszukiwarką",
@@ -133,14 +142,5 @@
 		},
 		"url" : "filmpodobnydo.pl",
 		"image" : "upload/projects/filmpodobnydo.jpg"
-	},
-	{
-	  "name" : "Skrypty Sattel",
-		"description" : {
-			"pl" : "Sklep internetowy (oparty o oprogramowaie Prestashop) ze skryptami stron internetowych",
-			"en" : "Online store based on the Prestashop software with web scripts"
-		},
-		"url" : "skrypty.sattel.pl",
-		"image" : "upload/projects/skrypty.jpg"
 	}
 ]}
