@@ -3,8 +3,8 @@
 		"name" : "MOTONOTICE",
 		"url" : "motonotice",
 		"description" : {
-			"pl" : "MOTONOTICE to skrypt dla strony www z ogłoszeniami w każdej kategorii związanej z motoryzacją",
-			"en" : "MOTONOTICE is a script for a website with classifieds in each category related to the automotive industry"
+			"pl" : "MOTONOTICE to skrypt dla strony www z ogłoszeniami lokalnymi, krajowymi lub strony międzynarodowej",
+			"en" : "MOTONOTICE is a script for local or national websites with online classifieds"
 		}
 	},
 	{
