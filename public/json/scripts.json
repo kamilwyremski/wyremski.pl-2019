@@ -1,13 +1,5 @@
 {"scripts":[
 	{
-		"name" : "NOTICE2",
-		"url" : "notice2",
-		"description" : {
-			"pl" : "NOTICE2 to uniwersalny, nowoczesny skrypt pozwalający stworzyć stronę z ogłoszeniami online",
-			"en" : "NOTICE2 is a modern script that allows you to create website with classifieds"
-		}
-	},
-	{
 		"name" : "MOTONOTICE",
 		"url" : "motonotice",
 		"description" : {
