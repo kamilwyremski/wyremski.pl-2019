@@ -16,6 +16,14 @@
 		}
 	},
 	{
+		"name" : "HOLMES2",
+		"url" : "holmes2",
+		"description" : {
+			"pl" : "Holmes2 to skrypt stron internetowych z bazą nieruchomości, dla osób prywatnych lub agencji real estate",
+			"en" : "Real estate website for small or big real estate agencies"
+		}
+	},
+	{
 		"name" : "FESTA2",
 		"url" : "festa2",
 		"description" : {
@@ -40,11 +48,11 @@
 		}
 	},
 	{
-		"name" : "HOLMES2",
-		"url" : "holmes2",
+		"name" : "CORTA",
+		"url" : "corta",
 		"description" : {
-			"pl" : "Holmes2 to skrypt stron internetowych z bazą nieruchomości, dla osób prywatnych lub agencji real estate",
-			"en" : "Real estate website for small or big real estate agencies"
+			"pl" : "Corta to skrypt strony www skracacza linków - zamienia długie adresy URL na krótkie i łatwe do zapamiętania",
+			"en" : "Corta is a script of website to URL shortener - it turns long URLs into short ones that are easy to remember"
 		}
 	}
 ]}
