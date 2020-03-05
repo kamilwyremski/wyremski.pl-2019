@@ -3,7 +3,11 @@
     "functions": 12,
     "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/139-skrypt-bazy-nieruchomosci-holmes2.html",
     "photos": 12,
-    "list_domains": []
+    "list_domains": [
+      "dhome.pl",
+      "playastreet.com",
+      "sublet.pl"
+    ]
   },
   "pl": {
     "title": "HOLMES2 - skrypt bazy nieruchomości",
