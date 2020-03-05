@@ -6,7 +6,7 @@
 			"en" : "Polish information portal in Great Britain - facts and events"
 		},
 		"url" : "polishexpress.co.uk",
-		"image" : "upload/projects/polishexpress.jpg"
+		"image" : "polishexpress.jpg"
 	},
 	{
 		"name" : "Rek Travel",
@@ -15,7 +15,16 @@
 			"en" : "Polish Travel Agency in Chicago"
 		},
 		"url" : "rektravel.com",
-		"image" : "upload/projects/rektravel.jpg"
+		"image" : "rektravel.jpg"
+	},
+	{
+	    "name" : "Giełda Mam",
+		"description" : {
+			"pl" : "Internetowy serwis aukcyjny produktów związanych z dziećmi",
+			"en" : "Online auction site for products related to children"
+		},
+		"url" : "gieldamam.pl",
+		"image" : "gieldamam.jpg"
 	},
 	{
 		"name" : "King Realty Group",
@@ -24,7 +33,7 @@
 			"en" : "Website of a Chicago real estate office"
 		},
 		"url" : "krgproperty.com",
-		"image" : "upload/projects/krgproperty.jpg"
+		"image" : "krgproperty.jpg"
 	},
 	{
 		"name" : "Janda Cleaning INC",
@@ -33,7 +42,7 @@
 			"en" : "A website company from Chicago dealing in cleaning furniture and carpets"
 		},
 		"url" : "jandacleaninginc.com",
-		"image" : "upload/projects/jandacleaninginc.jpg"
+		"image" : "jandacleaninginc.jpg"
 	},
 	{
 	  "name" : "MAX Plus KALISZ",
@@ -42,7 +51,7 @@
 			"en" : "Accounting and advertising company from city Kalisz / Poland"
 		},
 		"url" : "maxplus.kalisz.pl",
-		"image" : "upload/projects/maxplus.jpg"
+		"image" : "maxplus.jpg"
 	},
 	{
 	    "name" : "Fundacja Przystań",
@@ -51,7 +60,16 @@
 			"en" : "Website of the Przystań Foundation, dealing with broadly understood mental health protection"
 		},
 		"url" : "fundacjaprzystan.com",
-		"image" : "upload/projects/fundacjaprzystan.jpg"
+		"image" : "fundacjaprzystan.jpg"
+	},
+	{
+		"name" : "Multino",
+		  "description" : {
+			  "pl" : "Nowoczesny serwis internetowy z ogłoszeniami online",
+			  "en" : "A modern website with online classifieds"
+		  },
+		  "url" : "multino.pl",
+		  "image" : "multino.jpg"
 	},
 	{
 	    "name" : "Strefa.co.uk",
@@ -60,7 +78,7 @@
 			"en" : "This is one of the first advertising portals aimed at Poles living in the UK, which aim is to help them get started, find a job or find an apartment."
 		},
 		"url" : "strefa.co.uk",
-		"image" : "upload/projects/strefa.jpg"
+		"image" : "strefa.jpg"
 	},
 	{
 	    "name" : "Ogoloshennya.pl",
@@ -69,7 +87,7 @@
 			"en" : "Free website with offers in Polish, Russian and Ukrainian"
 		},
 		"url" : "ogoloshennya.pl",
-		"image" : "upload/projects/ogoloshennya.jpg"
+		"image" : "ogoloshennya.jpg"
 	},
 	{
 	    "name" : "Bioskin Kalisz",
@@ -78,7 +96,7 @@
 			"en" : "BIOSKIN is a combination of modern podology, trichology and services offered by a professional beauty and hairdressing salon."
 		},
 		"url" : "bioskin-kalisz.pl",
-		"image" : "upload/projects/bioskin.jpg"
+		"image" : "bioskin.jpg"
 	},
 	{
 		"name" : "Świat Kamienia",
@@ -87,7 +105,7 @@
 			"en" : "Company from city Kalisz / Poland"
 		},
 		"url" : "skamienia.pl",
-		"image" : "upload/projects/skamienia.jpg"
+		"image" : "skamienia.jpg"
 	},
 	{
 	    "name" : "Up To You",
@@ -96,16 +114,7 @@
 			"en" : "A page with real estate classifieds in Poland. Has an advanced search engine for announcements."
 		},
 		"url" : "up-to-you.pl",
-		"image" : "upload/projects/uptoyou.jpg"
-	},
-	{
-	    "name" : "Sklep Sattel.pl",
-		"description" : {
-			"pl" : "Internetowy sklep z elektroniką. Strona oparta o skrypt Wordpress Woocomerce",
-			"en" : "Online electronics store. Created with Wordpress Woocomerce."
-		},
-		"url" : "sklep.sattel.pl",
-		"image" : "upload/projects/sattel.jpg"
+		"image" : "uptoyou.jpg"
 	},
 	{
 	  "name" : "Chicago Ogłoszenia",
@@ -114,7 +123,7 @@
 			"en" : "Portal with free online classifieds for Polish living in Chicago"
 		},
 		"url" : "chicagoogloszenia.com",
-		"image" : "upload/projects/chicagoogloszenia.jpg"
+		"image" : "chicagoogloszenia.jpg"
 	},
 	{
 		"name" : "Oglaszamy24h.pl",
@@ -123,16 +132,7 @@
 			"en" : "Free classified ads: sell, buy, donate, exchange"
 		},
 		"url" : "oglaszamy24h.pl",
-		"image" : "upload/projects/oglaszamy24h.jpg"
-	},
-	{
-		"name" : "Skrypty Sattel",
-		  "description" : {
-			  "pl" : "Sklep internetowy (oparty o oprogramowaie Prestashop) ze skryptami stron internetowych",
-			  "en" : "Online store based on the Prestashop software with web scripts"
-		  },
-		  "url" : "skrypty.sattel.pl",
-		  "image" : "upload/projects/skrypty.jpg"
+		"image" : "oglaszamy24h.jpg"
 	},
 	{
 	  "name" : "Film Podobny do...",
@@ -141,6 +141,6 @@
 			"en" : "The database of films and series with the search engine"
 		},
 		"url" : "filmpodobnydo.pl",
-		"image" : "upload/projects/filmpodobnydo.jpg"
+		"image" : "filmpodobnydo.jpg"
 	}
 ]}

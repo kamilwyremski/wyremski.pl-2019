@@ -52,7 +52,7 @@ class Projects extends Component {
             {this.state.projects.map((item,i) =>
               <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project" itemScope itemType="http://schema.org/CollectionPage">
                 <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
-                  src: '/'+item.image,
+                  src: '/upload/projects/'+item.image,
                   alt: item.name,
                   ref: "image",
                   itemProp: "image"
