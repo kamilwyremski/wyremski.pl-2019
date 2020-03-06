@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LazyLoad from 'react-image-lazy-load';
 import './Home.scss';
 import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
-import { language, messages } from './../../Lang';
+import { language, messages, setMetaTags } from './../../Lang';
 
 class Home extends Component {
 
@@ -14,6 +14,15 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
+
+		let meta = {
+			'title': messages[language]['home.title'],
+			'description': messages[language]['home.description'],
+			'alternate_pl': messages['pl']['nav.link.home'],
+			'alternate_en': messages['en']['nav.link.home']
+		}
+		setMetaTags(meta);
+
 		let header_types_texts = messages[language]['home.header.types'].split(' ');
 		let header_types_counter = 0;
 		let header_text_index = 0;

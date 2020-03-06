@@ -71,7 +71,7 @@ class Nav extends Component {
           </div>
           <ul id="nav--menu" className={ this.state.active_mobile_menu ? "open d-flex" : "d-flex" }>
             <li className="hide">
-              <NavLink to={messages[language]['nav.link.home']} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={messages[language]['nav.title.home']}>Home</NavLink>
+              <NavLink to={messages[language]['nav.link.home']} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={messages[language]['nav.title.home']}><FormattedMessage id="nav.home"/></NavLink>
             </li>
             <li className="hide">
               <NavLink to={messages[language]['nav.link.scripts']} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={messages[language]['nav.title.scripts']}><FormattedMessage id="nav.scripts"/></NavLink>
