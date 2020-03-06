@@ -5,6 +5,7 @@ import { messages, language, setMetaTags } from './../../Lang';
 import LazyLoad from 'react-image-lazy-load';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import Error404 from './../Error404/Error404';
 
 class Script extends Component {
   constructor(props) {
@@ -13,7 +14,8 @@ class Script extends Component {
       script: false,
       script_name: this.props.match.params.script_slug,
       photoIndex: 0,
-      lightboxIsOpen: false
+      lightboxIsOpen: false,
+      script_error404: false
     };
   }
 
@@ -34,6 +36,9 @@ class Script extends Component {
         }
         setMetaTags(meta);
         window.scrollTo(0, 0);
+      })
+      .catch( err => {
+        this.setState({ script_error404: true });
       })
   }
 
@@ -94,13 +99,13 @@ class Script extends Component {
   }
 
   render() {
-    const { script, script_name, photoIndex, lightboxIsOpen } = this.state;
+    const { script, script_name, photoIndex, lightboxIsOpen, script_error404 } = this.state;
     const images = this.getImages();
     const list_domains = this.createListDomains();
     const show_list_domains = list_domains.length ? true : false;
     return (
       <main>
-        {!script &&
+        {!script && !script_error404 && 
           <div className="preloader d-flex">
             <div className="cssload-container">
               <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
@@ -241,6 +246,9 @@ class Script extends Component {
               <a href={script.buy_url} title={script_name} id="script--buy"><FormattedMessage id="script.buy"/></a>
             </div>
           </div>
+        }
+        {script_error404 &&
+          <Error404/>
         }
       </main>
     );
