@@ -74,6 +74,9 @@
     background-color: transparent; padding: 20px 0; justify-content: left; align-items:left;
   }
 }
+.grecaptcha-badge { 
+	visibility: hidden; 
+}
 /* style mobile */
 @media(max-width: 650px) {
 	#contact .row{
