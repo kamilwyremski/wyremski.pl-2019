@@ -40,14 +40,6 @@
 		}
 	},
 	{
-		"name" : "EMPRESA2",
-		"url" : "empresa2",
-		"description" : {
-			"pl" : "Empresa2 to skrypt dla katalogów firm online - umożliwia stworzenie strony z listą firm lokalnych, krajowych lub międzynarodowych",
-			"en" : "Empresa2 is a script for online business directories - allows you to create website with a list of local, national or international companies"
-		}
-	},
-	{
 		"name" : "CORTA",
 		"url" : "corta",
 		"description" : {
