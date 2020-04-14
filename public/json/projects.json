@@ -36,6 +36,15 @@
 		"image" : "krgproperty.jpg"
 	},
 	{
+		"name" : "Coupon Dojo",
+		"description" : {
+			"pl" : "Międzynarodowa strona ze zniżkami i kodami promocyjnymi",
+			"en" : "International website with discounts and vouchers"
+		},
+		"url" : "coupondojo.com",
+		"image" : "coupondojo.jpg"
+	},
+	{
 		"name" : "Janda Cleaning INC",
 		"description" : {
 			"pl" : "Strona firmy z Chicago zajmującej się czyszczeniem mebli i dywanów",
@@ -72,6 +81,15 @@
 		  "image" : "multino.jpg"
 	},
 	{
+		"name" : "PriceMonit",
+		  "description" : {
+			  "pl" : "Oprogramowanie przeznaczone do monitorowania i analizy cen",
+			  "en" : "Software designed for monitoring and price analysis"
+		  },
+		  "url" : "pricemonit.pl",
+		  "image" : "pricemonit.jpg"
+	},
+	{
 	    "name" : "Strefa.co.uk",
 		"description" : {
 			"pl" : "Jeden z pierwszych portali ogłoszeniowych dla Polaków mieszkających w Wielkiej Brytanii, ułatwiający znalezienie pracy, mieszkania, samochodu...",
@@ -79,6 +97,15 @@
 		},
 		"url" : "strefa.co.uk",
 		"image" : "strefa.jpg"
+	},
+	{
+	    "name" : "PressFoto",
+		"description" : {
+			"pl" : "Bank zdjęć prasowych dla fotoreporterów i wydawców",
+			"en" : "A bank of press photos for photojournalists and publishers"
+		},
+		"url" : "pressfoto.pl",
+		"image" : "pressfoto.jpg"
 	},
 	{
 	    "name" : "Ogoloshennya.pl",
@@ -133,6 +160,15 @@
 		},
 		"url" : "oglaszamy24h.pl",
 		"image" : "oglaszamy24h.jpg"
+	},
+	{
+		"name" : "MotoBryki",
+		  "description" : {
+			  "pl" : "Baza ogłoszeń motoryzacyjnych z całej Polski",
+			  "en" : "Website with automotive classifieds from all over Poland"
+		  },
+		  "url" : "motobryki.pl",
+		  "image" : "motobryki.jpg"
 	},
 	{
 	  "name" : "Film Podobny do...",
