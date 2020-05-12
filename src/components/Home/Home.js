@@ -1,57 +1,47 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-image-lazy-load';
 import './Home.scss';
-import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
-import { language, messages, setMetaTags } from './../../Lang';
+import {injectIntl, FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 
 class Home extends Component {
 
-	constructor(props) {
+	constructor({intl, ...props}) {
 		super();
 		this.state = {
-			header_typed: messages[language]['home.header.types'],
-		};
+			header_typed: ''
+		}
 	}
 
 	componentDidMount() {
-
-		let meta = {
-			'title': messages[language]['home.title'],
-			'description': messages[language]['home.description'],
-			'alternate_pl': messages['pl']['nav.link.home'],
-			'alternate_en': messages['en']['nav.link.home']
-		}
-		setMetaTags(meta);
-
-		let header_types_texts = messages[language]['home.header.types'].split(' ');
+		let header_types_texts = this.props.intl.formatMessage({ id: 'home.header.types' }).split(' ');
 		let header_types_counter = 0;
 		let header_text_index = 0;
 		let header_text_char = 0;
 		let header_text_length = 0;
 		let header_text = '';
 		this.countdown = setInterval( () => {
-		if(!header_text_length){
-			header_text_length = header_types_texts[header_text_index].length
-				}
+			if(!header_text_length){
+				header_text_length = header_types_texts[header_text_index].length
+			}
 			header_text_char = Math.floor(header_types_counter/4);
-				if(header_text_char>header_text_length + 15){
-					header_text_index++;
-					if(header_text_index>=header_types_texts.length){
-						header_text_index = 0;
-					}
-					header_text_length = header_types_counter = 0;
-				}else if(header_text_char>header_text_length + 10){
-					header_text = header_text.substring(0, header_text.length - 1);
-					header_types_counter++;
-				}else{
-					header_text = header_types_texts[header_text_index].substring(0,header_text_char);
-					header_types_counter++;
+			if(header_text_char>header_text_length + 15){
+				header_text_index++;
+				if(header_text_index>=header_types_texts.length){
+					header_text_index = 0;
 				}
+				header_text_length = header_types_counter = 0;
+			}else if(header_text_char>header_text_length + 10){
+				header_text = header_text.substring(0, header_text.length - 1);
+				header_types_counter++;
+			}else{
+				header_text = header_types_texts[header_text_index].substring(0,header_text_char);
+				header_types_counter++;
+			}
 			this.setState({
-					header_typed: header_text
+				header_typed: header_text
 			})
 		},70);
-		window.scrollTo(0, 0);
+		this.props.handleLanguage(this.props.language,'home');
 	}
 
 	componentWillUnmount() {
@@ -59,6 +49,7 @@ class Home extends Component {
 	}
 
 	render() {
+		const intl = this.props.intl;
 		return (
 			<main>
 				<header id="header">
@@ -97,23 +88,23 @@ class Home extends Component {
 								<span itemProp="birthDate">1988</span>
 								<span itemProp="homeLocation">Poland, Września</span>
 							</div>
-							<a href="https://www.facebook.com/wyremskipl/" title={messages[language]['footer.facebook']} target="_blank" rel="noopener noreferrer">
+							<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
 								<i className="icon-facebook-official" aria-hidden="true"></i>
 								<span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
 							</a>
-							<a href="https://github.com/kamilwyremski" title={messages[language]['footer.github']} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+							<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
 								<i className="icon-github-squared" aria-hidden="true"></i>
 								<span className="sr-only"><FormattedMessage id="footer.github"/></span>
 							</a>
-							<a href="skype:kamil.wyremski" title={messages[language]['footer.skype']}>
+							<a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>
 								<i className="icon-skype" aria-hidden="true"></i>
 								<span className="sr-only"><FormattedMessage id="footer.skype"/></span>
 							</a>
-							<a href="mailto:kamil.wyremski@gmail.com" title={messages[language]['footer.write_to_me']}>
+							<a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
 								<i className="icon-mail-alt" aria-hidden="true"></i>
 								<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
 							</a>
-							<a href="http://blog.wyremski.pl" title={messages[language]['footer.blog']} target="_blank" rel="noopener noreferrer" aria-hidden="true">
+							<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer" aria-hidden="true">
 								<i className="icon-link-ext-alt"></i>
 								<span className="sr-only"><FormattedMessage id="footer.blog"/></span>
 							</a>
@@ -265,4 +256,4 @@ class Home extends Component {
 	}
 }
 
-export default Home;
+export default injectIntl(Home);

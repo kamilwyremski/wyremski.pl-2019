@@ -1,39 +1,42 @@
 import React, { Component } from 'react';
-import './Projects.scss';
 import {FormattedMessage} from 'react-intl';
-import { language, messages, setMetaTags } from './../../Lang';
 import LazyLoad from 'react-image-lazy-load';
+import Preloader from './../Preloader/Preloader.js';
+
+import './Projects.scss';
 
 class Projects extends Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = {
       projects: [],
     };
   }
 
   componentDidMount() {
+    this.mounted = true;
     fetch('/json/projects.json')
       .then(response => response.json())
       .then(data => {
-        setTimeout(() => {
-          this.setState({ projects: data.projects });
-          if(!window.scrollY){
-            window.scrollTo(0, 50);
-            window.scrollTo(0, 0);
-          }
-        }, 100);
+        if(this.mounted) {
+          setTimeout(() => {
+            this.setState({ projects: data.projects });
+            if(!window.scrollY){
+              window.scrollTo(0, 50);
+              window.scrollTo(0, 0);
+            }
+          }, 100);
+        }
       });
-    let meta = {
-      'title': messages[language]['projects.title']+' - '+messages[language]['home.title'],
-      'description': messages[language]['projects.description'],
-      'alternate_pl': messages['pl']['nav.link.projects'],
-      'alternate_en': messages['en']['nav.link.projects']
-    }
-    setMetaTags(meta);
+    this.props.handleLanguage(this.props.language,'projects');
+  }
+
+  componentWillUnmount(){
+    this.mounted = false;
   }
 
   render() {
+    const language = this.props.language;
     return (
       <main>
         <div id="projects">
@@ -41,13 +44,7 @@ class Projects extends Component {
             <h1><FormattedMessage id="projects.title"/></h1>
             <h3><FormattedMessage id="projects.subtitle"/></h3>
           </div>
-          {!this.state.projects.length &&
-            <div className="preloader d-flex">
-              <div className="cssload-container">
-                <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
-              </div>
-            </div>
-          }
+          {!this.state.projects.length && <Preloader/>}
           <div id="projects--list" className="d-flex">
             {this.state.projects.map((item,i) =>
               <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project" itemScope itemType="http://schema.org/CollectionPage">

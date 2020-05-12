@@ -1,41 +1,45 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import {FormattedMessage} from 'react-intl';
-import { language, messages, setMetaTags } from './../../Lang';
-import './Scripts.scss';
+import {injectIntl,FormattedMessage} from 'react-intl';
 import LazyLoad from 'react-image-lazy-load';
+import Preloader from './../Preloader/Preloader.js';
+
+import './Scripts.scss';
 
 class Scripts extends Component {
-  constructor(props) {
-    super(props);
+  constructor({intl, ...props}) {
+    super();
     this.state = {
-      scripts: [],
+      scripts: []
     };
   }
 
   componentDidMount() {
+    this.mounted = true;
     fetch('/json/scripts.json')
       .then(response => response.json())
       .then(data => {
-        setTimeout(() => {
-          this.setState({ scripts: data.scripts });
-          if(!window.scrollY){
-            window.scrollTo(0, 50);
-            window.scrollTo(0, 0);
-          }
-        }, 100);
+        if(this.mounted) {
+          setTimeout(() => {
+            this.setState({ scripts: data.scripts });
+            if(!window.scrollY){
+              window.scrollTo(0, 50);
+              window.scrollTo(0, 0);
+            }
+          }, 100);
+        }
       }
     );
-    let meta = {
-      'title': messages[language]['scripts.title']+' - '+messages[language]['home.title'],
-      'description': messages[language]['scripts.description'],
-      'alternate_pl': messages['pl']['nav.link.scripts'],
-      'alternate_en': messages['en']['nav.link.scripts']
-    }
-    setMetaTags(meta);
+    this.props.handleLanguage(this.props.language,'scripts');
+  }
+
+  componentWillUnmount(){
+    this.mounted = false;
   }
 
   render() {
+    const language = this.props.language;
+    const intl = this.props.intl;
     return (
       <main>
         <div className="section container">
@@ -43,19 +47,13 @@ class Scripts extends Component {
             <h1><FormattedMessage id="scripts.title"/></h1>
             <h3><FormattedMessage id="scripts.subtitle"/></h3>
           </div>
-          {!this.state.scripts.length &&
-            <div className="preloader d-flex">
-              <div className="cssload-container">
-                <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
-              </div>
-            </div>
-          }
+          {!this.state.scripts.length && <Preloader/>}
           <div id="scripts">
             {this.state.scripts.map((item,i) =>
               <div className="animatable fadeInUp" key={i}>
                 <div className="d-flex scripts">
                   {i%2===0 &&
-                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name} className="scripts--half scripts--image">
+                    <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
                       <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
                         src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
                         alt: item.name,
@@ -64,14 +62,14 @@ class Scripts extends Component {
                     </Link>
                   }
                   <div className="scripts--description scripts--half text-center">
-                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name}><h2>{item.name}</h2></Link>
+                    <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name}><h2>{item.name}</h2></Link>
                     <hr />
                     <p>{item.description[language]}</p>
                     <br />
-                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name}><h4><FormattedMessage id="scripts.see"/></h4></Link>
+                    <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name}><h4><FormattedMessage id="scripts.see"/></h4></Link>
                   </div>
                   {i%2===1 &&
-                    <Link to={messages[language]['nav.link.script']+"/"+item.url} title={item.name} className="scripts--half scripts--image">
+                    <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
                       <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
                         src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
                         alt: item.name,
@@ -89,4 +87,4 @@ class Scripts extends Component {
   }
 }
 
-export default Scripts;
+export default injectIntl(Scripts);

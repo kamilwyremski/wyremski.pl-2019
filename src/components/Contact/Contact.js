@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import './Contact.scss';
-import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
+import {injectIntl, FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 import ReCAPTCHA from "react-google-recaptcha";
-import { language, messages, setMetaTags } from './../../Lang';
+import Preloader from './../Preloader/Preloader.js';
+
+import './Contact.scss';
 
 const recaptchaRef = React.createRef();
 
 class Contact extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor({intl, ...props}) {
+    super();
     this.state = {
       email: '',
       subject: '',
@@ -21,7 +22,8 @@ class Contact extends Component {
       alertCaptcha: false,
       verifyCaptcha: false,
       messageSend: false,
-      messageNoSend: false
+      messageNoSend: false,
+      showPreloader: false
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,13 +31,7 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    let meta = {
-      'title': messages[language]['contact.title']+' - '+messages[language]['home.title'],
-      'description': messages[language]['contact.description'],
-      'alternate_pl': messages['pl']['nav.link.contact'],
-      'alternate_en': messages['en']['nav.link.contact']
-    }
-    setMetaTags(meta);
+    this.props.handleLanguage(this.props.language,'contact');
     recaptchaRef.current.execute();
   }
 
@@ -170,6 +166,7 @@ class Contact extends Component {
   }
 
   render() {
+    const intl = this.props.intl;
     return (
       <main>
         <div id="contact">
@@ -193,7 +190,7 @@ class Contact extends Component {
                     value={this.state.email} 
                     onChange={this.handleInputChange}
                     aria-required="true"
-                    aria-label={messages[language]['contact.email']}
+                    aria-label={ intl.formatMessage({ id: 'contact.email' })}
                     aria-invalid={this.state.alertEmail}
                     aria-describedby="contact--alert--email"
                   />
@@ -211,7 +208,7 @@ class Contact extends Component {
                     value={this.state.subject} 
                     onChange={this.handleInputChange} 
                     aria-required="true" 
-                    aria-label={messages[language]['contact.subject']}
+                    aria-label={ intl.formatMessage({ id: 'contact.subject' })}
                     aria-invalid={this.state.alertSubject}
                     aria-describedby="contact--alert--subject"
                   />
@@ -228,7 +225,7 @@ class Contact extends Component {
                     value={this.state.message} 
                     onChange={this.handleInputChange} 
                     aria-required="true" 
-                    aria-label={messages[language]['contact.message']}
+                    aria-label={ intl.formatMessage({ id: 'contact.message' })}
                     aria-invalid={this.state.alertMessage}
                     aria-describedby="contact--alert--message"
                   ></textarea>
@@ -250,11 +247,11 @@ class Contact extends Component {
                       name="rules" 
                       checked={this.state.rules} 
                       onChange={this.handleInputChange} 
-                      aria-label={messages[language]['contact.privacy']}
+                      aria-label={ intl.formatMessage({ id: 'contact.privacy' })}
                       aria-invalid={this.state.alertRules}
                       aria-describedby="contact--alert--rules"
                     />
-                    <span className="checkmark"></span> <FormattedMessage id="contact.privacy"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={messages[language]['contact.privacy.link']} target="_blank" rel="noopener noreferrer"><FormattedMessage id="contact.privacy.link"/></a>
+                    <span className="checkmark"></span> <FormattedMessage id="contact.privacy"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'contact.privacy.link' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="contact.privacy.link"/></a>
                   </label>
                   <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'} id="contact--alert--rules"><FormattedMessage id="contact.alertRules"/></p>
                 </div>
@@ -263,13 +260,7 @@ class Contact extends Component {
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
                   <button name="contact--submit" type="submit" className="btn btn-primary" onClick={this.onClickContactSubmit}><FormattedMessage id="contact.send"/></button>
-                  <div className={this.state.showPreloader ? '' : 'hidden'} >
-                    <div className="preloader d-flex" id="contact--preloader">
-                      <div className="cssload-container">
-                        <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
-                      </div>
-                    </div>
-                  </div>
+                  {this.state.showPreloader && <Preloader/>}
                   <br />
                   <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'} role="alert"><FormattedMessage id="contact.messageSend"/></h4>
                   <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'} role="alert"><FormattedMessage id="contact.messageNoSend"/></h4>
@@ -289,4 +280,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default injectIntl(Contact);

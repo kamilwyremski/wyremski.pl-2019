@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import './Error404.scss';
-import { language, messages, setMetaTags } from './../../Lang';
 import {FormattedMessage} from 'react-intl';
 
 class Error404 extends Component {
 
+  constructor(props) {
+    super();
+  }
+
   componentDidMount() {
-    let meta = {
-      'title': messages[language]['error404.title']+' - '+messages[language]['home.title'],
-      'description': messages[language]['error404.title']
-    }
-    setMetaTags(meta);
+    this.props.handleLanguage(this.props.language,'error404');
   }
 
   render() {

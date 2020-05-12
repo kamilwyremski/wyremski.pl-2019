@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './Script.scss';
 import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
-import { messages, language, setMetaTags } from './../../Lang';
 import LazyLoad from 'react-image-lazy-load';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import Error404 from './../Error404/Error404';
+import Preloader from './../Preloader/Preloader.js';
+
+import './Script.scss';
 
 class Script extends Component {
   constructor(props) {
@@ -23,18 +24,16 @@ class Script extends Component {
     fetch('/json/scripts/'+this.state.script_name+'.json')
       .then(response => response.json())
       .then(data => {
-        Object.assign(messages.pl, data.pl);
-        Object.assign(messages.en, data.en);
-        this.setState({ script: data.data });
         let meta = {
-          'title': data[language]['title']+' - '+messages[language]['home.title'],
-          'description': data[language]['description'],
+          'messages': data,
+          'title': data[this.props.language]['title'],
+          'script_name': this.state.script_name,
+          'description': data[this.props.language]['description'],
           'image': '/upload/scripts/'+this.state.script_name+'/'+this.state.script_name+'.jpg',
           'favicon': '/upload/scripts/'+this.state.script_name+'/favicon.png',
-          'alternate_pl': messages['pl']['nav.link.script']+'/'+this.state.script_name,
-          'alternate_en': messages['en']['nav.link.script']+'/'+this.state.script_name
         }
-        setMetaTags(meta);
+        this.props.handleLanguage(this.props.language,'script',meta);
+        this.setState({ script: data.data });
         window.scrollTo(0, 0);
       })
       .catch( err => {
@@ -105,13 +104,7 @@ class Script extends Component {
     const show_list_domains = list_domains.length ? true : false;
     return (
       <main>
-        {!script && !script_error404 && 
-          <div className="preloader d-flex">
-            <div className="cssload-container">
-              <div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
-            </div>
-          </div>
-        }
+        {!script && !script_error404 && <Preloader/>}
         {script &&
           <div id="script">
             <div id="script--up" className="text-center">
@@ -248,7 +241,7 @@ class Script extends Component {
           </div>
         }
         {script_error404 &&
-          <Error404/>
+          <Error404 language={this.props.language} handleLanguage = {this.props.handleLanguage.bind(this)}/>
         }
       </main>
     );
