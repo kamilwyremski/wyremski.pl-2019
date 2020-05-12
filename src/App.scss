@@ -86,62 +86,13 @@ a{
 }
 /* scrollbar */
 body::-webkit-scrollbar {
-	width: 13px;	height: 13px;
+	width: 6px;	height: 6px;
 }
 body::-webkit-scrollbar-track {
 	background-color: #f3f6f6;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
 }
 body::-webkit-scrollbar-thumb {
-	background-color: #313131;	border-radius: 4px;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
-}
-body::-webkit-scrollbar-corner {
-	background: #2F3336 url(assets/scroll/corner.png) 2px 2px no-repeat;
-}
-body::-webkit-scrollbar-button:vertical:decrement {
-	background: #f3f6f6 url(assets/scroll/up.png) 2px 2px no-repeat;
-}
-body::-webkit-scrollbar-button:vertical:increment {
-	background: #f3f6f6 url(assets/scroll/down.png) 2px 3px no-repeat;
-}
-body::-webkit-scrollbar-button:horizontal:decrement {
-	background: #2F3336 url(assets/scroll/left.png) 1px 2px no-repeat;
-}
-body::-webkit-scrollbar-button:horizontal:increment {
-	background: #2F3336 url(assets/scroll/right.png) 3px 2px no-repeat;
-}
-/* :: 3.5.0 Preloader CSS */
-.preloader {
-  background-color: $color-white; padding: 200px 0; justify-content: center; align-items:center;
-  .cssload-container {
-    display: block;  width: 97px;
-  }
-  .cssload-loading i {
-    width: 19px;   height: 19px; display: inline-block;  border-radius: 50%; background: $color-primary;
-    &:first-child {
-      opacity: 0; animation: cssload-loading-ani2 0.58s linear infinite; transform: translate(-19px);
-    }
-    &:nth-child(2), &:nth-child(3) {
-      animation: cssload-loading-ani3 0.58s linear infinite;
-    }
-    &:last-child {
-      animation: cssload-loading-ani1 0.58s linear infinite;
-    }
-  }
-}
-@keyframes cssload-loading-ani1{
-  100% {
-    transform: translate(39px);  opacity: 0;
-	}
-}
-@keyframes cssload-loading-ani2 {
-  100% {
-    transform: translate(19px);  opacity: 1;
-	}
-}
-@keyframes cssload-loading-ani3 {
-  100% {
-    transform: translate(19px);
-	}
+	background-color: #555555;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
 }
 /* style mobile */
 @media(max-width: 768px) {
