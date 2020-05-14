@@ -1,12 +1,12 @@
 @import './../../assets/scss/_colors.scss';
 
 #scripts{
-	max-width: 900px; margin: auto;
+	max-width: 900px; margin: auto; padding-top: 50px;
 	.scripts--half{
 		flex: 0 0 50%; background-color: $color-light;	overflow: hidden;
 	}
 	.scripts--description{
-		padding-top: 50px; padding-bottom: 20px;
+		padding: 50px 10px 20px;
 	}
 	.scripts{
 		hr{
@@ -39,7 +39,7 @@
 			display: none !important;
 		}
 		.scripts--description{
-			padding-top: 30px; padding-bottom: 30px; border-bottom: solid 1px grey;
+			padding: 30px 10px; border-bottom: solid 1px grey;
 		}
 	}
 }

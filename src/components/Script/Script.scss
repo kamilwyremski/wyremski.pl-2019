@@ -38,7 +38,7 @@
 		flex: 0 0 25%; padding: 4px; margin-bottom: 20px;
 	}
 	.gallery--link{
-		border: none; background: none; cursor: pointer; border-bottom: solid 3px transparent; transition: all 0.2s;
+		border: none; background: none; cursor: pointer; border-bottom: solid 3px transparent; transition: all 0.2s; max-width:100%;
 		&:hover{
 			border-color: $color-primary; opacity: 0.7;
 		}
@@ -54,7 +54,7 @@
 	}
 }
 #script--up--middle{
-	padding: 120px 30px 0;
+	padding: 120px 10px 0;
 	img{
 		margin: 90px auto 0; max-width: 100%; display: block;
 	}
@@ -99,7 +99,10 @@
 		flex-basis: 100%; margin: 20px 0;
 	}
 	#script .gallery--photo{
-		flex-basis: 100%;
+		flex-basis: 100%; max-width:100%;
+	}
+	#script .LazyLoad, #script .LazyLoad img{
+		height: auto !important;
 	}
 }
 /* style print */

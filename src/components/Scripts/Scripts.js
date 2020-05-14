@@ -41,9 +41,9 @@ class Scripts extends Component {
     const language = this.props.language;
     const intl = this.props.intl;
     return (
-      <main>
+      <main id="scripts">
         <div className="section container">
-          <div className="section text-center">
+          <div className="text-center">
             <h1><FormattedMessage id="scripts.title"/></h1>
             <h3><FormattedMessage id="scripts.subtitle"/></h3>
           </div>

@@ -8,12 +8,24 @@ class Footer extends Component {
     this.state = {
       cookies_accepted: false
     };
+    this.keyFunction = this.keyFunction.bind(this);
+  }
+
+  keyFunction(event){
+    if(event.keyCode === 84) {
+      this.closeCookie();
+    }
   }
 
   componentDidMount() {
     this.setState({
       cookies_accepted: localStorage.cookies_accepted
     });
+    document.addEventListener("keydown", this.keyFunction, false);
+  }
+
+  componentWillUnmount(){
+    document.removeEventListener("keydown", this.keyFunction, false);
   }
 
   closeCookie = () => {
