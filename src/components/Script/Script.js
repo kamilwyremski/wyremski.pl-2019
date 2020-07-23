@@ -67,16 +67,14 @@ class Script extends Component {
   createGallery = () => {
     let gallery = []
     for (let i = 1; i <= this.state.script.photos; i++) {
-      gallery.push(<div className="gallery--photo" key={i}>
+      gallery.push(<button className="gallery--photo" key={i}  onClick={() => this.setState({ lightboxIsOpen: true, photoIndex: i-1 })}>
         <div className="animatable fadeInUp">
-          <button title={this.state.script_name} onClick={() => this.setState({ lightboxIsOpen: true, photoIndex: i-1 })} className="gallery--link">
-            <LazyLoad height={138} width={245} offsetVertical={300} loaderImage imageProps={{
-              src: "/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg",
-              alt: this.state.script_name
-            }} />
-          </button>
+          <LazyLoad offsetVertical={300} loaderImage imageProps={{
+            src: "/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg",
+            alt: this.state.script_name
+          }} />
         </div>
-      </div>)
+      </button>)
     }
     return gallery;
   }
@@ -230,7 +228,7 @@ class Script extends Component {
           	<div className="text-center section background-light" id="script--gallery">
           		<h2><FormattedMessage id="script.gallery"/></h2>
           		<br />
-          		<div className="container d-flex">
+          		<div className="container" id="script--gallery--photos">
                 {this.createGallery()}
           		</div>
           	</div>
