@@ -33,7 +33,7 @@
     "script.requirements_bottom": "Skrypt jest stworzony na bardzo szybkim i łatwym w modyfikacjach <strong>systemie szablonów Twig2</strong>.",
     "script.admin_panel_description": "Do strony jest dołączony bardzo rozbudowany Panel Administracyjny, który umożliwia zarządzanie ustawieniami strony, podgląd szczegółowych statystyk oraz logów serwisu",
     "script.demo.desc": "DEMO skryptu: <strong><a>cuadro.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>cuadro.wyremski.pl/admin</a></strong>{breakingLine}login: test hasło: 1234",
+    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>cuadro.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
     "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "Cuadro jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt dla strony z obrazkami, zdjęciami i filmami?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Cuadro już dziś może być Twój!</h3>"
@@ -62,7 +62,7 @@
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig2</strong>.",
     "script.admin_panel_description": "To script is included very extensive Admin Panel that allows to manage settings page, view detailed statistics and edit added pictures, photos and movies",
     "script.demo.desc": "DEMO version: <strong><a>cuadro.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>cuadro.scripts.pl/admin</a></strong>{breakingLine}login: test password: 1234",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>cuadro.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "The script have a lot of tools that are not available in other similar scripts!",
     "script.desc3": "<p>You will not find better script with pictures, photos and movies!{breakingLine}We Guarantee!</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"
