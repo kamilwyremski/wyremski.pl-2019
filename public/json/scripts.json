@@ -24,11 +24,11 @@
 		}
 	},
 	{
-		"name" : "FESTA2",
-		"url" : "festa2",
+		"name" : "JOBNOTICE",
+		"url" : "jobnotice",
 		"description" : {
-			"pl" : "Festa2 to nowoczesny skrypt umożliwiający stworzenie strony www z bazą miejsc noclegowych",
-			"en" : "Festa2 is a modern script that allows you to create a website with a base of accommodation"
+			"pl" : "JobNotice to skrypt strony www z ogłoszeniami pracy dla pracodawców oraz pracowników",
+			"en" : "JobNotice is a website script with job advertisements for employers and employees"
 		}
 	},
 	{
@@ -45,6 +45,14 @@
 		"description" : {
 			"pl" : "Corta to skrypt strony www skracacza linków - zamienia długie adresy URL na krótkie i łatwe do zapamiętania",
 			"en" : "Corta is a script of website to URL shortener - it turns long URLs into short ones that are easy to remember"
+		}
+	},
+	{
+		"name" : "FESTA2",
+		"url" : "festa2",
+		"description" : {
+			"pl" : "Festa2 to nowoczesny skrypt umożliwiający stworzenie strony www z bazą miejsc noclegowych",
+			"en" : "Festa2 is a modern script that allows you to create a website with a base of accommodation"
 		}
 	}
 ]}
