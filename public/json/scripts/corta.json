@@ -3,7 +3,9 @@
     "functions": 9,
     "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/149-skrypt-skracacza-linkow-corta.html",
     "photos": 8,
-    "list_domains": []
+    "list_domains": [
+      "pinch.link"
+    ]
   },
   "pl": {
     "title": "CORTA - skracacz adresów URL",
