@@ -82,7 +82,7 @@ class Home extends Component {
 							}}
 							/></p>
 						<div className="d-none">
-							<span itemProp="email">kamil.wyremski@gmail.com</span>
+							<span itemProp="email">kamil@wyremski.pl</span>
 							<span itemProp="url">https://wyremski.pl</span>
 							<span itemProp="birthDate">1988</span>
 							<span itemProp="homeLocation">Poland, Września</span>
@@ -99,7 +99,7 @@ class Home extends Component {
 							<i className="icon-skype" aria-hidden="true"></i>
 							<span className="sr-only"><FormattedMessage id="footer.skype"/></span>
 						</a>
-						<a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
+						<a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
 							<i className="icon-mail-alt" aria-hidden="true"></i>
 							<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
 						</a>

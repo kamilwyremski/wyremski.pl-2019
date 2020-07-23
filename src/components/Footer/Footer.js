@@ -42,14 +42,13 @@ class Footer extends Component {
         <footer id="footer">
           <div className="container d-flex footer--top--box">
             <div className="footer--top">
-              <p>Kamil Wyremski</p>
               <FormattedMessage id="footer.text" values={{
                 p: chunks => <p>{chunks}</p>,
                 a: chunks => <a href="https://skrypty.sattel.pl" title="Skrypty Sattel" target="_blank" rel="nofollow noopener noreferrer">{chunks}</a>
               }}/>
             </div>
             <div className="footer--top text-center">
-              <p><i className="icon-mail-alt" aria-hidden="true"></i> <a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil.wyremski@gmail.com</a></p>
+              <p><i className="icon-mail-alt" aria-hidden="true"></i> <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil@wyremski.pl</a></p>
               <p><i className="icon-skype" aria-hidden="true"></i> <a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>kamil.wyremski</a></p>
               <p><i className="icon-whatsapp" aria-hidden="true"></i> <a href="tel:+51990600447" title={ intl.formatMessage({ id: 'footer.phone' })}>+51 990600447</a></p>
               <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>

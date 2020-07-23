@@ -23,6 +23,8 @@ class Meta extends Component {
       description: '',
       og_locale: '',
       image: '',
+      image_width: 900,
+      image_height: 900,
       url: ''
 		}
   }
@@ -56,8 +58,18 @@ class Meta extends Component {
         image = url+props.meta.image
       }
 
+      let image_width = 900;
+      if(props.meta.image_width!==undefined){
+        image_width = props.meta.image_width
+      }
+
+      let image_height = 900;
+      if(props.meta.image_height!==undefined){
+        image_height = props.meta.image_height
+      }
+
       let favicon = url+'/upload/images/favicon/favicon.png';
-      if(props.meta.image!==undefined){
+      if(props.meta.favicon!==undefined){
         favicon = url+props.meta.favicon
       }
       document.querySelector('link[rel="shortcut icon"]').href = favicon;
@@ -79,6 +91,8 @@ class Meta extends Component {
         keywords: keywords,
         og_locale: lang === 'pl' ? 'pl_PL' : 'en_US',
         image: image,
+        image_width: image_width,
+        image_height: image_height,
         url: url
       }
     }
@@ -93,6 +107,9 @@ class Meta extends Component {
         <meta name="author" content="Kamil Wyremski"/>
 
         <meta property="og:image" content={this.state.image}/>
+        <meta property="og:image:secure_url" content={this.state.image}/>
+        <meta property="og:image:width" content={this.state.image_width} />
+        <meta property="og:image:height" content={this.state.image_height} />
         <meta property="og:description" content={this.state.description}/>
         <meta property="og:title" content={this.state.title}/>
         <meta property="og:type" content="website"/>
@@ -107,6 +124,10 @@ class Meta extends Component {
         <meta name="twitter:image" content={this.state.image}/>
 
         <meta name="p:domain_verify" content="c2fb247846bc4133916bec76263b6941"/>
+
+        <meta name="msapplication-TileColor" content="#3f5a6f"/>
+        <meta name="msapplication-TileImage" content={this.state.image}/>
+        <meta name="theme-color" content="#3f5a6f"/>
       </MetaTags>
       )
   }

@@ -6,8 +6,11 @@
   left:0; 
   right:0; 
   z-index: 100;
+  &.shadow{
+    box-shadow: 0 .5rem .5rem rgba(129, 95, 95, 0.08);
+  }
   a{
-    color: #777; transition: all 0.2s;
+    color: #555; transition: all 0.2s;
   }
   a:hover, a.is-active{
     color: #000;
@@ -16,7 +19,10 @@
     display: flex; justify-content: space-between; flex-wrap: wrap;
   }
   .navbar--brand{
-    padding: 15px 15px; text-transform: uppercase;
+    padding: 10px 15px; text-transform: uppercase;
+    small{
+      display: block; font-size: 10px;
+    }
   }
   #nav--menu{
     display: flex; list-style: none; margin:0;
@@ -38,22 +44,25 @@
     span{
       display: block;  position: absolute;  height: 2px;  width: 100%;  background: #777;  border-radius: 9px;
       opacity: 1;  left: 0;   transform: rotate(0deg);  transition: .25s ease-in-out; top:5px;
+      &:nth-child(1) {
+        width: 75%;
+      }
       &:nth-child(2) {
         top: 13px;
       }
       &:nth-child(3) {
-        top: 21px;
+        top: 21px; width: 75%; left: 25%;
       }
     }
     &.open{
       span:nth-child(1) {
-        top: 13px;  transform: rotate(135deg);
+        top: 13px;  transform: rotate(135deg); width: 100%;
       }
       span:nth-child(2) {
         opacity: 0;  left: -60px;
       }
       span:nth-child(3) {
-        top: 13px;  transform: rotate(-135deg);
+        top: 13px;  transform: rotate(-135deg); width: 100%; left:0;
       }
     }
   }

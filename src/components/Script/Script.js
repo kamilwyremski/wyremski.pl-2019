@@ -30,6 +30,8 @@ class Script extends Component {
           'script_name': this.state.script_name,
           'description': data[this.props.language]['description'],
           'image': '/upload/scripts/'+this.state.script_name+'/'+this.state.script_name+'.jpg',
+          'image_width': 450,
+          'image_height': 300,
           'favicon': '/upload/scripts/'+this.state.script_name+'/favicon.png',
         }
         this.props.handleLanguage(this.props.language,'script',meta);

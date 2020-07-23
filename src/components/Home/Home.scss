@@ -77,6 +77,7 @@
 	flex-wrap: wrap;
 	.home--technologies{
 		margin: 15px; padding: 30px 20px; border: solid 1px $color-light; position: relative; transition: all 0.4s; top:0; flex: 0 0 calc(25% - 30px); text-align: center;
+		box-shadow: 0 0 .5rem rgba(129, 95, 95, 0.08);
 		&:hover{
 			top:-10px;
 		}

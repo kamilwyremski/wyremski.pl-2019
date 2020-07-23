@@ -82,9 +82,9 @@ class Nav extends Component {
     const intl = this.props.intl;
     const language = this.props.language;
     return(
-      <nav id="nav" style={{top : this.state.nav_top}}>
+      <nav id="nav" style={{top : this.state.nav_top}} className={ this.state.nav_top==='0px' ? "shadow" : "" }>
         <div className="container d-flex" role="navigation" aria-label={ intl.formatMessage({ id: 'nav.title.navigation' })}>
-          <Link to={ intl.formatMessage({ id: 'nav.link.home' })} className="navbar--brand" title="Kamil Wyremski - Web Designer">Kamil Wyremski</Link>
+          <Link to={ intl.formatMessage({ id: 'nav.link.home' })} className="navbar--brand" title="Kamil Wyremski - Web Designer">Kamil Wyremski <small>Full Stack Web Developer</small></Link>
           <div id="nav--burger" 
             onClick={this.showHideMenu} 
             className={ this.state.active_mobile_menu ? "open" : "" }

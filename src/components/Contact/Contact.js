@@ -176,7 +176,7 @@ class Contact extends Component {
               <br />
               <p><FormattedMessage id="contact.subtitle"
                 	values={{
-                    a: chunks => <a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' }) }>{chunks}</a>
+                    a: chunks => <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' }) }>{chunks}</a>
                   }}
               /></p>
             </div>
