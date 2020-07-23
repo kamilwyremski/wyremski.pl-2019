@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LazyLoad from 'react-image-lazy-load';
 import './Home.scss';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
@@ -74,49 +73,40 @@ class Home extends Component {
 					</div>
 				</section>
 				<section id="home--about_me" className="section">
-					<div className="container d-flex" itemScope itemType="http://schema.org/Person">
-						<LazyLoad height={170} width={170} offsetVertical={300} loaderImage imageProps={{
-							src: '/upload/images/kamil_wyremski.jpg',
-							alt: "Kamil Wyremski",
-							ref: "image",
-							className: "img-fluid",
-							itemProp: "image"
-						}} />
-						<div id="home--about_me--desc">
-							<h2 itemProp="name">Kamil Wyremski</h2>
-							<h4 itemProp="jobTitle"><FormattedMessage id="home.about_me.title"/></h4>
-							<p><FormattedMessage id="home.about_me.brand"
-								values={{
-									span: chunks => <span itemProp="brand">{chunks}</span>
-								}}
-							 /></p>
-							<div className="d-none">
-								<span itemProp="email">kamil.wyremski@gmail.com</span>
-								<span itemProp="url">https://wyremski.pl</span>
-								<span itemProp="birthDate">1988</span>
-								<span itemProp="homeLocation">Poland, Września</span>
-							</div>
-							<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
-								<i className="icon-facebook-official" aria-hidden="true"></i>
-								<span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
-							</a>
-							<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
-								<i className="icon-github-squared" aria-hidden="true"></i>
-								<span className="sr-only"><FormattedMessage id="footer.github"/></span>
-							</a>
-							<a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>
-								<i className="icon-skype" aria-hidden="true"></i>
-								<span className="sr-only"><FormattedMessage id="footer.skype"/></span>
-							</a>
-							<a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
-								<i className="icon-mail-alt" aria-hidden="true"></i>
-								<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
-							</a>
-							<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer" aria-hidden="true">
-								<i className="icon-link-ext-alt"></i>
-								<span className="sr-only"><FormattedMessage id="footer.blog"/></span>
-							</a>
+					<div className="container" itemScope itemType="http://schema.org/Person">
+						<h2 itemProp="name">Kamil Wyremski</h2>
+						<h4 itemProp="jobTitle"><FormattedMessage id="home.about_me.title"/></h4>
+						<p><FormattedMessage id="home.about_me.brand"
+							values={{
+								span: chunks => <span itemProp="brand">{chunks}</span>
+							}}
+							/></p>
+						<div className="d-none">
+							<span itemProp="email">kamil.wyremski@gmail.com</span>
+							<span itemProp="url">https://wyremski.pl</span>
+							<span itemProp="birthDate">1988</span>
+							<span itemProp="homeLocation">Poland, Września</span>
 						</div>
+						<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
+							<i className="icon-facebook-official" aria-hidden="true"></i>
+							<span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
+						</a>
+						<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+							<i className="icon-github-squared" aria-hidden="true"></i>
+							<span className="sr-only"><FormattedMessage id="footer.github"/></span>
+						</a>
+						<a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>
+							<i className="icon-skype" aria-hidden="true"></i>
+							<span className="sr-only"><FormattedMessage id="footer.skype"/></span>
+						</a>
+						<a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
+							<i className="icon-mail-alt" aria-hidden="true"></i>
+							<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
+						</a>
+						<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer" aria-hidden="true">
+							<i className="icon-link-ext-alt"></i>
+							<span className="sr-only"><FormattedMessage id="footer.blog"/></span>
+						</a>
 					</div>
 				</section>
 				<section id="home--skills" className="background-light">

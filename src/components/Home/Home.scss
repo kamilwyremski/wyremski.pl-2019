@@ -1,7 +1,8 @@
 @import './../../assets/scss/_colors.scss';
 
 #header{
-	background: #0e0e0e url("/upload/images/header.jpg") no-repeat fixed center bottom / cover; padding-top: 170px; padding-bottom: 130px; text-shadow: 1px 1px 2px $color-black; color: $color-white;
+	background: #0e0e0e url("/upload/images/header.jpg") no-repeat fixed center bottom / cover; 
+	padding-top: 170px; padding-bottom: 130px; text-shadow: 1px 1px 2px $color-black; color: $color-white; transition: all 0.4s;
 	#header--inside{
 		margin-left: 10%; border-bottom: solid 1px grey; padding-bottom: 20px; padding-right: 20px;
 		#header--typed{
@@ -19,15 +20,12 @@
 	column-count: 2; column-gap: 4em; margin-top: 50px; 
 }
 #home--about_me{
-	background: $color-dark url("/upload/images/background_desk.jpg") no-repeat fixed center bottom / cover;  color: $color-light;
-	#home--about_me--desc{
-		padding: 5px 30px;
-	}
+	background: $color-dark url("/upload/images/background_desk.jpg") no-repeat fixed center bottom / cover;  color: $color-light; text-align: center;
 	h2, h4{
 		color: $color-white;
 	}
-	img{
-		border-radius: 50%;
+	P{
+		margin-top: 10px;
 	}
 	a i{
 		color: $color-white; margin: 0 10px 10px 0; transition: all 0.1s; font-size: 1.6em;
@@ -140,7 +138,7 @@
 }
 /* style mobile */
 @media(max-width: 992px) {
-	.home--skills, .home--technologies{
+	#home--skills--box .home--skills, #home--technologies--box .home--technologies{
 		flex: 0 0 calc(33% - 30px);
 	}
 }
@@ -157,7 +155,7 @@
 			margin: auto;
 		}
 	}
-	.home--skills, .home--technologies{
+	#home--skills--box .home--skills, #home--technologies--box .home--technologies{
 		flex: 0 0 calc(50% - 30px);
 	}
 }
