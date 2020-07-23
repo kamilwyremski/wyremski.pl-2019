@@ -10,13 +10,13 @@
     "description": "Dzięki skryptowi Corta możesz stworzyć własną prostą stronę www służącą do skracania linków – do zamieniania długich adresów URL na krótkie i łatwe do zapamiętania.",
     "script.header": "Skrypt skracacza linków URL - Corta",
     "script.subheader": "Stwórz własną stronę www do skracania linków URL",
-    "script.desc1": "<p>Dzięki skryptowi Corta możesz stworzyć własną prostą stronę www służącą do skracania linków – do zamieniania długich adresów URL na krótkie i łatwe do zapamiętania. Dzięki temu będą wygodniejsze do zamieszczenia w różnych mediach społecznościowych i komunikatorach. Dodatkowo administrator serwera może podejrzeć logi wejść na dany adres URL.</p><p>Nie ważne czy chcesz utworzyć krótki link do ulubionego artykułu na stronie www, do zdjęcia czy do filmu w serwisie społecznościowym. Skrypt sprawdzi czy adres jest poprawny i czy istnieje, po czym wygeneruje krótki adres URL. To wszystko! Dzięki boksom reklamowym możesz uzyskać pasywny dochód ze swojej strony www. Wystarczy, że umieścisz reklamy z AdSense lub od innego partnera i strona będzie na Ciebie pasywnie zarabiać!</p>",
+    "script.desc1": "<p>Dzięki skryptowi Corta możesz stworzyć własną prostą stronę www służącą do skracania linków – do <strong>zamieniania długich adresów URL na krótkie i łatwe do zapamiętania</strong>. Dzięki temu będą wygodniejsze do zamieszczenia w różnych mediach społecznościowych i komunikatorach. Dodatkowo administrator serwera może podejrzeć logi wejść na dany adres URL.</p><p>Nie ważne czy chcesz utworzyć krótki link do ulubionego artykułu na stronie www, do zdjęcia czy do filmu w serwisie społecznościowym. Skrypt sprawdzi czy adres jest poprawny i czy istnieje, po czym wygeneruje krótki adres URL. To wszystko! Dzięki boksom reklamowym możesz uzyskać <strong>pasywny dochód ze swojej strony www</strong>. Wystarczy, że umieścisz reklamy z AdSense lub od innego partnera i strona będzie na Ciebie pasywnie zarabiać!</p>",
     "script.function.1": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
     "script.function.2": "<h4>Szybkość</h4><p>Dzięki zastosowaniu nowoczesnych technologii strona bardzo szybko działa</p>",
     "script.function.3": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> dzięki którym możesz uzyskać pasywny dochód</p>",
     "script.function.4": "<h4>Artykuły</h4><p>Możliwość dodawania artykułów w serwisie - wpływa to pozytywnie na pozycjonowanie</p>",
     "script.function.5": "<h4>SEO</h4><p>Do stron info w serwisie istnieje możliwość ustalenia osobnych słów kluczowych i opisów SEO - bardzo przydatne przy pozycjonowaniu witryny</p>",
-    "script.function.6": "<h4>Dostosowanie</h4><p>Możliwość <strong>dostosowania</strong> serwisu do własnych potrzeb, rozbudowane możliwości konfiguracji strony<p>",
+    "script.function.6": "<h4>Dostosowanie</h4><p>Możliwość <strong>dostosowania</strong> serwisu do własnych potrzeb, rozbudowane możliwości konfiguracji strony</p>",
     "script.function.7": "<h4>Statystyki</h4><p>Podgląd szczegółowych <strong>statystyk systemu</strong> w Panelu Administracyjnym wraz z generatorem wykresów - dzięki niemu dowiesz się czego jeszcze potrzeba Twojej stronie!</p>",
     "script.function.8": "<h4>Newsletter</h4><p>Moduł newslettera umożliwiający użytkownikom zapis na listę mailingową a administratorowi wysyłkę maili</p>",
     "script.function.9": "<h4>SMTP i załączniki</h4><p>Możliwość wysyłki wiadomości email poprzez konto SMTP oraz wysyłki <strong>załączników</strong> do wiadomości z formularza kontaktowego.</p>",
@@ -25,10 +25,11 @@
     "script.requirements.3": "Możliwość ustawienia zadań CronTab",
     "script.requirements_bottom": "Skrypt jest stworzony na bardzo szybkim i łatwym w modyfikacjach <strong>systemie szablonów Twig2</strong>.",
     "script.admin_panel_description": "Do strony jest dołączony bardzo rozbudowany Panel Administracyjny, który umożliwia zarządzanie ustawieniami strony, podgląd szczegółowych statystyk oraz logów serwisu",
-    "script.demo.desc": "<h4>DEMO skryptu: <strong><a href=\"https://corta.wyremski.pl\" target=\"_blank\" title=\"CORTA\">corta.wyremski.pl</a></strong></h4><p>DEMO Panelu Administracyjnego: <strong><a href=\"https://corta.wyremski.pl/admin\" target=\"_blank\" title=\"Pokazowa strona skryptu     Corta\">corta.wyremski.pl/admin</a></strong><br>login: test hasło: 1234</p>",
-    "script.demo.manual": "<p>Zobacz także <a href=\"http://blog.wyremski.pl/instrukcja-instalacji-i-konfiguracji-skryptow/\" title=\"Instrukcja instalacji i konfiguracji skryptów\" target=\"_blank\">instrukcję instalacji i konfiguracji skryptów</a></p>",
+    "script.demo.desc": "DEMO skryptu: <strong><a>corta.wyremski.pl</a></strong>",
+    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>corta.wyremski.pl/admin</a></strong>{breakingLine}login: test hasło: 1234",
+    "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "CORTA - skrypt do skracania linków URL - zarabiaj pasywnie!",
-    "script.desc3": "<p>Znalazłeś lepszy skrypt skracacza linków online?<br>...na pewno nie! Po prostu takiego nie ma...</p><br /><h3>Corta już dziś może być Twoja!</h3>"
+    "script.desc3": "<p>Znalazłeś lepszy skrypt skracacza linków online?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Corta już dziś może być Twoja!</h3>"
   },
   "en":{
     "title": "CORTA - URL shortener",
@@ -43,16 +44,17 @@
     "script.function.5": "<h4>SEO</h4><p>For info pages on the site, you can set separate keywords and SEO descriptions - very useful when positioning your website</p>",
     "script.function.6": "<h4>Adjustment</h4><p>The ability to customize the site to suit your needs, extensive configuration options</p>",
     "script.function.7": "<h4>Statistics</h4><p>Preview of detailed system statistics in the Administrative Panel with a chart generator - thanks to it you will find out what else you need for your website!</p>",
-    "script.function.8": "<h4>Newsletter</h4><p>Newsletter module enabling users to subscribe to the mailing list and the administrator to send emails<p>",
+    "script.function.8": "<h4>Newsletter</h4><p>Newsletter module enabling users to subscribe to the mailing list and the administrator to send emails</p>",
     "script.function.9": "<h4>SMTP and attachments</h4><p>Possibility of sending email via SMTP account and sending attachments to messages from the contact form.</p>",
     "script.requirements.1": "PHP version min 7.0",
     "script.requirements.2": "Support MySQL database",
     "script.requirements.3": "Ability to set the tasks crontab",
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig2</strong>.",
     "script.admin_panel_description": "The site has a very extensive Administrative Panel attached, which allows you to manage page settings, view detailed statistics and site logs",
-    "script.demo.desc": "<p>DEMO version: <strong><a href=\"https://corta.wyremski.pl\" target=\"_blank\" title=\"CUADRO\">corta.wyremski.pl</a></strong></p><p>DEMO version of Admin Panel: <strong><a href=\"https://corta.wyremski.pl/admin\" target=\"_blank\" title=\"Test version of Cuadro\">corta.scripts.pl/admin</a></strong><br>login: test password: 1234</p>",
+    "script.demo.desc": "DEMO version: <strong><a>corta.wyremski.pl</a></strong>",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>corta.scripts.pl/admin</a></strong>{breakingLine}login: test password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "CORTA - script for shortening URL links - earn passive!",
-    "script.desc3": "<p>Have you found a better online link shortener script?<br>...certainly not! There is simply no such ...</p><br /><h4>If you are interested, you can buy this script:</h4>"
+    "script.desc3": "<p>Have you found a better online link shortener script?{breakingLine}...certainly not! There is simply no such ...</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"
   }
 }

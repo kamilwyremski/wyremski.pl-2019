@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {injectIntl, FormattedMessage, FormattedHTMLMessage} from 'react-intl';
+import {injectIntl, FormattedMessage} from 'react-intl';
 import ReCAPTCHA from "react-google-recaptcha";
 import Preloader from './../Preloader/Preloader.js';
 
@@ -174,7 +174,11 @@ class Contact extends Component {
             <div className="text-center">
               <h1><FormattedMessage id="contact.title"/></h1>
               <br />
-              <p><FormattedHTMLMessage id="contact.subtitle"/></p>
+              <p><FormattedMessage id="contact.subtitle"
+                	values={{
+                    a: chunks => <a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' }) }>{chunks}</a>
+                  }}
+              /></p>
             </div>
             <br />
             <form method="post" onSubmit={this.handleSubmit} id="contact--form">

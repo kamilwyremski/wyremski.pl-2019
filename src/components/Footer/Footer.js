@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.scss';
-import {injectIntl, FormattedMessage, FormattedHTMLMessage} from 'react-intl';
+import {injectIntl, FormattedMessage} from 'react-intl';
 
 class Footer extends Component {
   constructor({intl, ...props}) {
@@ -43,7 +43,10 @@ class Footer extends Component {
           <div className="container d-flex footer--top--box">
             <div className="footer--top">
               <p>Kamil Wyremski</p>
-              <FormattedHTMLMessage id="footer.text"/>
+              <FormattedMessage id="footer.text" values={{
+                p: chunks => <p>{chunks}</p>,
+                a: chunks => <a href="https://skrypty.sattel.pl" title="Skrypty Sattel" target="_blank" rel="nofollow noopener noreferrer">{chunks}</a>
+              }}/>
             </div>
             <div className="footer--top text-center">
               <p><i className="icon-mail-alt" aria-hidden="true"></i> <a href="mailto:kamil.wyremski@gmail.com" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil.wyremski@gmail.com</a></p>
