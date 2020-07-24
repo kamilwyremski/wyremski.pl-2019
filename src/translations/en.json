@@ -117,7 +117,6 @@
   "scripts.title": "Websites Scripts",
   "scripts.description": "Scripts websites that I created. This is a quick and cheap way to build your own website!",
   "scripts.subtitle": "The easiest way to create your own website!",
-  "scripts.see": "Read more",
   "error404.title": "Error 404",
   "error404.description": "The page you are looking for has been moved, deleted, or simply never existed."
 }
