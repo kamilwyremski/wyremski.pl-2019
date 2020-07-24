@@ -1,15 +1,15 @@
 @import './../../assets/scss/_colors.scss';
 
-#error404{
-  background: $color-dark url("/upload/images/background_desk.jpg") no-repeat fixed center bottom / cover; padding: 50px 0; color: $color-white;
+.error404{
+  background: $color-dark url("/upload/images/background_desk.jpg") no-repeat fixed center bottom / cover; padding: 50px 0; color: #fff;
   h1{
     font-size: 10em; color: #c665fd; margin: 20px auto; font-family:'Lucida Console';
   }
   .error404--tag{
-    color: $color-white; font-size: 0.7em; position: relative; top:-20px;
+    color: #fff; font-size: 0.7em; position: relative; top:-20px;
   }
-  #error404--code{
-    color: $color-white; text-align: left; font-weight: bold; width: 250px; max-width: 100%; margin: auto; font-family:'Lucida Console';
+  .error404--code{
+    color: #fff; text-align: left; font-weight: bold; width: 250px; max-width: 100%; margin: auto; font-family:'Lucida Console';
   }
   .error404--color1{
     color: #96cbfe;
@@ -23,18 +23,18 @@
 }
 /* style mobile */
 @media(max-width: 640px) {
-	#error404 h1{
+	.error404 h1{
     font-size: 6em;
 	}
 }
 @media(max-width: 350px) {
-	#error404 h1{
+	.error404 h1{
     font-size: 4em;
 	}
 }
 /* style print */
 @media print {
-  #error404{
+  .error404{
     padding:0; color: inherit;
     .error404--tag{
       color: inherit;

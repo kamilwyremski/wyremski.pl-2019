@@ -31,7 +31,7 @@ class Nav extends Component {
     window.addEventListener('scroll', this.handleScroll);
 
     let nav_link_delay = 1;
-    document.querySelectorAll("#nav--menu .hide").forEach(link => {
+    document.querySelectorAll("#navbar--menu .hide").forEach(link => {
       setTimeout(
         function() {
           link.classList.remove("hide");
@@ -82,20 +82,19 @@ class Nav extends Component {
     const intl = this.props.intl;
     const language = this.props.language;
     return(
-      <nav id="nav" style={{top : this.state.nav_top}} className={ this.state.nav_top==='0px' ? "shadow" : "" }>
+      <nav style={{top : this.state.nav_top}} className={ this.state.nav_top==='0px' ? "navbar shadow d-print-none" : "navbar d-print-none" }>
         <div className="container d-flex" role="navigation" aria-label={ intl.formatMessage({ id: 'nav.title.navigation' })}>
           <Link to={ intl.formatMessage({ id: 'nav.link.home' })} className="navbar--brand" title="Kamil Wyremski - Web Designer">Kamil Wyremski <small>Full Stack Web Developer</small></Link>
-          <div id="nav--burger" 
+          <div className={ this.state.active_mobile_menu ? "open navbar--burger" : "navbar--burger" }
             onClick={this.showHideMenu} 
-            className={ this.state.active_mobile_menu ? "open" : "" }
-            aria-controls="nav--menu" 
+            aria-controls="navbar--menu" 
             aria-expanded={this.state.active_mobile_menu} 
             aria-label={ intl.formatMessage({ id: 'nav.title.toogle' })}>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <ul id="nav--menu" className={ this.state.active_mobile_menu ? "open d-flex" : "d-flex" }>
+          <ul id="navbar--menu" className={ this.state.active_mobile_menu ? "open d-flex navbar--menu" : "d-flex navbar--menu" }>
             <li className="hide">
               <NavLink to={ intl.formatMessage({ id: 'nav.link.home' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.home' })}><FormattedMessage id="nav.home"/></NavLink>
             </li>

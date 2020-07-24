@@ -39,8 +39,8 @@ class Footer extends Component {
     const intl = this.props.intl;
     return (
       <div>
-        <footer id="footer">
-          <div className="container d-flex footer--top--box">
+        <footer className="footer">
+          <div className="container d-flex">
             <div className="footer--top">
               <FormattedMessage id="footer.text" values={{
                 p: chunks => <p>{chunks}</p>,
@@ -54,7 +54,7 @@ class Footer extends Component {
               <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>
           	</div>
         		<div className="footer--top text-center">
-        			<div itemScope itemType="http://schema.org/Organization" id="footer--social">
+        			<div itemScope itemType="http://schema.org/Organization" className="footer--social">
         				<link itemProp="url" href="https://wyremski.pl" />
         				<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
                   <i className="icon-facebook-official"></i>
@@ -103,10 +103,10 @@ class Footer extends Component {
             <p>Copyright © 2013 - 2020 by Kamil Wyremski. All rights reserved</p>
           </div>
         </footer>
-        <div id="cookies-message" className={ this.state.cookies_accepted ? "" : "open"}>
+        <div className={ this.state.cookies_accepted ? "cookies-message" : "cookies-message open"}>
           <p><FormattedMessage id="cookies_message"/></p>
           <p><FormattedMessage id="cookies_message.bottom"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'cookies_message.privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="cookies_message.privacy_policy"/></a></p>
-          <button className="link" id="accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
+          <button className="link accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
         </div>
       </div>
     );

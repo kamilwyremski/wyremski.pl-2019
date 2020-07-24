@@ -111,25 +111,27 @@ class Script extends Component {
       <main>
         {!script && !script_error404 && <Preloader/>}
         {script &&
-          <div id="script">
-            <div id="script--up" className="text-center">
-            	<div id="script--up--middle">
-                <h1><FormattedMessage id="script.header"/></h1>
-                <h3><FormattedMessage id="script.subheader"/></h3>
+          <div className="script">
+            <div className="script--up text-center">
+            	<div className="script--up--middle">
+                <h1 className="display-4"><FormattedMessage id="script.header"/></h1>
+                <h3 className="display-1"><FormattedMessage id="script.subheader"/></h3>
                 <LazyLoad offsetVertical={300} loaderImage imageProps={{
                   src: "/upload/scripts/"+script_name+"/banner_top.png",
                   alt: script_name
                 }} />
             	</div>
             </div>
-            <div className="text-center section container" id="script--up--bottom">
-              <FormattedMessage id="script.desc1" values={{
-                  h2: chunks => <h2>{chunks}</h2>,
-                  p: chunks => <p>{chunks}</p>,
-                  strong: chunks => <strong>{chunks}</strong>,
-                  breakingLine: <br />
-                }}
-              />
+            <div className="section container">
+              <div className="script--up--bottom">
+                <FormattedMessage id="script.desc1" values={{
+                    h2: chunks => <h2 className="display-2">{chunks}</h2>,
+                    p: chunks => <p>{chunks}</p>,
+                    strong: chunks => <strong>{chunks}</strong>,
+                    breakingLine: <br />
+                  }}
+                />
+              </div>
             </div>
             <div className="d-flex container text-center">
         			<div className="features">
@@ -168,13 +170,13 @@ class Script extends Component {
         		</div>
             <br />
             <div className="text-center background-dark section">
-              <h2 className="color-light"><FormattedMessage id="script.functions"/></h2>
+              <h2 className="color-light display-3"><FormattedMessage id="script.functions"/></h2>
 	            <div className="container d-flex">
                 {this.createFunctions()}
               </div>
             </div>
             <div className="container text-center section">
-            	<h2><FormattedMessage id="script.requirements"/></h2>
+            	<h2 className="display-3"><FormattedMessage id="script.requirements"/></h2>
             	<div className="d-flex">
             		<div className="script--requirements">
                   <LazyLoad height={200} width={142} offsetVertical={300} loaderImage imageProps={{
@@ -205,30 +207,30 @@ class Script extends Component {
                 strong: chunks => <strong>{chunks}</strong>
               }}/></p>
             </div>
-            <div className="text-center color-light background-dark section" id="script--admin--panel">
-            	<h2><FormattedMessage id="script.admin_panel"/></h2>
+            <div className="text-center color-light background-dark section script--admin--panel">
+            	<h2 className="display-3"><FormattedMessage id="script.admin_panel"/></h2>
               <LazyLoad height={129} width={345} offsetVertical={300} loaderImage imageProps={{
                 src: "/upload/scripts/admin.png",
                 alt: "Admin Panel created by Kamil Wyremski"
               }} />
-            	<p><FormattedMessage id="script.admin_panel_description"/></p>
+            	<p className="content"><FormattedMessage id="script.admin_panel_description"/></p>
             </div>
-            <div className="container text-center section" id="script--language">
-            	<h2><FormattedMessage id="script.language.title"/></h2>
+            <div className="container text-center section script--language">
+            	<h2 className="display-3"><FormattedMessage id="script.language.title"/></h2>
               <LazyLoad height={286} width={258} offsetVertical={300} loaderImage imageProps={{
                 src: "/upload/scripts/language.png",
                 alt: "Flags of countries in the world"
               }} />
               <FormattedMessage id="script.language.desc" values={{
-                p: chunks => <p>{chunks}</p>,
+                p: chunks => <p className="content">{chunks}</p>,
                 strong: chunks => <strong>{chunks}</strong>,
                 breakingLine: <br />
               }}/>
             </div>
-          	<div className="text-center section background-light" id="script--gallery">
-          		<h2><FormattedMessage id="script.gallery"/></h2>
+          	<div className="text-center section background-light script--gallery">
+          		<h2 className="display-3"><FormattedMessage id="script.gallery"/></h2>
           		<br />
-          		<div className="container" id="script--gallery--photos">
+          		<div className="container script--gallery--photos">
                 {this.createGallery()}
           		</div>
           	</div>
@@ -251,40 +253,42 @@ class Script extends Component {
               />
             )}
             <div className="text-center container section">
-          		<h2><FormattedMessage id="script.demo.title"/></h2>
-            	<br />
-              <h4><FormattedMessage id="script.demo.desc" values={{
-                strong: chunks => <strong>{chunks}</strong>,
-                a: chunks => <a href={'https://'+chunks} target="_blank" rel="noopener noreferrer" title={script_name}>{chunks}</a>
-              }}/>
-              </h4>
-          		<br />
-              <p><FormattedMessage id="script.demo.desc2" values={{
-                strong: chunks => <strong>{chunks}</strong>,
-                a: chunks => <a href={'https://'+chunks} target="_blank" rel="noopener noreferrer" title={script_name}>{chunks}</a>,
-                breakingLine: <br />
-              }}/>
-              </p>
-              {show_list_domains &&
-              	<p><FormattedMessage id="script.demo.list"/> <strong>{list_domains}</strong></p>
-              }
-              <p><FormattedMessage id="script.demo.manual" values={{
-                a: chunks => <a href="http://blog.wyremski.pl/instrukcja-instalacji-i-konfiguracji-skryptow/" title="Instrukcja instalacji i konfiguracji skryptów" target="_blank" rel="noopener noreferrer">{chunks}</a>,
-                breakingLine: <br />
-              }}/></p>
+              <div className="content">
+                <h2 className="display-3"><FormattedMessage id="script.demo.title"/></h2>
+                <br />
+                <h4 className="display-1"><FormattedMessage id="script.demo.desc" values={{
+                  strong: chunks => <strong>{chunks}</strong>,
+                  a: chunks => <a href={'https://'+chunks} target="_blank" rel="noopener noreferrer" title={script_name}>{chunks}</a>
+                }}/>
+                </h4>
+                <br />
+                <p><FormattedMessage id="script.demo.desc2" values={{
+                  strong: chunks => <strong>{chunks}</strong>,
+                  a: chunks => <a href={'https://'+chunks} target="_blank" rel="noopener noreferrer" title={script_name}>{chunks}</a>,
+                  breakingLine: <br />
+                }}/>
+                </p>
+                {show_list_domains &&
+                  <p><FormattedMessage id="script.demo.list"/> <strong>{list_domains}</strong></p>
+                }
+                <p><FormattedMessage id="script.demo.manual" values={{
+                  a: chunks => <a href="http://blog.wyremski.pl/instrukcja-instalacji-i-konfiguracji-skryptow/" title="Instrukcja instalacji i konfiguracji skryptów" target="_blank" rel="noopener noreferrer">{chunks}</a>,
+                  breakingLine: <br />
+                }}/></p>
+              </div>
             </div>
-          	<div className="text-center background-light" id="script--info">
-          		<h4><FormattedMessage id="script.desc2"/></h4>
+          	<div className="text-center background-light script--info">
+          		<p className="display-1"><FormattedMessage id="script.desc2"/></p>
           	</div>
             <div className="text-center container section">
               <FormattedMessage id="script.desc3"
                 values={{
-                  h3: chunks => <h3>{chunks}</h3>,
+                  h3: chunks => <h3 className="display-2">{chunks}</h3>,
                   p: chunks => <p>{chunks}</p>,
                   breakingLine: <br />
                 }}
               />
-              <a href={script.buy_url} title={script_name} id="script--buy"><FormattedMessage id="script.buy"/></a>
+              <a href={script.buy_url} title={script_name} className="script--buy"><FormattedMessage id="script.buy"/></a>
             </div>
           </div>
         }

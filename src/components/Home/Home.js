@@ -51,20 +51,20 @@ class Home extends Component {
 		const intl = this.props.intl;
 		return (
 			<main>
-				<header id="header">
-					<div id="header--inside">
-						<h1>Kamil Wyremski</h1>
-						<h2 id="header--typed"><span id="header--typed--text">{this.state.header_typed}</span><span id="header--typed--cursor">|</span></h2>
-						<h4><FormattedMessage id="home.header.text" values={{breakingLine: <br />}}/></h4>
+				<header className="home--header">
+					<div className="home--header--inside">
+						<h1 className="display-4">Kamil Wyremski</h1>
+						<p className="home--header--typed">{this.state.header_typed}<span className="home--header--typed-cursor">|</span></p>
+						<h3 className="display-1"><FormattedMessage id="home.header.text" values={{breakingLine: <br />}}/></h3>
 					</div>
 				</header>
-				<section className="container section" id="home--introduction">
+				<section className="container section">
 					<div className="text-center">
-						<h2><FormattedMessage id="home.introduction.header"/></h2>
+						<h2 className="display-3"><FormattedMessage id="home.introduction.header"/></h2>
 						<br />
-						<h4><FormattedMessage id="home.introduction.subheader" values={{breakingLine: <br />}}/></h4>
+						<h3 className="display-1"><FormattedMessage id="home.introduction.subheader" values={{breakingLine: <br />}}/></h3>
 					</div>
-					<div id="home--introduction--text">
+					<div className="home--introduction--text">
 						<FormattedMessage id="home.introduction.text" 
 							values={{
 								p: chunks => <p>{chunks}</p>
@@ -72,10 +72,10 @@ class Home extends Component {
 						/>
 					</div>
 				</section>
-				<section id="home--about_me" className="section">
+				<section className="section home--about_me">
 					<div className="container" itemScope itemType="http://schema.org/Person">
-						<h2 itemProp="name">Kamil Wyremski</h2>
-						<h4 itemProp="jobTitle"><FormattedMessage id="home.about_me.title"/></h4>
+						<h2 className="display-3" itemProp="name">Kamil Wyremski</h2>
+						<h4 className="display-1" itemProp="jobTitle"><FormattedMessage id="home.about_me.title"/></h4>
 						<p><FormattedMessage id="home.about_me.brand"
 							values={{
 								span: chunks => <span itemProp="brand">{chunks}</span>
@@ -109,170 +109,172 @@ class Home extends Component {
 						</a>
 					</div>
 				</section>
-				<section id="home--skills" className="background-light">
+				<section className="background-light">
 					<div className="container section">
-						<div className="text-center">
-							<h2><FormattedMessage id="home.skills.title"/></h2>
+						<div className="text-center content">
+							<h2 className="display-3"><FormattedMessage id="home.skills.title"/></h2>
 							<br />
 							<p><FormattedMessage id="home.skills.description"/></p>
+							<br />
 						</div>
-						<div className="d-flex" id="home--skills--box">
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.1.title"/></h4>
+						<div className="d-flex home--skills">
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.1.title"/></h4>
 								<p><FormattedMessage id="home.skills.1.desc"
 									values={{
 										a: chunks => <a href="http://blog.wyremski.pl/poprawne-wyswietlanie-strony/" target="_blank" title="Standard W3C" rel="noopener noreferrer">{chunks}</a>
 									}}
 								/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.2.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.2.title"/></h4>
 								<p><FormattedMessage id="home.skills.2.desc"
 									values={{
 										a: chunks => <a href="http://blog.wyremski.pl/optymalizacja-strony-www/" target="_blank" title="Strony www zgodne z SEO" rel="noopener noreferrer">{chunks}</a>
 									}}
 								/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.3.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.3.title"/></h4>
 								<p><FormattedMessage id="home.skills.3.desc"/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.4.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.4.title"/></h4>
 								<p><FormattedMessage id="home.skills.4.desc"/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.5.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.5.title"/></h4>
 								<p><FormattedMessage id="home.skills.5.desc"/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.6.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.6.title"/></h4>
 								<p><FormattedMessage id="home.skills.6.desc"/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.7.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.7.title"/></h4>
 								<p><FormattedMessage id="home.skills.7.desc"/></p>
 							</div>
-							<div className="home--skills animatable fadeInUp">
-								<div className="home--skills--image"></div>
-								<h4><FormattedMessage id="home.skills.8.title"/></h4>
+							<div className="home--skill animatable fadeInUp">
+								<div className="home--skill--image"></div>
+								<h4 className="display-1"><FormattedMessage id="home.skills.8.title"/></h4>
 								<p><FormattedMessage id="home.skills.8.desc"/></p>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section id="home--technologies" className="container section">
-					<div className="text-center">
-						<h2><FormattedMessage id="home.technologies.title"/></h2>
+				<section className="container section">
+					<div className="text-center content">
+						<h2 className="display-3"><FormattedMessage id="home.technologies.title"/></h2>
 						<br />
 						<p><FormattedMessage id="home.technologies.description"/></p>
+						<br />
 					</div>
-					<div className="d-flex" id="home--technologies--box">
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>PHP</h4>
+					<div className="d-flex home--technologies">
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">PHP</h4>
 							<p><FormattedMessage id="home.technologies.1.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>JavaScript</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">JavaScript</h4>
 							<p><FormattedMessage id="home.technologies.2.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Symfony</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Symfony</h4>
 							<p><FormattedMessage id="home.technologies.3.desc"
 								values={{
 									a: chunks => <a href="http://blog.wyremski.pl/framework-symfony/" title="Symfony" target="_blank" rel="noopener noreferrer">{chunks}</a>
 								}}
 							/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Wordpress</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Wordpress</h4>
 							<p><FormattedMessage id="home.technologies.4.desc"
 								values={{
 									a: chunks => <a href="http://blog.wyremski.pl/o-wordpress-ie/" title="Wordpress" target="_blank" rel="noopener noreferrer">{chunks}</a>
 								}}
 							/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Prestashop</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Prestashop</h4>
 							<p><FormattedMessage id="home.technologies.5.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Twitter Bootstrap</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Twitter Bootstrap</h4>
 							<p><FormattedMessage id="home.technologies.6.desc"
 								values={{
 									a: chunks => <a href="http://blog.wyremski.pl/framework-bootstrap/" title="Twitter Bootstrap" target="_blank" rel="noopener noreferrer">{chunks}</a>
 								}}
 							/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>jQuery</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">jQuery</h4>
 							<p><FormattedMessage id="home.technologies.7.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Angular</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Angular</h4>
 							<p><FormattedMessage id="home.technologies.8.desc"
 								values={{
 									a: chunks => <a href="http://blog.wyremski.pl/angularjs-framework-do-javascript/" title="AngularJS" target="_blank" rel="noopener noreferrer">{chunks}</a>
 								}}
 							/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>HTML</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">HTML</h4>
 							<p><FormattedMessage id="home.technologies.9.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>CSS</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">CSS</h4>
 							<p><FormattedMessage id="home.technologies.10.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Adobe Photoshop</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Adobe Photoshop</h4>
 							<p><FormattedMessage id="home.technologies.11.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>NodeJS</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">NodeJS</h4>
 							<p><FormattedMessage id="home.technologies.12.desc"
 								values={{
 									a: chunks => <a href="http://blog.wyremski.pl/wprowadzenie-do-node-js/" title="Wprowadzenie do node.js" target="_blank" rel="noopener noreferrer">{chunks}</a>
 								}}
 							/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>React</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">React</h4>
 							<p><FormattedMessage id="home.technologies.13.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>Linux</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">Linux</h4>
 							<p><FormattedMessage id="home.technologies.14.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>MySQL</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">MySQL</h4>
 							<p><FormattedMessage id="home.technologies.15.desc"/></p>
 						</div>
-						<div className="home--technologies animatable fadeInUp">
-							<div className="home--technologies--image"></div>
-							<h4>GIT</h4>
+						<div className="home--technologie animatable fadeInUp">
+							<div className="home--technologie--image"></div>
+							<h4 className="display-1">GIT</h4>
 							<p><FormattedMessage id="home.technologies.16.desc"/></p>
 						</div>
 					</div>

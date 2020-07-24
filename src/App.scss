@@ -12,6 +12,9 @@ body{
 .section{
   padding: 50px 30px;
 }
+.content{
+  max-width: 900px; margin: auto;
+}
 .text-center{
   text-align: center;
 }
@@ -33,17 +36,17 @@ body{
 .color-light{
 	color: $color-light;
 }
-h1{
-  font-size: 2.2em; margin-bottom: 10px;
+.display-4{
+  font-size: 2.2em; font-family: 'Montserrat', sans-serif;
 }
-h2{
-  font-size: 2.2em; line-height: 1.6;  font-family: 'Montserrat', sans-serif;
+.display-3{
+  font-size: 2em; font-family: 'Montserrat', sans-serif; line-height: 1.4;
 }
-h3{
-  font-size: 1.5em;
+.display-2{
+  font-size: 1.5em; font-family: 'Montserrat', sans-serif;
 }
-h4{
-  font-size: 1.2em; line-height: 1.7; font-family: 'Montserrat', sans-serif;
+.display-1{
+  font-size: 1.2em; font-family: 'Montserrat', sans-serif; line-height: 1.6;
 }
 p, ul, ol{
   font-size: 0.85em; margin: 0 0 10px; line-height: 1.7;
@@ -96,16 +99,16 @@ body::-webkit-scrollbar-thumb {
 }
 /* style mobile */
 @media(max-width: 768px) {
-  h1{
+  .display-4{
     font-size: 1.8em;
   }
-  h2{
-    font-size: 1.5em; line-height: 1.3; margin-bottom: 10px;
+  .display-3{
+    font-size: 1.5em;
   }
-  h3{
+  .display-2{
     font-size: 1.2em;
   }
-  h4{
+  .display-1{
     font-size: 1em;
   }
 }
@@ -122,5 +125,8 @@ body::-webkit-scrollbar-thumb {
   }
   .color-light{
     color: inherit;
+  }
+  .d-print-none{
+    display: none !important;
   }
 }

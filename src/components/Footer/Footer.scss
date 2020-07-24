@@ -1,28 +1,25 @@
 @import './../../assets/scss/_colors.scss';
 
-#footer{
-	background-color: $color-black; padding: 30px 10px 10px; color: $color-light;
-	.footer--top--box{
-		flex-wrap: wrap; 
-	}
-	.footer--top{
-		flex: 0 0 calc(33% - 30px); margin: 15px; padding-bottom: 15px;
-	}
+.footer{
+	background-color: #000; padding: 30px 10px 10px; color: $color-light;
 	a{
 		color: $color-light; transition: all 0.2s;
 	}
 	a:hover, a:focus{
-		color: $color-white; 
-	}
-	#footer--social{
-		font-size: 2em;
-	}
-	.footer--bottom{
-		font-size: 0.85em; font-family:'Lucida Console'; padding: 30px 10px 10px;
+		color: #fff; 
 	}
 }
-#cookies-message{
-	color: $color-white; 
+.footer--top{
+	flex: 0 0 calc(33% - 30px); margin: 15px; padding-bottom: 15px;
+}
+.footer--social{
+	font-size: 2em;
+}
+.footer--bottom{
+	font-size: 0.85em; font-family:'Lucida Console'; padding: 30px 10px 10px;
+}
+.cookies-message{
+	color: #fff; 
 	padding: 12px; 
 	position: fixed; 
 	bottom:0px; 
@@ -41,11 +38,10 @@
 		color: $color-light;
 	}
 	a:hover, a:focus{
-		color: $color-white; 
-		text-decoration: underline;
+		color: #fff; 
 	}
-	#accept-cookies-checkbox{
-		color: $color-white;
+	.accept-cookies-checkbox{
+		color: #fff;
 		font-size: 11px;
 		font-family:'Lucida Console';
 		&:hover{
@@ -55,16 +51,16 @@
 }
 /* style mobile */
 @media(max-width: 768px) {
-	#footer .footer--top--box{
+	.footer .d-flex{
 		display: block; text-align: center;
 	}
 }
 /* style print */
 @media print {
-	#footer, #footer a{
-		color: $color-black;
+	.footer, .footer a{
+		color: #000;
 	}
-	#footer--social, #cookies-message{
+	.footer--social, .cookies-message{
 		display: none !important;
 	}
 }

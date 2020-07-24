@@ -41,17 +41,17 @@ class Scripts extends Component {
     const language = this.props.language;
     const intl = this.props.intl;
     return (
-      <main id="scripts">
-        <div className="section container">
-          <div className="text-center">
-            <h1><FormattedMessage id="scripts.title"/></h1>
-            <h3><FormattedMessage id="scripts.subtitle"/></h3>
+      <main className="scripts">
+        <div className="container">
+          <div className="text-center section">
+            <h1 className="display-4"><FormattedMessage id="scripts.title"/></h1>
+            <h3 className="display-1"><FormattedMessage id="scripts.subtitle"/></h3>
           </div>
           {!this.state.scripts.length && <Preloader/>}
           <div id="scripts">
             {this.state.scripts.map((item,i) =>
               <div className="animatable fadeInUp" key={i}>
-                <div className="d-flex scripts">
+                <div className="d-flex script">
                   {i%2===0 &&
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
                       <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
@@ -66,7 +66,6 @@ class Scripts extends Component {
                     <hr />
                     <p>{item.description[language]}</p>
                     <br />
-                    <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name}><h4><FormattedMessage id="scripts.see"/></h4></Link>
                   </div>
                   {i%2===1 &&
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">

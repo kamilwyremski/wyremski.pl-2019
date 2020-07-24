@@ -15,10 +15,10 @@ class Error404 extends Component {
   render() {
     return (
       <main>
-        <div id="error404">
+        <div className="error404">
           <div className="text-center section">
             <h1>4<span className="error404--tag">&lt;/&gt;</span>4</h1>
-            <p id="error404--code"><span className="error404--color1">Error404</span>(){'{'}<br />&nbsp;&nbsp;<span className="error404--color2">message</span> = "<span className="error404--color3">page not found</span>";<br />{'}'};</p>
+            <p className="error404--code"><span className="error404--color1">Error404</span>(){'{'}<br />&nbsp;&nbsp;<span className="error404--color2">message</span> = "<span className="error404--color3">page not found</span>";<br />{'}'};</p>
             <br /><br /><br />
             <h3><FormattedMessage id="error404.title"/></h3>
             <br />

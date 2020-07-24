@@ -169,10 +169,10 @@ class Contact extends Component {
     const intl = this.props.intl;
     return (
       <main>
-        <div id="contact">
+        <div className="contact">
           <div className="container section">
             <div className="text-center">
-              <h1><FormattedMessage id="contact.title"/></h1>
+              <h1 className="display-4"><FormattedMessage id="contact.title"/></h1>
               <br />
               <p><FormattedMessage id="contact.subtitle"
                 	values={{
@@ -181,7 +181,7 @@ class Contact extends Component {
               /></p>
             </div>
             <br />
-            <form method="post" onSubmit={this.handleSubmit} id="contact--form">
+            <form method="post" onSubmit={this.handleSubmit}>
               <input type="hidden" name="action" value="send_message" />
               <div className="row">
                 <label htmlFor="contact--email" className="col-form-label"><FormattedMessage id="contact.email"/></label>
@@ -198,7 +198,7 @@ class Contact extends Component {
                     aria-invalid={this.state.alertEmail}
                     aria-describedby="contact--alert--email"
                   />
-                  <p className={this.state.alertEmail ? 'invalid-feedback' : 'hidden'} id="contact--alert--email"><FormattedMessage id="contact.alertEmail"/></p>
+                  <p className={this.state.alertEmail ? 'invalid-feedback' : 'd-none'} id="contact--alert--email"><FormattedMessage id="contact.alertEmail"/></p>
                   <p><FormattedMessage id="contact.email.info"/></p>
                 </div>
               </div>
@@ -216,7 +216,7 @@ class Contact extends Component {
                     aria-invalid={this.state.alertSubject}
                     aria-describedby="contact--alert--subject"
                   />
-                  <p className={this.state.alertSubject ? 'invalid-feedback' : 'hidden'} id="contact--alert--subject"><FormattedMessage id="contact.alertSubject"/></p>
+                  <p className={this.state.alertSubject ? 'invalid-feedback' : 'd-none'} id="contact--alert--subject"><FormattedMessage id="contact.alertSubject"/></p>
                 </div>
               </div>
               <div className="row">
@@ -233,14 +233,14 @@ class Contact extends Component {
                     aria-invalid={this.state.alertMessage}
                     aria-describedby="contact--alert--message"
                   ></textarea>
-                  <p className={this.state.alertMessage ? 'invalid-feedback' : 'hidden'} id="contact--alert--message"><FormattedMessage id="contact.alertMessage"/></p>
+                  <p className={this.state.alertMessage ? 'invalid-feedback' : 'd-none'} id="contact--alert--message"><FormattedMessage id="contact.alertMessage"/></p>
                 </div>
               </div>
               <div className="row">
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
                   <p><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="nofollow noopener noreferrer">Terms of Service</a> apply.</small></p>
-                  <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'hidden'}><FormattedMessage id="contact.alertCaptcha"/></p>
+                  <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'd-none'}><FormattedMessage id="contact.alertCaptcha"/></p>
                 </div>
               </div>
               <div className="row">
@@ -257,7 +257,7 @@ class Contact extends Component {
                     />
                     <span className="checkmark"></span> <FormattedMessage id="contact.privacy"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'contact.privacy.link' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="contact.privacy.link"/></a>
                   </label>
-                  <p className={this.state.alertRules ? 'invalid-feedback' : 'hidden'} id="contact--alert--rules"><FormattedMessage id="contact.alertRules"/></p>
+                  <p className={this.state.alertRules ? 'invalid-feedback' : 'd-none'} id="contact--alert--rules"><FormattedMessage id="contact.alertRules"/></p>
                 </div>
               </div>
               <div className="row">
@@ -266,8 +266,8 @@ class Contact extends Component {
                   <button name="contact--submit" type="submit" className="btn btn-primary" onClick={this.onClickContactSubmit}><FormattedMessage id="contact.send"/></button>
                   {this.state.showPreloader && <Preloader/>}
                   <br />
-                  <h4 className={this.state.messageSend ? 'alert-success' : 'hidden'} role="alert"><FormattedMessage id="contact.messageSend"/></h4>
-                  <h4 className={this.state.messageNoSend ? 'alert-danger' : 'hidden'} role="alert"><FormattedMessage id="contact.messageNoSend"/></h4>
+                  <h4 className={this.state.messageSend ? 'alert-success' : 'd-none'} role="alert"><FormattedMessage id="contact.messageSend"/></h4>
+                  <h4 className={this.state.messageNoSend ? 'alert-danger' : 'd-none'} role="alert"><FormattedMessage id="contact.messageNoSend"/></h4>
                 </div>
               </div>
               <ReCAPTCHA

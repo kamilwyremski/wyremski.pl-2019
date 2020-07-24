@@ -39,13 +39,14 @@ class Projects extends Component {
     const language = this.props.language;
     return (
       <main>
-        <div id="projects">
+        <div className="projects">
           <div className="container section text-center">
-            <h1><FormattedMessage id="projects.title"/></h1>
-            <h3><FormattedMessage id="projects.subtitle"/></h3>
+            <h1 className="display-4"><FormattedMessage id="projects.title"/></h1>
+            <br />
+            <h3 className="display-1 content"><FormattedMessage id="projects.subtitle"/></h3>
           </div>
           {!this.state.projects.length && <Preloader/>}
-          <div id="projects--list" className="d-flex">
+          <div className="d-flex projects--list">
             {this.state.projects.map((item,i) =>
               <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project" itemScope itemType="http://schema.org/CollectionPage">
                 <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
@@ -65,7 +66,7 @@ class Projects extends Component {
             )}
           </div>
         </div>
-        <div className="text-center section container" id="projects--thankyou--box">
+        <div className="text-center section container projects--thankyou">
           <p>
             {this.state.projects.map((item,i,arr) => {
               if(arr.length - 1 === i)
@@ -74,7 +75,7 @@ class Projects extends Component {
             })}
           </p>
           <br />
-          <p id="projects--thankyou"><FormattedMessage id="projects.thankyou"/></p>
+          <p className="big"><FormattedMessage id="projects.thankyou"/></p>
           <p><FormattedMessage id="projects.thankyou2"/></p>
         </div>
       </main>

@@ -1,7 +1,7 @@
 @import './../../assets/scss/_colors.scss';
 
 .preloader {
-    background-color: $color-white; padding: 200px 0; justify-content: center; align-items:center;
+    background-color: #fff; padding: 200px 0; justify-content: center; align-items:center;
     .cssload-container {
         display: block;  width: 97px;
     }

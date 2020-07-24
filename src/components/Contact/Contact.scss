@@ -1,16 +1,10 @@
 @import './../../assets/scss/_colors.scss';
 
-#contact{
+.contact{
   background: $color-dark url("/upload/images/contact.jpg") no-repeat fixed center bottom / cover; 
   color: $color-light; padding: 50px 0;
   a{
-    color: $color-white;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
-  .has-error label, .text-danger{
-    color: $color-danger;
+    color: #fff;
   }
   .row{
     display: flex; flex-wrap: wrap;
@@ -22,10 +16,7 @@
     }
   }
   .invalid-feedback{
-    color: $color-danger; margin-top: 5px; margin-bottom:0;
-  }
-  .hidden{
-    display: none;
+    color: #dd5858; margin-top: 5px; margin-bottom:0;
   }
   .alert-success{
     background-color: #d4edda; color: #155724; padding: 10px; margin-top: 10px; font-size: 0.85em;
@@ -33,26 +24,26 @@
   .alert-danger{
     background-color: #f8d7da; color: #721c24; padding: 10px; margin-top: 10px; font-size: 0.85em;
   }
-  input[type=text], input[type=email], textarea{
-    background-color: transparent; color: $color-white; border: none; border-bottom: solid 1px $color-white; display: block; width: 100%; padding: 10px 0; margin-bottom: 5px; resize: none; font: inherit; font-size: 0.95em;
+  .form-control{
+    background-color: transparent; color: #fff; border: none; border-bottom: solid 1px #fff; display: block; width: 100%; padding: 10px 0; margin-bottom: 5px; resize: none; font: inherit; font-size: 0.95em;
     &:focus{
       outline: none; border-bottom: solid 2px $color-primary; margin-bottom: 4px;
     }
   }
-  input:-webkit-autofill, textarea:-webkit-autofill{
-    background-color: transparent !important; color: $color-white !important;
+  .form-control:-webkit-autofill{
+    background-color: transparent !important; color: #fff !important;
   }
   input[type=checkbox]{
     position: absolute;  opacity: 0;  cursor: pointer;  height: 0;  width: 0;
   }
   .checkmark {
-    position: absolute;  top: -2px;  left: 0;  height: 20px;  width: 20px;  background-color: $color-white;
+    position: absolute;  top: -2px;  left: 0;  height: 20px;  width: 20px;  background-color: #fff;
   }
   input[type=checkbox]:checked ~ .checkmark {
     background-color: $color-primary;
   }
   .checkmark:after {
-    content: "";  position: absolute;  display: none; left: 7px;  top: 3px;  width: 5px;  height: 10px;  border: solid $color-white;  border-width: 0 3px 3px 0;
+    content: "";  position: absolute;  display: none; left: 7px;  top: 2px;  width: 5px;  height: 10px;  border: solid #fff;  border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
   input[type=checkbox]:checked ~ .checkmark:after {
@@ -62,7 +53,7 @@
     position: relative; padding-left: 30px; font-size: 0.9em;
   }
   [type=submit]{
-    background-color: rgba(0,0,0,0.2); transition: all 0.4s; border: solid 2px $color-primary; padding: 12px 24px; text-transform: uppercase; color: $color-white; cursor: pointer;
+    background-color: rgba(0,0,0,0.2); transition: all 0.4s; border: solid 2px $color-primary; padding: 12px 24px; text-transform: uppercase; color: #fff; cursor: pointer;
   }
   [type=submit]:hover{
     background-color: $color-primary;
@@ -79,28 +70,30 @@
 }
 /* style mobile */
 @media(max-width: 650px) {
-	#contact .row{
-    display: block;
-	}
-	#contact .row .col-form-label{
-    text-align: left;
-	}
+	.contact{
+    [type=submit]{
+      display: block; width: 100%;
+    }
+    .row{
+      display: block;
+      .col-form-label{
+        text-align: left;
+      }
+    }
+  }
 }
 /* style print */
 @media print {
-  #contact{
+  .contact{
     padding:0; color: inherit;
     p a, [type=submit]{
       color: inherit;
     }
-    input[type=text], input[type=email], textarea{
+    .form-control{
       border-color: black;
     }
     .checkmark{
       border: solid 1px black;
     }
-  }
-  #g-recaptcha{
-    display: none;
   }
 }
