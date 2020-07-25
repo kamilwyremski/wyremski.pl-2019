@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.scss';
 import './assets/css/fontello.css';
-import './assets/css/fonts.css';
 
 import {IntlProvider} from "react-intl";
 import { messages } from './Lang';
