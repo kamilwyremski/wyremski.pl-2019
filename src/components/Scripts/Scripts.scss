@@ -6,7 +6,7 @@
 		flex: 0 0 50%; background-color: $color-light;	overflow: hidden;
 	}
 	.scripts--description{
-		padding: 50px 10px 20px;     display: flex;    flex-flow: column;    align-items: center;    justify-content: center;
+		padding: 20px;     display: flex;    flex-flow: column;    align-items: center;    justify-content: center;
 	}
 	.script{
 		h2{
@@ -28,7 +28,7 @@
 			}
 		}
 		p{
-			max-width: 250px;
+			max-width: 250px; margin-bottom:0;
 		}
 	}
 }
