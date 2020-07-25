@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import {injectIntl,FormattedMessage} from 'react-intl';
 import LazyLoad from 'react-image-lazy-load';
-import Preloader from './../Preloader/Preloader.js';
+import scripts from './scripts.json';
 
 import './Scripts.scss';
 
@@ -15,26 +15,8 @@ class Scripts extends Component {
   }
 
   componentDidMount() {
-    this.mounted = true;
-    fetch('/json/scripts.json')
-      .then(response => response.json())
-      .then(data => {
-        if(this.mounted) {
-          setTimeout(() => {
-            this.setState({ scripts: data.scripts });
-            if(!window.scrollY){
-              window.scrollTo(0, 50);
-              window.scrollTo(0, 0);
-            }
-          }, 100);
-        }
-      }
-    );
+    this.setState({ scripts: scripts });
     this.props.handleLanguage(this.props.language,'scripts');
-  }
-
-  componentWillUnmount(){
-    this.mounted = false;
   }
 
   render() {
@@ -47,14 +29,13 @@ class Scripts extends Component {
             <h1 className="display-4"><FormattedMessage id="scripts.title"/></h1>
             <h3 className="display-1"><FormattedMessage id="scripts.subtitle"/></h3>
           </div>
-          {!this.state.scripts.length && <Preloader/>}
           <div id="scripts">
             {this.state.scripts.map((item,i) =>
-              <div className="animatable fadeInUp" key={i}>
+              <div className={ i<2 ? "" : "animatable fadeInUp"} key={i}>
                 <div className="d-flex script">
                   {i%2===0 &&
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
-                      <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
+                      <LazyLoad height={300} width={450} imageProps={{
                         src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
                         alt: item.name,
                         ref: "image"

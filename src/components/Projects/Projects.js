@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {FormattedMessage} from 'react-intl';
 import LazyLoad from 'react-image-lazy-load';
-import Preloader from './../Preloader/Preloader.js';
+import projects from './projects.json';
 
 import './Projects.scss';
 
@@ -14,25 +14,8 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    this.mounted = true;
-    fetch('/json/projects.json')
-      .then(response => response.json())
-      .then(data => {
-        if(this.mounted) {
-          setTimeout(() => {
-            this.setState({ projects: data.projects });
-            if(!window.scrollY){
-              window.scrollTo(0, 50);
-              window.scrollTo(0, 0);
-            }
-          }, 100);
-        }
-      });
+    this.setState({ projects: projects });
     this.props.handleLanguage(this.props.language,'projects');
-  }
-
-  componentWillUnmount(){
-    this.mounted = false;
   }
 
   render() {
@@ -45,11 +28,10 @@ class Projects extends Component {
             <br />
             <h3 className="display-1 content"><FormattedMessage id="projects.subtitle"/></h3>
           </div>
-          {!this.state.projects.length && <Preloader/>}
           <div className="d-flex projects--list">
             {this.state.projects.map((item,i) =>
-              <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className="project" itemScope itemType="http://schema.org/CollectionPage">
-                <LazyLoad height={350} offsetVertical={300} loaderImage imageProps={{
+              <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className={ i<4 ? "project" : "project animatable fadeInUp"} itemScope itemType="http://schema.org/CollectionPage">
+                <LazyLoad height={350} imageProps={{
                   src: '/upload/projects/'+item.image,
                   alt: item.name,
                   ref: "image",
