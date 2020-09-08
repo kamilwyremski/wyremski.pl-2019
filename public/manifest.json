@@ -2,7 +2,7 @@
   "name": "Kamil Wyremski - Full Stack Web developer",
   "short_name": "wyremski.pl",
   "start_url": "https://wyremski.pl",
-  "display": "standalone",
+  "display": "fullscreen",
   "description": "Tworzenie nowoczesnych, zgodnych z SEO, bezpiecznych oraz responsywnych stron internetowych. Gotowe skrypty stron www.",
   "lang": "pl-PL",
   "icons": [
