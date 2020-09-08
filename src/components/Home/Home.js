@@ -192,7 +192,7 @@ class Home extends Component {
 							<h4 className="display-1">Symfony</h4>
 							<p><FormattedMessage id="home.technologies.3.desc"
 								values={{
-									a: chunks => <a href="http://blog.wyremski.pl/framework-symfony/" title="Symfony" target="_blank" rel="noopener noreferrer">{chunks}</a>
+									a: chunks => <a href="http://blog.wyremski.pl/framework-symfony/" title="Symfony framework" target="_blank" rel="noopener noreferrer">{chunks}</a>
 								}}
 							/></p>
 						</div>
@@ -227,11 +227,7 @@ class Home extends Component {
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
 							<h4 className="display-1">Angular</h4>
-							<p><FormattedMessage id="home.technologies.8.desc"
-								values={{
-									a: chunks => <a href="http://blog.wyremski.pl/angularjs-framework-do-javascript/" title="AngularJS" target="_blank" rel="noopener noreferrer">{chunks}</a>
-								}}
-							/></p>
+							<p><FormattedMessage id="home.technologies.8.desc"/></p>
 						</div>
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
