@@ -239,7 +239,7 @@ class Contact extends Component {
               <div className="row">
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
-                  <p><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="nofollow noopener noreferrer">Terms of Service</a> apply.</small></p>
+                  <p><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow noopener noreferrer" title="reCAPTCHA Privacy Policy">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="nofollow noopener noreferrer" title="reCAPTCHA Terms of Service">Terms of Service</a> apply.</small></p>
                   <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'd-none'}><FormattedMessage id="contact.alertCaptcha"/></p>
                 </div>
               </div>
