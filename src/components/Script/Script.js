@@ -272,7 +272,7 @@ class Script extends Component {
                   <p><FormattedMessage id="script.demo.list"/> <strong>{list_domains}</strong></p>
                 }
                 <p><FormattedMessage id="script.demo.manual" values={{
-                  a: chunks => <a href="http://blog.wyremski.pl/instrukcja-instalacji-i-konfiguracji-skryptow/" title="Instrukcja instalacji i konfiguracji skryptów" target="_blank" rel="noopener noreferrer">{chunks}</a>,
+                  a: chunks => <a href="https://blog.wyremski.pl/instrukcja-instalacji-i-konfiguracji-skryptow/" title="Instrukcja instalacji i konfiguracji skryptów" target="_blank" rel="noopener noreferrer">{chunks}</a>,
                   breakingLine: <br />
                 }}/></p>
               </div>
