@@ -4,20 +4,20 @@
     "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/122-skrypt-ogloszen-motoryzacyjnych-motonotice.html",
     "photos": 12,
     "list_domains": [
-      "taniomoto.pl",
       "vapetrade.pl",
       "lanczujemy.pl",
-      "benbzu.pl",
+      "bebzu.pl",
       "cesjeleasingu.pl",
-      "pomocdlaseniorow.pl"
+      "pomocdlaseniorow.pl",
+      "klasyki.net"
     ]
   },
   "pl": {
-    "title": "MOTONOTICE - skrypt ogłoszeń online",
-    "description": "MOTONOTICE to skrypt strony www z ogłoszeniami lokalnymi, krajowymi lub z całego świata",
-    "script.header": "Skrypt strony z ogłoszeniami MotoNotice",
-    "script.subheader": "Stwórz własny portal z ogłoszeniami online",
-    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>MOTONOTICE to skrypt umożliwiający stworzenie własnej strony z ogłoszeniami online w każdej kategorii związanej z motoryzacją: z samochodami, motocyklami, ciężarówkami, autobusami, rolnictwem albo po prostu z częściami samochodowymi. Dzięki uniwersalnej budowie może być użyty także jako strona z bazą noclegów, nieruchomości lub katalog firm. Jest on zbudowany zgodnie z obecnymi standardami tworzenia stron www. MotoNotice jest bardzo łatwy w obsłudze, zarówno przez administratora, jak i klientów serwisu.</p><p>Skrypt umożliwia stworzenie strony lokalnej, ogólnopolskiej lub międzynarodowej. Dostępnych jest bardzo wiele opcji konfiguracyjnych, dzięki czemu można dostosować go do indywidualnych wymagań. Obsługuje <strong>automatyczne płatności</strong> za wystawianie i promowanie ogłoszeń w systemach Dotpay, Przelewy24 oraz PayPal.</p>",
+    "title": "MOTONOTICE - skrypt ogłoszeń motoryzacyjnych",
+    "description": "MOTONOTICE to skrypt strony www z ogłoszeniami z branży motoryzacyjnej",
+    "script.header": "Skrypt strony z ogłoszeniami motoryzacyjnymi MotoNotice",
+    "script.subheader": "Stwórz własny portal z ogłoszeniami motoryzacyjnymi",
+    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>MOTONOTICE to skrypt umożliwiający stworzenie własnej strony z ogłoszeniami online w każdej kategorii związanej z motoryzacją: z samochodami, motocyklami, ciężarówkami, autobusami, rolnictwem albo po prostu z częściami samochodowymi. Jest on zbudowany zgodnie z obecnymi standardami tworzenia stron www. MotoNotice jest bardzo łatwy w obsłudze, zarówno przez administratora, jak i klientów serwisu.</p><p>Skrypt umożliwia stworzenie strony lokalnej, ogólnopolskiej lub międzynarodowej. Dostępnych jest bardzo wiele opcji konfiguracyjnych, dzięki czemu można dostosować go do indywidualnych wymagań. Obsługuje <strong>automatyczne płatności</strong> za wystawianie i promowanie ogłoszeń w systemach Dotpay, Przelewy24 oraz PayPal.</p>",
     "script.function.1": "<h4>Płatności</h4><p>Obsługa <strong>systemów płatności Dotpay</strong>, <strong>Przelewy24</strong> oraz <strong>PayPal</strong> za wystawianie i promowanie ogłoszenia, automatyczne potwierdzanie płatności</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
     "script.function.3": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie lokalizacji ogłoszeń na mapie oraz <strong>wyszukiwanie wg odległości</strong></p>",
@@ -39,14 +39,14 @@
     "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>motonotice.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
     "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "MOTONOTICE jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
-    "script.desc3": "<p>Znalazłeś lepszy skrypt dla ogłoszeń online?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>MotoNotice już dziś może być Twój!</h3>"
+    "script.desc3": "<p>Znalazłeś lepszy skrypt dla ogłoszeń motoryzacyjnych?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>MotoNotice już dziś może być Twój!</h3>"
   },
   "en":{
-    "title": "MOTONOTICE - script of online classifieds",
-    "description": "MOTONOTICE is a modern script that allows you to create website with online classifieds",
-    "script.header": "Website script with online announcements",
-    "script.subheader": "Create your own modern website with online announcements!",
-    "script.desc1": "<h2>Join to satisfied users!</h2><p>MOTONOTICE allows you to easily create your own website with online automotive announcements.</p><p>With MOTONOTICE you can create website with classifieds in every category related to the automotive industry: with cars, motorcycles, trucks, buses, agriculture or simply with car parts. Thanks to its universal construction, it can also be used as a website with accommodation, real estate or a business directory. There is a lof of configuration options so you can customize it to individual requirements. Includes added and promo ads selling system which supports <strong>automatic payments</strong> via Dotpay, Przelewy24 and PayPal.</p>",
+    "title": "MOTONOTICE - script of online classifieds from the automotive industry",
+    "description": "MOTONOTICE is a modern script that allows you to create website with online classifieds from the automotive industry",
+    "script.header": "Website script with online classifieds from the automotive industry",
+    "script.subheader": "Create your own modern website with online announcements from the automotive industry!",
+    "script.desc1": "<h2>Join to satisfied users!</h2><p>MOTONOTICE allows you to easily create your own website with online automotive announcements.</p><p>With MOTONOTICE you can create website with classifieds in every category related to the automotive industry: with cars, motorcycles, trucks, buses, agriculture or simply with car parts. There is a lof of configuration options so you can customize it to individual requirements. Includes added and promo ads selling system which supports <strong>automatic payments</strong> via Dotpay, Przelewy24 and PayPal.</p>",
     "script.function.1": "<h4>Payments</h4><p>Supports <strong>payment systems Dotpay</strong>, <strong>Przelewy24</strong> and <strong>PayPal</strong> for added and promoting offers, automatic confirmation of payments</p>",
     "script.function.2": "<h4>RWD</h4><p><strong>Responsive template</strong> compatible with HTML5 - the page is displayed correctly on the mobile devices (such as mobile phones, tablets)</p>",
     "script.function.3": "<h4>Google Maps</h4><p>Integration with Google Map lets you select offers from the map, easy to find or <strong>search offers by the distance</strong></p>",
@@ -68,6 +68,6 @@
     "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>motonotice.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "The script have a lot of tools that are not available in other similar scripts!",
-    "script.desc3": "<p>You will not find better script with online classifieds!{breakingLine}We Guarantee!</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"
+    "script.desc3": "<p>You will not find better script with classifieds from the automotive industry!{breakingLine}We Guarantee!</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"
   }
 }

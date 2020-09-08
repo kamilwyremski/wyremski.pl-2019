@@ -58,7 +58,7 @@
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig 3</strong>.",
     "script.admin_panel_description": "To script is included very extensive Admin Panel that allows to manage settings page, view detailed statistics and edit added announcements",
     "script.demo.desc": "DEMO version: <strong><a>jobnotice.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>motonotice.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>jobnotice.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "JOBNOTICE will make it easier for your clients to find a job and you to earn income!",
     "script.desc3": "<p>Did you find a better website script for job offers?{breakingLine}...sure not! There simply isn't one...</p>{breakingLine}<h3>JobNotice could be yours today!</h3>"
