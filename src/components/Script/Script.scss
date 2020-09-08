@@ -80,6 +80,9 @@
 }
 .script--info{
 	padding: 20px;
+	p{
+		margin-bottom:0;
+	}
 }
 .script--buy{
 	display: inline-block; padding: 10px 20px; border: solid 3px $color-primary;  transition: all 0.2s; font-size: 1.3em; margin-top: 20px; color: $color-primary !important; font-weight: bold;
