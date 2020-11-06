@@ -99,13 +99,13 @@
 		"image" : "multino.jpg"
 	},
 	{
-		"name" : "PriceMonit",
+		"name" : "IT Works Better",
 		"description" : {
-			"pl" : "Oprogramowanie przeznaczone do monitorowania i analizy cen produktów w Allegro",
-			"en" : "Software designed for monitoring and price analysis"
+			"pl" : "Strona www zespołu programistów Backend i Frontend (aplikacji webowych i mobilnych) oraz grafików i specjalistów SEO",
+			"en" : "Website of a team of Backend and Frontend programmers (web and mobile applications) as well as graphic designers and SEO specialists"
 		},
-		"url" : "pricemonit.pl",
-		"image" : "pricemonit.jpg"
+		"url" : "itworksbetter.net",
+		"image" : "itworksbetter.jpg"
 	},
 	{
 	  "name" : "Strefa.co.uk",
