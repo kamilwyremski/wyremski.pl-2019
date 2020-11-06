@@ -4,15 +4,13 @@
     "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/57-skrypt-typu-demotywatory-demoty2.html",
     "photos": 12,
     "list_domains": [
-      "pokazfure.pl",
       "durnotki.pl",
       "zarzucaj.pl",
       "kontrowersyjny.pl",
-      "barcareal.pl",
       "smishno.net",
       "mistrzparkowania.pl",
       "memhub.pl",
-      "strefabeczki.pl"
+      "zmemowani.pl"
     ]
   },
   "pl": {
@@ -38,8 +36,8 @@
     "script.requirements.3": "Możliwość ustawienia zadań CronTab",
     "script.requirements_bottom": "Skrypt jest stworzony na bardzo szybkim i łatwym w modyfikacjach <strong>systemie szablonów Twig2</strong>.",
     "script.admin_panel_description": "Do strony jest dołączony bardzo rozbudowany Panel Administracyjny, który umożliwia pełne zarządzanie ustawieniami strony, podgląd szczegółowych statystyk oraz zarządzanie obrazkami, tagami, kategoriami i użytkownikami",
-    "script.demo.desc": "DEMO version: <strong><a>demoty2.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>demoty2.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
+    "script.demo.desc": "DEMO version: <strong><a>demoty2.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>demoty2.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "Demoty2 są wyposażone w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt typu demotywatory?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Demoty2 już dzis mogą być Twoje!</h3>"
@@ -67,8 +65,8 @@
     "script.requirements.3": "Ability to set the tasks crontab",
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig</strong>.",
     "script.admin_panel_description": "To script is included very extensive Admin Panel that allows to manage settings page, view detailed statistics and manage pictures, tags, categories, users",
-    "script.demo.desc": "DEMO version: <strong><a>demoty2.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>demoty2.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
+    "script.demo.desc": "DEMO version: <strong><a>demoty2.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>demoty2.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "The script have a lot of tools that are not available in other similar scripts!",
     "script.desc3": "<p>You will not find better script with demotivators and memes.{breakingLine}We Guarantee!</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"

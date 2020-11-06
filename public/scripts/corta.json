@@ -27,8 +27,8 @@
     "script.requirements.3": "Możliwość ustawienia zadań CronTab",
     "script.requirements_bottom": "Skrypt jest stworzony na bardzo szybkim i łatwym w modyfikacjach <strong>systemie szablonów Twig2</strong>.",
     "script.admin_panel_description": "Do strony jest dołączony bardzo rozbudowany Panel Administracyjny, który umożliwia zarządzanie ustawieniami strony, podgląd szczegółowych statystyk oraz logów serwisu",
-    "script.demo.desc": "DEMO skryptu: <strong><a>corta.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>corta.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
+    "script.demo.desc": "DEMO skryptu: <strong><a>corta.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>corta.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
     "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "CORTA - skrypt do skracania linków URL - zarabiaj pasywnie!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt skracacza linków online?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Corta już dziś może być Twoja!</h3>"
@@ -53,8 +53,8 @@
     "script.requirements.3": "Ability to set the tasks crontab",
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig2</strong>.",
     "script.admin_panel_description": "The site has a very extensive Administrative Panel attached, which allows you to manage page settings, view detailed statistics and site logs",
-    "script.demo.desc": "DEMO version: <strong><a>corta.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>corta.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
+    "script.demo.desc": "DEMO version: <strong><a>corta.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>corta.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "CORTA - script for shortening URL links - earn passive!",
     "script.desc3": "<p>Have you found a better online link shortener script?{breakingLine}...certainly not! There is simply no such ...</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"

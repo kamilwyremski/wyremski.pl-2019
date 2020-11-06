@@ -28,8 +28,8 @@
     "script.requirements.3": "Możliwość ustawienia zadań CronTab",
     "script.requirements_bottom": "Skrypt jest stworzony na bardzo szybkim i łatwym w modyfikacjach <strong>systemie szablonów Twig 3</strong>.",
     "script.admin_panel_description": "Do skryptu dołączony jest bardzo rozbudowany Panel Administracyjny, który umożliwia zarządzanie ustawieniami strony, podgląd szczegółowych statystyk oraz logów systemu",
-    "script.demo.desc": "DEMO skryptu: <strong><a>jobnotice.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>jobnotice.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
+    "script.demo.desc": "DEMO skryptu: <strong><a>jobnotice.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO Panelu Administracyjnego: <strong><a>jobnotice.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
     "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "JOBNOTICE ułatwi Twoim klientom znalezienie pracy a Tobie uzyskanie dochodu!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt strony www z ofertami pracy?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>JobNotice już dziś może być Twój!</h3>"
@@ -57,8 +57,8 @@
     "script.requirements.3": "Ability to set the tasks crontab",
     "script.requirements_bottom": "This script is created with the very fast <strong>template engine Twig 3</strong>.",
     "script.admin_panel_description": "To script is included very extensive Admin Panel that allows to manage settings page, view detailed statistics and edit added announcements",
-    "script.demo.desc": "DEMO version: <strong><a>jobnotice.wyremski.pl</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>jobnotice.wyremski.pl/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
+    "script.demo.desc": "DEMO version: <strong><a>jobnotice.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>jobnotice.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "JOBNOTICE will make it easier for your clients to find a job and you to earn income!",
     "script.desc3": "<p>Did you find a better website script for job offers?{breakingLine}...sure not! There simply isn't one...</p>{breakingLine}<h3>JobNotice could be yours today!</h3>"
