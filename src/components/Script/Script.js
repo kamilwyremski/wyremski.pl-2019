@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {FormattedMessage} from 'react-intl';
+import {injectIntl, FormattedMessage} from 'react-intl';
 import LazyLoad from 'react-image-lazy-load';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
@@ -9,7 +9,7 @@ import Preloader from './../Preloader/Preloader.js';
 import './Script.scss';
 
 class Script extends Component {
-  constructor(props) {
+  constructor({intl, ...props}) {
     super(props);
     this.state = {
       script: false,
@@ -50,7 +50,9 @@ class Script extends Component {
         <div className="animatable fadeInUp">
           <LazyLoad height={250} width={200} offsetVertical={300} loaderImage imageProps={{
             src: "/upload/scripts/"+this.state.script_name+"/f"+i+".jpg",
-            alt: this.state.script_name
+            alt: this.state.script_name,
+            width: 200,
+            height: 250
           }} />
           <FormattedMessage id={"script.function."+i}  values={{
               h4: chunks => <h4>{chunks}</h4>,
@@ -67,7 +69,7 @@ class Script extends Component {
   createGallery = () => {
     let gallery = []
     for (let i = 1; i <= this.state.script.photos; i++) {
-      gallery.push(<button className="gallery--photo" key={i}  onClick={() => this.setState({ lightboxIsOpen: true, photoIndex: i-1 })}>
+      gallery.push(<button className="gallery--photo" aria-label={this.props.intl.formatMessage({ id: 'script.gallery' })+" "+this.state.script_name} key={i} onClick={() => this.setState({ lightboxIsOpen: true, photoIndex: i-1 })}>
         <div className="animatable fadeInUp">
           <LazyLoad offsetVertical={300} loaderImage imageProps={{
             src: "/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg",
@@ -118,7 +120,9 @@ class Script extends Component {
                 <h3 className="display-1"><FormattedMessage id="script.subheader"/></h3>
                 <LazyLoad offsetVertical={300} loaderImage imageProps={{
                   src: "/upload/scripts/"+script_name+"/banner_top.png",
-                  alt: script_name
+                  alt: script_name,
+                  width: 994,
+                  height: 285
                 }} />
             	</div>
             </div>
@@ -137,7 +141,9 @@ class Script extends Component {
         			<div className="features">
                 <LazyLoad height={100} width={100} offsetVertical={300} loaderImage imageProps={{
                   src: "/upload/scripts/clock.png",
-                  alt: "Clock"
+                  alt: "Clock",
+                  width: 100,
+                  height: 100
                 }} />
         			  <FormattedMessage id="script.feature.1" values={{
                   h4: chunks => <h4>{chunks}</h4>,
@@ -148,7 +154,9 @@ class Script extends Component {
         			<div className="features">
                 <LazyLoad height={100} width={100} offsetVertical={300} loaderImage imageProps={{
                   src: "/upload/scripts/main-ok.png",
-                  alt: "OK"
+                  alt: "OK",
+                  width: 100,
+                  height: 100
                 }} />
         				<FormattedMessage id="script.feature.2" values={{
                   h4: chunks => <h4>{chunks}</h4>,
@@ -159,7 +167,9 @@ class Script extends Component {
         			<div className="features">
                 <LazyLoad height={100} width={100} offsetVertical={300} loaderImage imageProps={{
                   src: "/upload/scripts/help.png",
-                  alt: "Help"
+                  alt: "Help",
+                  width: 100,
+                  height: 100
                 }} />
         				<FormattedMessage id="script.feature.3" values={{
                   h4: chunks => <h4>{chunks}</h4>,
@@ -181,7 +191,9 @@ class Script extends Component {
             		<div className="script--requirements">
                   <LazyLoad height={200} width={142} offsetVertical={300} loaderImage imageProps={{
                     src: "/upload/scripts/php7.png",
-                    alt: "Logo PHP7"
+                    alt: "Logo PHP7",
+                    width: 142,
+                    height: 200
                   }} />
                   <h4>PHP</h4>
             			<p><FormattedMessage id="script.requirements.1"/></p>
@@ -189,7 +201,9 @@ class Script extends Component {
             		<div className="script--requirements">
                   <LazyLoad height={200} width={168} offsetVertical={300} loaderImage imageProps={{
                     src: "/upload/scripts/mysql.png",
-                    alt: "Logo MySQL"
+                    alt: "Logo MySQL",
+                    width: 168,
+                    height: 200
                   }} />
                   <h4>MySQL</h4>
             			<p><FormattedMessage id="script.requirements.2"/></p>
@@ -197,7 +211,9 @@ class Script extends Component {
             		<div className="script--requirements">
                   <LazyLoad height={200} width={188} offsetVertical={300} loaderImage imageProps={{
                     src: "/upload/scripts/crontab.png",
-                    alt: "Logo CronTab"
+                    alt: "Logo CronTab",
+                    width: 188,
+                    height: 200
                   }} />
                   <h4>CronTab</h4>
             			<p><FormattedMessage id="script.requirements.3"/></p>
@@ -211,7 +227,9 @@ class Script extends Component {
             	<h2 className="display-3"><FormattedMessage id="script.admin_panel"/></h2>
               <LazyLoad height={129} width={345} offsetVertical={300} loaderImage imageProps={{
                 src: "/upload/scripts/admin.png",
-                alt: "Admin Panel created by Kamil Wyremski"
+                alt: "Admin Panel created by Kamil Wyremski",
+                width: 345,
+                height: 129
               }} />
             	<p className="content"><FormattedMessage id="script.admin_panel_description"/></p>
             </div>
@@ -219,7 +237,9 @@ class Script extends Component {
             	<h2 className="display-3"><FormattedMessage id="script.language.title"/></h2>
               <LazyLoad height={286} width={258} offsetVertical={300} loaderImage imageProps={{
                 src: "/upload/scripts/language.png",
-                alt: "Flags of countries in the world"
+                alt: "Flags of countries in the world",
+                width: 258,
+                height: 286
               }} />
               <FormattedMessage id="script.language.desc" values={{
                 p: chunks => <p className="content">{chunks}</p>,
@@ -300,4 +320,4 @@ class Script extends Component {
   }
 }
 
-export default Script;
+export default injectIntl(Script);

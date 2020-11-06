@@ -25,17 +25,18 @@ class Projects extends Component {
         <div className="projects">
           <div className="container section text-center">
             <h1 className="display-4"><FormattedMessage id="projects.title"/></h1>
-            <br />
-            <h3 className="display-1 content"><FormattedMessage id="projects.subtitle"/></h3>
+            <h2 className="display-1 content"><FormattedMessage id="projects.subtitle"/></h2>
           </div>
           <div className="d-flex projects--list">
             {this.state.projects.map((item,i) =>
               <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className={ i<4 ? "project" : "project animatable fadeInUp"} itemScope itemType="http://schema.org/CollectionPage">
-                <LazyLoad height={350} imageProps={{
+                <LazyLoad height={350} width={350} imageProps={{
                   src: '/upload/projects/'+item.image,
                   alt: item.name,
                   ref: "image",
-                  itemProp: "image"
+                  itemProp: "image",
+                  width: 350,
+                  height: 350
                 }} />
                 <div className="project--description text-center">
                   <div>
