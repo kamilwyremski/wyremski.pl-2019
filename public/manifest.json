@@ -44,7 +44,8 @@
     {
       "src": "upload/images/favicon/favicon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "theme_color": "#89b1a8",
