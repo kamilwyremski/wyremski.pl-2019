@@ -27,7 +27,7 @@ class Scripts extends Component {
         <div className="container">
           <div className="text-center section">
             <h1 className="display-4"><FormattedMessage id="scripts.title"/></h1>
-            <h3 className="display-1"><FormattedMessage id="scripts.subtitle"/></h3>
+            <h2 className="display-1"><FormattedMessage id="scripts.subtitle"/></h2>
           </div>
           <div id="scripts">
             {this.state.scripts.map((item,i) =>
@@ -38,7 +38,9 @@ class Scripts extends Component {
                       <LazyLoad height={300} width={450} imageProps={{
                         src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
                         alt: item.name,
-                        ref: "image"
+                        ref: "image",
+                        width: 450,
+                        height: 300
                       }} />
                     </Link>
                   }
@@ -46,7 +48,6 @@ class Scripts extends Component {
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name}><h2>{item.name}</h2></Link>
                     <hr />
                     <p>{item.description[language]}</p>
-                    <br />
                   </div>
                   {i%2===1 &&
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
