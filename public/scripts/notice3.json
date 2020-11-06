@@ -3,7 +3,9 @@
     "functions": 12,
     "buy_url": "https://skrypty.sattel.pl/skrypty-stron-www/191-skrypt-ogloszeniowy-notice3.html",
     "photos": 12,
-    "list_domains": []
+    "list_domains": [
+      "fantbi.pl"
+    ]
   },
   "pl": {
     "title": "NOTICE3 - skrypt ogłoszeń online",
@@ -57,8 +59,8 @@
     "script.requirements.3": "Ability to set the tasks crontab",
     "script.requirements_bottom": "The script is based on the well-known <strong>Symfony 5 framework</strong>",
     "script.admin_panel_description": "The script includes a very extensive Administration Panel, which allows you to manage page settings, view classifieds, users, change categories, regions and filters, and add blog posts",
-    "script.demo.desc": "DEMO version: <strong><a>notice3.itworksbetter.net</a></strong>",
-    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>notice3.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
+    "script.demo.desc": "DEMO version: <strong><a>notice3en.itworksbetter.net</a></strong>",
+    "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>notice3en.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "The script have a lot of tools that are not available in other similar scripts!",
     "script.desc3": "<p>You will not find better script with online classifieds!{breakingLine}We Guarantee!</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"
