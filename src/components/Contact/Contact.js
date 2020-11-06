@@ -173,7 +173,6 @@ class Contact extends Component {
           <div className="container section">
             <div className="text-center">
               <h1 className="display-4"><FormattedMessage id="contact.title"/></h1>
-              <br />
               <p><FormattedMessage id="contact.subtitle"
                 	values={{
                     a: chunks => <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' }) }>{chunks}</a>
