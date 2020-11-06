@@ -55,7 +55,7 @@ class Home extends Component {
 					<div className="home--header--inside">
 						<h1 className="display-4">Kamil Wyremski</h1>
 						<p className="home--header--typed">{this.state.header_typed}<span className="home--header--typed-cursor">|</span></p>
-						<h3 className="display-1"><FormattedMessage id="home.header.text" values={{breakingLine: <br />}}/></h3>
+						<h2 className="display-1"><FormattedMessage id="home.header.text" values={{breakingLine: <br />}}/></h2>
 					</div>
 				</header>
 				<section className="container section">
@@ -103,8 +103,8 @@ class Home extends Component {
 							<i className="icon-mail-alt" aria-hidden="true"></i>
 							<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
 						</a>
-						<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer" aria-hidden="true">
-							<i className="icon-link-ext-alt"></i>
+						<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer">
+							<i className="icon-link-ext-alt" aria-hidden="true"></i>
 							<span className="sr-only"><FormattedMessage id="footer.blog"/></span>
 						</a>
 					</div>
