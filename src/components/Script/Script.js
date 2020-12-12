@@ -70,7 +70,8 @@ class Script extends Component {
     for (let i = 1; i <= this.state.script.photos; i++) {
       gallery.push(<button className="gallery--photo" aria-label={this.props.intl.formatMessage({ id: 'script.gallery' })+" "+this.state.script_name} key={i} onClick={() => this.setState({ lightboxIsOpen: true, photoIndex: i-1 })}>
         <div className="animatable fadeInUp">
-          <img src={"/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg"}
+          <img width={i<2 ? 750 : i < 8 ? 370 : 245} height={i<2 ? 427 : i < 8 ? 211 : 140}
+            src={"/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg"}
             alt={this.state.script_name}
             className="img"
             loading="lazy"
