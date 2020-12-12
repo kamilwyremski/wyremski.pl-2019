@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import {injectIntl,FormattedMessage} from 'react-intl';
-import LazyLoad from 'react-image-lazy-load';
 import scripts from './scripts.json';
 
 import './Scripts.scss';
@@ -35,13 +34,13 @@ class Scripts extends Component {
                 <div className="d-flex script">
                   {i%2===0 &&
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
-                      <LazyLoad height={300} width={450} imageProps={{
-                        src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
-                        alt: item.name,
-                        ref: "image",
-                        width: 450,
-                        height: 300
-                      }} />
+                      <img height="300" width="450"
+                        src={"/upload/scripts/"+item.url+"/"+item.url+".jpg"}
+                        alt={item.name}
+                        ref="image"
+                        className="img"
+                        loading="lazy"
+                      />
                     </Link>
                   }
                   <div className="scripts--description scripts--half text-center">
@@ -51,11 +50,13 @@ class Scripts extends Component {
                   </div>
                   {i%2===1 &&
                     <Link to={ intl.formatMessage({ id: 'nav.link.script' })+"/"+item.url} title={item.name} className="scripts--half scripts--image">
-                      <LazyLoad height={300} width={450} offsetVertical={300} loaderImage imageProps={{
-                        src: "/upload/scripts/"+item.url+"/"+item.url+".jpg",
-                        alt: item.name,
-                        ref: "image"
-                      }} />
+                      <img height="300" width="450"
+                        src={"/upload/scripts/"+item.url+"/"+item.url+".jpg"}
+                        alt={item.name}
+                        ref="image"
+                        className="img"
+                        loading="lazy"
+                      />
                     </Link>
                   }
                 </div>

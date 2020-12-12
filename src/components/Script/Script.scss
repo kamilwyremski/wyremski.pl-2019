@@ -9,7 +9,7 @@
 	}
 	.features{
 		padding-bottom: 30px; flex: 0 0 33%;
-		.LazyLoad{
+		.img{
 			margin: auto;
 		}
 		h4{
@@ -24,13 +24,13 @@
 		h4{
 			padding: 15px 20px 5px; font-size: 1.5em;
 		}
-		.LazyLoad{
+		.img{
 			margin: auto;
 		}
 	}
 	.script--requirements{
 		flex: 0 0 33%; padding: 20px 10px;
-		.LazyLoad{
+		.img{
 			margin: 0 auto 15px;
 		}
 	}
@@ -47,7 +47,7 @@
 .script--up--bottom h2{
 	margin-bottom: 20px;
 }
-.script--admin--panel .LazyLoad, .script--language .LazyLoad{
+.script--admin--panel .img, .script--language .img{
 	margin: 20px auto 30px;
 }
 .script--gallery--photos{
@@ -126,7 +126,7 @@
 	.script--up h1, .script--up h3{
 		color: inherit;
 	}
-	.script .features .LazyLoad, .script .functions .LazyLoad, .script .script--requirements .LazyLoad, .script--admin--panel .LazyLoad, .script--language .LazyLoad, .script--gallery{
+	.script .features .img, .script .functions .img, .script .script--requirements .img, .script--admin--panel .img, .script--language .img, .script--gallery{
 		display: none;
 	}
 	.script .features{

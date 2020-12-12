@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {injectIntl, FormattedMessage} from 'react-intl';
-import LazyLoad from 'react-image-lazy-load';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import Error404 from './../Error404/Error404';
@@ -48,12 +47,12 @@ class Script extends Component {
     for (let i = 1; i <= this.state.script.functions; i++) {
       functions.push(<div className="functions" key={i}>
         <div className="animatable fadeInUp">
-          <LazyLoad height={250} width={200} offsetVertical={300} loaderImage imageProps={{
-            src: "/upload/scripts/"+this.state.script_name+"/f"+i+".jpg",
-            alt: this.state.script_name,
-            width: 200,
-            height: 250
-          }} />
+          <img height="250" width="200" 
+            src={"/upload/scripts/"+this.state.script_name+"/f"+i+".jpg"}
+            alt={this.state.script_name}
+            className="img"
+            loading="lazy"
+          />
           <FormattedMessage id={"script.function."+i}  values={{
               h4: chunks => <h4>{chunks}</h4>,
               p: chunks => <p>{chunks}</p>,
@@ -71,10 +70,11 @@ class Script extends Component {
     for (let i = 1; i <= this.state.script.photos; i++) {
       gallery.push(<button className="gallery--photo" aria-label={this.props.intl.formatMessage({ id: 'script.gallery' })+" "+this.state.script_name} key={i} onClick={() => this.setState({ lightboxIsOpen: true, photoIndex: i-1 })}>
         <div className="animatable fadeInUp">
-          <LazyLoad offsetVertical={300} loaderImage imageProps={{
-            src: "/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg",
-            alt: this.state.script_name
-          }} />
+          <img src={"/upload/scripts/"+this.state.script_name+"/screenshots/"+i+"_thumb.jpg"}
+            alt={this.state.script_name}
+            className="img"
+            loading="lazy"
+          />
         </div>
       </button>)
     }
@@ -118,12 +118,13 @@ class Script extends Component {
             	<div className="script--up--middle">
                 <h1 className="display-4"><FormattedMessage id="script.header"/></h1>
                 <h3 className="display-1"><FormattedMessage id="script.subheader"/></h3>
-                <LazyLoad offsetVertical={300} loaderImage imageProps={{
-                  src: "/upload/scripts/"+script_name+"/banner_top.png",
-                  alt: script_name,
-                  width: 994,
-                  height: 285
-                }} />
+                <img src={"/upload/scripts/"+script_name+"/banner_top.png"}
+                  alt={script_name}
+                  width="994"
+                  height="285"
+                  className="img"
+                  loading="lazy"
+                />
             	</div>
             </div>
             <div className="section container">
@@ -139,12 +140,12 @@ class Script extends Component {
             </div>
             <div className="d-flex container text-center">
         			<div className="features">
-                <LazyLoad height={100} width={100} offsetVertical={300} loaderImage imageProps={{
-                  src: "/upload/scripts/clock.png",
-                  alt: "Clock",
-                  width: 100,
-                  height: 100
-                }} />
+                <img height="100" width="100"
+                  src="/upload/scripts/clock.png"
+                  alt="Clock"
+                  className="img"
+                  loading="lazy"
+                />
         			  <FormattedMessage id="script.feature.1" values={{
                   h4: chunks => <h4>{chunks}</h4>,
                   p: chunks => <p>{chunks}</p>,
@@ -152,12 +153,12 @@ class Script extends Component {
                 />
         			</div>
         			<div className="features">
-                <LazyLoad height={100} width={100} offsetVertical={300} loaderImage imageProps={{
-                  src: "/upload/scripts/main-ok.png",
-                  alt: "OK",
-                  width: 100,
-                  height: 100
-                }} />
+                <img height="100" width="100"
+                  src="/upload/scripts/main-ok.png"
+                  alt="OK"
+                  className="img"
+                  loading="lazy"
+                />
         				<FormattedMessage id="script.feature.2" values={{
                   h4: chunks => <h4>{chunks}</h4>,
                   p: chunks => <p>{chunks}</p>,
@@ -165,12 +166,12 @@ class Script extends Component {
                 />
         			</div>
         			<div className="features">
-                <LazyLoad height={100} width={100} offsetVertical={300} loaderImage imageProps={{
-                  src: "/upload/scripts/help.png",
-                  alt: "Help",
-                  width: 100,
-                  height: 100
-                }} />
+                <img height="100" width="100"
+                  src="/upload/scripts/help.png"
+                  alt="Help"
+                  className="img"
+                  loading="lazy"
+                />
         				<FormattedMessage id="script.feature.3" values={{
                   h4: chunks => <h4>{chunks}</h4>,
                   p: chunks => <p>{chunks}</p>,
@@ -189,32 +190,32 @@ class Script extends Component {
             	<h2 className="display-3"><FormattedMessage id="script.requirements"/></h2>
             	<div className="d-flex">
             		<div className="script--requirements">
-                  <LazyLoad height={200} width={142} offsetVertical={300} loaderImage imageProps={{
-                    src: "/upload/scripts/php7.png",
-                    alt: "Logo PHP7",
-                    width: 142,
-                    height: 200
-                  }} />
+                  <img height="200" width="142"
+                    src="/upload/scripts/php7.png"
+                    alt="Logo PHP7"
+                    className="img"
+                    loading="lazy"
+                  />
                   <h4>PHP</h4>
             			<p><FormattedMessage id="script.requirements.1"/></p>
             		</div>
             		<div className="script--requirements">
-                  <LazyLoad height={200} width={168} offsetVertical={300} loaderImage imageProps={{
-                    src: "/upload/scripts/mysql.png",
-                    alt: "Logo MySQL",
-                    width: 168,
-                    height: 200
-                  }} />
+                  <img height="200" width="168"
+                    src="/upload/scripts/mysql.png"
+                    alt="Logo MySQL"
+                    className="img"
+                    loading="lazy"
+                  />
                   <h4>MySQL</h4>
             			<p><FormattedMessage id="script.requirements.2"/></p>
             		</div>
             		<div className="script--requirements">
-                  <LazyLoad height={200} width={188} offsetVertical={300} loaderImage imageProps={{
-                    src: "/upload/scripts/crontab.png",
-                    alt: "Logo CronTab",
-                    width: 188,
-                    height: 200
-                  }} />
+                  <img height="200" width="188"
+                    src="/upload/scripts/crontab.png"
+                    alt="Logo CronTab"
+                    className="img"
+                    loading="lazy"
+                  />
                   <h4>CronTab</h4>
             			<p><FormattedMessage id="script.requirements.3"/></p>
             		</div>
@@ -225,22 +226,22 @@ class Script extends Component {
             </div>
             <div className="text-center color-light background-dark section script--admin--panel">
             	<h2 className="display-3"><FormattedMessage id="script.admin_panel"/></h2>
-              <LazyLoad height={129} width={345} offsetVertical={300} loaderImage imageProps={{
-                src: "/upload/scripts/admin.png",
-                alt: "Admin Panel created by Kamil Wyremski",
-                width: 345,
-                height: 129
-              }} />
+              <img height="129" width="345"
+                src="/upload/scripts/admin.png"
+                alt="Admin Panel created by Kamil Wyremski"
+                className="img"
+                loading="lazy"
+              />
             	<p className="content"><FormattedMessage id="script.admin_panel_description"/></p>
             </div>
             <div className="container text-center section script--language">
             	<h2 className="display-3"><FormattedMessage id="script.language.title"/></h2>
-              <LazyLoad height={286} width={258} offsetVertical={300} loaderImage imageProps={{
-                src: "/upload/scripts/language.png",
-                alt: "Flags of countries in the world",
-                width: 258,
-                height: 286
-              }} />
+              <img height="286" width="258"
+                src="/upload/scripts/language.png"
+                alt="Flags of countries in the world"
+                className="img"
+                loading="lazy"
+              />
               <FormattedMessage id="script.language.desc" values={{
                 p: chunks => <p className="content">{chunks}</p>,
                 strong: chunks => <strong>{chunks}</strong>,

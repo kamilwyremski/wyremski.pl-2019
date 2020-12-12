@@ -100,7 +100,7 @@ class Footer extends Component {
             </div>
           </div>
           <div className="container text-center footer--bottom">
-            <p>Copyright © 2013 - 2020 by Kamil Wyremski. All rights reserved</p>
+            <p>Copyright © 2013 - 2021 by Kamil Wyremski. All rights reserved</p>
           </div>
         </footer>
         <div className={ this.state.cookies_accepted ? "cookies-message" : "cookies-message open"}>
