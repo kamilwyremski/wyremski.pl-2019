@@ -3,6 +3,11 @@
   "version": "1.0.8",
   "private": false,
   "homepage": "https://wyremski.pl",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kamilwyremski/wyremski.pl-2019.git"
+  },
+  "license": "MIT license",
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "node-sass": "^4.14.1",
