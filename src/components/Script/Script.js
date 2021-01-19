@@ -20,7 +20,7 @@ class Script extends Component {
   }
 
   componentDidMount() {
-    fetch('/scripts/'+this.state.script_name+'.json')
+    fetch('/api/scripts/'+this.state.script_name+'.json')
       .then(response => response.json())
       .then(data => {
         let meta = {
