@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Home.scss';
 import {injectIntl, FormattedMessage} from 'react-intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faSkype, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 class Home extends Component {
 
@@ -88,23 +91,23 @@ class Home extends Component {
 							<span itemProp="homeLocation">Poland, Września</span>
 						</div>
 						<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
-							<i className="icon-facebook-official" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faFacebookSquare} />
 							<span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
 						</a>
 						<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
-							<i className="icon-github-squared" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faGithub} />
 							<span className="sr-only"><FormattedMessage id="footer.github"/></span>
 						</a>
 						<a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>
-							<i className="icon-skype" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faSkype} />
 							<span className="sr-only"><FormattedMessage id="footer.skype"/></span>
 						</a>
 						<a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
-							<i className="icon-mail-alt" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faEnvelope} />
 							<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
 						</a>
 						<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer">
-							<i className="icon-link-ext-alt" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faBlog} />
 							<span className="sr-only"><FormattedMessage id="footer.blog"/></span>
 						</a>
 					</div>

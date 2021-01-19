@@ -21,10 +21,10 @@
 	P{
 		margin-top: 10px;
 	}
-	a i{
-		color: #fff; margin: 0 10px 10px 0; transition: all 0.1s; font-size: 1.6em;
+	a{
+		color: #fff; margin: 0 12px 12px 0; transition: all 0.1s; font-size: 1.6em;
 	}
-	a:hover i{
+	a:hover{
 		color: $color-primary;
 	}
 }
