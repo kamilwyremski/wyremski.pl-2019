@@ -27,13 +27,13 @@
 		"image" : "greencleanbean.jpg"
 	},
 	{
-	  "name" : "Giełda Mam",
+	  "name" : "Shop & Go",
 		"description" : {
-			"pl" : "Internetowy serwis aukcyjny produktów związanych z dziećmi. Możliwość sprzedawania swoich produktów",
-			"en" : "Online auction site for products related to children"
+			"pl" : "Platforma modowa z ofertami sklepów i z zintegrowanym blogiem. Oparta o framework Laravel 2 wraz z Voyager.",
+			"en" : "A fashion platform with shop offers and an integrated blog. Based on the Laravel 2 framework with Voyager."
 		},
-		"url" : "gieldamam.pl",
-		"image" : "gieldamam.jpg"
+		"url" : "shopngo.pl",
+		"image" : "shopngo.jpg"
 	},
 	{
 		"name" : "King Realty Group",
