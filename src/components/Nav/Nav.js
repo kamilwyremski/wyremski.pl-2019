@@ -35,7 +35,9 @@ class Nav extends Component {
       setTimeout(
         function() {
           link.classList.remove("hide");
-        }, 200*nav_link_delay);
+        }, 
+        200 * nav_link_delay
+      );
       nav_link_delay++;
     })
   }
@@ -84,7 +86,7 @@ class Nav extends Component {
     return(
       <nav style={{top : this.state.nav_top}} className={ this.state.nav_top==='0px' ? "navbar shadow d-print-none" : "navbar d-print-none" }>
         <div className="container d-flex" role="navigation" aria-label={ intl.formatMessage({ id: 'nav.title.navigation' })}>
-          <Link to={ intl.formatMessage({ id: 'nav.link.home' })} className="navbar--brand" title="Kamil Wyremski - Web Designer">Kamil Wyremski <small>Full Stack Web Developer</small></Link>
+          <Link to={ intl.formatMessage({ id: 'nav.link.home' })} className="navbar--brand" title="Kamil Wyremski - Web Designer" rel="home">Kamil Wyremski <small>Full Stack Web Developer</small></Link>
           <button className={ this.state.active_mobile_menu ? "open navbar--burger" : "navbar--burger" }
             onClick={this.showHideMenu} 
             aria-controls="navbar--menu" 
@@ -96,7 +98,7 @@ class Nav extends Component {
           </button>
           <ul id="navbar--menu" className={ this.state.active_mobile_menu ? "open d-flex navbar--menu" : "d-flex navbar--menu" }>
             <li className="hide">
-              <NavLink to={ intl.formatMessage({ id: 'nav.link.home' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.home' })}><FormattedMessage id="nav.home"/></NavLink>
+              <NavLink to={ intl.formatMessage({ id: 'nav.link.home' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.home' })} rel="home"><FormattedMessage id="nav.home"/></NavLink>
             </li>
             <li className="hide">
               <NavLink to={ intl.formatMessage({ id: 'nav.link.scripts' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.scripts' })}><FormattedMessage id="nav.scripts"/></NavLink>
