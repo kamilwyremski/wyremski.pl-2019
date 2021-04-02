@@ -54,13 +54,13 @@
 		"image" : "coupondojo.jpg"
 	},
 	{
-		"name" : "Janda Cleaning INC",
+		"name" : "Mieszkania w stylu",
 		"description" : {
-			"pl" : "Strona firmy z Chicago zajmującej się czyszczeniem mebli i dywanów wraz z panelem admina",
-			"en" : "A website company from Chicago dealing in cleaning furniture and carpets"
+			"pl" : "Portal z ogłoszeniami nieruchomości ze zintegrowanym blogiem",
+			"en" : "Real estate classifieds portal with integrated blog"
 		},
-		"url" : "jandacleaninginc.com",
-		"image" : "jandacleaninginc.jpg"
+		"url" : "mieszkaniawstylu.pl",
+		"image" : "mieszkaniawstylu.jpg"
 	},
 	{
 	  "name" : "MAX Plus KALISZ",
