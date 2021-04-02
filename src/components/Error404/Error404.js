@@ -4,7 +4,6 @@ import './Error404.scss';
 class Error404 extends Component {
 
   componentDidMount() {
-    console.log(this.props.language);
     this.props.handleLanguage(this.props.language,'error404');
   }
 
