@@ -76,25 +76,15 @@ class Home extends Component {
 					</div>
 				</section>
 				<section className="section home--about_me">
-					<div className="container" itemScope itemType="http://schema.org/Person">
-						<h2 className="display-3" itemProp="name">Kamil Wyremski</h2>
-						<h4 className="display-1" itemProp="jobTitle"><FormattedMessage id="home.about_me.title"/></h4>
-						<p><FormattedMessage id="home.about_me.brand"
-							values={{
-								span: chunks => <span itemProp="brand">{chunks}</span>
-							}}
-							/></p>
-						<div className="d-none">
-							<span itemProp="email">kamil@wyremski.pl</span>
-							<span itemProp="url">https://wyremski.pl</span>
-							<span itemProp="birthDate">1988</span>
-							<span itemProp="homeLocation">Poland, Września</span>
-						</div>
+					<div className="container">
+						<h2 className="display-3">Kamil Wyremski</h2>
+						<h4 className="display-1"><FormattedMessage id="home.about_me.title"/></h4>
+						<p><FormattedMessage id="home.about_me.brand"/></p>
 						<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
 							<FontAwesomeIcon icon={faFacebookSquare} />
 							<span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
 						</a>
-						<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+						<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer">
 							<FontAwesomeIcon icon={faGithub} />
 							<span className="sr-only"><FormattedMessage id="footer.github"/></span>
 						</a>
@@ -202,11 +192,7 @@ class Home extends Component {
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
 							<h4 className="display-1">Wordpress</h4>
-							<p><FormattedMessage id="home.technologies.4.desc"
-								values={{
-									a: chunks => <a href="http://blog.wyremski.pl/o-wordpress-ie/" title="Wordpress" target="_blank" rel="noopener noreferrer">{chunks}</a>
-								}}
-							/></p>
+							<p><FormattedMessage id="home.technologies.4.desc"/></p>
 						</div>
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
@@ -224,7 +210,7 @@ class Home extends Component {
 						</div>
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
-							<h4 className="display-1">jQuery</h4>
+							<h4 className="display-1">VUE</h4>
 							<p><FormattedMessage id="home.technologies.7.desc"/></p>
 						</div>
 						<div className="home--technologie animatable fadeInUp">
@@ -250,11 +236,7 @@ class Home extends Component {
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
 							<h4 className="display-1">NodeJS</h4>
-							<p><FormattedMessage id="home.technologies.12.desc"
-								values={{
-									a: chunks => <a href="http://blog.wyremski.pl/wprowadzenie-do-node-js/" title="Wprowadzenie do node.js" target="_blank" rel="noopener noreferrer">{chunks}</a>
-								}}
-							/></p>
+							<p><FormattedMessage id="home.technologies.12.desc"/></p>
 						</div>
 						<div className="home--technologie animatable fadeInUp">
 							<div className="home--technologie--image"></div>
