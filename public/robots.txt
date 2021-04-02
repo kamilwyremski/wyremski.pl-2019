@@ -1,5 +1,5 @@
-Sitemap: https://wyremski.pl/sitemap.xml
-
 User-agent: *
 Disallow: /404
 Disallow: /404.html
+
+Sitemap: https://wyremski.pl/sitemap.xml
