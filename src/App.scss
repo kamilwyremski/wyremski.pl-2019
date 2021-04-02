@@ -37,10 +37,10 @@ body{
 	color: $color-light;
 }
 .display-4{
-  font-size: 2.2em; font-family: 'Montserrat', sans-serif;
+  font-size: 2.2em; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;
 }
 .display-3{
-  font-size: 2em; font-family: 'Montserrat', sans-serif; line-height: 1.4;
+  font-size: 2em; font-family: 'Montserrat', sans-serif; line-height: 1.4; margin-bottom: 7px;
 }
 .display-2{
   font-size: 1.5em; font-family: 'Montserrat', sans-serif;
@@ -68,6 +68,9 @@ a{
 }
 .sr-only{
   position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0
+}
+.mb-2{
+  margin-bottom: 12px;
 }
 /* animations */
 .animatable{
