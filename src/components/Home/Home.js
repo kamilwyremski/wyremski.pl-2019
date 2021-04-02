@@ -64,7 +64,6 @@ class Home extends Component {
 				<section className="container section">
 					<div className="text-center">
 						<h2 className="display-3"><FormattedMessage id="home.introduction.header"/></h2>
-						<br />
 						<h3 className="display-1"><FormattedMessage id="home.introduction.subheader" values={{breakingLine: <br />}}/></h3>
 					</div>
 					<div className="home--introduction--text">
@@ -104,11 +103,9 @@ class Home extends Component {
 				</section>
 				<section className="background-light">
 					<div className="container section">
-						<div className="text-center content">
+						<div className="text-center content mb-2">
 							<h2 className="display-3"><FormattedMessage id="home.skills.title"/></h2>
-							<br />
 							<p><FormattedMessage id="home.skills.description"/></p>
-							<br />
 						</div>
 						<div className="d-flex home--skills">
 							<div className="home--skill animatable fadeInUp">
@@ -163,11 +160,9 @@ class Home extends Component {
 					</div>
 				</section>
 				<section className="container section">
-					<div className="text-center content">
+					<div className="text-center content mb-2">
 						<h2 className="display-3"><FormattedMessage id="home.technologies.title"/></h2>
-						<br />
 						<p><FormattedMessage id="home.technologies.description"/></p>
-						<br />
 					</div>
 					<div className="d-flex home--technologies">
 						<div className="home--technologie animatable fadeInUp">
