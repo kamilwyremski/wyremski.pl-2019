@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import {FormattedMessage} from 'react-intl';
 import projects from './projects.json';
-
 import './Projects.scss';
 
 class Projects extends Component {
-  constructor(props) {
-    super();
-    this.state = {
-      projects: [],
-    };
-  }
 
   componentDidMount() {
-    this.setState({ projects: projects });
     this.props.handleLanguage(this.props.language,'projects');
   }
 
@@ -27,7 +19,7 @@ class Projects extends Component {
             <h2 className="display-1 content"><FormattedMessage id="projects.subtitle"/></h2>
           </div>
           <div className="d-flex projects--list">
-            {this.state.projects.map((item,i) =>
+            {projects.map((item,i) =>
               <a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer" key={i} className={ i<4 ? "project" : "project animatable fadeInUp"} itemScope itemType="http://schema.org/CollectionPage">
                 <img height="350" width="350" 
                   src={"/upload/projects/"+item.image}              
@@ -50,7 +42,7 @@ class Projects extends Component {
         </div>
         <div className="text-center section container projects--thankyou">
           <p>
-            {this.state.projects.map((item,i,arr) => {
+            {projects.map((item,i,arr) => {
               if(arr.length - 1 === i)
               return <a href={"http://" + item.url} key={i} title={item.name} target="_blank" rel="nofollow noopener noreferrer">{item.name}</a>
               return <span key={i}><a href={"http://" + item.url} title={item.name} target="_blank" rel="nofollow noopener noreferrer">{item.name}</a>, </span>

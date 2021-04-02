@@ -6,15 +6,8 @@ import scripts from './scripts.json';
 import './Scripts.scss';
 
 class Scripts extends Component {
-  constructor({intl, ...props}) {
-    super();
-    this.state = {
-      scripts: []
-    };
-  }
 
   componentDidMount() {
-    this.setState({ scripts: scripts });
     this.props.handleLanguage(this.props.language,'scripts');
   }
 
@@ -29,7 +22,7 @@ class Scripts extends Component {
             <h2 className="display-1"><FormattedMessage id="scripts.subtitle"/></h2>
           </div>
           <div id="scripts">
-            {this.state.scripts.map((item,i) =>
+            {scripts.map((item,i) =>
               <div className={ i<2 ? "" : "animatable fadeInUp"} key={i}>
                 <div className="d-flex script">
                   {i%2===0 &&

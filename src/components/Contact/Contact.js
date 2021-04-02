@@ -36,7 +36,7 @@ class Contact extends Component {
   }
 
   verifyRecaptchaCallback(recaptchaToken) {
-    var data = new FormData();
+    let data = new FormData();
     data.append( "recaptchaToken", recaptchaToken );
     fetch('/contact.php', {
       method: 'post',
@@ -58,32 +58,16 @@ class Contact extends Component {
     });
     switch (name) {
       case "email":
-        if(this.validateEmail(value)){
-          this.setState({alertEmail: false});
-        }else{
-          this.setState({alertEmail: true});
-        }
+        this.setState({alertEmail: !this.validateEmail(value)});
         break;
       case "subject":
-        if(value){
-          this.setState({alertSubject: false});
-        }else{
-          this.setState({alertSubject: true});
-        }
+        this.setState({alertSubject: !value});
         break;
       case "message":
-        if(value){
-          this.setState({alertMessage: false});
-        }else{
-          this.setState({alertMessage: true});
-        }
+        this.setState({alertMessage: !value});
         break;
       case "rules":
-        if(value){
-          this.setState({alertRules: false});
-        }else{
-          this.setState({alertRules: true});
-        }
+        this.setState({alertRules: !value});
         break;
       default:
     }
@@ -157,7 +141,7 @@ class Contact extends Component {
   }
 
   validateEmail(email) {
-    var re = /\S+@\S+\.\S+/;
+    let re = /\S+@\S+\.\S+/;
     return re.test(email);
   }
 
@@ -272,7 +256,7 @@ class Contact extends Component {
               <ReCAPTCHA
                 ref={recaptchaRef}
                 size="invisible"
-                sitekey="6Ld66YAUAAAAACgwCy8Nv91JIeiXb4lzQnEKLvey"
+                sitekey="6LdiG0AaAAAAAFnJHwh9T4Ns4QwkKmGBJEZonNdh"
                 onChange={this.verifyRecaptchaCallback}
               />
             </form>

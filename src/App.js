@@ -55,7 +55,7 @@ class App extends Component {
     window.removeEventListener('scroll', this.doAnimations);
   }
 
-  doAnimations = (event) => {
+  doAnimations = () => {
     let offset = document.documentElement.scrollTop + window.innerHeight;
     document.querySelectorAll(".animatable").forEach(animatable => {
       if((animatable.offsetTop + 80) < offset) {

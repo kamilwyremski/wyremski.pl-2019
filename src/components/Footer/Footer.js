@@ -44,7 +44,7 @@ class Footer extends Component {
   render() {
     const intl = this.props.intl;
     return (
-      <div>
+      <>
         <footer className="footer">
           <div className="container d-flex">
             <div className="footer--top">
@@ -122,7 +122,7 @@ class Footer extends Component {
           <p><FormattedMessage id="cookies_message.bottom"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'cookies_message.privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="cookies_message.privacy_policy"/></a></p>
           <button className="link accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
         </div>
-      </div>
+      </>
     );
   }
 }
