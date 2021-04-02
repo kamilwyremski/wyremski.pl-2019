@@ -6,7 +6,6 @@
     "list_domains": [
       "durnotki.pl",
       "zarzucaj.pl",
-      "smishno.net",
       "mistrzparkowania.pl",
       "memhub.pl"
     ]
@@ -19,7 +18,7 @@
     "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>Skrypt DEMOTY2 umożliwia stworzenie własnej strony z <strong>demotywatorami, demotami oraz memami</strong> w łatwy i szybki sposób. Umożliwia generowanie demotywatorów i memów oraz ich poźniejszą edycję. Jest to nowoczesny skrypt napisany zgodnie ze współczesnymi standardami, oparty o system szablonów Twig 3 oraz framework CSS Bulma.</p><p>Skrypt został zoptymalizowany, dzięki czemu można go zainstalować na praktycznie dowolnym hostingu. Będzie prawidłowo działał przy dużej ilości obrazków oraz użytkowników.</p>",
     "script.function.1": "<h4>Tworzenie demotów oraz memów</h4><p>Możliwość tworzenia <strong>demotywatorów oraz memów</strong> przez użytkowników serwisu wraz z możliwością ich późniejszej edycji</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona jest poprawnie wyświetlana także na urządzeniach mobilnych (typu telefony komórkowe, tablety)</p>",
-    "script.function.3": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (panel Facebook, logowanie przez Facebook-a oraz przez konto Google, przyciski Lubię to, Udostępnij, Tweetnij i Wykop)</p>",
+    "script.function.3": "<h4>Portale społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (panel Facebook, logowanie przez Facebook-a oraz przez konto Google, przyciski Lubię to, Udostępnij, Tweetnij, WhatsApp i Wykop)</p>",
     "script.function.4": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> - pomiędzy demotami oraz po bokach strony</p>",
     "script.function.5": "<h4>Kanał FEED</h4><p>Wbudowany <strong>kanał FEED (RSS)</strong> wyświetlający ostatnio dodane demotywatory oraz memy</p>",
     "script.function.6": "<h4>SEO</h4><p>Do stron info w serwisie istnieje możliwość ustalenia osobnych słow kluczowych i opisów SEO - bardzo przydatne przy pozycjonowaniu witryny</p>",
@@ -48,7 +47,7 @@
     "script.desc1": "<h2>Join our hundreds of satisfied users!</h2><p>The DEMOTY2 script allows you to create your own website with <strong>demotivators and memes</strong> in an easy and fast way. It allows generating demotivators and memes with possibility to edit their later. It is a modern script written in accordance with modern standards based on the Twig 3 template system and the CSS framework Bulma.</p><p>The script has been optimized so you can install it on almost any hosting and will work properly with a large number of images and users.</p>",
     "script.function.1": "<h4>Creating demotivators and memes</h4><p>The ability to create <strong>demotivators and memes</strong> by users with the option of later editing</p>",
     "script.function.2": "<h4>RWD</h4><p><strong>Responsive template</strong> compatible with HTML5 - the page is displayed correctly on the mobile devices (such as mobile phones, tablets)</p>",
-    "script.function.3": "<h4>Social Network</h4><p>Integration with social network: Facebook (possibility to login by FB and Google), Twitter and Wykop.pl</p>",
+    "script.function.3": "<h4>Social Network</h4><p>Integration with social network: Facebook (possibility to login by FB and Google), Twitter, WhatsApp, and Wykop.pl</p>",
     "script.function.4": "<h4>ADS</h4><p>Many website sections to include <strong>ads</strong> - between images and in aside</p>",
     "script.function.5": "<h4>FEED Channel</h4><p><strong>FEED (RSS) channel</strong> displays the most recently added demotivators</p>",
     "script.function.6": "<h4>SEO</h4><p>You can set up separate keyword and SEO description for each info page - very useful to positioning Your site</p>",
