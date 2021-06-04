@@ -18,15 +18,6 @@
 		"image" : "allemoto.jpg"
 	},
 	{
-	  "name" : "Green Clean Been",
-		"description" : {
-			"pl" : "Responsywna strona One Page firmy sprzątającej Green Clean Been z Chicago/USA",
-			"en" : "Green Clean Bean will create a safe, clean and comfortable living environment for you and your family."
-		},
-		"url" : "greencleanbean.com",
-		"image" : "greencleanbean.jpg"
-	},
-	{
 	  "name" : "Shop & Go",
 		"description" : {
 			"pl" : "Platforma modowa z ofertami sklepów i z zintegrowanym blogiem. Oparta o framework Laravel 2 wraz z Voyager.",
@@ -36,13 +27,13 @@
 		"image" : "shopngo.jpg"
 	},
 	{
-		"name" : "King Realty Group",
+		"name" : "Oz Codes Pro",
 		"description" : {
-			"pl" : "Strona internetowa biura nieruchomości z Chicago wraz z panelem zarządzania treścią",
-			"en" : "Website of a Chicago real estate office"
+			"pl" : "Strona www z najlepszymi kody promocyjne, voucherami i promocjami w USA",
+			"en" : "Website with best promo codes, coupon codes and promotions in USA"
 		},
-		"url" : "krgproperty.com",
-		"image" : "krgproperty.jpg"
+		"url" : "ozcodespro.com",
+		"image" : "ozcodespro.jpg"
 	},
 	{
 		"name" : "Coupon Dojo",
@@ -52,6 +43,15 @@
 		},
 		"url" : "coupondojo.com",
 		"image" : "coupondojo.jpg"
+	},
+	{
+		"name" : "King Realty Group",
+		"description" : {
+			"pl" : "Strona internetowa biura nieruchomości z Chicago wraz z panelem zarządzania treścią",
+			"en" : "Website of a Chicago real estate office"
+		},
+		"url" : "krgproperty.com",
+		"image" : "krgproperty.jpg"
 	},
 	{
 		"name" : "Mieszkania w stylu",
