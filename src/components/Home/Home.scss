@@ -1,7 +1,7 @@
 @import './../../assets/scss/_colors.scss';
 
 .home--header{
-	background: #0e0e0e url("/upload/images/header.jpg") no-repeat fixed center bottom / cover; 
+	background: #0e0e0e url("./../../assets/images/header.jpg") no-repeat fixed center bottom / cover; 
 	padding-top: 170px; padding-bottom: 130px; text-shadow: 1px 1px 2px #000; color: #fff; 
 }
 .home--header--inside{
@@ -17,7 +17,7 @@
 	column-count: 2; column-gap: 4em; margin-top: 50px; 
 }
 .home--about_me{
-	background: $color-dark url("/upload/images/background_desk.jpg") no-repeat fixed center bottom / cover;  color: $color-light; text-align: center;
+	background: $color-dark url("./../../assets/images/background_desk.jpg") no-repeat fixed center bottom / cover;  color: $color-light; text-align: center;
 	P{
 		margin-top: 10px;
 	}
@@ -34,7 +34,7 @@
 		top:-10px;
 	}
 	.home--skill--image{
-		background-image: url('/upload/images/skills.png'); width: 60px; height: 60px; margin: 0 auto 30px;
+		background-image: url('./../../assets/images/skills.png'); width: 60px; height: 60px; margin: 0 auto 30px;
 	}
 	&:nth-child(2) .home--skill--image{
 		background-position: 0 -60px;
@@ -77,7 +77,7 @@
 		}
 	}
 	.home--technologie--image{
-		background-image: url('/upload/images/technologies.png'); width: 60px; height: 60px; margin: 0 auto 30px;
+		background-image: url('./../../assets/images/technologies.png'); width: 60px; height: 60px; margin: 0 auto 30px;
 	}
 	&:nth-child(2) .home--technologie--image{
 		background-position: 0 -60px;

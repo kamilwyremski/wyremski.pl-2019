@@ -5,6 +5,9 @@
 	a{
 		color: $color-light; transition: all 0.2s;
 	}
+	a:hover{
+		text-decoration: underline;
+	}
 	a:hover, a:focus{
 		color: #fff; 
 	}
