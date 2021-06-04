@@ -182,7 +182,7 @@ class Contact extends Component {
                     aria-describedby="contact--alert--email"
                   />
                   <p className={this.state.alertEmail ? 'invalid-feedback' : 'd-none'} id="contact--alert--email"><FormattedMessage id="contact.alertEmail"/></p>
-                  <p><FormattedMessage id="contact.email.info"/></p>
+                  <p className="small"><FormattedMessage id="contact.email.info"/></p>
                 </div>
               </div>
               <div className="row">
@@ -222,7 +222,7 @@ class Contact extends Component {
               <div className="row">
                 <label className="col-form-label">&nbsp;</label>
                 <div className="col">
-                  <p><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow noopener noreferrer" title="reCAPTCHA Privacy Policy">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="nofollow noopener noreferrer" title="reCAPTCHA Terms of Service">Terms of Service</a> apply.</small></p>
+                  <p className="small">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow noopener noreferrer" title="reCAPTCHA Privacy Policy">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="nofollow noopener noreferrer" title="reCAPTCHA Terms of Service">Terms of Service</a> apply.</p>
                   <p className={this.state.alertCaptcha ? 'invalid-feedback' : 'd-none'}><FormattedMessage id="contact.alertCaptcha"/></p>
                 </div>
               </div>
