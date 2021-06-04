@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faYoutube, faHackerrank, faFreeCodeCamp, faStackOverflow, faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faHackerrank, faFreeCodeCamp, faStackOverflow, faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faShoppingBasket, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import './Footer.scss';
@@ -97,10 +97,6 @@ class Footer extends Component {
         				<a href="https://pl.pinterest.com/kamilwyremski/" title={ intl.formatMessage({ id: 'footer.pinterest' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
                   <FontAwesomeIcon icon={faPinterest} />
                   <span className="sr-only"><FormattedMessage id="footer.pinterest"/></span>
-                </a>
-        				<a href="https://www.youtube.com/channel/UCR1g4AKZ2Swr4YCApWQKkpQ" title={ intl.formatMessage({ id: 'footer.youtube' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
-                  <FontAwesomeIcon icon={faYoutube} />
-                  <span className="sr-only"><FormattedMessage id="footer.youtube"/></span>
                 </a>
         				<a href="https://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faBlog} />
