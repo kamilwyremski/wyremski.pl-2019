@@ -50,13 +50,14 @@ class Footer extends Component {
             <div className="footer--top">
               <FormattedMessage id="footer.text" values={{
                 p: chunks => <p>{chunks}</p>,
-                a: chunks => <a href="https://skrypty.sattel.pl" title="Skrypty Sattel" target="_blank" rel="nofollow noopener noreferrer">{chunks}</a>
+                a: chunks => <a href="https://sklep.itworksbetter.net/" title="IT Works Better" target="_blank" rel="nofollow noopener noreferrer">{chunks}</a>,
+                breakingLine: <br />
               }}/>
             </div>
             <div className="footer--top text-center">
               <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil@wyremski.pl</a></p>
               <p><FontAwesomeIcon icon={faSkype} /> <a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>kamil.wyremski</a></p>
-              <p><FontAwesomeIcon icon={faWhatsapp} /> <a href="tel:+51990600447" title={ intl.formatMessage({ id: 'footer.phone' })}>+51 990600447</a></p>
+              <p><FontAwesomeIcon icon={faWhatsapp} /> <a href="tel:+48692413725" title={ intl.formatMessage({ id: 'footer.phone' })}>+48 692413725</a></p>
               <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>
           	</div>
         		<div className="footer--top text-center">
@@ -102,7 +103,7 @@ class Footer extends Component {
                   <FontAwesomeIcon icon={faBlog} />
                   <span className="sr-only"><FormattedMessage id="footer.blog"/></span>
                 </a>
-                <a href="https://skrypty.sattel.pl" title={ intl.formatMessage({ id: 'footer.shop' })} target="_blank" rel="noopener noreferrer">
+                <a href="https://sklep.itworksbetter.net/" title={ intl.formatMessage({ id: 'footer.shop' })} target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faShoppingBasket} />
                   <span className="sr-only"><FormattedMessage id="footer.shop"/></span>
                 </a>
