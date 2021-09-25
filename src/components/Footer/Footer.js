@@ -18,7 +18,7 @@ class Footer extends Component {
   }
 
   keyFunction(event){
-    if(event.keyCode === 84) {
+    if(event.keyCode === 84 || event.keyCode === 89) {
       this.closeCookie();
     }
   }
