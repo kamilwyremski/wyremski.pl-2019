@@ -80,8 +80,6 @@ class Meta extends Component {
         alternate_pl = alternate_pl+'/'+props.meta.script_name;
         alternate_en = alternate_en+'/'+props.meta.script_name;
       }
-      document.querySelector('link[hreflang="pl"]').href = alternate_pl;
-      document.querySelector('link[hreflang="en"]').href = alternate_en;
 
       return {
         lang: lang,
@@ -93,7 +91,9 @@ class Meta extends Component {
         image: image,
         image_width: image_width,
         image_height: image_height,
-        url: url
+        url: url,
+        alternate_pl: alternate_pl,
+        alternate_en: alternate_en
       }
     }
   }
@@ -101,6 +101,9 @@ class Meta extends Component {
   render() {
     return (
       <MetaTags>
+        <link rel="alternate" hreflang="pl" href={this.state.alternate_pl} />
+        <link rel="alternate" hreflang="en" href={this.state.alternate_en} />
+
         <title>{this.state.title}</title>
         <meta name="keywords" content={this.state.keywords}/>
         <meta name="description" content={this.state.description}/>

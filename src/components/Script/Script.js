@@ -114,10 +114,10 @@ class Script extends Component {
       <main>
         {!script && !script_error404 && <Preloader/>}
         {script &&
-          <div className="script">
+          <section className="script" aria-labelledby="script-title">
             <div className="script--up text-center">
             	<div className="script--up--middle">
-                <h1 className="display-4"><FormattedMessage id="script.header"/></h1>
+                <h1 className="display-4" id="script-title"><FormattedMessage id="script.header"/></h1>
                 <h3 className="display-1"><FormattedMessage id="script.subheader"/></h3>
                 <img src={"/upload/scripts/"+script_name+"/banner_top.png"}
                   alt={script_name}
@@ -312,7 +312,7 @@ class Script extends Component {
               />
               <a href={script.buy_url} title={script_name} className="script--buy"><FormattedMessage id="script.buy"/></a>
             </div>
-          </div>
+          </section>
         }
         {script_error404 &&
           <Error404 language={this.props.language} handleLanguage = {this.props.handleLanguage.bind(this)}/>

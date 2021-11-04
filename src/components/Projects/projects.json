@@ -18,13 +18,13 @@
 		"image" : "allemoto.jpg"
 	},
 	{
-	  "name" : "Shop & Go",
+	  "name" : "hosting_dojo",
 		"description" : {
-			"pl" : "Platforma modowa z ofertami sklepów i z zintegrowanym blogiem. Oparta o framework Laravel 2 wraz z Voyager.",
-			"en" : "A fashion platform with shop offers and an integrated blog. Based on the Laravel 2 framework with Voyager."
+			"pl" : "Strona z rankingiem szybkości hostingów z różnych krajów. Oparta o Symfony i VUE",
+			"en" : "Website with a ranking of the speed of hosting from different countries. Based on Symfony and VUE"
 		},
-		"url" : "shopngo.pl",
-		"image" : "shopngo.jpg"
+		"url" : "hostingdojo.com",
+		"image" : "hostingdojo.jpg"
 	},
 	{
 		"name" : "Oz Codes Pro",

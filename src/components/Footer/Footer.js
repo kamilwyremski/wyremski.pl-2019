@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faHackerrank, faFreeCodeCamp, faStackOverflow, faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faHackerrank, faFreeCodeCamp, faStackOverflow, faSkype } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faShoppingBasket, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import './Footer.scss';
@@ -57,7 +57,6 @@ class Footer extends Component {
             <div className="footer--top text-center">
               <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil@wyremski.pl</a></p>
               <p><FontAwesomeIcon icon={faSkype} /> <a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>kamil.wyremski</a></p>
-              <p><FontAwesomeIcon icon={faWhatsapp} /> <a href="tel:+48692413725" title={ intl.formatMessage({ id: 'footer.phone' })}>+48 692413725</a></p>
               <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>
           	</div>
         		<div className="footer--top text-center">

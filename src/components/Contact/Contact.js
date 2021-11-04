@@ -153,10 +153,10 @@ class Contact extends Component {
     const intl = this.props.intl;
     return (
       <main>
-        <div className="contact">
+        <section className="contact" aria-labelledby="contact-title">
           <div className="container section">
             <div className="text-center">
-              <h1 className="display-4"><FormattedMessage id="contact.title"/></h1>
+              <h1 className="display-4" id="contact-title"><FormattedMessage id="contact.title"/></h1>
               <p><FormattedMessage id="contact.subtitle"
                 	values={{
                     a: chunks => <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' }) }>{chunks}</a>
@@ -261,7 +261,7 @@ class Contact extends Component {
               />
             </form>
           </div>
-        </div>
+        </section>
       </main>
     );
   }

@@ -54,16 +54,16 @@ class Home extends Component {
 		const intl = this.props.intl;
 		return (
 			<main>
-				<header className="home--header">
+				<header className="home--header" aria-labelledby="main-title">
 					<div className="home--header--inside">
-						<h1 className="display-4">Kamil Wyremski</h1>
+						<h1 className="display-4" id="main-title">Kamil Wyremski</h1>
 						<p className="home--header--typed">{this.state.header_typed}<span className="home--header--typed-cursor">|</span></p>
 						<h2 className="display-1"><FormattedMessage id="home.header.text" values={{breakingLine: <br />}}/></h2>
 					</div>
 				</header>
-				<section className="container section">
+				<section className="container section" aria-labelledby="introduction-title">
 					<div className="text-center">
-						<h2 className="display-3"><FormattedMessage id="home.introduction.header"/></h2>
+						<h2 className="display-3" id="introduction-title"><FormattedMessage id="home.introduction.header"/></h2>
 						<h3 className="display-1"><FormattedMessage id="home.introduction.subheader" values={{breakingLine: <br />}}/></h3>
 					</div>
 					<div className="home--introduction--text">
@@ -74,10 +74,10 @@ class Home extends Component {
 						/>
 					</div>
 				</section>
-				<section className="section home--about_me">
+				<section className="section home--about_me" aria-labelledby="about-me-title">
 					<div className="container">
 						<h2 className="display-3">Kamil Wyremski</h2>
-						<h4 className="display-1"><FormattedMessage id="home.about_me.title"/></h4>
+						<h4 className="display-1" id="about-me-title"><FormattedMessage id="home.about_me.title"/></h4>
 						<p><FormattedMessage id="home.about_me.brand"/></p>
 						<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
 							<FontAwesomeIcon icon={faFacebookSquare} />
@@ -101,10 +101,10 @@ class Home extends Component {
 						</a>
 					</div>
 				</section>
-				<section className="background-light">
+				<section className="background-light" aria-labelledby="skills-title">
 					<div className="container section">
 						<div className="text-center content mb-2">
-							<h2 className="display-3"><FormattedMessage id="home.skills.title"/></h2>
+							<h2 className="display-3" id="skills-title"><FormattedMessage id="home.skills.title"/></h2>
 							<p><FormattedMessage id="home.skills.description"/></p>
 						</div>
 						<div className="d-flex home--skills">
@@ -159,9 +159,9 @@ class Home extends Component {
 						</div>
 					</div>
 				</section>
-				<section className="container section">
+				<section className="container section" aria-labelledby="technologies-title">
 					<div className="text-center content mb-2">
-						<h2 className="display-3"><FormattedMessage id="home.technologies.title"/></h2>
+						<h2 className="display-3" id="technologies-title"><FormattedMessage id="home.technologies.title"/></h2>
 						<p><FormattedMessage id="home.technologies.description"/></p>
 					</div>
 					<div className="d-flex home--technologies">

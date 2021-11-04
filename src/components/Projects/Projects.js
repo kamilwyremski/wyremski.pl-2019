@@ -13,9 +13,9 @@ class Projects extends Component {
     const language = this.props.language;
     return (
       <main>
-        <div className="projects">
+        <section className="projects" aria-labelledby="projects-title">
           <div className="container section text-center">
-            <h1 className="display-4"><FormattedMessage id="projects.title"/></h1>
+            <h1 className="display-4" id="projects-title"><FormattedMessage id="projects.title"/></h1>
             <h2 className="display-1 content"><FormattedMessage id="projects.subtitle"/></h2>
           </div>
           <div className="d-flex projects--list">
@@ -39,7 +39,7 @@ class Projects extends Component {
               </a>
             )}
           </div>
-        </div>
+        </section>
         <div className="text-center section container projects--thankyou">
           <p>
             {projects.map((item,i,arr) => {

@@ -16,9 +16,9 @@ class Scripts extends Component {
     const intl = this.props.intl;
     return (
       <main className="scripts">
-        <div className="container">
+        <section className="container" aria-labelledby="scripts-title">
           <div className="text-center section">
-            <h1 className="display-4"><FormattedMessage id="scripts.title"/></h1>
+            <h1 className="display-4" id="scripts-title"><FormattedMessage id="scripts.title"/></h1>
             <h2 className="display-1"><FormattedMessage id="scripts.subtitle"/></h2>
           </div>
           <div id="scripts">
@@ -56,7 +56,7 @@ class Scripts extends Component {
               </div>
             )}
           </div>
-        </div>
+        </section>
       </main>
     );
   }
