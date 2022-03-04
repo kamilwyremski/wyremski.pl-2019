@@ -101,8 +101,8 @@ class Meta extends Component {
   render() {
     return (
       <MetaTags>
-        <link rel="alternate" hreflang="pl" href={this.state.alternate_pl} />
-        <link rel="alternate" hreflang="en" href={this.state.alternate_en} />
+        <link rel="alternate" hrefLang="pl" href={this.state.alternate_pl} />
+        <link rel="alternate" hrefLang="en" href={this.state.alternate_en} />
 
         <title>{this.state.title}</title>
         <meta name="keywords" content={this.state.keywords}/>

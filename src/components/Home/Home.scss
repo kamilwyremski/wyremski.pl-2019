@@ -18,8 +18,8 @@
 }
 .home--about_me{
 	background: $color-dark url("./../../assets/images/background_desk.jpg") no-repeat fixed center bottom / cover;  color: $color-light; text-align: center;
-	P{
-		margin-top: 10px;
+	p{
+		margin-top: 10px; margin-bottom: 0;
 	}
 	a{
 		color: #fff; margin: 0 12px 12px 0; transition: all 0.1s; font-size: 1.6em;
@@ -58,7 +58,7 @@
 		background-position: 0 -420px;
 	}
 	p{
-		color: $color-light; font-size: 0.8em;
+		color: $color-light; font-size: 0.9em;
 	}
 	a{
 		color: #fff;
@@ -71,7 +71,7 @@
 		top:-10px;
 	}
 	p{
-		font-size: 0.8em;
+		font-size: 0.9em;
 		a{
 			color: $color-primary;
 		}

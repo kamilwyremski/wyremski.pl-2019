@@ -109,7 +109,7 @@ class App extends Component {
         <Router onUpdate={() => window.scrollTo(0, 0)}>
           <div>
             <Nav language={this.state.language} component={this.state.component} alternate_slug={this.state.alternate_slug}/>
-            <Switch>
+            <Switch >
                {this.createRoute(this)}
             </Switch>
             <Footer />

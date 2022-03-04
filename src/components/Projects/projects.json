@@ -27,13 +27,13 @@
 		"image" : "hostingdojo.jpg"
 	},
 	{
-		"name" : "Oz Codes Pro",
+		"name" : "Cargoos",
 		"description" : {
-			"pl" : "Strona www z najlepszymi kody promocyjne, voucherami i promocjami w USA",
-			"en" : "Website with best promo codes, coupon codes and promotions in USA"
+			"pl" : "Strona internetowa firmy transportowej z USA stworzona na Wordpress",
+			"en" : "Website of a transport company from the USA created on Wordpress"
 		},
-		"url" : "ozcodespro.com",
-		"image" : "ozcodespro.jpg"
+		"url" : "cargoos.com",
+		"image" : "cargoos.jpg"
 	},
 	{
 		"name" : "Coupon Dojo",
@@ -45,13 +45,13 @@
 		"image" : "coupondojo.jpg"
 	},
 	{
-		"name" : "King Realty Group",
+		"name" : "G1ant",
 		"description" : {
-			"pl" : "Strona internetowa biura nieruchomości z Chicago wraz z panelem zarządzania treścią",
-			"en" : "Website of a Chicago real estate office"
+			"pl" : "Założona w 2015 roku w Londynie, G1ANT jest najszybciej rozwijającą się platformą oprogramowania RPA na rynku",
+			"en" : "Founded in 2015 in London, G1ANT is the fastest-growing RPA software platform on the market"
 		},
-		"url" : "krgproperty.com",
-		"image" : "krgproperty.jpg"
+		"url" : "g1ant.com",
+		"image" : "g1ant.jpg"
 	},
 	{
 		"name" : "Mieszkania w stylu",
@@ -72,7 +72,7 @@
 		"image" : "maxplus.jpg"
 	},
 	{
-	  "name" : "M Rzetecki",
+	  "name" : "Mateusz Rzetecki",
 	  "description" : {
 			"pl" : "Portfolio eksperta SEO wraz z jego blogiem. Oparte o PHP + Twig3",
 			"en" : "Portfolio of an SEO expert with his blog"

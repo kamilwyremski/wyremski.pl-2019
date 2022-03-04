@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import './Home.scss';
 import {injectIntl, FormattedMessage} from 'react-intl';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faSkype, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
 class Home extends Component {
 
-	constructor({intl, ...props}) {
+	constructor() {
 		super();
 		this.state = {
 			header_typed: ''
@@ -15,7 +11,7 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		let header_types_texts = this.props.intl.formatMessage({ id: 'home.header.types' }).split(' ');
+		const header_texts = this.props.intl.formatMessage({ id: 'home.header.types' }).split(' ');
 		let header_types_counter = 0;
 		let header_text_index = 0;
 		let header_text_char = 0;
@@ -23,27 +19,26 @@ class Home extends Component {
 		let header_text = '';
 		this.countdown = setInterval( () => {
 			if(!header_text_length){
-				header_text_length = header_types_texts[header_text_index].length
+				header_text_length = header_texts[header_text_index].length
 			}
 			header_text_char = Math.floor(header_types_counter/4);
-			if(header_text_char>header_text_length + 15){
+			if(header_text_char > header_text_length + 15){
 				header_text_index++;
-				if(header_text_index>=header_types_texts.length){
+				if(header_text_index >= header_texts.length){
 					header_text_index = 0;
 				}
 				header_text_length = header_types_counter = 0;
-			}else if(header_text_char>header_text_length + 10){
+			}else if(header_text_char > header_text_length + 10){
 				header_text = header_text.substring(0, header_text.length - 1);
 				header_types_counter++;
 			}else{
-				header_text = header_types_texts[header_text_index].substring(0,header_text_char);
+				header_text = header_texts[header_text_index].substring(0,header_text_char);
 				header_types_counter++;
 			}
 			this.setState({
 				header_typed: header_text
 			})
 		},70);
-		this.props.handleLanguage(this.props.language,'home');
 	}
 
 	componentWillUnmount() {
@@ -51,7 +46,6 @@ class Home extends Component {
 	}
 
 	render() {
-		const intl = this.props.intl;
 		return (
 			<main>
 				<header className="home--header" aria-labelledby="main-title">
@@ -70,7 +64,7 @@ class Home extends Component {
 						<FormattedMessage id="home.introduction.text" 
 							values={{
 								p: chunks => <p>{chunks}</p>
- 							}}
+							}}
 						/>
 					</div>
 				</section>
@@ -79,26 +73,6 @@ class Home extends Component {
 						<h2 className="display-3">Kamil Wyremski</h2>
 						<h4 className="display-1" id="about-me-title"><FormattedMessage id="home.about_me.title"/></h4>
 						<p><FormattedMessage id="home.about_me.brand"/></p>
-						<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faFacebookSquare} />
-							<span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
-						</a>
-						<a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faGithub} />
-							<span className="sr-only"><FormattedMessage id="footer.github"/></span>
-						</a>
-						<a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>
-							<FontAwesomeIcon icon={faSkype} />
-							<span className="sr-only"><FormattedMessage id="footer.skype"/></span>
-						</a>
-						<a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>
-							<FontAwesomeIcon icon={faEnvelope} />
-							<span className="sr-only"><FormattedMessage id="footer.write_to_me"/></span>
-						</a>
-						<a href="http://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faBlog} />
-							<span className="sr-only"><FormattedMessage id="footer.blog"/></span>
-						</a>
 					</div>
 				</section>
 				<section className="background-light" aria-labelledby="skills-title">

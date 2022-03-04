@@ -10,12 +10,12 @@
     }
   }
   .small{
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .row{
     display: flex; flex-wrap: wrap;
     .col-form-label{
-      flex: 0 0 30%; text-align: right; font-size: 0.9em; padding: 22px 10px 5px; font-weight: bold;
+      flex: 0 0 30%; text-align: right; padding: 22px 10px 5px; font-weight: bold;
     }
     .col{
       flex: 0 0 70%; padding: 10px;

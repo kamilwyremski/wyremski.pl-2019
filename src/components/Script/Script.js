@@ -8,7 +8,7 @@ import Preloader from './../Preloader/Preloader.js';
 import './Script.scss';
 
 class Script extends Component {
-  constructor({intl, ...props}) {
+  constructor({...props}) {
     super(props);
     this.state = {
       script: false,

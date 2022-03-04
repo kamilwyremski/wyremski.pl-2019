@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faHackerrank, faFreeCodeCamp, faStackOverflow, faSkype } from '@fortawesome/free-brands-svg-icons'
-import { faBlog, faShoppingBasket, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faHackerrank, faFreeCodeCamp, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+import { faPenSquare, faShoppingBasket, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import './Footer.scss';
 
@@ -56,7 +56,6 @@ class Footer extends Component {
             </div>
             <div className="footer--top text-center">
               <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil@wyremski.pl</a></p>
-              <p><FontAwesomeIcon icon={faSkype} /> <a href="skype:kamil.wyremski" title={ intl.formatMessage({ id: 'footer.skype' })}>kamil.wyremski</a></p>
               <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>
           	</div>
         		<div className="footer--top text-center">
@@ -99,7 +98,7 @@ class Footer extends Component {
                   <span className="sr-only"><FormattedMessage id="footer.pinterest"/></span>
                 </a>
         				<a href="https://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faBlog} />
+                  <FontAwesomeIcon icon={faPenSquare} />
                   <span className="sr-only"><FormattedMessage id="footer.blog"/></span>
                 </a>
                 <a href="https://sklep.itworksbetter.net/" title={ intl.formatMessage({ id: 'footer.shop' })} target="_blank" rel="noopener noreferrer">
