@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.scss';
 
 import {IntlProvider} from "react-intl";
@@ -33,8 +33,8 @@ class App extends Component {
     this.doAnimations();
   }
 
-  handleLanguage(lang,component='home',data={}) {
-    if(data.messages!==undefined){
+  handleLanguage(lang, component='home', data={}) {
+    if(data.messages !== undefined){
       let m = {}
       m.pl = {...messages.pl, ...data.messages.pl }
       m.en = {...messages.en, ...data.messages.en }
@@ -46,7 +46,7 @@ class App extends Component {
     this.setState({
       language: lang,
       component: component,
-      alternate_slug: data.script_name!==undefined ? data.script_name : '',
+      alternate_slug: data.script_name || '',
       meta: data
     })
   }
@@ -69,33 +69,33 @@ class App extends Component {
     let routes = []
     Object.keys(messages).forEach(function(lang, index){
       routes.push(
-        <Route exact path={messages[lang]['nav.link.home']} key={index+lang+'home'} render={ () => 
+        <Route path={messages[lang]['nav.link.home']} key={index+lang+'home'} element={
           <Home language={lang} handleLanguage = {t.handleLanguage.bind(t)}/> } 
         />
       )
       routes.push(
-        <Route exact path={messages[lang]['nav.link.scripts']} key={index+lang+'scripts'} render={ () => 
+        <Route path={messages[lang]['nav.link.scripts']} key={index+lang+'scripts'} element={
           <Scripts language={lang} handleLanguage = {t.handleLanguage.bind(t)}/> } 
         />
       )
       routes.push(
-        <Route exact path={messages[lang]['nav.link.script']+"/:script_slug"} key={index+lang+'script'} render={ (props) => 
-          <Script language={lang} {...props} handleLanguage = {t.handleLanguage.bind(t)}/> } 
+        <Route path={messages[lang]['nav.link.script']+"/:script_slug"} key={index+lang+'script'} element={
+          <Script language={lang} handleLanguage = {t.handleLanguage.bind(t)}/> } 
         />
       )
       routes.push(
-        <Route exact path={messages[lang]['nav.link.projects']} key={index+lang+'projects'} render={ () => 
+        <Route path={messages[lang]['nav.link.projects']} key={index+lang+'projects'} element={
           <Projects language={lang} handleLanguage = {t.handleLanguage.bind(t)}/> } 
         />
       )
       routes.push(
-        <Route exact path={messages[lang]['nav.link.contact']} key={index+lang+'contact'} render={ () => 
+        <Route path={messages[lang]['nav.link.contact']} key={index+lang+'contact'} element={
           <Contact language={lang} handleLanguage = {t.handleLanguage.bind(t)}/> } 
         />
       )
     })
     routes.push(
-      <Route status={404} notFound={true} key={'error404'} render={ () => 
+      <Route status={404} notFound={true} key={'error404'} element={
         <Error404 language={t.state.language} handleLanguage = {t.handleLanguage.bind(t)}/> } 
       />
     )
@@ -109,9 +109,9 @@ class App extends Component {
         <Router onUpdate={() => window.scrollTo(0, 0)}>
           <div>
             <Nav language={this.state.language} component={this.state.component} alternate_slug={this.state.alternate_slug}/>
-            <Switch >
+            <Routes >
                {this.createRoute(this)}
-            </Switch>
+            </Routes>
             <Footer />
           </div>
         </Router>

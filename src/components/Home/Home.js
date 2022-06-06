@@ -11,6 +11,7 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
+		this.props.handleLanguage(this.props.language,'home');
 		const header_texts = this.props.intl.formatMessage({ id: 'home.header.types' }).split(' ');
 		let header_types_counter = 0;
 		let header_text_index = 0;

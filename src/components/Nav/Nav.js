@@ -98,19 +98,19 @@ class Nav extends Component {
           </button>
           <ul id="navbar--menu" className={ this.state.active_mobile_menu ? "open d-flex navbar--menu" : "d-flex navbar--menu" }>
             <li className="hide">
-              <NavLink to={ intl.formatMessage({ id: 'nav.link.home' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.home' })} rel="home"><FormattedMessage id="nav.home"/></NavLink>
+              <NavLink to={ intl.formatMessage({ id: 'nav.link.home' })} className={({ isActive }) => "nav--link" + (isActive ? " is-active" : "")} onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.home' })} rel="home"><FormattedMessage id="nav.home"/></NavLink>
             </li>
             <li className="hide">
-              <NavLink to={ intl.formatMessage({ id: 'nav.link.scripts' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.scripts' })}><FormattedMessage id="nav.scripts"/></NavLink>
+              <NavLink to={ intl.formatMessage({ id: 'nav.link.scripts' })} className={({ isActive }) => "nav--link" + (isActive ? " is-active" : "")} onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.scripts' })}><FormattedMessage id="nav.scripts"/></NavLink>
             </li>
             <li className="hide">
-              <NavLink to={ intl.formatMessage({ id: 'nav.link.projects' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.projects' })}><FormattedMessage id="nav.projects"/></NavLink>
+              <NavLink to={ intl.formatMessage({ id: 'nav.link.projects' })} className={({ isActive }) => "nav--link" + (isActive ? " is-active" : "")} onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.projects' })}><FormattedMessage id="nav.projects"/></NavLink>
             </li>
             <li className="hide">
-              <NavLink to={ intl.formatMessage({ id: 'nav.link.contact' })} className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.contact' })}><FormattedMessage id="nav.contact"/></NavLink>
+              <NavLink to={ intl.formatMessage({ id: 'nav.link.contact' })} className={({ isActive }) => "nav--link" + (isActive ? " is-active" : "")} onClick={this.onClickMenu} title={ intl.formatMessage({ id: 'nav.title.contact' })}><FormattedMessage id="nav.contact"/></NavLink>
             </li>
             <li className="hide">
-              <NavLink to={ this.state.alternate_url } className="nav--link" exact activeClassName='is-active' onClick={this.onClickMenu} title={language==='pl' ? 'en' : 'pl'}>{language==='pl' ? 'en' : 'pl'}&nbsp;&#9656;</NavLink>
+              <a href={ this.state.alternate_url } className="nav--link" onClick={this.changeLanguage} title={language==='pl' ? 'en' : 'pl'}>{language==='pl' ? 'en' : 'pl'}&nbsp;&#9656;</a>
             </li>
           </ul>
         </div>

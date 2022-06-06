@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
-
+import { Helmet } from 'react-helmet';
 import messages_pl from "./../../translations/pl.json";
 import messages_en from "./../../translations/en.json";
 
@@ -100,7 +99,7 @@ class Meta extends Component {
 
   render() {
     return (
-      <MetaTags>
+      <Helmet>
         <link rel="alternate" hrefLang="pl" href={this.state.alternate_pl} />
         <link rel="alternate" hrefLang="en" href={this.state.alternate_en} />
 
@@ -131,7 +130,7 @@ class Meta extends Component {
         <meta name="msapplication-TileColor" content="#3f5a6f"/>
         <meta name="msapplication-TileImage" content={this.state.image}/>
         <meta name="theme-color" content="#3f5a6f"/>
-      </MetaTags>
+      </Helmet>
       )
   }
 }

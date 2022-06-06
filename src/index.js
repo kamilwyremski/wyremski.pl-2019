@@ -1,19 +1,16 @@
 import React from 'react';
-import { hydrate, render } from "react-dom";
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
-} else {
-  render(<App />, rootElement);
-}
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App tab="home" />);
 
 serviceWorkerRegistration.register();
 
 window.snapSaveState = () => {
-  document.querySelector("#root").setAttribute("data-server-rendered", "true");
+  document.querySelector("#app").setAttribute("data-server-rendered", "true");
 };
 
 

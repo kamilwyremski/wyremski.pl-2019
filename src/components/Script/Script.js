@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import {injectIntl, FormattedMessage} from 'react-intl';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import { useParams } from "react-router-dom";
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css';
 import Error404 from './../Error404/Error404';
 import Preloader from './../Preloader/Preloader.js';
 
 import './Script.scss';
 
 class Script extends Component {
-  constructor({...props}) {
+  constructor(props) {
     super(props);
     this.state = {
       script: false,
-      script_name: this.props.match.params.script_slug,
+      script_name: this.props.params.script_slug,
       photoIndex: 0,
       lightboxIsOpen: false,
       script_error404: false
@@ -322,4 +323,7 @@ class Script extends Component {
   }
 }
 
-export default injectIntl(Script);
+export default injectIntl((props) => (<Script
+  {...props}
+  params={useParams()}
+/>));
