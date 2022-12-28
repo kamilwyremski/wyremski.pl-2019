@@ -1,81 +1,146 @@
-.navbar{
-  font-family: 'Montserrat', sans-serif; 
-  background-color: rgba(255,255,255,0.9); 
-  position: fixed; 
-  top: 20px; 
-  left:0; 
-  right:0; 
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
   z-index: 100;
-  &.shadow{
-    box-shadow: 0 .5rem .5rem rgba(129, 95, 95, 0.08);
+
+  &.shadow {
+    box-shadow: 0 0.5rem 0.5rem rgba(129, 95, 95, 0.08);
   }
-  a{
-    color: #555; transition: all 0.2s;
+
+  a {
+    color: #555;
+    transition: all 0.2s;
   }
-  a:hover, a.is-active{
+
+  a:hover,
+  a.is-active {
     color: #000;
   }
-  .container{
+
+  .container {
     justify-content: space-between;
   }
 }
-.navbar--brand{
-  padding: 12px 15px; 
+
+.navbar--brand {
+  padding: 12px 15px;
   text-transform: uppercase;
   font-size: 17px;
-  small{
-    display: block; font-size: 10px;
+
+  small {
+    display: block;
+    font-size: 10px;
   }
 }
-.navbar--menu{
-  list-style: none; margin:0; 
-  .nav--link{
-    display: block;  padding: 15px; text-transform: uppercase; font-size: 0.9em;
+
+.navbar--menu {
+  list-style: none;
+  margin: 0;
+
+  .nav--link {
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.9em;
   }
-  li{
-    transition: all 0.2s; position: relative; opacity:1; top:0;
-    &.hide{
-      opacity:0; top:-100px;
+
+  li {
+    transition: all 0.2s;
+    position: relative;
+    opacity: 1;
+    top: 0;
+
+    &.hide {
+      opacity: 0;
+      top: -100px;
     }
   }
 }
-.navbar--burger{
-  width: 30px;  height: 30px;  position: relative; transform: rotate(0deg);  transition: .5s ease-in-out; transition: opacity .2s ease-in-out; display: none; margin: 10px 10px; opacity:0.7; background: none; border: none;
-  &:hover{
+
+.navbar--burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+  display: none;
+  margin: 13px;
+  opacity: 0.7;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
     opacity: 1;
   }
-  span{
-    display: block;  position: absolute;  height: 2px;  width: 100%;  background: #777;  border-radius: 9px;
-    opacity: 1;  left: 0;   transform: rotate(0deg);  transition: .25s ease-in-out; top:5px;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #777;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    top: 5px;
+
     &:nth-child(1) {
       width: 75%;
     }
+
     &:nth-child(2) {
       top: 13px;
     }
+
     &:nth-child(3) {
-      top: 21px; width: 75%; left: 25%;
+      top: 21px;
+      width: 75%;
+      left: 25%;
     }
   }
-  &.open{
+
+  &.open {
     span:nth-child(1) {
-      top: 13px;  transform: rotate(135deg); width: 100%;
+      top: 13px;
+      transform: rotate(135deg);
+      width: 100%;
     }
+
     span:nth-child(2) {
-      opacity: 0;  left: -60px;
+      opacity: 0;
+      left: -60px;
     }
+
     span:nth-child(3) {
-      top: 13px;  transform: rotate(-135deg); width: 100%; left:0;
+      top: 13px;
+      transform: rotate(-135deg);
+      width: 100%;
+      left: 0;
     }
   }
 }
-@media(max-width: 768px) {
-  .navbar--burger{
+
+@media (max-width: 768px) {
+  .navbar--burger {
     display: block;
   }
-  .navbar--menu{
-    display: block; width: 100%;  flex-basis: 100%; max-height:0;  overflow-y: hidden;  transition: all .4s;
-    &.open{
+
+  .navbar--menu {
+    display: block;
+    width: 100%;
+    flex-basis: 100%;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.4s;
+
+    &.open {
       max-height: 350px;
     }
   }
