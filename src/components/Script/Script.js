@@ -311,7 +311,7 @@ class Script extends Component {
                   breakingLine: <br />
                 }}
               />
-              <a href={script.buy_url} title={script_name} className="script--buy"><FormattedMessage id="script.buy"/></a>
+              <a href={script.buy_url} title={script_name} className="script--buy">{script.free ? <FormattedMessage id="script.download"/> : <FormattedMessage id="script.buy"/>}</a>
             </div>
           </section>
         }

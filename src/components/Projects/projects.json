@@ -1,182 +1,182 @@
 [
 	{
-		"name" : "Polish Express",
-		"description" : {
-			"pl" : "Polski portal informacyjny w Wielkiej Brytanii - fakty i wydarzenia. Oparty na Symfony3.",
-			"en" : "Polish information portal in Great Britain - facts and events. Based on Symfony3."
+		"name": "Polish Express",
+		"description": {
+			"pl": "Polski portal informacyjny w Wielkiej Brytanii - fakty i wydarzenia. Oparty na Symfony3.",
+			"en": "Polish information portal in Great Britain - facts and events. Based on Symfony3."
 		},
-		"url" : "polishexpress.co.uk",
-		"image" : "polishexpress.jpg"
+		"url": "polishexpress.co.uk",
+		"image": "polishexpress.jpg"
 	},
 	{
-	  "name" : "AlleMoto",
-		"description" : {
-			"pl" : "Rozbudowany i nowoczesny (stworzony w 2020 roku) serwis z ogłoszeniami motoryzacyjnymi",
-			"en" : "Modern website with automotive advertisements"
+		"name": "Twoja Oferta",
+		"description": {
+			"pl": "Nowoczesny i rozbudowany portal z ogłoszeniami online oparty o skrypt Notice3. Pracuje na Symfony 5 i Vue",
+			"en": "Modern portal with online classifieds based on Notice3 script. Works on Symfony 5 and framework Vue"
 		},
-		"url" : "allemoto.com",
-		"image" : "allemoto.jpg"
+		"url": "twojaoferta.com.pl",
+		"image": "twojaoferta.jpg"
 	},
 	{
-	  "name" : "hosting_dojo",
-		"description" : {
-			"pl" : "Strona z rankingiem szybkości hostingów z różnych krajów. Oparta o Symfony i VUE",
-			"en" : "Website with a ranking of the speed of hosting from different countries. Based on Symfony and VUE"
+		"name": "hosting_dojo",
+		"description": {
+			"pl": "Strona z rankingiem szybkości hostingów z różnych krajów. Oparta o Symfony i VUE",
+			"en": "Website with a ranking of the speed of hosting from different countries. Based on Symfony and VUE"
 		},
-		"url" : "hostingdojo.com",
-		"image" : "hostingdojo.jpg"
+		"url": "hostingdojo.com",
+		"image": "hostingdojo.jpg"
 	},
 	{
-		"name" : "Cargoos",
-		"description" : {
-			"pl" : "Strona internetowa firmy transportowej z USA stworzona na Wordpress",
-			"en" : "Website of a transport company from the USA created on Wordpress"
+		"name": "Cargoos",
+		"description": {
+			"pl": "Strona internetowa firmy transportowej z USA stworzona na Wordpress",
+			"en": "Website of a transport company from the USA created on Wordpress"
 		},
-		"url" : "cargoos.com",
-		"image" : "cargoos.jpg"
+		"url": "cargoos.com",
+		"image": "cargoos.jpg"
 	},
 	{
-		"name" : "Coupon Dojo",
-		"description" : {
-			"pl" : "Wielojęzyczna strona ze zniżkami i kodami promocyjnymi wraz z wtyczką do Chrome",
-			"en" : "International website with discounts and vouchers"
+		"name": "Coupon Dojo",
+		"description": {
+			"pl": "Wielojęzyczna strona ze zniżkami i kodami promocyjnymi wraz z wtyczką do Chrome",
+			"en": "International website with discounts and vouchers"
 		},
-		"url" : "coupondojo.com",
-		"image" : "coupondojo.jpg"
+		"url": "coupondojo.com",
+		"image": "coupondojo.jpg"
 	},
 	{
-		"name" : "G1ant",
-		"description" : {
-			"pl" : "Założona w 2015 roku w Londynie, G1ANT jest najszybciej rozwijającą się platformą oprogramowania RPA na rynku",
-			"en" : "Founded in 2015 in London, G1ANT is the fastest-growing RPA software platform on the market"
+		"name": "G1ant",
+		"description": {
+			"pl": "Założona w 2015 roku w Londynie, G1ANT jest najszybciej rozwijającą się platformą oprogramowania RPA na rynku",
+			"en": "Founded in 2015 in London, G1ANT is the fastest-growing RPA software platform on the market"
 		},
-		"url" : "g1ant.com",
-		"image" : "g1ant.jpg"
+		"url": "g1ant.com",
+		"image": "g1ant.jpg"
 	},
 	{
-		"name" : "Mieszkania w stylu",
-		"description" : {
-			"pl" : "Portal z ogłoszeniami nieruchomości ze zintegrowanym blogiem",
-			"en" : "Real estate classifieds portal with integrated blog"
+		"name": "Mieszkania w stylu",
+		"description": {
+			"pl": "Portal z ogłoszeniami nieruchomości ze zintegrowanym blogiem",
+			"en": "Real estate classifieds portal with integrated blog"
 		},
-		"url" : "mieszkaniawstylu.pl",
-		"image" : "mieszkaniawstylu.jpg"
+		"url": "mieszkaniawstylu.pl",
+		"image": "mieszkaniawstylu.jpg"
 	},
 	{
-	  "name" : "MAX Plus KALISZ",
-	  "description" : {
-			"pl" : "Strona wielobranżowej firmy z Kalisza świadczącej usługi rachunkowe oraz poligraficzne (agencja reklamowa)",
-			"en" : "Accounting and advertising company from city Kalisz / Poland"
+		"name": "MAX Plus KALISZ",
+		"description": {
+			"pl": "Strona wielobranżowej firmy z Kalisza świadczącej usługi rachunkowe oraz poligraficzne (agencja reklamowa)",
+			"en": "Accounting and advertising company from city Kalisz / Poland"
 		},
-		"url" : "maxplus.kalisz.pl",
-		"image" : "maxplus.jpg"
+		"url": "maxplus.kalisz.pl",
+		"image": "maxplus.jpg"
 	},
 	{
-	  "name" : "Mateusz Rzetecki",
-	  "description" : {
-			"pl" : "Portfolio eksperta SEO wraz z jego blogiem. Oparte o PHP + Twig3",
-			"en" : "Portfolio of an SEO expert with his blog"
+		"name": "Mateusz Rzetecki",
+		"description": {
+			"pl": "Portfolio eksperta SEO wraz z jego blogiem. Oparte o PHP + Twig3",
+			"en": "Portfolio of an SEO expert with his blog"
 		},
-		"url" : "mrzetecki.com",
-		"image" : "mrzetecki.jpg"
+		"url": "mrzetecki.com",
+		"image": "mrzetecki.jpg"
 	},
 	{
-	  "name" : "Fundacja Przystań",
-		"description" : {
-			"pl" : "Strona internetowa Fundacji Przystań z Dąbrowy Górniczej, zajmującej się szeroko pojętą ochroną zdrowia psychicznego. Oparta na Symfony3.",
-			"en" : "Website of the Przystań Foundation, dealing with broadly understood mental health protection. Based on Symfony3"
+		"name": "Fundacja Przystań",
+		"description": {
+			"pl": "Strona internetowa Fundacji Przystań z Dąbrowy Górniczej, zajmującej się szeroko pojętą ochroną zdrowia psychicznego. Oparta na Symfony3.",
+			"en": "Website of the Przystań Foundation, dealing with broadly understood mental health protection. Based on Symfony3"
 		},
-		"url" : "fundacjaprzystan.com",
-		"image" : "fundacjaprzystan.jpg"
+		"url": "fundacjaprzystan.com",
+		"image": "fundacjaprzystan.jpg"
 	},
 	{
-		"name" : "Multino",
-		"description" : {
-			"pl" : "Nowoczesny serwis internetowy z ogłoszeniami online oparty o skrypt ogłoszeniowy",
-			"en" : "A modern website with online classifieds"
+		"name": "Multino",
+		"description": {
+			"pl": "Nowoczesny serwis internetowy z ogłoszeniami online oparty o skrypt ogłoszeniowy",
+			"en": "A modern website with online classifieds"
 		},
-		"url" : "multino.pl",
-		"image" : "multino.jpg"
+		"url": "multino.pl",
+		"image": "multino.jpg"
 	},
 	{
-		"name" : "IT Works Better",
-		"description" : {
-			"pl" : "Strona www zespołu programistów Backend i Frontend (aplikacji webowych i mobilnych) oraz grafików i specjalistów SEO",
-			"en" : "Website of a team of Backend and Frontend programmers (web and mobile applications) as well as graphic designers and SEO specialists"
+		"name": "IT Works Better",
+		"description": {
+			"pl": "Strona www zespołu programistów Backend i Frontend (aplikacji webowych i mobilnych) oraz grafików i specjalistów SEO",
+			"en": "Website of a team of Backend and Frontend programmers (web and mobile applications) as well as graphic designers and SEO specialists"
 		},
-		"url" : "itworksbetter.net",
-		"image" : "itworksbetter.jpg"
+		"url": "itworksbetter.net",
+		"image": "itworksbetter.jpg"
 	},
 	{
-	  "name" : "Strefa.co.uk",
-		"description" : {
-			"pl" : "Jeden z pierwszych portali ogłoszeniowych dla Polaków mieszkających w Wielkiej Brytanii. Oparty o skrypt ogłoszeniowy Notice",
-			"en" : "This is one of the first advertising portals aimed at Poles living in the UK, which aim is to help them get started, find a job or find an apartment."
+		"name": "Strefa.co.uk",
+		"description": {
+			"pl": "Jeden z pierwszych portali ogłoszeniowych dla Polaków mieszkających w Wielkiej Brytanii. Oparty o skrypt ogłoszeniowy Notice",
+			"en": "This is one of the first advertising portals aimed at Poles living in the UK, which aim is to help them get started, find a job or find an apartment."
 		},
-		"url" : "strefa.co.uk",
-		"image" : "strefa.jpg"
+		"url": "strefa.co.uk",
+		"image": "strefa.jpg"
 	},
 	{
-	  "name" : "PressFoto",
-		"description" : {
-			"pl" : "Bank zdjęć prasowych dla fotoreporterów i wydawców",
-			"en" : "A bank of press photos for photojournalists and publishers"
+		"name": "PressFoto",
+		"description": {
+			"pl": "Bank zdjęć prasowych dla fotoreporterów i wydawców",
+			"en": "A bank of press photos for photojournalists and publishers"
 		},
-		"url" : "pressfoto.pl",
-		"image" : "pressfoto.jpg"
+		"url": "pressfoto.pl",
+		"image": "pressfoto.jpg"
 	},
 	{
-	    "name" : "Ogoloshennya.pl",
-		"description" : {
-			"pl" : "Darmowy serwis z ogłoszeniami lokalnymi po polsku, rosyjsku i ukraińsku w kategoriach: Praca, Mieszkanie, Usługi, Kupię/Sprzedam, Motoryzacja i Towarzyskie",
-			"en" : "Free website with offers in Polish, Russian and Ukrainian"
+		"name": "Ogoloshennya.pl",
+		"description": {
+			"pl": "Darmowy serwis z ogłoszeniami lokalnymi po polsku, rosyjsku i ukraińsku w kategoriach: Praca, Mieszkanie, Usługi, Kupię/Sprzedam, Motoryzacja i Towarzyskie",
+			"en": "Free website with offers in Polish, Russian and Ukrainian"
 		},
-		"url" : "ogoloshennya.pl",
-		"image" : "ogoloshennya.jpg"
+		"url": "ogoloshennya.pl",
+		"image": "ogoloshennya.jpg"
 	},
 	{
-	    "name" : "Bioskin Kalisz",
-		"description" : {
-			"pl" : "Strona internetowa profesjonalnego gabinetu kosmetycznego i fryzjerskiego. Oparta na Symfony3",
-			"en" : "BIOSKIN is a combination of modern podology, trichology and services offered by a professional beauty and hairdressing salon."
+		"name": "Bioskin Kalisz",
+		"description": {
+			"pl": "Strona internetowa profesjonalnego gabinetu kosmetycznego i fryzjerskiego. Oparta na Symfony3",
+			"en": "BIOSKIN is a combination of modern podology, trichology and services offered by a professional beauty and hairdressing salon."
 		},
-		"url" : "bioskin-kalisz.pl",
-		"image" : "bioskin.jpg"
+		"url": "bioskin-kalisz.pl",
+		"image": "bioskin.jpg"
 	},
 	{
-		"name" : "Świat Kamienia",
-		"description" : {
-			"pl" : "Strona jednego z większych składów kamienia naturalnego w Południowej Wielkopolsce.",
-			"en" : "Company from city Kalisz / Poland"
+		"name": "Świat Kamienia",
+		"description": {
+			"pl": "Strona jednego z większych składów kamienia naturalnego w Południowej Wielkopolsce.",
+			"en": "Company from city Kalisz / Poland"
 		},
-		"url" : "skamienia.pl",
-		"image" : "skamienia.jpg"
+		"url": "skamienia.pl",
+		"image": "skamienia.jpg"
 	},
 	{
-	  "name" : "Chicago Ogłoszenia",
-		"description" : {
-			"pl" : "Portal z darmowymi ogłoszeniami online dla Polaków mieszkających w Chicago. Oparty o skrypt ogłoszeniowy Notice",
-			"en" : "Portal with free online classifieds for Polish living in Chicago"
+		"name": "Chicago Ogłoszenia",
+		"description": {
+			"pl": "Portal z darmowymi ogłoszeniami online dla Polaków mieszkających w Chicago. Oparty o skrypt ogłoszeniowy Notice",
+			"en": "Portal with free online classifieds for Polish living in Chicago"
 		},
-		"url" : "chicagoogloszenia.com",
-		"image" : "chicagoogloszenia.jpg"
+		"url": "chicagoogloszenia.com",
+		"image": "chicagoogloszenia.jpg"
 	},
 	{
-		"name" : "Oglaszamy24h.pl",
-		"description" : {
-			"pl" : "Nowoczesny serwis darmowych ogłoszeń drobnych: sprzedam, kupię, oddam, wymienię. Oparty o skrypt ogłoszeniowy Notice",
-			"en" : "Free classified ads: sell, buy, donate, exchange"
+		"name": "Oglaszamy24h.pl",
+		"description": {
+			"pl": "Nowoczesny serwis darmowych ogłoszeń drobnych: sprzedam, kupię, oddam, wymienię. Oparty o skrypt ogłoszeniowy Notice",
+			"en": "Free classified ads: sell, buy, donate, exchange"
 		},
-		"url" : "oglaszamy24h.pl",
-		"image" : "oglaszamy24h.jpg"
+		"url": "oglaszamy24h.pl",
+		"image": "oglaszamy24h.jpg"
 	},
 	{
-		"name" : "MotoBryki",
-		  "description" : {
-			  "pl" : "Baza ogłoszeń motoryzacyjnych z całej Polski oparta o skrypt ogłoszeniowy",
-			  "en" : "Website with automotive classifieds from all over Poland"
-		  },
-		  "url" : "motobryki.pl",
-		  "image" : "motobryki.jpg"
+		"name": "MotoBryki",
+		"description": {
+			"pl": "Baza ogłoszeń motoryzacyjnych z całej Polski oparta o skrypt ogłoszeniowy",
+			"en": "Website with automotive classifieds from all over Poland"
+		},
+		"url": "motobryki.pl",
+		"image": "motobryki.jpg"
 	}
 ]
