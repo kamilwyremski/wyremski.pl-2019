@@ -72,7 +72,7 @@ class Home extends Component {
 				<section className="section home--about_me" aria-labelledby="about-me-title">
 					<div className="container">
 						<h2 className="display-3">Kamil Wyremski</h2>
-						<h4 className="display-1" id="about-me-title"><FormattedMessage id="home.about_me.title"/></h4>
+						<h3 className="display-1" id="about-me-title"><FormattedMessage id="home.about_me.title"/></h3>
 						<p><FormattedMessage id="home.about_me.brand"/></p>
 					</div>
 				</section>
