@@ -94,11 +94,6 @@ class App extends Component {
         />
       )
     })
-    routes.push(
-      <Route status={404} notFound={true} key={'error404'} element={
-        <Error404 language={t.state.language} handleLanguage = {t.handleLanguage.bind(t)}/> } 
-      />
-    )
     return routes;
   }
 
@@ -110,7 +105,8 @@ class App extends Component {
           <div>
             <Nav language={this.state.language} component={this.state.component} alternate_slug={this.state.alternate_slug}/>
             <Routes >
-               {this.createRoute(this)}
+              {this.createRoute(this)}
+              <Route path="*" status={404} notFound={true} element={<Error404/>} />
             </Routes>
             <Footer />
           </div>
