@@ -56,6 +56,6 @@
     "script.demo.desc2": "DEMO version of Admin Panel: <strong><a>corta.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "CORTA - script for shortening URL links - earn passive!",
-    "script.desc3": "<p>Have you found a better online link shortener script?{breakingLine}...certainly not! There is simply no such ...</p>{breakingLine}<h3>If you are interested, you can buy this script:</h3>"
+    "script.desc3": "<p>Have you found a better online link shortener script?{breakingLine}...certainly not! There is simply no such ...</p>{breakingLine}<h3>You can download this script from GitHub:</h3>"
   }
 }
