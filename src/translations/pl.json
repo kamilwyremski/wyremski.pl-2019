@@ -44,7 +44,7 @@
   "home.skills.8.title": "Szybkość",
   "home.skills.8.desc": "Stosuję zaawansowane techniki cachowania oraz minimalizacji kodu, dzięki czemu Twoja strona działa znacznie szybciej!",
   "home.technologies.title": "Technologie",
-  "home.technologies.description": "Posiadam szeroki zakres umiejętności, które obejmują projektowanie, front-end (HTML5, CSS3, JavaScript, Angular, React, VUE, Ember, Next), oraz back-end (PHP7, Symfony, Yii, Laravel). Poniżej przedstawiam zarys technologii w których pracuję.",
+  "home.technologies.description": "Posiadam szeroki zakres umiejętności, które obejmują projektowanie, front-end (HTML5, CSS3, JavaScript, Angular, React, VUE, Ember, Next), oraz back-end (PHP, Symfony, Yii, Laravel). Poniżej przedstawiam zarys technologii w których pracuję.",
   "home.technologies.1.desc": "Interpretowany skryptowy język programowania stworzony do generowania stron internetowych (Back-End).",
   "home.technologies.2.desc": "Skryptowy język programowania, działający po stronie klienta lub serwera (node.js).",
   "home.technologies.3.desc": "<a>Symfony</a> to framework PHP bazujący na wzorcu projektowym MVC i wykorzystujący najnowsze standardy programowania.",

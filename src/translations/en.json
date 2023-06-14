@@ -44,7 +44,7 @@
   "home.skills.8.title": "Fast website",
   "home.skills.8.desc": "With advanced caching techniques and minimizing, your website runs smooth and fast!",
   "home.technologies.title": "Technologies",
-  "home.technologies.description": "My skills include the programming and design, front-end (HTML5, CSS3, JavaScript, Angular, React, Vue, Ember, Next), and the back-end (PHP7, Symfony, Yii, Laravel). Here is an outline of the technology in which it works.",
+  "home.technologies.description": "My skills include the programming and design, front-end (HTML5, CSS3, JavaScript, Angular, React, Vue, Ember, Next), and the back-end (PHP, Symfony, Yii, Laravel). Here is an outline of the technology in which it works.",
   "home.technologies.1.desc": "Interpreted scripting programming language designed to generate web pages (Back-End).",
   "home.technologies.2.desc": "Script programming language running on the client or server side (node.js).",
   "home.technologies.3.desc": "PHP framework based on the MVC design pattern and using the latest programming standards.",
