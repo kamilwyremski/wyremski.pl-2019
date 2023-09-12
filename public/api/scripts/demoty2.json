@@ -1,7 +1,8 @@
 {
   "data": {
     "functions": 12,
-    "buy_url": "https://sklep.itworksbetter.net/skrypty-stron-www/3-skrypt-typu-demotywatory-demoty2.html",
+    "buy_url": "https://github.com/kamilwyremski/demoty2",
+    "free": true,
     "photos": 12,
     "list_domains": [
       "durnotki.pl",

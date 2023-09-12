@@ -9,38 +9,6 @@ import './Footer.scss';
 
 
 class Footer extends Component {
-  constructor({intl, ...props}) {
-    super();
-    this.state = {
-      cookies_accepted: false
-    };
-    this.keyFunction = this.keyFunction.bind(this);
-  }
-
-  keyFunction(event){
-    if(event.keyCode === 84 || event.keyCode === 89) {
-      this.closeCookie();
-    }
-  }
-
-  componentDidMount() {
-    this.setState({
-      cookies_accepted: localStorage.cookies_accepted
-    });
-    document.addEventListener("keydown", this.keyFunction, false);
-  }
-
-  componentWillUnmount(){
-    document.removeEventListener("keydown", this.keyFunction, false);
-  }
-
-  closeCookie = () => {
-    this.setState({
-      cookies_accepted: true
-    });
-    localStorage.cookies_accepted = true;
-  }
-
   render() {
     const intl = this.props.intl;
     return (
@@ -112,11 +80,6 @@ class Footer extends Component {
             <p>Copyright © 2013 - 2023 by Kamil Wyremski. All rights reserved</p>
           </div>
         </footer>
-        <div className={ this.state.cookies_accepted ? "cookies-message" : "cookies-message open"}>
-          <p><FormattedMessage id="cookies_message"/></p>
-          <p><FormattedMessage id="cookies_message.bottom"/> <a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'cookies_message.privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="cookies_message.privacy_policy"/></a></p>
-          <button className="link accept-cookies-checkbox" onClick={this.closeCookie}><FormattedMessage id="cookies_message.accept"/></button>
-        </div>
       </>
     );
   }

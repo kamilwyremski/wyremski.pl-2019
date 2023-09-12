@@ -1,14 +1,5 @@
 [
 	{
-		"name": "Polish Express",
-		"description": {
-			"pl": "Polski portal informacyjny w Wielkiej Brytanii - fakty i wydarzenia. Oparty na Symfony3.",
-			"en": "Polish information portal in Great Britain - facts and events. Based on Symfony3."
-		},
-		"url": "polishexpress.co.uk",
-		"image": "polishexpress.jpg"
-	},
-	{
 		"name": "Twoja Oferta",
 		"description": {
 			"pl": "Nowoczesny i rozbudowany portal z ogłoszeniami online oparty o skrypt Notice3. Pracuje na Symfony 5 i Vue",
@@ -16,6 +7,15 @@
 		},
 		"url": "twojaoferta.com.pl",
 		"image": "twojaoferta.jpg"
+	},
+	{
+		"name": "Kody Rabatowe Nasze Miasto",
+		"description": {
+			"pl": "Strona z aktualnymi kodami rabatowymi i promocjami w sklepach. Oparty o Symfony i VUE",
+			"en": "Website with current discount codes and promotions in stores. Powered by Symfony and VUE"
+		},
+		"url": "kodyrabatowe.naszemiasto.pl",
+		"image": "kodyrabatowe.jpg"
 	},
 	{
 		"name": "hosting_dojo",

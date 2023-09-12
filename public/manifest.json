@@ -1,10 +1,12 @@
 {
   "name": "Kamil Wyremski - Full Stack Web developer",
   "short_name": "wyremski.pl",
-  "start_url": "https://wyremski.pl",
+  "start_url": "/",
   "display": "fullscreen",
-  "description": "Tworzenie nowoczesnych, zgodnych z SEO, bezpiecznych oraz responsywnych stron internetowych. Gotowe skrypty stron www.",
-  "lang": "pl-PL",
+  "description": "Creating modern, SEO-compliant, safe and responsive websites. Ready-made website scripts.",
+  "lang": "en-US",
+  "theme_color": "#89b1a8",
+  "background_color": "#89b1a8",
   "icons": [
     {
       "src": "upload/images/favicon/favicon-72.png",
@@ -37,7 +39,5 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#89b1a8",
-  "background_color": "#89b1a8"
+  ]
 }
