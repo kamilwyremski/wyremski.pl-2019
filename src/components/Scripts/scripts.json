@@ -12,7 +12,7 @@
 		"url" : "demoty2",
 		"description" : {
 			"pl" : "Demoty2 to skrypt dla strony pozwalającej tworzyć demotywatory, demoty oraz memy",
-			"en" : "Demoty2 is a script for a website with demotivators, demots and memes"
+			"en" : "Demoty2 is a script for a website with demotivators, demots, and memes"
 		}
 	},
 	{
@@ -28,7 +28,7 @@
 		"url" : "holmes2",
 		"description" : {
 			"pl" : "Holmes2 to skrypt stron internetowych z bazą nieruchomości, dla osób prywatnych lub agencji real estate",
-			"en" : "Real estate website for small or big real estate agencies"
+			"en" : "Holmes2 is a real estate website for small or large real estate agencies"
 		}
 	},
 	{
@@ -44,7 +44,7 @@
 		"url" : "cuadro",
 		"description" : {
 			"pl" : "CUADRO to uniwersalny skrypt dla stron internetowych z obrazkami, zdjęciami i filmami video",
-			"en" : "CUADRO is a script that allows you to create website with pictures, photos and movies"
+			"en" : "Cuadro is a script that allows you to create a website with pictures, photos, and movies"
 		}
 	},
 	{
@@ -52,7 +52,7 @@
 		"url" : "festa2",
 		"description" : {
 			"pl" : "Festa2 to nowoczesny skrypt umożliwiający stworzenie strony www z bazą miejsc noclegowych",
-			"en" : "Festa2 is a modern script that allows you to create a website with a base of accommodation"
+			"en" : "Festa2 is a modern script that allows you to create a website with a database of accommodations"
 		}
 	},
 	{
@@ -60,7 +60,7 @@
 		"url" : "corta",
 		"description" : {
 			"pl" : "Corta to skrypt strony www skracacza linków - zamienia długie adresy URL na krótkie i łatwe do zapamiętania",
-			"en" : "Corta is a script of website to URL shortener - it turns long URLs into short ones that are easy to remember"
+			"en" : "Corta is a script for a website URL shortener - it turns long URLs into short ones that are easy to remember"
 		}
 	}
 ]

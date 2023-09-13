@@ -58,7 +58,7 @@ a{
   outline: 0;
 }
 :focus {
-  outline: 2px $color-primary dashed;
+  outline: 2px $color-primary dashed; z-index:2;
 }
 .text-uppercase{
   text-transform: uppercase;
