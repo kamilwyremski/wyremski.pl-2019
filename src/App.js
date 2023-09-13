@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { AnimatePresence } from "framer-motion"; // Importuj AnimatePresence
+
 import './App.scss';
 
 import {IntlProvider} from "react-intl";
@@ -104,10 +106,12 @@ class App extends Component {
         <Router onUpdate={() => window.scrollTo(0, 0)}>
           <div>
             <Nav language={this.state.language} component={this.state.component} alternate_slug={this.state.alternate_slug}/>
+            <AnimatePresence mode="wait">
             <Routes >
               {this.createRoute(this)}
               <Route path="*" status={404} notFound={true} element={<Error404/>} />
             </Routes>
+            </AnimatePresence>
             <Footer />
           </div>
         </Router>
@@ -115,5 +119,5 @@ class App extends Component {
     )
   }
 };
-         
+
 export default App;
