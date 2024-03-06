@@ -1,7 +1,7 @@
 {
   "data": {
     "functions": 12,
-    "buy_url": "https://sklep.itworksbetter.net/skrypty-stron-www/5-skrypt-bazy-noclegow-festa2.html",
+    "buy_url": "https://github.com/kamilwyremski/festa2",
     "photos": 12,
     "list_domains": [
       "stancje.wroclaw.pl",
@@ -9,7 +9,8 @@
       "noclegi-beskidy.pl",
       "urlop24.com",
       "noclegi-nadmorzem.pl"
-    ]
+    ],
+    "free": true
   },
   "pl": {
     "title": "FESTA2 - skrypt bazy noclegowej",
@@ -40,7 +41,7 @@
     "script.desc2": "Festa2 jest wyposażona w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
     "script.desc3": "<h3>Szybki zysk dzięki dużej możliwości konfiguracji opłat</h3>{breakingLine}{breakingLine}<p>Znalazłeś lepszy skrypt strony z bazą noclegów?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Skrypt Festa2 już dziś może być Twój!</h3>"
   },
-  "en":{
+  "en": {
     "title": "FESTA2 - script of accommodation base",
     "description": "Festa2 is a modern script that allows you to create a website with a base of accommodation",
     "script.header": "Script accomodations website - Festa2",

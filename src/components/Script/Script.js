@@ -198,7 +198,6 @@ class Script extends Component {
                     width="994"
                     height="285"
                     className="img"
-                    loading="lazy"
                   />
                 </div>
               </div>

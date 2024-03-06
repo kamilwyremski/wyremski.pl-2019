@@ -5,7 +5,7 @@
     "photos": 12,
     "list_domains": [
       "playastreet.pl",
-      "vitalclub.pl"
+      "vitaldream.pl"
     ]
   },
   "pl": {
@@ -37,7 +37,7 @@
     "script.desc2": "Holmes2 jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
     "script.desc3": "<h3>Szybki zysk dzięki dużej możliwości konfiguracji opłat</h3>{breakingLine}{breakingLine}<p>Znalazłeś lepszy skrypt z bazą nieruchomości?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Skrypt Holmes2 już dziś może być Twój!</h3>"
   },
-  "en":{
+  "en": {
     "title": "HOLMES2 - real estate script",
     "description": "Real estate website for small or big real estate agencies",
     "script.header": "Holmes2 - real estate script",

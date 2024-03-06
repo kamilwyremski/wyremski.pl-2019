@@ -43,7 +43,7 @@ class Projects extends Component {
                     ref="image"
                     itemProp="image"
                     className="img"
-                    loading="lazy"
+                    loading={i > 3 ? "lazy" : "eager"}
                   />
                   <div className="project--description text-center">
                     <div>

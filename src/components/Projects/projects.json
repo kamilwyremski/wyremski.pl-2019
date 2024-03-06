@@ -36,6 +36,15 @@
 		"image": "cargoos.jpg"
 	},
 	{
+		"name": "Shop&Go",
+		"description": {
+			"pl": "Katalog odzieży, obuwia i dodatków modowych. Agregator produktów ze sklepów online. Oparty na Symfony i VUE",
+			"en": "Catalog of clothing, footwear and fashion accessories. Aggregator of products from online stores. Powered by Symfony and VUE"
+		},
+		"url": "shopngo.pl",
+		"image": "shopngo.jpg"
+	},
+	{
 		"name": "Coupon Dojo",
 		"description": {
 			"pl": "Wielojęzyczna strona ze zniżkami i kodami promocyjnymi wraz z wtyczką do Chrome",
@@ -124,15 +133,6 @@
 		},
 		"url": "pressfoto.pl",
 		"image": "pressfoto.jpg"
-	},
-	{
-		"name": "Ogoloshennya.pl",
-		"description": {
-			"pl": "Darmowy serwis z ogłoszeniami lokalnymi po polsku, rosyjsku i ukraińsku w kategoriach: Praca, Mieszkanie, Usługi, Kupię/Sprzedam, Motoryzacja i Towarzyskie",
-			"en": "A free website offering offers in Polish, Russian, and Ukrainian"
-		},
-		"url": "ogoloshennya.pl",
-		"image": "ogoloshennya.jpg"
 	},
 	{
 		"name": "Bioskin Kalisz",

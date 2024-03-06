@@ -53,7 +53,7 @@ class Scripts extends Component {
                           alt={item.name}
                           ref="image"
                           className="img"
-                          loading="lazy"
+                          loading={i > 1 ? "lazy" : "eager"}
                         />
                       </Link>
                     )}
@@ -94,7 +94,7 @@ class Scripts extends Component {
                           alt={item.name}
                           ref="image"
                           className="img"
-                          loading="lazy"
+                          loading={i > 1 ? "lazy" : "eager"}
                         />
                       </Link>
                     )}

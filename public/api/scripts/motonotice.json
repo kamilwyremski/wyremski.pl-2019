@@ -4,7 +4,6 @@
     "buy_url": "https://sklep.itworksbetter.net/skrypty-stron-www/4-skrypt-ogloszen-motoryzacyjnych-motonotice.html",
     "photos": 12,
     "list_domains": [
-      "sklepzleasingami.pl",
       "vapetrade.pl",
       "lanczujemy.pl",
       "cesjeleasingu.pl",
@@ -40,7 +39,7 @@
     "script.desc2": "MOTONOTICE jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt dla ogłoszeń motoryzacyjnych?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>MotoNotice już dziś może być Twój!</h3>"
   },
-  "en":{
+  "en": {
     "title": "MOTONOTICE - script of online classifieds from the automotive industry",
     "description": "MOTONOTICE is a modern script that allows you to create website with online classifieds from the automotive industry",
     "script.header": "Website script with online classifieds from the automotive industry",

@@ -6,7 +6,6 @@
     "photos": 12,
     "list_domains": [
       "durnotki.pl",
-      "ememy.pl",
       "meme24.cz"
     ]
   },
@@ -39,7 +38,7 @@
     "script.desc2": "Demoty2 są wyposażone w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt typu demotywatory?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Demoty2 już dzis mogą być Twoje!</h3>"
   },
-  "en":{
+  "en": {
     "title": "DEMOTY2 - web script for demotivators and memes",
     "description": "Demoty2 is a script for a website with demotivators, demots and memes",
     "script.header": "Script Demoty2",

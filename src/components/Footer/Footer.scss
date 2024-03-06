@@ -29,10 +29,12 @@
 
 .footer--social {
 	font-size: 2em;
+  max-width: 260px;
+  margin: auto;
 }
 
 .footer--social a {
-	margin: 7px;
+	margin: 15px;
 }
 
 .footer--bottom {

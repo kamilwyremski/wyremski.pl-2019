@@ -4,7 +4,6 @@
     "buy_url": "https://sklep.itworksbetter.net/skrypty-stron-www/8-skrypt-ofert-pracy-jobnotice.html",
     "photos": 12,
     "list_domains": [
-      "unijob.pl",
       "pracaweuropie.com",
       "pracastala.pl"
     ]
@@ -38,7 +37,7 @@
     "script.desc2": "JOBNOTICE ułatwi Twoim klientom znalezienie pracy a Tobie uzyskanie dochodu!",
     "script.desc3": "<p>Znalazłeś lepszy skrypt strony www z ofertami pracy?{breakingLine}...na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>JobNotice już dziś może być Twój!</h3>"
   },
-  "en":{
+  "en": {
     "title": "JOBNOTICE - job posting script",
     "description": "JOBNOTICE is a script of a website with job offers - it connects employees with employers",
     "script.header": "JobNotice job site script",

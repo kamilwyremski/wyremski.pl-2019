@@ -1,12 +1,24 @@
-import React, { Component } from 'react';
-import {injectIntl, FormattedMessage} from 'react-intl';
+import React, { Component } from "react";
+import { injectIntl, FormattedMessage } from "react-intl";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faLinkedin, faTwitterSquare, faPinterest, faGithub, faHackerrank, faFreeCodeCamp, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import { faPenSquare, faShoppingBasket, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faTwitterSquare,
+  faGithub,
+  faHackerrank,
+  faFreeCodeCamp,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faPenSquare,
+  faShoppingBasket,
+  faCode,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
-import './Footer.scss';
-
+import "./Footer.scss";
 
 class Footer extends Component {
   render() {
@@ -16,68 +28,177 @@ class Footer extends Component {
         <footer className="footer">
           <div className="container d-flex">
             <div className="footer--top">
-              <FormattedMessage id="footer.text" values={{
-                p: chunks => <p>{chunks}</p>,
-                a: chunks => <a href="https://sklep.itworksbetter.net/" title="IT Works Better" target="_blank" rel="nofollow noopener noreferrer">{chunks}</a>,
-                breakingLine: <br />
-              }}/>
+              <FormattedMessage
+                id="footer.text"
+                values={{
+                  p: (chunks) => <p>{chunks}</p>,
+                  a: (chunks) => (
+                    <a
+                      href="https://sklep.itworksbetter.net/"
+                      title="IT Works Better"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                  breakingLine: <br />,
+                }}
+              />
             </div>
             <div className="footer--top text-center">
-              <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:kamil@wyremski.pl" title={ intl.formatMessage({ id: 'footer.write_to_me' })}>kamil@wyremski.pl</a></p>
-              <p><a href="https://blog.wyremski.pl/polityka-prywatnosci/" title={ intl.formatMessage({ id: 'privacy_policy' })} target="_blank" rel="noopener noreferrer"><FormattedMessage id="privacy_policy"/></a></p>
-          	</div>
-        		<div className="footer--top text-center">
-        			<div itemScope itemType="http://schema.org/Organization" className="footer--social">
-        				<link itemProp="url" href="https://wyremski.pl" />
-        				<a href="https://www.facebook.com/wyremskipl/" title={ intl.formatMessage({ id: 'footer.facebook' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+              <p>
+                <FontAwesomeIcon icon={faEnvelope} />{" "}
+                <a
+                  href="mailto:kamil@wyremski.pl"
+                  title={intl.formatMessage({ id: "footer.write_to_me" })}
+                >
+                  kamil@wyremski.pl
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://blog.wyremski.pl/polityka-prywatnosci/"
+                  title={intl.formatMessage({ id: "privacy_policy" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FormattedMessage id="privacy_policy" />
+                </a>
+              </p>
+            </div>
+            <div className="footer--top text-center">
+              <div
+                itemScope
+                itemType="http://schema.org/Organization"
+                className="footer--social"
+              >
+                <link itemProp="url" href="https://wyremski.pl" />
+                <a
+                  href="https://www.facebook.com/wyremskipl/"
+                  title={intl.formatMessage({ id: "footer.facebook" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faFacebookSquare} />
-                  <span className="sr-only"><FormattedMessage id="footer.facebook"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.facebook" />
+                  </span>
                 </a>
-        				<a href="https://linkedin.com/in/kamil-wyremski" title={ intl.formatMessage({ id: 'footer.linkedin' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://linkedin.com/in/kamil-wyremski"
+                  title={intl.formatMessage({ id: "footer.linkedin" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
-                  <span className="sr-only"><FormattedMessage id="footer.linkedin"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.linkedin" />
+                  </span>
                 </a>
-                <a href="https://github.com/kamilwyremski" title={ intl.formatMessage({ id: 'footer.github' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://github.com/kamilwyremski"
+                  title={intl.formatMessage({ id: "footer.github" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faGithub} />
-                  <span className="sr-only"><FormattedMessage id="footer.github"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.github" />
+                  </span>
                 </a>
-                <a href="https://www.hackerrank.com/kamil_wyremski" title={ intl.formatMessage({ id: 'footer.hackerrank' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://www.hackerrank.com/kamil_wyremski"
+                  title={intl.formatMessage({ id: "footer.hackerrank" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faHackerrank} />
-                  <span className="sr-only"><FormattedMessage id="footer.hackerrank"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.hackerrank" />
+                  </span>
                 </a>
-                <a href="https://www.freecodecamp.org/kamil.wyremski" title={ intl.formatMessage({ id: 'footer.freecodecamp' })} target="_blank" rel="publisher noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://www.freecodecamp.org/kamil.wyremski"
+                  title={intl.formatMessage({ id: "footer.freecodecamp" })}
+                  target="_blank"
+                  rel="publisher noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faFreeCodeCamp} />
-                  <span className="sr-only"><FormattedMessage id="footer.freecodecamp"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.freecodecamp" />
+                  </span>
                 </a>
-                <a href="https://www.codewars.com/users/kamilwyremski" title={ intl.formatMessage({ id: 'footer.codewars' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://www.codewars.com/users/kamilwyremski"
+                  title={intl.formatMessage({ id: "footer.codewars" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faCode} />
-                  <span className="sr-only"><FormattedMessage id="footer.codewars"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.codewars" />
+                  </span>
                 </a>
-                <a href="https://stackoverflow.com/users/8337251/kamil-wyremski" title={ intl.formatMessage({ id: 'footer.stackoverflow' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://stackoverflow.com/users/8337251/kamil-wyremski"
+                  title={intl.formatMessage({ id: "footer.stackoverflow" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faStackOverflow} />
-                  <span className="sr-only"><FormattedMessage id="footer.stackoverflow"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.stackoverflow" />
+                  </span>
                 </a>
-        				<a href="https://twitter.com/kamil_wyremski" title={ intl.formatMessage({ id: 'footer.twitter' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
+                <a
+                  href="https://twitter.com/kamil_wyremski"
+                  title={intl.formatMessage({ id: "footer.twitter" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="sameAs"
+                >
                   <FontAwesomeIcon icon={faTwitterSquare} />
-                  <span className="sr-only"><FormattedMessage id="footer.twitter"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.twitter" />
+                  </span>
                 </a>
-        				<a href="https://pl.pinterest.com/kamilwyremski/" title={ intl.formatMessage({ id: 'footer.pinterest' })} target="_blank" rel="noopener noreferrer" itemProp="sameAs">
-                  <FontAwesomeIcon icon={faPinterest} />
-                  <span className="sr-only"><FormattedMessage id="footer.pinterest"/></span>
-                </a>
-        				<a href="https://blog.wyremski.pl" title={ intl.formatMessage({ id: 'footer.blog' })} target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://blog.wyremski.pl"
+                  title={intl.formatMessage({ id: "footer.blog" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faPenSquare} />
-                  <span className="sr-only"><FormattedMessage id="footer.blog"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.blog" />
+                  </span>
                 </a>
-                <a href="https://sklep.itworksbetter.net/" title={ intl.formatMessage({ id: 'footer.shop' })} target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://sklep.itworksbetter.net/"
+                  title={intl.formatMessage({ id: "footer.shop" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faShoppingBasket} />
-                  <span className="sr-only"><FormattedMessage id="footer.shop"/></span>
+                  <span className="sr-only">
+                    <FormattedMessage id="footer.shop" />
+                  </span>
                 </a>
               </div>
             </div>
           </div>
           <div className="container text-center footer--bottom">
-            <p>Copyright © 2013 - 2023 by Kamil Wyremski. All rights reserved</p>
+            <p>
+              Copyright © 2013 - 2024 by Kamil Wyremski. All rights reserved
+            </p>
           </div>
         </footer>
       </>
