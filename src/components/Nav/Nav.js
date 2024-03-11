@@ -114,7 +114,7 @@ class Nav extends Component {
             onClick={this.showHideMenu}
             aria-controls="navbar--menu"
             aria-expanded={this.state.active_mobile_menu}
-            aria-label={intl.formatMessage({ id: "nav.title.toogle" })}
+            aria-label={intl.formatMessage({ id: "nav.title.toggle" })}
           >
             <span></span>
             <span></span>

@@ -14,7 +14,7 @@
 	color: $color-primary; animation-name: showHide; animation-duration: 0.8s; animation-iteration-count: infinite;
 }
 .home--introduction--text{
-	column-count: 2; column-gap: 4em; margin-top: 50px; 
+	column-count: 2; column-gap: 2em; margin-top: 50px; 
 }
 .home--about_me{
 	background: $color-dark url("./../../assets/images/background_desk.webp") no-repeat fixed center bottom / cover;  color: $color-light; text-align: center;
