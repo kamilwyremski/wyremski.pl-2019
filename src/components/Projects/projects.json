@@ -126,6 +126,15 @@
 		"image": "strefa.jpg"
 	},
 	{
+		"name": "Baterslo.sk",
+		"description": {
+			"pl": "Słowacka strona z ogłoszeniami online z różnych kategorii. Oparta na skrypcie ogłoszeniowym Notice3",
+			"en": "The Slovakian website with online classifieds from different categories. Based on Notice3 script"
+		},
+		"url": "baterslo.sk",
+		"image": "baterslo-sk.jpg"
+	},
+	{
 		"name": "PressFoto",
 		"description": {
 			"pl": "Bank zdjęć prasowych dla fotoreporterów i wydawców",
