@@ -12,9 +12,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.props.handleLanguage(this.props.language, "home");
-    const header_texts = this.props.intl
-      .formatMessage({ id: "home.header.types" })
-      .split(" ");
+    const header_texts = this.props.intl.formatMessage({ id: "home.header.types" }).split(" ");
     let header_types_counter = 0;
     let header_text_index = 0;
     let header_text_char = 0;
@@ -35,10 +33,7 @@ class Home extends Component {
         header_text = header_text.substring(0, header_text.length - 1);
         header_types_counter++;
       } else {
-        header_text = header_texts[header_text_index].substring(
-          0,
-          header_text_char
-        );
+        header_text = header_texts[header_text_index].substring(0, header_text_char);
         header_types_counter++;
       }
       this.setState({
@@ -65,26 +60,17 @@ class Home extends Component {
                 <span className="home--header--typed-cursor">|</span>
               </p>
               <h2 className="display-1">
-                <FormattedMessage
-                  id="home.header.text"
-                  values={{ breakingLine: <br /> }}
-                />
+                <FormattedMessage id="home.header.text" values={{ breakingLine: <br /> }} />
               </h2>
             </div>
           </header>
-          <section
-            className="container section"
-            aria-labelledby="introduction-title"
-          >
+          <section className="container section" aria-labelledby="introduction-title">
             <div className="text-center">
               <h2 className="display-3" id="introduction-title">
                 <FormattedMessage id="home.introduction.header" />
               </h2>
               <h3 className="display-1">
-                <FormattedMessage
-                  id="home.introduction.subheader"
-                  values={{ breakingLine: <br /> }}
-                />
+                <FormattedMessage id="home.introduction.subheader" values={{ breakingLine: <br /> }} />
               </h3>
             </div>
             <div className="home--introduction--text">
@@ -96,10 +82,7 @@ class Home extends Component {
               />
             </div>
           </section>
-          <section
-            className="section home--about_me"
-            aria-labelledby="about-me-title"
-          >
+          <section className="section home--about_me" aria-labelledby="about-me-title">
             <div className="container">
               <h2 className="display-3">Kamil Wyremski</h2>
               <h3 className="display-1" id="about-me-title">
@@ -131,12 +114,7 @@ class Home extends Component {
                       id="home.skills.1.desc"
                       values={{
                         a: (chunks) => (
-                          <a
-                            href="http://blog.wyremski.pl/poprawne-wyswietlanie-strony/"
-                            target="_blank"
-                            title="Standard W3C"
-                            rel="noopener noreferrer"
-                          >
+                          <a href="http://blog.wyremski.pl/poprawne-wyswietlanie-strony/" target="_blank" title="Standard W3C" rel="noopener noreferrer">
                             {chunks}
                           </a>
                         ),
@@ -154,12 +132,7 @@ class Home extends Component {
                       id="home.skills.2.desc"
                       values={{
                         a: (chunks) => (
-                          <a
-                            href="http://blog.wyremski.pl/optymalizacja-strony-www/"
-                            target="_blank"
-                            title="Strony www zgodne z SEO"
-                            rel="noopener noreferrer"
-                          >
+                          <a href="http://blog.wyremski.pl/optymalizacja-strony-www/" target="_blank" title="Strony www zgodne z SEO" rel="noopener noreferrer">
                             {chunks}
                           </a>
                         ),
@@ -224,10 +197,7 @@ class Home extends Component {
               </div>
             </div>
           </section>
-          <section
-            className="container section"
-            aria-labelledby="technologies-title"
-          >
+          <section className="container section" aria-labelledby="technologies-title">
             <div className="text-center content mb-2">
               <h2 className="display-3" id="technologies-title">
                 <FormattedMessage id="home.technologies.title" />
@@ -259,12 +229,7 @@ class Home extends Component {
                     id="home.technologies.3.desc"
                     values={{
                       a: (chunks) => (
-                        <a
-                          href="http://blog.wyremski.pl/framework-symfony/"
-                          title="Symfony framework"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <a href="http://blog.wyremski.pl/framework-symfony/" title="Symfony framework" target="_blank" rel="noopener noreferrer">
                           {chunks}
                         </a>
                       ),
@@ -288,18 +253,13 @@ class Home extends Component {
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Twitter Bootstrap</h4>
+                <h4 className="display-1">Bootstrap</h4>
                 <p>
                   <FormattedMessage
                     id="home.technologies.6.desc"
                     values={{
                       a: (chunks) => (
-                        <a
-                          href="http://blog.wyremski.pl/framework-bootstrap/"
-                          title="Twitter Bootstrap"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <a href="http://blog.wyremski.pl/framework-bootstrap/" title="Bootstrap" target="_blank" rel="noopener noreferrer">
                           {chunks}
                         </a>
                       ),

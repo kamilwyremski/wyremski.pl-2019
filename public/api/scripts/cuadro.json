@@ -46,7 +46,7 @@
     "script.subheader": "Create Your Own Modern Website Featuring Images and Movies!",
     "script.desc1": "<h2>Join Hundreds of Satisfied Users!</h2><p>CUADRO simplifies the process of creating your own website filled with <strong>images, photos, and movies</strong>. It supports user uploads of graphics and MP4 files, as well as the integration of videos from YouTube, Vimeo, and DailyMotion.</p><p>CUADRO is versatile enough for any topic, offering <strong>numerous configuration options</strong> to tailor it to your unique needs. Its design utilizes the Materialize framework, ensuring a modern appearance.</p>",
     "script.function.1": "<h4>RWD</h4><p><strong>Responsive Design</strong> ensures compatibility with HTML5, displaying correctly on mobile devices such as smartphones and tablets.</p>",
-    "script.function.2": "<h4>Social Network Integration</h4><p>Features integration with social networks: Facebook (including login capability), Google, Twitter, and Wykop.pl.</p>",
+    "script.function.2": "<h4>Social Network Integration</h4><p>Features integration with social networks: Facebook (including login capability), Google, X (Twitter), and Wykop.pl.</p>",
     "script.function.3": "<h4>Waiting Room and Top</h4><p>Includes a subpage for new uploads in the <strong>Waiting Room</strong>, showcasing the best files based on votes and random selections.</p>",
     "script.function.4": "<h4>ADS</h4><p>Provides numerous sections for <strong>ads</strong>, both between files and in sidebars, for potential revenue generation.</p>",
     "script.function.5": "<h4>RSS Channel</h4><p>An <strong>RSS channel</strong> that displays the most recently added files, keeping content fresh and engaging.</p>",

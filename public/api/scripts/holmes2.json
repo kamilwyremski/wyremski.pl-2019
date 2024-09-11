@@ -1,23 +1,24 @@
 {
   "data": {
     "functions": 12,
-    "buy_url": "https://sklep.itworksbetter.net/skrypty-stron-www/6-skrypt-bazy-nieruchomosci-holmes2.html",
+    "buy_url": "https://github.com/kamilwyremski/holmes2",
     "photos": 12,
     "list_domains": [
       "playastreet.pl",
       "vitaldream.pl"
-    ]
+    ],
+    "free": true
   },
   "pl": {
     "title": "HOLMES2 - Skrypt Bazy Nieruchomości",
     "description": "Holmes2 to skrypt stron internetowych z bazą nieruchomości, przeznaczony dla osób prywatnych oraz agencji nieruchomości.",
     "script.header": "Skrypt Bazy Nieruchomości Holmes2",
     "script.subheader": "Stwórz własny portal z bazą nieruchomości i zarabiaj na nim!",
-    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>Skrypt umożliwia stworzenie własnej strony z bazą nieruchomości w łatwy i szybki sposób.</p><p>Z Holmes2 możesz stworzyć portal lokalny, ogólnopolski lub międzynarodowy. Skrypt doskonale nadaje się do prowadzenia małych jak i wielkich stron z listą nieruchomości na sprzedaż, wynajem lub zamianę. Mogą to być domy, działki, garaże, hale/magazyny, lokale, mieszkania, pokoje, wille, zamki itd.</p><p>Dodatkowo wspiera <strong>możliwość zmiany języka</strong> oraz <strong>płatności</strong> w systemach <strong>Dotpay</strong>, <strong>Paynow</strong>, <strong>Przelewy24</strong> oraz <strong>PayPal</strong>.</p>",
+    "script.desc1": "<h2>Dołącz do zadowolonych użytkowników!</h2><p>Darmowy skrypt Holmes2 umożliwia stworzenie własnej strony z bazą nieruchomości w łatwy i szybki sposób.</p><p>Z Holmes2 możesz stworzyć portal lokalny, ogólnopolski lub międzynarodowy. Skrypt doskonale nadaje się do prowadzenia małych jak i wielkich stron z listą nieruchomości na sprzedaż, wynajem lub zamianę. Mogą to być domy, działki, garaże, hale/magazyny, lokale, mieszkania, pokoje, wille, zamki itd.</p><p>Dodatkowo wspiera <strong>możliwość zmiany języka</strong> oraz <strong>płatności</strong> w systemach <strong>Dotpay</strong>, <strong>Paynow</strong>, <strong>Przelewy24</strong> oraz <strong>PayPal</strong>.</p>",
     "script.function.1": "<h4>Płatności</h4><p>Obsługa <strong>systemów płatności Dotpay</strong>, <strong>Przelewy24</strong> oraz <strong>PayPal</strong> za wystawianie i promowanie ogłoszenia.</p>",
     "script.function.2": "<h4>Responsywność</h4><p><strong>Responsywny szablon</strong> zgodny z HTML5 - strona poprawnie wyświetla się także na urządzeniach mobilnych (np. telefonach komórkowych, tabletach).</p>",
     "script.function.3": "<h4>Automatyzacja</h4><p><strong>Automatyzacja działania</strong>, m.in. dzięki zadaniom cron-a i cachowaniu danych, w celu utrzymania maksymalnej wydajności systemu.</p>",
-    "script.function.4": "<h4>Portale Społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi</strong> (slider Facebooka, logowanie przez Facebooka oraz przez konto Google, przyciski udostępniania z Facebook, Twitter i LinkedIn).</p>",
+    "script.function.4": "<h4>Portale Społecznościowe</h4><p>Integracja z <strong>portalami społecznościowymi: </strong>slider Facebooka, logowanie przez Facebooka oraz przez konto Google, przyciski udostępniania z Facebook, X (Twitter) i LinkedIn.</p>",
     "script.function.5": "<h4>Reklamy</h4><p>Dużo miejsca na <strong>reklamy</strong> (możliwość dodania kilku banerów reklamowych, edycji slidera na stronie głównej oraz stopki serwisu).</p>",
     "script.function.6": "<h4>Kanał RSS</h4><p>Wbudowany <strong>kanał RSS</strong> (FEED) wyświetlający ostatnio dodane oferty w serwisie.</p>",
     "script.function.7": "<h4>Mapa Google</h4><p>Integracja z Mapą Google umożliwia zaznaczanie obiektów na mapie, łatwe ich znalezienie oraz <strong>wyszukiwanie obiektów wg odległości</strong>.</p>",
@@ -35,18 +36,18 @@
     "script.demo.desc2": "Demo Panelu Administracyjnego: <strong><a>holmes2.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}hasło: 1234",
     "script.demo.manual": "Zobacz także <a>instrukcję instalacji i konfiguracji skryptów</a>",
     "script.desc2": "Holmes2 jest wyposażony w wiele narzędzi, które nie są dostępne w innych tego typu skryptach!",
-    "script.desc3": "<h3>Szybki zysk dzięki dużej możliwości konfiguracji opłat</h3>{breakingLine}{breakingLine}<p>Znalazłeś lepszy skrypt z bazą nieruchomości?{breakingLine}...Na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Skrypt Holmes2 już dziś może być Twój!</h3>"
+    "script.desc3": "<h3>Szybki zysk dzięki dużej możliwości konfiguracji opłat</h3>{breakingLine}{breakingLine}<p>Znalazłeś lepszy skrypt z bazą nieruchomości?{breakingLine}...Na pewno nie! Po prostu takiego nie ma...</p>{breakingLine}<h3>Już dziś zainstaluj skrypt Holmes2!</h3>"
   },
   "en": {
     "title": "HOLMES2 - Real Estate Script",
     "description": "A real estate website script for agencies of all sizes.",
     "script.header": "Holmes2 - Real Estate Script",
     "script.subheader": "Launch Your Own Real Estate Website and Monetize It!",
-    "script.desc1": "<h2>Join Our Satisfied Customers!</h2><p>HOLMES2 facilitates the creation of comprehensive real estate websites with ease and speed. Ideal for agencies aiming for success, this script allows for both agency-curated and user-submitted listings, including sales and rentals of apartments, houses, warehouses, and more. Its extensive configurability and automatic integration with payment systems like Dotpay, Paynow, Przelewy24, and PayPal, make it a powerful tool for your business.</p>",
+    "script.desc1": "<h2>Join Our Satisfied Customers!</h2><p>Free HOLMES2 script facilitates the creation of comprehensive real estate websites with ease and speed. Ideal for agencies aiming for success, this script allows for both agency-curated and user-submitted listings, including sales and rentals of apartments, houses, warehouses, and more. Its extensive configurability and automatic integration with payment systems like Dotpay, Paynow, Przelewy24, and PayPal, make it a powerful tool for your business.</p>",
     "script.function.1": "<h4>Payments</h4><p>Features automatic payment confirmations from <strong>Dotpay, Przelewy24, and PayPal</strong>, simplifying transaction management without administrative oversight.</p>",
     "script.function.2": "<h4>RWD</h4><p><strong>Responsive Design</strong> ensures the website is viewable on all devices, thanks to HTML5 compatibility.</p>",
     "script.function.3": "<h4>Automation</h4><p>Maximizes performance with <strong>automated scheduling and data caching</strong> processes.</p>",
-    "script.function.4": "<h4>Social Network Integration</h4><p>Connects with social networks like Facebook and Google for logins, and Twitter and LinkedIn for wider reach.</p>",
+    "script.function.4": "<h4>Social Network Integration</h4><p>Connects with social networks like Facebook and Google for logins, and X (Twitter) and LinkedIn for wider reach.</p>",
     "script.function.5": "<h4>ADS</h4><p>Provides extensive ad placement opportunities, including customizable banners, homepage sliders, and footers.</p>",
     "script.function.6": "<h4>RSS Channel</h4><p>An <strong>RSS feed</strong> showcases the latest listings, keeping your website content fresh.</p>",
     "script.function.7": "<h4>Google Maps</h4><p>Enables property location display and searches by distance via Google Maps integration.</p>",
@@ -64,6 +65,6 @@
     "script.demo.desc2": "Demo version of the Admin Panel: <strong><a>holmes2.itworksbetter.net/admin</a></strong>{breakingLine}login: test{breakingLine}password: 1234",
     "script.demo.manual": " ",
     "script.desc2": "This script offers unique tools not found in competing products!",
-    "script.desc3": "<h3>Generate Revenue Quickly Through High Configurability and Fee Structures</h3>{breakingLine}<p>Discover the unmatched real estate script—guaranteed!</p>{breakingLine}<h3>Interested in purchasing? Explore this script further:</h3>"
+    "script.desc3": "<h3>Generate Revenue Quickly Through High Configurability and Fee Structures</h3>{breakingLine}<p>Discover the unmatched real estate script—guaranteed!</p>{breakingLine}<h3>You can download script from GitHub:</h3>"
   }
 }
