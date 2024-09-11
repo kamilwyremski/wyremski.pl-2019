@@ -75,3 +75,33 @@ ExpiresDefault "access plus 1 month"
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+# Ensure HTTPS is used and enable HSTS without including subdomains
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+
+# Content Security Policy allowing fonts from Google Fonts and inline event handlers
+<IfModule mod_headers.c>
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+</IfModule>
+
+# X-Frame-Options
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# X-Content-Type-Options
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Referrer Policy
+<IfModule mod_headers.c>
+  Header set Referrer-Policy "no-referrer-when-downgrade"
+</IfModule>
+
+# Permissions Policy
+<IfModule mod_headers.c>
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>

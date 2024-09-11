@@ -2,8 +2,8 @@
 	{
 		"name": "Twoja Oferta",
 		"description": {
-			"pl": "Nowoczesny i rozbudowany portal z ogłoszeniami online oparty o skrypt Notice3. Pracuje na Symfony 5 i Vue",
-			"en": "A modern portal with online classifieds based on the Notice3 script. It operates on Symfony 5 and the Vue framework"
+			"pl": "Nowoczesny i rozbudowany portal z ogłoszeniami online oparty o skrypt Notice3. Pracuje na Symfony i Vue",
+			"en": "A modern portal with online classifieds based on the Notice3 script. It operates on Symfony and the Vue framework"
 		},
 		"url": "twojaoferta.com.pl",
 		"image": "twojaoferta.jpg"
