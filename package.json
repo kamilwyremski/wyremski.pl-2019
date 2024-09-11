@@ -1,7 +1,7 @@
 {
   "name": "wyremski.pl",
   "description": "My portfolio wyremski.pl from 2019",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "private": false,
   "homepage": "https://wyremski.pl",
   "repository": {
@@ -15,19 +15,19 @@
   },
   "license": "MIT license",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "autoprefixer": "^10.4.18",
-    "framer-motion": "^11.0.8",
-    "react": "^18.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.5.4",
+    "react": "^18.3.1",
     "react-18-image-lightbox": "^5.1.4",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
     "react-helmet": "^6.1.0",
-    "react-intl": "^6.6.2",
-    "react-router-dom": "^6.22.2",
+    "react-intl": "^6.6.8",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
@@ -49,7 +49,7 @@
   "devDependencies": {
     "prop-types": "^15.8.1",
     "react-snap": "^1.23.0",
-    "sass": "^1.71.1",
+    "sass": "^1.78.0",
     "typescript": "^4.9.5"
   },
   "reactSnap": {

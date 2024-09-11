@@ -45,6 +45,15 @@
 		"image": "shopngo.jpg"
 	},
 	{
+		"name": "Turecka Przygoda",
+		"description": {
+			"pl": "Wielojęzyczna strona z ofertami apartamentów, atrakcji, wycieczek i transferów w Turcji. Dedykowana turystom chcącym odwiedzić ten kraj",
+			"en": "A multilingual website with an offer of apartments, attractions, trips and transfers in Turkey. For tourists who want to visit this country"
+		},
+		"url": "tureckaprzygoda.com.pl",
+		"image": "tureckaprzygoda.jpg"
+	},
+	{
 		"name": "Coupon Dojo",
 		"description": {
 			"pl": "Wielojęzyczna strona ze zniżkami i kodami promocyjnymi wraz z wtyczką do Chrome",
@@ -52,15 +61,6 @@
 		},
 		"url": "coupondojo.com",
 		"image": "coupondojo.jpg"
-	},
-	{
-		"name": "G1ant",
-		"description": {
-			"pl": "Założona w 2015 roku w Londynie, G1ANT jest najszybciej rozwijającą się platformą oprogramowania RPA na rynku",
-			"en": "Founded in 2015 in London, G1ANT is the fastest-growing RPA software platform on the market"
-		},
-		"url": "g1ant.com",
-		"image": "g1ant.jpg"
 	},
 	{
 		"name": "Mieszkania w stylu",
@@ -133,15 +133,6 @@
 		},
 		"url": "pressfoto.pl",
 		"image": "pressfoto.jpg"
-	},
-	{
-		"name": "Bioskin Kalisz",
-		"description": {
-			"pl": "Strona internetowa profesjonalnego gabinetu kosmetycznego i fryzjerskiego. Oparta na Symfony",
-			"en": "BIOSKIN is a combination of modern podology, trichology, and services offered by a professional beauty and hairdressing salon"
-		},
-		"url": "bioskin-kalisz.pl",
-		"image": "bioskin.jpg"
 	},
 	{
 		"name": "Świat Kamienia",
