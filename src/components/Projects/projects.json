@@ -18,6 +18,15 @@
 		"image": "kodyrabatowe.jpg"
 	},
 	{
+		"name": "Who Is Calling",
+		"description": {
+			"pl": "Strona www z narzędziami do identyfikacji numeru telefonu. Oparta o Symfony",
+			"en": "A website with tools to identify phone numbers. Built on Symfony"
+		},
+		"url": "whoiscalling.io",
+		"image": "whoiscalling.jpg"
+	},
+	{
 		"name": "hosting_dojo",
 		"description": {
 			"pl": "Strona z rankingiem szybkości hostingów z różnych krajów. Oparta o Symfony i VUE",
@@ -43,24 +52,6 @@
 		},
 		"url": "shopngo.pl",
 		"image": "shopngo.jpg"
-	},
-	{
-		"name": "Turecka Przygoda",
-		"description": {
-			"pl": "Wielojęzyczna strona z ofertami apartamentów, atrakcji, wycieczek i transferów w Turcji. Dedykowana turystom chcącym odwiedzić ten kraj",
-			"en": "A multilingual website with an offer of apartments, attractions, trips and transfers in Turkey. For tourists who want to visit this country"
-		},
-		"url": "tureckaprzygoda.com.pl",
-		"image": "tureckaprzygoda.jpg"
-	},
-	{
-		"name": "Coupon Dojo",
-		"description": {
-			"pl": "Wielojęzyczna strona ze zniżkami i kodami promocyjnymi wraz z wtyczką do Chrome",
-			"en": "An international website offering discounts and vouchers"
-		},
-		"url": "coupondojo.com",
-		"image": "coupondojo.jpg"
 	},
 	{
 		"name": "Mieszkania w stylu",
@@ -117,6 +108,24 @@
 		"image": "itworksbetter.jpg"
 	},
 	{
+		"name": "Trafna Okazja",
+		"description": {
+			"pl": "Strona z ogłoszeniami online oparta o skrypt ogłoszeniowy Notice3. Zbudowana na Symfony i VUE",
+			"en": "A website featuring online classifieds based on the Notice3 script. Built on Symfony and VUE"
+		},
+		"url": "trafnaokazja.pl",
+		"image": "trafnaokazja.jpg"
+	},
+	{
+		"name": "Wybierz TV",
+		"description": {
+			"pl": "Strona ułatwiająca wybór telewizora w oparciu o oceny i recenzje użytkowników. Zbudowana na Svelte",
+			"en": "A website helping users choose a TV based on user reviews and ratings. Built on Svelte"
+		},
+		"url": "wybierz.tv",
+		"image": "wybierztv.jpg"
+	},
+	{
 		"name": "Strefa.co.uk",
 		"description": {
 			"pl": "Jeden z pierwszych portali ogłoszeniowych dla Polaków mieszkających w Wielkiej Brytanii. Oparty o skrypt ogłoszeniowy Notice",
@@ -133,15 +142,6 @@
 		},
 		"url": "baterslo.sk",
 		"image": "baterslo-sk.jpg"
-	},
-	{
-		"name": "PressFoto",
-		"description": {
-			"pl": "Bank zdjęć prasowych dla fotoreporterów i wydawców",
-			"en": "A bank of press photos for photojournalists and publishers"
-		},
-		"url": "pressfoto.pl",
-		"image": "pressfoto.jpg"
 	},
 	{
 		"name": "Świat Kamienia",
