@@ -246,7 +246,7 @@ class Home extends Component {
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Prestashop</h4>
+                <h4 className="display-1">Svelte</h4>
                 <p>
                   <FormattedMessage id="home.technologies.5.desc" />
                 </p>
