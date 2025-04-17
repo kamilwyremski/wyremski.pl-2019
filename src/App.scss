@@ -1,5 +1,33 @@
 @import 'assets/scss/colors';
 
+/* montserrat-regular - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/montserrat-v29-latin_latin-ext-regular.woff2') format('woff2'), 
+       url('assets/fonts/montserrat-v29-latin_latin-ext-regular.ttf') format('truetype');
+}
+/* open-sans-regular - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/open-sans-v40-latin_latin-ext-regular.woff2') format('woff2'), 
+       url('assets/fonts/open-sans-v40-latin_latin-ext-regular.ttf') format('truetype');
+}
+/* open-sans-700 - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/open-sans-v40-latin_latin-ext-700.woff2') format('woff2'),
+       url('assets/fonts/open-sans-v40-latin_latin-ext-700.ttf') format('truetype');
+}
+
 *{
   margin: 0; padding:0; box-sizing: border-box;
 }
