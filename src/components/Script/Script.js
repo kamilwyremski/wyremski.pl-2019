@@ -68,9 +68,9 @@ class Script extends Component {
             <FormattedMessage
               id={"script.function." + i}
               values={{
-                h4: (chunks) => <h4>{chunks}</h4>,
-                p: (chunks) => <p>{chunks}</p>,
-                strong: (chunks) => <strong>{chunks}</strong>,
+                h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                p: (chunks) => <p key={chunks}>{chunks}</p>,
+                strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
               }}
             />
           </div>
@@ -206,10 +206,10 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.desc1"
                     values={{
-                      h2: (chunks) => <h2 className="display-2">{chunks}</h2>,
-                      p: (chunks) => <p>{chunks}</p>,
-                      strong: (chunks) => <strong>{chunks}</strong>,
-                      breakingLine: <br />,
+                      h2: (chunks) => <h2 className="display-2" key={chunks}>{chunks}</h2>,
+                      p: (chunks) => <p key={chunks}>{chunks}</p>,
+                      strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
+                      breakingLine: (key) => <br key={key} />,
                     }}
                   />
                 </div>
@@ -227,8 +227,8 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.feature.1"
                     values={{
-                      h4: (chunks) => <h4>{chunks}</h4>,
-                      p: (chunks) => <p>{chunks}</p>,
+                      h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                      p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
                 </div>
@@ -244,8 +244,8 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.feature.2"
                     values={{
-                      h4: (chunks) => <h4>{chunks}</h4>,
-                      p: (chunks) => <p>{chunks}</p>,
+                      h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                      p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
                 </div>
@@ -261,8 +261,8 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.feature.3"
                     values={{
-                      h4: (chunks) => <h4>{chunks}</h4>,
-                      p: (chunks) => <p>{chunks}</p>,
+                      h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                      p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
                 </div>
@@ -326,7 +326,7 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.requirements_bottom"
                     values={{
-                      strong: (chunks) => <strong>{chunks}</strong>,
+                      strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
                     }}
                   />
                 </p>
@@ -362,9 +362,9 @@ class Script extends Component {
                 <FormattedMessage
                   id="script.language.desc"
                   values={{
-                    p: (chunks) => <p className="content">{chunks}</p>,
-                    strong: (chunks) => <strong>{chunks}</strong>,
-                    breakingLine: <br />,
+                    p: (chunks) => <p className="content" key={chunks}>{chunks}</p>,
+                    strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
+                    breakingLine: (key) => <br key={key} />,
                   }}
                 />
               </div>
@@ -410,13 +410,14 @@ class Script extends Component {
                     <FormattedMessage
                       id="script.demo.desc"
                       values={{
-                        strong: (chunks) => <strong>{chunks}</strong>,
+                        strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
                         a: (chunks) => (
                           <a
                             href={"https://" + chunks}
                             target="_blank"
                             rel="noopener noreferrer"
                             title={script_name}
+                            key={chunks}
                           >
                             {chunks}
                           </a>
@@ -429,18 +430,19 @@ class Script extends Component {
                     <FormattedMessage
                       id="script.demo.desc2"
                       values={{
-                        strong: (chunks) => <strong>{chunks}</strong>,
+                        strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
                         a: (chunks) => (
                           <a
                             href={"https://" + chunks}
                             target="_blank"
                             rel="noopener noreferrer"
                             title={script_name}
+                            key={chunks}
                           >
                             {chunks}
                           </a>
                         ),
-                        breakingLine: <br />,
+                        breakingLine: (key) => <br key={key} />,
                       }}
                     />
                   </p>
@@ -460,11 +462,12 @@ class Script extends Component {
                             title="Instrukcja instalacji i konfiguracji skryptów"
                             target="_blank"
                             rel="noopener noreferrer"
+                            key={chunks}
                           >
                             {chunks}
                           </a>
                         ),
-                        breakingLine: <br />,
+                        breakingLine: (key) => <br key={key} />,
                       }}
                     />
                   </p>
@@ -479,9 +482,9 @@ class Script extends Component {
                 <FormattedMessage
                   id="script.desc3"
                   values={{
-                    h3: (chunks) => <h3 className="display-2">{chunks}</h3>,
-                    p: (chunks) => <p>{chunks}</p>,
-                    breakingLine: <br />,
+                    h3: (chunks) => <h3 className="display-2" key={chunks}>{chunks}</h3>,
+                    p: (chunks) => <p key={chunks}>{chunks}</p>,
+                    breakingLine: (key) => <br key={key} />,
                   }}
                 />
                 <a

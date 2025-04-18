@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import { injectIntl, FormattedMessage } from "react-intl";
 import Transitions from "../../Transition";
 import scripts from "./scripts.json";
-
 import "./Scripts.scss";
 
 class Scripts extends Component {
+
+  constructor(props) {
+    super(props);
+    this.imageRef = React.createRef();
+  }
+
   componentDidMount() {
     this.props.handleLanguage(this.props.language, "scripts");
   }
@@ -51,7 +56,7 @@ class Scripts extends Component {
                             ".jpg"
                           }
                           alt={item.name}
-                          ref="image"
+                          ref={this.imageRef}
                           className="img"
                           loading={i > 1 ? "lazy" : "eager"}
                         />
@@ -92,7 +97,7 @@ class Scripts extends Component {
                             ".jpg"
                           }
                           alt={item.name}
-                          ref="image"
+                          ref={this.imageRef}
                           className="img"
                           loading={i > 1 ? "lazy" : "eager"}
                         />

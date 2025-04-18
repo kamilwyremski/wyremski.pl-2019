@@ -60,7 +60,7 @@ class Home extends Component {
                 <span className="home--header--typed-cursor">|</span>
               </p>
               <h2 className="display-1">
-                <FormattedMessage id="home.header.text" values={{ breakingLine: <br /> }} />
+                <FormattedMessage id="home.header.text" values={{ breakingLine: (key) => <br key={key} /> }} />
               </h2>
             </div>
           </header>
@@ -70,14 +70,14 @@ class Home extends Component {
                 <FormattedMessage id="home.introduction.header" />
               </h2>
               <h3 className="display-1">
-                <FormattedMessage id="home.introduction.subheader" values={{ breakingLine: <br /> }} />
+                <FormattedMessage id="home.introduction.subheader" values={{ breakingLine: (key) => <br key={key} /> }} />
               </h3>
             </div>
             <div className="home--introduction--text">
               <FormattedMessage
                 id="home.introduction.text"
                 values={{
-                  p: (chunks) => <p>{chunks}</p>,
+                  p: (chunks) => <p key={chunks}>{chunks}</p>,
                 }}
               />
             </div>
@@ -114,7 +114,7 @@ class Home extends Component {
                       id="home.skills.1.desc"
                       values={{
                         a: (chunks) => (
-                          <a href="http://blog.wyremski.pl/poprawne-wyswietlanie-strony/" target="_blank" title="Standard W3C" rel="noopener noreferrer">
+                          <a href="http://blog.wyremski.pl/poprawne-wyswietlanie-strony/" target="_blank" title="Standard W3C" rel="noopener noreferrer" key={chunks}>
                             {chunks}
                           </a>
                         ),
@@ -132,7 +132,7 @@ class Home extends Component {
                       id="home.skills.2.desc"
                       values={{
                         a: (chunks) => (
-                          <a href="http://blog.wyremski.pl/optymalizacja-strony-www/" target="_blank" title="Strony www zgodne z SEO" rel="noopener noreferrer">
+                          <a href="http://blog.wyremski.pl/optymalizacja-strony-www/" target="_blank" title="Strony www zgodne z SEO" rel="noopener noreferrer" key={chunks}>
                             {chunks}
                           </a>
                         ),
@@ -229,7 +229,7 @@ class Home extends Component {
                     id="home.technologies.3.desc"
                     values={{
                       a: (chunks) => (
-                        <a href="http://blog.wyremski.pl/framework-symfony/" title="Symfony framework" target="_blank" rel="noopener noreferrer">
+                        <a href="http://blog.wyremski.pl/framework-symfony/" title="Symfony framework" target="_blank" rel="noopener noreferrer" key={chunks}>
                           {chunks}
                         </a>
                       ),
@@ -259,7 +259,7 @@ class Home extends Component {
                     id="home.technologies.6.desc"
                     values={{
                       a: (chunks) => (
-                        <a href="http://blog.wyremski.pl/framework-bootstrap/" title="Bootstrap" target="_blank" rel="noopener noreferrer">
+                        <a href="http://blog.wyremski.pl/framework-bootstrap/" title="Bootstrap" target="_blank" rel="noopener noreferrer" key={chunks}>
                           {chunks}
                         </a>
                       ),

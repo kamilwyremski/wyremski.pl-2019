@@ -173,6 +173,7 @@ class Contact extends Component {
                           title={intl.formatMessage({
                             id: "footer.write_to_me",
                           })}
+                          key={chunks}
                         >
                           {chunks}
                         </a>

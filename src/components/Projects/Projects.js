@@ -5,6 +5,12 @@ import projects from "./projects.json";
 import "./Projects.scss";
 
 class Projects extends Component {
+
+  constructor(props) {
+    super(props);
+    this.imageRef = React.createRef();
+  }
+
   componentDidMount() {
     this.props.handleLanguage(this.props.language, "projects");
   }
@@ -40,7 +46,7 @@ class Projects extends Component {
                     width="350"
                     src={"/upload/projects/" + item.image}
                     alt={item.name}
-                    ref="image"
+                    ref={this.imageRef}
                     itemProp="image"
                     className="img"
                     loading={i > 3 ? "lazy" : "eager"}

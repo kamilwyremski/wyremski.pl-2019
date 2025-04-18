@@ -18,13 +18,13 @@ class Footer extends Component {
               <FormattedMessage
                 id="footer.text"
                 values={{
-                  p: (chunks) => <p>{chunks}</p>,
+                  p: (chunks) => <p key={chunks}>{chunks}</p>,
                   a: (chunks) => (
-                    <a href="https://sklep.itworksbetter.net/" title="IT Works Better" target="_blank" rel="nofollow noopener noreferrer">
+                    <a href="https://sklep.itworksbetter.net/" title="IT Works Better" target="_blank" rel="nofollow noopener noreferrer" key={chunks}>
                       {chunks}
                     </a>
                   ),
-                  breakingLine: <br />,
+                  breakingLine: (key) => <br key={key} />,
                 }}
               />
             </div>
