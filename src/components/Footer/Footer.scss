@@ -1,68 +1,66 @@
-@import './../../assets/scss/_colors.scss';
+@import "./../../assets/scss/_colors.scss";
 
 .footer {
-	background-color: #000;
-	padding: 30px 10px 10px;
-	color: $color-light;
-	font-size: 0.85rem;
+  background-color: #000;
+  padding: 30px 10px 10px;
+  color: $color-light;
+  font-size: 0.85rem;
 
-	a {
-		color: $color-light;
-		transition: all 0.2s;
-	}
+  a {
+    color: $color-light;
+    transition: all 0.2s;
+  }
 
-	a:hover {
-		text-decoration: underline;
-	}
+  a:hover {
+    text-decoration: underline;
+  }
 
-	a:hover,
-	a:focus {
-		color: #fff;
-	}
+  a:hover,
+  a:focus {
+    color: #fff;
+  }
 }
 
 .footer--top {
-	flex: 0 0 calc(33% - 30px);
-	margin: 15px;
-	padding-bottom: 15px;
+  flex: 0 0 calc(33% - 30px);
+  margin: 15px;
+  padding-bottom: 15px;
 }
 
 .footer--social {
-	font-size: 2em;
+  font-size: 2em;
   max-width: 260px;
   margin: auto;
 }
 
 .footer--social a {
-	margin: 15px;
+  margin: 15px;
 }
 
 .footer--bottom {
-	font-family: 'Lucida Console';
-	padding: 30px 10px 10px;
+  padding: 30px 10px 10px;
 
-	p {
-		font-size: 0.8em;
-	}
+  p {
+    font-size: 0.9em;
+  }
 }
 
 /* style mobile */
-@media(max-width: 768px) {
-	.footer .d-flex {
-		display: block;
-		text-align: center;
-	}
+@media (max-width: 768px) {
+  .footer .d-flex {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* style print */
 @media print {
+  .footer,
+  .footer a {
+    color: #000;
+  }
 
-	.footer,
-	.footer a {
-		color: #000;
-	}
-
-	.footer--social {
-		display: none !important;
-	}
+  .footer--social {
+    display: none !important;
+  }
 }

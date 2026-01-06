@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, injectIntl } from "react-intl";
 import Transitions from "../../Transition";
 import projects from "./projects.json";
 import "./Projects.scss";
+import { useParams } from "react-router-dom";
 
 class Projects extends Component {
 
@@ -33,7 +34,6 @@ class Projects extends Component {
               {projects.map((item, i) => (
                 <a
                   href={"http://" + item.url}
-                  title={item.name}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   key={i}
@@ -45,7 +45,7 @@ class Projects extends Component {
                     height="350"
                     width="350"
                     src={"/upload/projects/" + item.image}
-                    alt={item.name}
+                    alt={this.props.intl.formatMessage({ id: "projects.title" }) + " " +item.name}
                     ref={this.imageRef}
                     itemProp="image"
                     className="img"
@@ -53,9 +53,9 @@ class Projects extends Component {
                   />
                   <div className="project--description text-center">
                     <div>
-                      <h4 itemProp="name" className="text-uppercase">
+                      <h3 itemProp="name" className="text-uppercase">
                         {item.name}
-                      </h4>
+                      </h3>
                       <p itemProp="description">{item.description[language]}</p>
                       <p className="project--description--link">{item.url}</p>
                     </div>
@@ -72,7 +72,6 @@ class Projects extends Component {
                     <a
                       href={"http://" + item.url}
                       key={i}
-                      title={item.name}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -83,7 +82,6 @@ class Projects extends Component {
                   <span key={i}>
                     <a
                       href={"http://" + item.url}
-                      title={item.name}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -95,9 +93,9 @@ class Projects extends Component {
               })}
             </p>
             <br />
-            <p className="big">
+            <h3 className="big">
               <FormattedMessage id="projects.thankyou" />
-            </p>
+            </h3>
             <p>
               <FormattedMessage id="projects.thankyou2" />
             </p>
@@ -108,4 +106,6 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default injectIntl((props) => (
+  <Projects {...props} params={useParams()} />
+));

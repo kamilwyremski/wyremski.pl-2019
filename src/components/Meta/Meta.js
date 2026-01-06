@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import messages_pl from "./../../translations/pl.json";
 import messages_en from "./../../translations/en.json";
@@ -118,14 +118,6 @@ class Meta extends Component {
         <meta property="og:site_name" content={this.state.title}/>
         <meta property="og:locale" content={this.state.og_locale}/>
         <meta property="og:url" content={this.state.url}/>
-        <meta property="fb:app_id" content="531870546992716"/>
-
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:title" content={this.state.title}/>
-        <meta name="twitter:description" content={this.state.description}/>
-        <meta name="twitter:image" content={this.state.image}/>
-
-        <meta name="p:domain_verify" content="c2fb247846bc4133916bec76263b6941"/>
 
         <meta name="msapplication-TileColor" content="#3f5a6f"/>
         <meta name="msapplication-TileImage" content={this.state.image}/>

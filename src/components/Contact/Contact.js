@@ -25,6 +25,7 @@ class Contact extends Component {
       messageSend: false,
       messageNoSend: false,
       showPreloader: false,
+      errorMessage: "",
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -113,7 +114,7 @@ class Contact extends Component {
       is_valid = false;
     }
     if (is_valid) {
-      var data = new FormData();
+      const data = new FormData();
       data.append("email", this.state.email);
       data.append("subject", this.state.subject);
       data.append("message", this.state.message);
@@ -138,7 +139,19 @@ class Contact extends Component {
               showPreloader: false,
             });
           }
+        })
+        .catch((error) => {
+          console.error("Error sending message:", error.message, error);
+          this.setState({
+            messageNoSend: true,
+            showPreloader: false,
+            errorMessage: error.message || "An error occurred while sending the message",
+          });
         });
+    }else {
+      this.setState({
+        showPreloader: false,
+      });
     }
     event.preventDefault();
   }
@@ -271,7 +284,7 @@ class Contact extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <label className="col-form-label">&nbsp;</label>
+                  <div className="col-form-label"></div>
                   <div className="col">
                     <p className="small">
                       This site is protected by reCAPTCHA and the Google{" "}
@@ -304,7 +317,7 @@ class Contact extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <label className="col-form-label">&nbsp;</label>
+                  <div className="col-form-label"></div>
                   <div className="col">
                     <label className="label-checkbox">
                       <input
@@ -322,9 +335,6 @@ class Contact extends Component {
                       <FormattedMessage id="contact.privacy" />{" "}
                       <a
                         href="https://blog.wyremski.pl/polityka-prywatnosci/"
-                        title={intl.formatMessage({
-                          id: "contact.privacy.link",
-                        })}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -342,7 +352,7 @@ class Contact extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <label className="col-form-label">&nbsp;</label>
+                  <div className="col-form-label"></div>
                   <div className="col">
                     <button
                       name="contact--submit"
@@ -354,22 +364,30 @@ class Contact extends Component {
                     </button>
                     {this.state.showPreloader && <Preloader />}
                     <br />
-                    <h4
+                    <p
                       className={
                         this.state.messageSend ? "alert-success" : "d-none"
                       }
                       role="alert"
                     >
                       <FormattedMessage id="contact.messageSend" />
-                    </h4>
-                    <h4
+                    </p>
+                    <p
                       className={
                         this.state.messageNoSend ? "alert-danger" : "d-none"
                       }
                       role="alert"
                     >
-                      <FormattedMessage id="contact.messageNoSend" />
-                    </h4>
+                      {this.state.errorMessage ? (
+                        <>
+                          <FormattedMessage id="contact.messageNoSend" />
+                          <br />
+                          <strong>{this.state.errorMessage}</strong>
+                        </>
+                      ) : (
+                        <FormattedMessage id="contact.messageNoSend" />
+                      )}
+                    </p>
                   </div>
                 </div>
                 <ReCAPTCHA

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import "./Home.scss";
 import { injectIntl, FormattedMessage } from "react-intl";
 import Transitions from "../../Transition";
@@ -55,13 +55,13 @@ class Home extends Component {
               <h1 className="display-4" id="main-title">
                 Kamil Wyremski
               </h1>
-              <p className="home--header--typed">
+              <h2 className="home--header--typed">
                 {this.state.header_typed}
                 <span className="home--header--typed-cursor">|</span>
-              </p>
-              <h2 className="display-1">
-                <FormattedMessage id="home.header.text" values={{ breakingLine: (key) => <br key={key} /> }} />
               </h2>
+              <h3 className="display-1">
+                <FormattedMessage id="home.header.text" values={{ breakingLine: (key) => <br key={key} /> }} />
+              </h3>
             </div>
           </header>
           <section className="container section" aria-labelledby="introduction-title">
@@ -106,9 +106,9 @@ class Home extends Component {
               <div className="d-flex home--skills">
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.1.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage
                       id="home.skills.1.desc"
@@ -124,9 +124,9 @@ class Home extends Component {
                 </div>
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.2.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage
                       id="home.skills.2.desc"
@@ -142,27 +142,27 @@ class Home extends Component {
                 </div>
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.3.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage id="home.skills.3.desc" />
                   </p>
                 </div>
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.4.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage id="home.skills.4.desc" />
                   </p>
                 </div>
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.5.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage id="home.skills.5.desc" />
                   </p>
@@ -178,18 +178,18 @@ class Home extends Component {
                 </div>
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.7.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage id="home.skills.7.desc" />
                   </p>
                 </div>
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage id="home.skills.8.title" />
-                  </h4>
+                  </h3>
                   <p>
                     <FormattedMessage id="home.skills.8.desc" />
                   </p>
@@ -209,21 +209,21 @@ class Home extends Component {
             <div className="d-flex home--technologies">
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">PHP</h4>
+                <h3 className="display-1">PHP</h3>
                 <p>
                   <FormattedMessage id="home.technologies.1.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">JavaScript</h4>
+                <h3 className="display-1">JavaScript</h3>
                 <p>
                   <FormattedMessage id="home.technologies.2.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Symfony</h4>
+                <h3 className="display-1">Symfony</h3>
                 <p>
                   <FormattedMessage
                     id="home.technologies.3.desc"
@@ -239,21 +239,21 @@ class Home extends Component {
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Wordpress</h4>
+                <h3 className="display-1">Wordpress</h3>
                 <p>
                   <FormattedMessage id="home.technologies.4.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Svelte</h4>
+                <h3 className="display-1">Svelte</h3>
                 <p>
                   <FormattedMessage id="home.technologies.5.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Bootstrap</h4>
+                <h3 className="display-1">Bootstrap</h3>
                 <p>
                   <FormattedMessage
                     id="home.technologies.6.desc"
@@ -269,70 +269,70 @@ class Home extends Component {
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">VUE</h4>
+                <h3 className="display-1">VUE</h3>
                 <p>
                   <FormattedMessage id="home.technologies.7.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Angular</h4>
+                <h3 className="display-1">Angular</h3>
                 <p>
                   <FormattedMessage id="home.technologies.8.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">HTML</h4>
+                <h3 className="display-1">HTML</h3>
                 <p>
                   <FormattedMessage id="home.technologies.9.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">CSS</h4>
+                <h3 className="display-1">CSS</h3>
                 <p>
                   <FormattedMessage id="home.technologies.10.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Adobe Photoshop</h4>
+                <h3 className="display-1">Adobe Photoshop</h3>
                 <p>
                   <FormattedMessage id="home.technologies.11.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">NodeJS</h4>
+                <h3 className="display-1">NodeJS</h3>
                 <p>
                   <FormattedMessage id="home.technologies.12.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">React</h4>
+                <h3 className="display-1">React</h3>
                 <p>
                   <FormattedMessage id="home.technologies.13.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">Linux</h4>
+                <h3 className="display-1">Linux</h3>
                 <p>
                   <FormattedMessage id="home.technologies.14.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">MySQL</h4>
+                <h3 className="display-1">MySQL</h3>
                 <p>
                   <FormattedMessage id="home.technologies.15.desc" />
                 </p>
               </div>
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>
-                <h4 className="display-1">GIT</h4>
+                <h3 className="display-1">GIT</h3>
                 <p>
                   <FormattedMessage id="home.technologies.16.desc" />
                 </p>

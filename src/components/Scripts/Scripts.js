@@ -42,7 +42,6 @@ class Scripts extends Component {
                           "/" +
                           item.url
                         }
-                        title={item.name}
                         className="scripts--half scripts--image"
                       >
                         <img
@@ -83,7 +82,6 @@ class Scripts extends Component {
                           "/" +
                           item.url
                         }
-                        title={item.name}
                         className="scripts--half scripts--image"
                       >
                         <img

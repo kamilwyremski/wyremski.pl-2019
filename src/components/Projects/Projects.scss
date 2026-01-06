@@ -1,91 +1,93 @@
-@import './../../assets/scss/_colors.scss';
+@import "./../../assets/scss/_colors.scss";
 
 .projects {
-	padding-top: 50px;
+  padding-top: 50px;
 
-	a {
-		color: #000;
-	}
+  a {
+    color: #000;
+  }
 }
 
 .projects--list {
-	width: 1400px;
-	max-width: 100%;
-	margin: auto;
+  width: 1400px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .project {
-	position: relative;
-	overflow: hidden;
-	flex: 0 0 25%;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 25%;
 
-	.img {
-		text-align: center;
-		margin: auto;
-		display: block;
-	}
+  .img {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
 
-	h4 {
-		margin-bottom: 10px;
-	}
+  h4 {
+    margin-bottom: 10px;
+  }
 }
 
 .project--description {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	transition: all 0.2s;
-	opacity: 0;
-	background-color: #fff;
-	padding: 15px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.2s;
+  opacity: 0;
+  background-color: #fff;
+  padding: 15px;
 }
 
 .project--description--link {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.project:hover .project--description, .project:focus .project--description {
-	opacity: 1;
+.project:hover .project--description,
+.project:focus .project--description {
+  opacity: 1;
 }
 
 .projects--thankyou {
-	a {
-		color: #000;
+  a {
+    color: #000;
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-	.big {
-		font-size: 2.5em;
-	}
+  .big {
+    font-size: 2.5em;
+    font-weight: 300;
+  }
 }
 
 /* style mobile */
-@media(max-width: 1100px) {
-	.project {
-		flex: 0 0 33.3%;
-	}
+@media (max-width: 1100px) {
+  .project {
+    flex: 0 0 33.3%;
+  }
 
-	.projects--thankyou .big {
-		font-size: 2em;
-	}
+  .projects--thankyou .big {
+    font-size: 2em;
+  }
 }
 
-@media(max-width: 768px) {
-	.project {
-		flex: 0 0 50%;
-	}
+@media (max-width: 768px) {
+  .project {
+    flex: 0 0 50%;
+  }
 }
 
-@media(max-width: 500px) {
-	.project {
-		flex: 0 0 100%;
-	}
+@media (max-width: 500px) {
+  .project {
+    flex: 0 0 100%;
+  }
 }

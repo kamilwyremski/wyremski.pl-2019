@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { injectIntl, FormattedMessage } from "react-intl";
 import { useParams } from "react-router-dom";
 import Lightbox from "react-18-image-lightbox";
@@ -61,14 +61,17 @@ class Script extends Component {
               src={
                 "/upload/scripts/" + this.state.script_name + "/f" + i + ".jpg"
               }
-              alt={this.state.script_name}
+              alt={
+                this.props.intl.formatMessage({ id: "script.functions" }) + " " +
+                this.props.intl.formatMessage({ id: "script.function." + i }).match(/<h3[^>]*>(.*?)<\/h3>/)?.[1] || ''
+              }
               className="img"
               loading="lazy"
             />
             <FormattedMessage
               id={"script.function." + i}
               values={{
-                h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                h3: (chunks) => <h3 key={chunks}>{chunks}</h3>,
                 p: (chunks) => <p key={chunks}>{chunks}</p>,
                 strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
               }}
@@ -107,7 +110,7 @@ class Script extends Component {
                 i +
                 "_thumb.jpg"
               }
-              alt={this.state.script_name}
+              alt={this.state.script_name + " screenshot " + i}
               className="img"
               loading="lazy"
             />
@@ -141,7 +144,6 @@ class Script extends Component {
           domains.push(
             <span key={i}>
               <a
-                title={this.state.script.list_domains[i]}
                 href={"http://" + this.state.script.list_domains[i]}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
@@ -155,7 +157,6 @@ class Script extends Component {
           domains.push(
             <span key={i}>
               <a
-                title={this.state.script.list_domains[i]}
                 href={"http://" + this.state.script.list_domains[i]}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
@@ -177,7 +178,6 @@ class Script extends Component {
       this.state;
     const images = this.getImages();
     const list_domains = this.createListDomains();
-    const show_list_domains = list_domains.length ? true : false;
     return (
       <main>
         {!script && !script_error404 && <Preloader />}
@@ -189,9 +189,9 @@ class Script extends Component {
                   <h1 className="display-4" id="script-title">
                     <FormattedMessage id="script.header" />
                   </h1>
-                  <h3 className="display-1">
+                  <h2 className="display-1">
                     <FormattedMessage id="script.subheader" />
-                  </h3>
+                  </h2>
                   <img
                     src={"/upload/scripts/" + script_name + "/banner_top.png"}
                     alt={script_name}
@@ -227,7 +227,7 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.feature.1"
                     values={{
-                      h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                      h3: (chunks) => <h3 key={chunks}>{chunks}</h3>,
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
@@ -244,7 +244,7 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.feature.2"
                     values={{
-                      h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                      h3: (chunks) => <h3 key={chunks}>{chunks}</h3>,
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
@@ -261,7 +261,7 @@ class Script extends Component {
                   <FormattedMessage
                     id="script.feature.3"
                     values={{
-                      h4: (chunks) => <h4 key={chunks}>{chunks}</h4>,
+                      h3: (chunks) => <h3 key={chunks}>{chunks}</h3>,
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
@@ -288,7 +288,7 @@ class Script extends Component {
                       className="img"
                       loading="lazy"
                     />
-                    <h4>PHP</h4>
+                    <h3>PHP</h3>
                     <p>
                       <FormattedMessage id="script.requirements.1" />
                     </p>
@@ -302,7 +302,7 @@ class Script extends Component {
                       className="img"
                       loading="lazy"
                     />
-                    <h4>MySQL</h4>
+                    <h3>MySQL</h3>
                     <p>
                       <FormattedMessage id="script.requirements.2" />
                     </p>
@@ -316,7 +316,7 @@ class Script extends Component {
                       className="img"
                       loading="lazy"
                     />
-                    <h4>CronTab</h4>
+                    <h3>CronTab</h3>
                     <p>
                       <FormattedMessage id="script.requirements.3" />
                     </p>
@@ -406,7 +406,7 @@ class Script extends Component {
                     <FormattedMessage id="script.demo.title" />
                   </h2>
                   <br />
-                  <h4 className="display-1">
+                  <h3 className="display-1">
                     <FormattedMessage
                       id="script.demo.desc"
                       values={{
@@ -424,7 +424,7 @@ class Script extends Component {
                         ),
                       }}
                     />
-                  </h4>
+                  </h3>
                   <br />
                   <p>
                     <FormattedMessage
@@ -446,7 +446,7 @@ class Script extends Component {
                       }}
                     />
                   </p>
-                  {show_list_domains && (
+                  {list_domains.length > 0 && (
                     <p>
                       <FormattedMessage id="script.demo.list" />{" "}
                       <strong>{list_domains}</strong>
