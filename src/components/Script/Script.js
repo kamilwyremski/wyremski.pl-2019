@@ -209,7 +209,7 @@ class Script extends Component {
                       h2: (chunks) => <h2 className="display-2" key={chunks}>{chunks}</h2>,
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                       strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
-                      breakingLine: (key) => <br key={key} />,
+                      breakingLine: <br />,
                     }}
                   />
                 </div>
@@ -364,7 +364,7 @@ class Script extends Component {
                   values={{
                     p: (chunks) => <p className="content" key={chunks}>{chunks}</p>,
                     strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
-                    breakingLine: (key) => <br key={key} />,
+                    breakingLine: <br />,
                   }}
                 />
               </div>
@@ -442,7 +442,7 @@ class Script extends Component {
                             {chunks}
                           </a>
                         ),
-                        breakingLine: (key) => <br key={key} />,
+                        breakingLine: <br />,
                       }}
                     />
                   </p>
@@ -467,7 +467,7 @@ class Script extends Component {
                             {chunks}
                           </a>
                         ),
-                        breakingLine: (key) => <br key={key} />,
+                        breakingLine: <br />,
                       }}
                     />
                   </p>
@@ -484,7 +484,7 @@ class Script extends Component {
                   values={{
                     h3: (chunks) => <h3 className="display-2" key={chunks}>{chunks}</h3>,
                     p: (chunks) => <p key={chunks}>{chunks}</p>,
-                    breakingLine: (key) => <br key={key} />,
+                    breakingLine: <br />,
                   }}
                 />
                 <a
