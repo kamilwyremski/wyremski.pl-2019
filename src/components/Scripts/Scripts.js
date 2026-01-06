@@ -33,7 +33,7 @@ class Scripts extends Component {
             </div>
             <div id="scripts">
               {scripts.map((item, i) => (
-                <div className={i < 2 ? "" : "animatable fadeInUp"} key={i}>
+                <div className={i < 4 ? "" : "animatable fadeInUp"} key={i}>
                   <div className="d-flex script">
                     {i % 2 === 0 && (
                       <Link

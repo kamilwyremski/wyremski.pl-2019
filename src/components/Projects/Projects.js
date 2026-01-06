@@ -37,7 +37,7 @@ class Projects extends Component {
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   key={i}
-                  className={i < 4 ? "project" : "project animatable fadeInUp"}
+                  className={i < 8 ? "project" : "project animatable fadeInUp"}
                   itemScope
                   itemType="http://schema.org/CollectionPage"
                 >

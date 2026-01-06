@@ -23,7 +23,7 @@
 			"pl": "Strona www z narzędziami do identyfikacji numeru telefonu. Oparta o Symfony",
 			"en": "A website with tools to identify phone numbers. Built on Symfony"
 		},
-		"url": "whoiscalling.io",
+		"url": "whoiscalling.pl",
 		"image": "whoiscalling.jpg"
 	},
 	{
@@ -135,15 +135,6 @@
 		"image": "strefa.jpg"
 	},
 	{
-		"name": "Baterslo.sk",
-		"description": {
-			"pl": "Słowacka strona z ogłoszeniami online z różnych kategorii. Oparta na skrypcie ogłoszeniowym Notice3",
-			"en": "The Slovakian website with online classifieds from different categories. Based on Notice3 script"
-		},
-		"url": "baterslo.sk",
-		"image": "baterslo-sk.jpg"
-	},
-	{
 		"name": "Świat Kamienia",
 		"description": {
 			"pl": "Strona jednego z większych składów kamienia naturalnego w Południowej Wielkopolsce.",
@@ -162,15 +153,6 @@
 		"image": "chicagoogloszenia.jpg"
 	},
 	{
-		"name": "Oglaszamy24h.pl",
-		"description": {
-			"pl": "Nowoczesny serwis darmowych ogłoszeń drobnych: sprzedam, kupię, oddam, wymienię. Oparty o skrypt ogłoszeniowy Notice",
-			"en": "A platform for free classified ads, allowing users to sell, buy, donate, or exchange items"
-		},
-		"url": "oglaszamy24h.pl",
-		"image": "oglaszamy24h.jpg"
-	},
-	{
 		"name": "MotoBryki",
 		"description": {
 			"pl": "Baza ogłoszeń motoryzacyjnych z całej Polski oparta o skrypt ogłoszeniowy",
@@ -178,5 +160,23 @@
 		},
 		"url": "motobryki.pl",
 		"image": "motobryki.jpg"
+	},
+	{
+		"name": "Targowisko",
+		"description": {
+			"pl": "Platforma ogloszeń lokalnych i ogólnopolskich oparta o skrypt ogłoszeniowy Notice3",
+			"en": "A platform for local and nationwide classifieds based on the Notice3 script"
+		},
+		"url": "targowisko.org",
+		"image": "targowisko.jpg"
+	},
+	{
+		"name": "Myroxylon",
+		"description": {
+			"pl": "Myroxylon GmbH to konsultant zajmujący się inwestycjami w międzynarodowe operacje związane z rolnictwem, leśnictwem i drewnem",
+			"en": "Myroxylon GmbH is a consultant that deals with investments in international agriculture-, forestry- and timber-related operations"
+		},
+		"url": "myroxylon.com",
+		"image": "myroxylon.jpg"
 	}
 ]
