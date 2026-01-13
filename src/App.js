@@ -82,14 +82,16 @@ class App extends Component {
       <IntlProvider locale={this.state.language} messages={this.state.messages[this.state.language]} key={this.state.language}>
         <Meta language={this.state.language} component={this.state.component} meta={this.state.meta}></Meta>
         <Router onUpdate={() => window.scrollTo(0, 0)}>
-          <div>
+          <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
             <Nav language={this.state.language} component={this.state.component} alternate_slug={this.state.alternate_slug} />
-            <AnimatePresence mode="wait">
-              <Routes>
-                {this.createRoute(this)}
-                <Route path="*" status={404} notFound={true} element={<Error404 />} />
-              </Routes>
-            </AnimatePresence>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+              <AnimatePresence mode="wait">
+                <Routes>
+                  {this.createRoute(this)}
+                  <Route path="*" status={404} notFound={true} element={<Error404 />} />
+                </Routes>
+              </AnimatePresence>
+            </div>
             <Footer />
           </div>
         </Router>

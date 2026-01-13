@@ -38,9 +38,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body,
+#app {
+  height: 100%;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: $color-dark;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+#app > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#app > div > div {
+  flex: 1;
 }
 .container {
   width: 1200px;

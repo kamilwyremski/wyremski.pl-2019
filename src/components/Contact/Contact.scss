@@ -1,88 +1,149 @@
-@import './../../assets/scss/_colors.scss';
+@import "./../../assets/scss/_colors.scss";
 
-.contact{
-  background: $color-dark url("./../../assets/images/contact.webp") no-repeat fixed center bottom / cover; 
-  color: $color-light; padding: 50px 0;
-  a{
+.contact {
+  background: $color-dark url("./../../assets/images/contact.webp") no-repeat
+    fixed center bottom / cover;
+  color: $color-light;
+  padding: 50px 0;
+  min-height: 100%;
+  a {
     color: #fff;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
-  .small{
+  .small {
     font-size: 0.9em;
   }
-  .row{
-    display: flex; flex-wrap: wrap;
-    .col-form-label{
-      flex: 0 0 30%; text-align: right; padding: 22px 10px 5px; font-weight: bold;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    .col-form-label {
+      flex: 0 0 30%;
+      text-align: right;
+      padding: 22px 10px 5px;
+      font-weight: bold;
     }
-    .col{
-      flex: 0 0 70%; padding: 10px;
-    }
-  }
-  .invalid-feedback{
-    color: #dd5858; margin-top: 5px; margin-bottom:0;
-  }
-  .alert-success{
-    background-color: #d4edda; color: #155724; padding: 10px; margin-top: 10px; font-size: 0.85em;
-  }
-  .alert-danger{
-    background-color: #f8d7da; color: #721c24; padding: 10px; margin-top: 10px; font-size: 0.85em;
-  }
-  .form-control{
-    background-color: transparent; color: #fff; border: none; border-bottom: solid 1px #fff; display: block; width: 100%; padding: 10px 0; margin-bottom: 5px; resize: none; font: inherit; font-size: 0.95em;
-    &:focus{
-      outline: none; border-bottom: solid 2px $color-primary; margin-bottom: 4px;
+    .col {
+      flex: 0 0 70%;
+      padding: 10px;
     }
   }
-  .form-control:-webkit-autofill{
-    background-color: transparent !important; color: #fff !important;
+  .invalid-feedback {
+    color: #dd5858;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
-  input[type=checkbox]{
-    position: absolute;  opacity: 0;  cursor: pointer;  height: 0;  width: 0;
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.85em;
+  }
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.85em;
+  }
+  .form-control {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: solid 1px #fff;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    resize: none;
+    font: inherit;
+    font-size: 0.95em;
+    &:focus {
+      outline: none;
+      border-bottom: solid 2px $color-primary;
+      margin-bottom: 4px;
+    }
+  }
+  .form-control:-webkit-autofill {
+    background-color: transparent !important;
+    color: #fff !important;
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
   }
   .checkmark {
-    position: absolute;  top: -2px;  left: 0;  height: 20px;  width: 20px;  background-color: #fff;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
   }
-  input[type=checkbox]:checked ~ .checkmark {
+  input[type="checkbox"]:checked ~ .checkmark {
     background-color: $color-primary;
   }
   .checkmark:after {
-    content: "";  position: absolute;  display: none; left: 7px;  top: 2px;  width: 5px;  height: 10px;  border: solid #fff;  border-width: 0 3px 3px 0;
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
-  input[type=checkbox]:checked ~ .checkmark:after {
+  input[type="checkbox"]:checked ~ .checkmark:after {
     display: block;
   }
-  .label-checkbox{
-    position: relative; padding-left: 30px; font-size: 0.9em;
+  .label-checkbox {
+    position: relative;
+    padding-left: 30px;
+    font-size: 0.9em;
   }
-  [type=submit]{
-    background-color: rgba(0,0,0,0.2); transition: all 0.4s; border: solid 2px $color-primary; padding: 12px 24px; text-transform: uppercase; color: #fff; cursor: pointer;
+  [type="submit"] {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+    border: solid 2px $color-primary;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
   }
-  [type=submit]:hover{
+  [type="submit"]:hover {
     background-color: $color-primary;
   }
-  [type=submit]:disabled{
-    background-color: rgba(0,0,0,0.2); opacity: 0.5;
+  [type="submit"]:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
   }
-  .preloader{
-    background-color: transparent; padding: 20px 0; justify-content: left; align-items:left;
+  .preloader {
+    background-color: transparent;
+    padding: 20px 0;
+    justify-content: left;
+    align-items: left;
   }
 }
-.grecaptcha-badge { 
-	visibility: hidden; 
+.grecaptcha-badge {
+  visibility: hidden;
 }
 /* style mobile */
-@media(max-width: 650px) {
-	.contact{
-    [type=submit]{
-      display: block; width: 100%;
-    }
-    .row{
+@media (max-width: 650px) {
+  .contact {
+    [type="submit"] {
       display: block;
-      .col-form-label{
+      width: 100%;
+    }
+    .row {
+      display: block;
+      .col-form-label {
         text-align: left;
       }
     }
@@ -90,15 +151,17 @@
 }
 /* style print */
 @media print {
-  .contact{
-    padding:0; color: inherit;
-    p a, [type=submit]{
+  .contact {
+    padding: 0;
+    color: inherit;
+    p a,
+    [type="submit"] {
       color: inherit;
     }
-    .form-control{
+    .form-control {
       border-color: black;
     }
-    .checkmark{
+    .checkmark {
       border: solid 1px black;
     }
   }

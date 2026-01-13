@@ -168,7 +168,7 @@ class Contact extends Component {
   render() {
     const intl = this.props.intl;
     return (
-      <main>
+      <main style={{minHeight: "100%"}}>
         <Transitions>
           <section className="contact" aria-labelledby="contact-title">
             <div className="container section">
