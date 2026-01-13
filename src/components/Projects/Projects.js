@@ -22,14 +22,14 @@ class Projects extends Component {
       <main>
         <Transitions>
           <section className="projects" aria-labelledby="projects-title">
-            <div className="container section text-center">
+            <hgroup className="container section text-center">
               <h1 className="display-4" id="projects-title">
                 <FormattedMessage id="projects.title" />
               </h1>
               <h2 className="display-1 content">
                 <FormattedMessage id="projects.subtitle" />
               </h2>
-            </div>
+            </hgroup>
             <div className="d-flex projects--list">
               {projects.map((item, i) => (
                 <a
@@ -51,7 +51,7 @@ class Projects extends Component {
                     className="img"
                     loading={i > 3 ? "lazy" : "eager"}
                   />
-                  <div className="project--description text-center">
+                  <hgroup className="project--description text-center">
                     <div>
                       <h3 itemProp="name" className="text-uppercase">
                         {item.name}
@@ -59,7 +59,7 @@ class Projects extends Component {
                       <p itemProp="description">{item.description[language]}</p>
                       <p className="project--description--link">{item.url}</p>
                     </div>
-                  </div>
+                  </hgroup>
                 </a>
               ))}
             </div>

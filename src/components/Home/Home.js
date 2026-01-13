@@ -51,7 +51,7 @@ class Home extends Component {
       <main>
         <Transitions>
           <header className="home--header" aria-labelledby="main-title">
-            <div className="home--header--inside">
+            <hgroup className="home--header--inside">
               <h1 className="display-4" id="main-title">
                 Kamil Wyremski
               </h1>
@@ -62,17 +62,17 @@ class Home extends Component {
               <h3 className="display-1">
                 <FormattedMessage id="home.header.text" values={{ breakingLine: (key) => <br key={key} /> }} />
               </h3>
-            </div>
+            </hgroup>
           </header>
           <section className="container section" aria-labelledby="introduction-title">
-            <div className="text-center">
+            <hgroup className="text-center">
               <h2 className="display-3" id="introduction-title">
                 <FormattedMessage id="home.introduction.header" />
               </h2>
               <h3 className="display-1">
                 <FormattedMessage id="home.introduction.subheader" values={{ breakingLine: (key) => <br key={key} /> }} />
               </h3>
-            </div>
+            </hgroup>
             <div className="home--introduction--text">
               <FormattedMessage
                 id="home.introduction.text"
@@ -83,7 +83,7 @@ class Home extends Component {
             </div>
           </section>
           <section className="section home--about_me" aria-labelledby="about-me-title">
-            <div className="container">
+            <hgroup className="container">
               <h2 className="display-3">Kamil Wyremski</h2>
               <h3 className="display-1" id="about-me-title">
                 <FormattedMessage id="home.about_me.title" />
@@ -91,18 +91,18 @@ class Home extends Component {
               <p>
                 <FormattedMessage id="home.about_me.brand" />
               </p>
-            </div>
+            </hgroup>
           </section>
           <section className="background-light" aria-labelledby="skills-title">
             <div className="container section">
-              <div className="text-center content mb-2">
+              <hgroup className="text-center content mb-2">
                 <h2 className="display-3" id="skills-title">
                   <FormattedMessage id="home.skills.title" />
                 </h2>
                 <p>
                   <FormattedMessage id="home.skills.description" />
                 </p>
-              </div>
+              </hgroup>
               <div className="d-flex home--skills">
                 <div className="home--skill animatable fadeInUp">
                   <div className="home--skill--image"></div>
@@ -198,14 +198,14 @@ class Home extends Component {
             </div>
           </section>
           <section className="container section" aria-labelledby="technologies-title">
-            <div className="text-center content mb-2">
+            <hgroup className="text-center content mb-2">
               <h2 className="display-3" id="technologies-title">
                 <FormattedMessage id="home.technologies.title" />
               </h2>
               <p>
                 <FormattedMessage id="home.technologies.description" />
               </p>
-            </div>
+            </hgroup>
             <div className="d-flex home--technologies">
               <div className="home--technologie animatable fadeInUp">
                 <div className="home--technologie--image"></div>

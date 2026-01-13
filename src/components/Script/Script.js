@@ -54,7 +54,7 @@ class Script extends Component {
     for (let i = 1; i <= this.state.script.functions; i++) {
       functions.push(
         <div className="functions" key={i}>
-          <div className="animatable fadeInUp">
+          <hgroup className="animatable fadeInUp">
             <img
               height="250"
               width="200"
@@ -76,7 +76,7 @@ class Script extends Component {
                 strong: (chunks) => <strong key={chunks}>{chunks}</strong>,
               }}
             />
-          </div>
+          </hgroup>
         </div>
       );
     }
@@ -185,7 +185,7 @@ class Script extends Component {
           <Transitions>
             <section className="script" aria-labelledby="script-title">
               <div className="script--up text-center">
-                <div className="script--up--middle">
+                <hgroup className="script--up--middle">
                   <h1 className="display-4" id="script-title">
                     <FormattedMessage id="script.header" />
                   </h1>
@@ -199,10 +199,10 @@ class Script extends Component {
                     height="285"
                     className="img"
                   />
-                </div>
+                </hgroup>
               </div>
               <div className="section container">
-                <div className="script--up--bottom">
+                <hgroup className="script--up--bottom">
                   <FormattedMessage
                     id="script.desc1"
                     values={{
@@ -212,10 +212,10 @@ class Script extends Component {
                       breakingLine: <br />,
                     }}
                   />
-                </div>
+                </hgroup>
               </div>
               <div className="d-flex container text-center">
-                <div className="features">
+                <hgroup className="features">
                   <img
                     height="100"
                     width="100"
@@ -231,8 +231,8 @@ class Script extends Component {
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
-                </div>
-                <div className="features">
+                </hgroup>
+                <hgroup className="features">
                   <img
                     height="100"
                     width="100"
@@ -248,8 +248,8 @@ class Script extends Component {
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
-                </div>
-                <div className="features">
+                </hgroup>
+                <hgroup className="features">
                   <img
                     height="100"
                     width="100"
@@ -265,7 +265,7 @@ class Script extends Component {
                       p: (chunks) => <p key={chunks}>{chunks}</p>,
                     }}
                   />
-                </div>
+                </hgroup>
               </div>
               <br />
               <div className="text-center background-dark section">
@@ -279,7 +279,7 @@ class Script extends Component {
                   <FormattedMessage id="script.requirements" />
                 </h2>
                 <div className="d-flex">
-                  <div className="script--requirements">
+                  <hgroup className="script--requirements">
                     <img
                       width="260"
                       height="200"
@@ -292,8 +292,8 @@ class Script extends Component {
                     <p>
                       <FormattedMessage id="script.requirements.1" />
                     </p>
-                  </div>
-                  <div className="script--requirements">
+                  </hgroup>
+                  <hgroup className="script--requirements">
                     <img
                       width="168"
                       height="200"
@@ -306,8 +306,8 @@ class Script extends Component {
                     <p>
                       <FormattedMessage id="script.requirements.2" />
                     </p>
-                  </div>
-                  <div className="script--requirements">
+                  </hgroup>
+                  <hgroup className="script--requirements">
                     <img
                       width="188"
                       height="200"
@@ -320,7 +320,7 @@ class Script extends Component {
                     <p>
                       <FormattedMessage id="script.requirements.3" />
                     </p>
-                  </div>
+                  </hgroup>
                 </div>
                 <p>
                   <FormattedMessage

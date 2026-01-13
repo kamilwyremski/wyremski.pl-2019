@@ -23,14 +23,14 @@ class Scripts extends Component {
       <main className="scripts">
         <Transitions>
           <section className="container" aria-labelledby="scripts-title">
-            <div className="text-center section">
+            <hgroup className="text-center section">
               <h1 className="display-4" id="scripts-title">
                 <FormattedMessage id="scripts.title" />
               </h1>
               <h2 className="display-1">
                 <FormattedMessage id="scripts.subtitle" />
               </h2>
-            </div>
+            </hgroup>
             <div id="scripts">
               {scripts.map((item, i) => (
                 <div className={i < 4 ? "" : "animatable fadeInUp"} key={i}>
