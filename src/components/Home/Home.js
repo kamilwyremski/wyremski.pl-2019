@@ -60,7 +60,7 @@ class Home extends Component {
                 <span className="home--header--typed-cursor">|</span>
               </h2>
               <h3 className="display-1">
-                <FormattedMessage id="home.header.text" values={{ breakingLine: (key) => <br key={key} /> }} />
+                <FormattedMessage id="home.header.text" values={{  breakingLine: <br /> }} />
               </h3>
             </hgroup>
           </header>
@@ -70,7 +70,7 @@ class Home extends Component {
                 <FormattedMessage id="home.introduction.header" />
               </h2>
               <h3 className="display-1">
-                <FormattedMessage id="home.introduction.subheader" values={{ breakingLine: (key) => <br key={key} /> }} />
+                <FormattedMessage id="home.introduction.subheader" values={{ breakingLine: <br />}} />
               </h3>
             </hgroup>
             <div className="home--introduction--text">

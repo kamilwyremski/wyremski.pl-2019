@@ -3,8 +3,8 @@
 .home--header {
   background: #0e0e0e url("./../../assets/images/header.webp") no-repeat fixed
     center bottom / cover;
-  padding-top: 170px;
-  padding-bottom: 130px;
+  padding-top: 250px;
+  padding-bottom: 70px;
   text-shadow: 1px 1px 2px #000;
   color: #fff;
 }
@@ -176,11 +176,19 @@
   }
 }
 @media (max-width: 768px) {
+  .home--header {
+    padding-top: 170px;
+    padding-bottom: 50px;
+  }
+  .home--header--inside {
+    margin-left: 5%;
+  }
   .home--header--typed {
     font-size: 2.7em;
   }
   .home--introduction--text {
     column-count: 1;
+    margin-top: 30px;
   }
   .home--skill,
   .home--technologie {

@@ -1,163 +1,219 @@
-@import 'assets/scss/colors';
+@import "assets/scss/colors";
 
 /* montserrat-regular - latin_latin-ext */
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/montserrat-v29-latin_latin-ext-regular.woff2') format('woff2'), 
-       url('assets/fonts/montserrat-v29-latin_latin-ext-regular.ttf') format('truetype');
+  src: url("assets/fonts/montserrat-v29-latin_latin-ext-regular.woff2")
+      format("woff2"),
+    url("assets/fonts/montserrat-v29-latin_latin-ext-regular.ttf")
+      format("truetype");
 }
 /* open-sans-regular - latin_latin-ext */
 @font-face {
   font-display: swap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/open-sans-v40-latin_latin-ext-regular.woff2') format('woff2'), 
-       url('assets/fonts/open-sans-v40-latin_latin-ext-regular.ttf') format('truetype');
+  src: url("assets/fonts/open-sans-v40-latin_latin-ext-regular.woff2")
+      format("woff2"),
+    url("assets/fonts/open-sans-v40-latin_latin-ext-regular.ttf")
+      format("truetype");
 }
 /* open-sans-700 - latin_latin-ext */
 @font-face {
   font-display: swap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/open-sans-v40-latin_latin-ext-700.woff2') format('woff2'),
-       url('assets/fonts/open-sans-v40-latin_latin-ext-700.ttf') format('truetype');
+  src: url("assets/fonts/open-sans-v40-latin_latin-ext-700.woff2")
+      format("woff2"),
+    url("assets/fonts/open-sans-v40-latin_latin-ext-700.ttf") format("truetype");
 }
 
-*{
-  margin: 0; padding:0; box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  font-family: 'Open Sans', sans-serif; color: $color-dark;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $color-dark;
 }
-.container{
-  width: 1200px; max-width: 100%; margin: auto;
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
 }
-.section{
+.section {
   padding: 50px 30px;
 }
-.content{
-  max-width: 900px; margin: auto;
+.content {
+  max-width: 900px;
+  margin: auto;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-.d-none{
+.d-none {
   display: none;
 }
-.d-flex{
-  display: flex; flex-wrap: wrap;
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
-.link{
-  background: none; border:none; cursor: pointer;
+.link {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-.background-light{
-	background-color: $color-light;
+.background-light {
+  background-color: $color-light;
 }
-.background-dark{
+.background-dark {
   background-color: $color-dark;
 }
-.color-light{
-	color: $color-light;
+.color-light {
+  color: $color-light;
 }
-.display-4{
-  font-size: 2.2em; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;
+.display-4 {
+  font-size: 2.2em;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
 }
-.display-3{
-  font-size: 2em; font-family: 'Montserrat', sans-serif; line-height: 1.4; margin-bottom: 7px;
+.display-3 {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 7px;
 }
-.display-2{
-  font-size: 1.5em; font-family: 'Montserrat', sans-serif;
+.display-2 {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
 }
-.display-1{
-  font-size: 1.2em; font-family: 'Montserrat', sans-serif; line-height: 1.6;
+.display-1 {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
 }
-p, ul, ol{
-  margin: 0 0 10px; line-height: 1.7;
+p,
+ul,
+ol {
+  margin: 0 0 10px;
+  line-height: 1.7;
 }
-a{
+a {
   text-decoration: none;
 }
-:active{
+:active {
   outline: 0;
 }
 :focus {
-  outline: 2px $color-primary dashed; z-index:2;
+  outline: 2px $color-primary dashed;
+  z-index: 2;
 }
-.text-uppercase{
+.text-uppercase {
   text-transform: uppercase;
 }
-.img{
-  max-width: 100%; height: auto;
+.img {
+  max-width: 100%;
+  height: auto;
 }
-.sr-only{
-  position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
-.mb-2{
+.mb-2 {
   margin-bottom: 12px;
 }
-/* animations */
-.animatable{
-	visibility: hidden;	animation-play-state: paused;
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
 }
-.animated{
-	visibility: visible;  animation-fill-mode: both;  animation-duration: 1s; animation-play-state: running;
+/* animations */
+.animatable {
+  visibility: hidden;
+  animation-play-state: paused;
+}
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
 }
 @keyframes fadeInUp {
-	0% {		opacity: 0;		transform: translateY(40px);	}
-	100% {		opacity: 1;		transform: translateY(0);	}
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes showHide {
-	65% {		opacity: 0;		}
-	75% {		opacity: 1;		}
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
 }
 .animated.fadeInUp {
-	animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 /* scrollbar */
 body::-webkit-scrollbar {
-	width: 10px;	height: 10px;
+  width: 10px;
+  height: 10px;
 }
 body::-webkit-scrollbar-track {
-	background-color: #f3f6f6;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+  background-color: #f3f6f6;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 body::-webkit-scrollbar-thumb {
-	background-color: #555555;	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+  background-color: #555555;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 /* style mobile */
-@media(max-width: 768px) {
-  .display-4{
+@media (max-width: 768px) {
+  .display-4 {
     font-size: 1.8em;
   }
-  .display-3{
+  .display-3 {
     font-size: 1.5em;
   }
-  .display-2{
+  .display-2 {
     font-size: 1.2em;
   }
-  .display-1{
+  .display-1 {
     font-size: 1em;
   }
 }
 /* style print */
 @media print {
-  .animatable{
+  .animatable {
     visibility: visible;
   }
-  .section{
+  .section {
     padding: 20px;
   }
   a[href^="http"]::after {
     content: " (" attr(href) ")";
   }
-  .color-light{
+  .color-light {
     color: inherit;
   }
-  .d-print-none{
+  .d-print-none {
     display: none !important;
   }
 }

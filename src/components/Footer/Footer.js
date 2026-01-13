@@ -23,8 +23,7 @@ class Footer extends Component {
                     <a href="https://sklep.itworksbetter.net/" title="IT Works Better" target="_blank" rel="nofollow noopener noreferrer" key={chunks}>
                       {chunks}
                     </a>
-                  ),
-                  breakingLine: (key) => <br key={key} />,
+                  )
                 }}
               />
             </div>
