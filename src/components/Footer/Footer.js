@@ -78,7 +78,7 @@ class Footer extends Component {
             </div>
           </div>
           <div className="container text-center footer--bottom">
-            <p>Copyright © 2013 - 2025 by Kamil Wyremski. All rights reserved</p>
+            <p>Copyright © 2013 - 2026 by Kamil Wyremski. All rights reserved</p>
           </div>
         </footer>
       </>
