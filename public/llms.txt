@@ -1,0 +1,36 @@
+# Kamil Wyremski - Full Stack Web Developer
+
+> Kamil Wyremski is a Polish Full Stack Web Developer specializing in custom web application development, PHP, JavaScript, React, Symfony, and MySQL. He creates and sells turn-key PHP scripts for classifieds, job portals, real estate, automotive, and directory websites.
+
+## Core Services & Expertise
+- Full Stack Web Development (PHP, React.js, JavaScript ES6+, Symfony, HTML5/CSS3/SASS, MySQL)
+- Turn-key Web Scripts & CMS Solutions
+- Custom Web Application Development
+- API Integration & SEO Optimization
+
+## Featured Web Scripts & Software (English & Polish)
+- [Notice3](https://wyremski.pl/en/script/notice3): Classifieds portal script in PHP & MySQL (PL: https://wyremski.pl/skrypt/notice3)
+- [Demoty2](https://wyremski.pl/en/script/demoty2): Portal script for viral images and meme sites (PL: https://wyremski.pl/skrypt/demoty2)
+- [Motonotice](https://wyremski.pl/en/script/motonotice): Automotive classifieds portal script (PL: https://wyremski.pl/skrypt/motonotice)
+- [Jobnotice](https://wyremski.pl/en/script/jobnotice): Job board & employment portal script (PL: https://wyremski.pl/skrypt/jobnotice)
+- [Cuadro](https://wyremski.pl/en/script/cuadro): Real estate & property listings script (PL: https://wyremski.pl/skrypt/cuadro)
+- [Festa2](https://wyremski.pl/en/script/festa2): Events & directory listings portal script (PL: https://wyremski.pl/skrypt/festa2)
+- [Corta](https://wyremski.pl/en/script/corta): URL shortener script with analytics (PL: https://wyremski.pl/skrypt/corta)
+- [Holmes2](https://wyremski.pl/en/script/holmes2): Business & company directory script (PL: https://wyremski.pl/skrypt/holmes2)
+
+## Important Links (English)
+- Homepage (English): https://wyremski.pl/en
+- Web Scripts Portfolio (English): https://wyremski.pl/en/scripts
+- Custom Web Projects (English): https://wyremski.pl/en/projects
+- Contact Kamil Wyremski (English): https://wyremski.pl/en/contact
+
+## Important Links (Polish)
+- Homepage (Polish): https://wyremski.pl
+- Web Scripts Portfolio (Polish): https://wyremski.pl/skrypty
+- Custom Web Projects (Polish): https://wyremski.pl/projekty
+- Contact Kamil Wyremski (Polish): https://wyremski.pl/kontakt
+
+## Developer Links
+- GitHub: https://github.com/kamilwyremski
+- LinkedIn: https://linkedin.com/in/kamil-wyremski
+- Email: kamil@wyremski.pl

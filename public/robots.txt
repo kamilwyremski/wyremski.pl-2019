@@ -2,4 +2,30 @@ User-agent: *
 Disallow: /404
 Disallow: /404.html
 
+# AI Agent Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ora-agent
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://wyremski.pl/sitemap.xml
+Link: https://wyremski.pl/llms.txt

@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Kamil Wyremski"/>
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="/upload/images/favicon/favicon-57.png"/>
-    <link rel="apple-touch-icon" sizes="60x60" href="/upload/images/favicon/favicon-60.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="/upload/images/favicon/favicon-72.png"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="/upload/images/favicon/favicon-76.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="/upload/images/favicon/favicon-114.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" href="/upload/images/favicon/favicon-120.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="/upload/images/favicon/favicon-144.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/upload/images/favicon/favicon-180.png"/>
-    <link rel="icon" type="image/png" sizes="192x192" href="/upload/images/favicon/favicon-192.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/upload/images/favicon/favicon-32.png"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="/upload/images/favicon/favicon-96.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/upload/images/favicon/favicon-16.png"/>
-    <link rel="shortcut icon" href="/upload/images/favicon/favicon.png"/>
 
-    <link rel="manifest" href="/manifest.json"/>
-    <meta name="theme-color" content="#3f5a6f"/>
-    <meta name="msapplication-config" content="/browserconfig.xml" />
-    <link rel="mask-icon" href="/upload/images/favicon/favicon.svg" color="#3f5a6f"></link>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Kamil Wyremski" />
 
-    <script type="application/ld+json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/upload/images/favicon/favicon-57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/upload/images/favicon/favicon-60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/upload/images/favicon/favicon-72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/upload/images/favicon/favicon-76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/upload/images/favicon/favicon-114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/upload/images/favicon/favicon-120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/upload/images/favicon/favicon-144.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/upload/images/favicon/favicon-180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/upload/images/favicon/favicon-192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/upload/images/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/upload/images/favicon/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/upload/images/favicon/favicon-16.png" />
+  <link rel="shortcut icon" href="/upload/images/favicon/favicon.png" />
+
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#3f5a6f" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+  <link rel="mask-icon" href="/upload/images/favicon/favicon.svg" color="#3f5a6f">
+  </link>
+
+  <script type="application/ld+json">
       {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "Kamil Wyremski",
-        "email": "kamil@wyremski.pl",
-        "url": "https://wyremski.pl",
-        "sameAs": [
-          "https://www.facebook.com/wyremskipl/",
-          "https://twitter.com/kamil_wyremski",
-          "https://linkedin.com/in/kamil-wyremski",
-          "https://github.com/kamilwyremski",
-          "https://wyremski.pl/"
-        ],
-        "jobTitle": "Full Stack Web Developer"  
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://wyremski.pl/#person",
+            "name": "Kamil Wyremski",
+            "email": "kamil@wyremski.pl",
+            "url": "https://wyremski.pl",
+            "jobTitle": "Full Stack Web Developer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Kamil Wyremski Web Development",
+              "url": "https://wyremski.pl"
+            },
+            "sameAs": [
+              "https://www.facebook.com/wyremskipl/",
+              "https://x.com/kamil_wyremski",
+              "https://linkedin.com/in/kamil-wyremski",
+              "https://github.com/kamilwyremski",
+              "https://wyremski.pl"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://wyremski.pl/#organization",
+            "name": "Kamil Wyremski - Web Development",
+            "url": "https://wyremski.pl",
+            "logo": "https://wyremski.pl/upload/images/logo_facebook.png",
+            "sameAs": [
+              "https://www.facebook.com/wyremskipl/",
+              "https://twitter.com/kamil_wyremski",
+              "https://linkedin.com/in/kamil-wyremski",
+              "https://github.com/kamilwyremski"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://wyremski.pl/#website",
+            "url": "https://wyremski.pl",
+            "name": "Kamil Wyremski - Full Stack Web Developer",
+            "publisher": {
+              "@id": "https://wyremski.pl/#person"
+            },
+            "inLanguage": ["pl", "en"]
+          }
+        ]
       }
     </script>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="app"></div>
-  </body>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="app"></div>
+</body>
+
 </html>

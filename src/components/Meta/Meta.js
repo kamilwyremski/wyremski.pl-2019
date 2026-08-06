@@ -100,6 +100,7 @@ class Meta extends Component {
   render() {
     return (
       <Helmet>
+        <link rel="canonical" href={this.state.lang === 'pl' ? this.state.alternate_pl : this.state.alternate_en} />
         <link rel="alternate" hrefLang="pl" href={this.state.alternate_pl} />
         <link rel="alternate" hrefLang="en" href={this.state.alternate_en} />
 

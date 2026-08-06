@@ -1,0 +1,7 @@
+# Agent Skills & Discovery File
+
+- entity: Kamil Wyremski
+- type: Full Stack Web Developer
+- url: https://wyremski.pl
+- llms_txt: https://wyremski.pl/llms.txt
+- agents_md: https://wyremski.pl/agents.md

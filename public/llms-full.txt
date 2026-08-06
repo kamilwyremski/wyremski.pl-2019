@@ -1,0 +1,63 @@
+# Kamil Wyremski - Full Stack Web Developer (Full Documentation)
+
+## Overview
+Kamil Wyremski is an experienced Full Stack Web Developer based in Poland. With expertise in PHP, MySQL, JavaScript, React.js, and Symfony, he offers custom web application development, responsive website design, and pre-built, ready-to-deploy web scripts for startups, entrepreneurs, and businesses.
+
+## Key Technical Skills & Technologies
+- **Backend**: PHP (7.x / 8.x), Symfony, Node.js, REST APIs, Service Workers
+- **Frontend**: JavaScript (ES6+), React.js, HTML5, CSS3, SASS/SCSS, Responsive Web Design
+- **Database**: MySQL, MariaDB
+- **Tools & DevOps**: Git, npm, Composer, Docker, Webpack, CRA (Create React App), PWA (Progressive Web Apps)
+
+## Pre-Built PHP Scripts Portfolio
+
+### 1. Notice3 - Classifieds Portal Script
+- **URL**: https://wyremski.pl/skrypt/notice3
+- **Description**: Feature-rich PHP classifieds script allowing users to post, manage, and promote local or national advertisements.
+- **Key Features**: Paid ads support, interactive map search, multi-language support, responsive design, SEO friendly.
+
+### 2. Demoty2 - Entertainment & Meme Website Script
+- **URL**: https://wyremski.pl/skrypt/demoty2
+- **Description**: CMS script designed for viral entertainment websites, demotivators, and user-generated media portals.
+- **Key Features**: Media upload (images/videos), voting & commenting system, moderation panel, social media sharing.
+
+### 3. Motonotice - Automotive Classifieds Script
+- **URL**: https://wyremski.pl/skrypt/motonotice
+- **Description**: Dedicated automotive classifieds script for car dealers and auto marketplace sites.
+- **Key Features**: Vehicle parameter filters (mileage, engine size, year, body type), photo galleries, contact forms.
+
+### 4. Jobnotice - Job Portal & Employment Script
+- **URL**: https://wyremski.pl/skrypt/jobnotice
+- **Description**: Modern job board script for employers to post job offers and job seekers to submit resumes.
+- **Key Features**: CV uploads, employer profiles, category/location filtering, paid job postings.
+
+### 5. Cuadro - Real Estate Portal Script
+- **URL**: https://wyremski.pl/skrypt/cuadro
+- **Description**: Complete real estate software for property listings, realtors, and property portals.
+- **Key Features**: Property features breakdown (sqm, rooms, floor, amenities), map integration, lead contact forms.
+
+### 6. Festa2 - Directory & Event Listings Script
+- **URL**: https://wyremski.pl/skrypt/festa2
+- **Description**: Comprehensive directory and events management script for business listings or regional events.
+
+### 7. Corta - URL Shortener Script
+- **URL**: https://wyremski.pl/skrypt/corta
+- **Description**: Fast, lightweight URL shortener with analytics and click tracking.
+
+### 8. Holmes2 - Business Directory Script
+- **URL**: https://wyremski.pl/skrypt/holmes2
+- **Description**: Local business search directory script with business profiles, ratings, and map search.
+
+## Services Provided
+1. Custom PHP & React Web Application Development
+2. Script Installation, Customization, and Server Deployment
+3. SEO Optimization & Performance Tuning
+4. Bug Fixing & Code Refactoring
+
+## Contact Information
+- **Website**: https://wyremski.pl
+- **Email**: kamil@wyremski.pl
+- **GitHub**: https://github.com/kamilwyremski
+- **LinkedIn**: https://linkedin.com/in/kamil-wyremski
+- **Facebook**: https://www.facebook.com/wyremskipl/
+- **X / Twitter**: https://x.com/kamil_wyremski
