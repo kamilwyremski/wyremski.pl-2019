@@ -105,3 +105,8 @@ ExpiresDefault "access plus 1 month"
 <IfModule mod_headers.c>
   Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
+
+# No-Vary-Search (Performance spec - ignores tracking params like utm_*, fbclid, gclid for instant cache hits)
+<IfModule mod_headers.c>
+  Header set No-Vary-Search 'key-order, params=("utm_source" "utm_medium" "utm_campaign" "utm_term" "utm_content" "fbclid" "gclid" "ref")'
+</IfModule>

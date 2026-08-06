@@ -1,129 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+              http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+              http://www.google.com/schemas/sitemap-image/1.1
+              http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
 
-<url>
-  <loc>https://wyremski.pl/</loc>
-  <lastmod>2020-09-08T18:16:51+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypty/</loc>
-  <lastmod>2020-09-08T18:16:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/projekty/</loc>
-  <lastmod>2020-09-08T18:16:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/kontakt/</loc>
-  <lastmod>2020-09-08T18:16:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/</loc>
-  <lastmod>2020-09-08T18:16:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/scripts/</loc>
-  <lastmod>2020-09-08T18:16:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/notice3/</loc>
-  <lastmod>2020-09-08T18:17:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/motonotice/</loc>
-  <lastmod>2020-09-08T18:17:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/demoty2/</loc>
-  <lastmod>2020-09-08T18:17:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/holmes2/</loc>
-  <lastmod>2020-09-08T18:17:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/festa2/</loc>
-  <lastmod>2020-09-08T18:17:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/cuadro/</loc>
-  <lastmod>2020-09-08T18:17:09+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/corta/</loc>
-  <lastmod>2020-09-08T18:17:08+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/skrypt/jobnotice/</loc>
-  <lastmod>2020-09-08T18:17:08+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/projects/</loc>
-  <lastmod>2020-09-08T18:17:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/contact/</loc>
-  <lastmod>2020-09-08T18:17:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/notice3/</loc>
-  <lastmod>2020-09-08T18:17:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/motonotice/</loc>
-  <lastmod>2020-09-08T18:17:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/demoty2/</loc>
-  <lastmod>2020-09-08T18:17:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/holmes2/</loc>
-  <lastmod>2020-09-08T18:17:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/festa2/</loc>
-  <lastmod>2020-09-08T18:17:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/cuadro/</loc>
-  <lastmod>2020-09-08T18:17:22+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/corta/</loc>
-  <lastmod>2020-09-08T18:17:23+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://wyremski.pl/en/script/jobnotice/</loc>
-  <lastmod>2020-09-08T18:17:23+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
+  <url>
+    <loc>https://wyremski.pl/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/images/logo_facebook.png</image:loc>
+      <image:title>Kamil Wyremski - Full Stack Web Developer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypty/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/projekty/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/kontakt/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/images/logo_facebook.png</image:loc>
+      <image:title>Kamil Wyremski - Full Stack Web Developer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/scripts/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/notice3/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/notice3/notice3.jpg</image:loc>
+      <image:title>Skrypt ogłoszeń Notice3 - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/motonotice/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/motonotice/motonotice.jpg</image:loc>
+      <image:title>Skrypt ogłoszeń motoryzacyjnych Motonotice - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/demoty2/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/demoty2/demoty2.jpg</image:loc>
+      <image:title>Skrypt portalu rozrywkowego Demoty2 - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/holmes2/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/holmes2/holmes2.jpg</image:loc>
+      <image:title>Skrypt katalogu firm Holmes2 - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/festa2/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/festa2/festa2.jpg</image:loc>
+      <image:title>Skrypt bazy wydarzeń i katalogu Festa2 - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/cuadro/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/cuadro/cuadro.jpg</image:loc>
+      <image:title>Skrypt nieruchomości Cuadro - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/corta/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/corta/corta.jpg</image:loc>
+      <image:title>Skrypt skracacza linków Corta - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/skrypt/jobnotice/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/jobnotice/jobnotice.jpg</image:loc>
+      <image:title>Skrypt portalu pracy Jobnotice - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/projects/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/contact/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/notice3/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/notice3/notice3.jpg</image:loc>
+      <image:title>Notice3 Classifieds Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/motonotice/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/motonotice/motonotice.jpg</image:loc>
+      <image:title>Motonotice Automotive Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/demoty2/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/demoty2/demoty2.jpg</image:loc>
+      <image:title>Demoty2 Entertainment Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/holmes2/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/holmes2/holmes2.jpg</image:loc>
+      <image:title>Holmes2 Business Directory Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/festa2/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/festa2/festa2.jpg</image:loc>
+      <image:title>Festa2 Events Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/cuadro/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/cuadro/cuadro.jpg</image:loc>
+      <image:title>Cuadro Real Estate Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/corta/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/corta/corta.jpg</image:loc>
+      <image:title>Corta URL Shortener Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wyremski.pl/en/script/jobnotice/</loc>
+    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <priority>0.51</priority>
+    <image:image>
+      <image:loc>https://wyremski.pl/upload/scripts/jobnotice/jobnotice.jpg</image:loc>
+      <image:title>Jobnotice Job Board Script - Kamil Wyremski</image:title>
+    </image:image>
+  </url>
 
 </urlset>
