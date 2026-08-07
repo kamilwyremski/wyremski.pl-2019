@@ -1,0 +1,4 @@
+Contact: mailto:kamil@wyremski.pl
+Expires: 2027-08-07T00:00:00Z
+Preferred-Languages: pl, en
+Canonical: https://wyremski.pl/.well-known/security.txt

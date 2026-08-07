@@ -30,8 +30,10 @@ RewriteRule ^(.*)/index\.html$ /$1 [R=301,L]
 ErrorDocument 404 /404.html
 
 # Markdown source endpoints — serve .md files with correct MIME type
+# security.txt — serve .txt files as text/plain per RFC 9116
 <IfModule mod_mime.c>
   AddType text/markdown .md
+  AddType text/plain .txt
 </IfModule>
 
 ## EXPIRES CACHING ##
@@ -99,7 +101,7 @@ ExpiresDefault "access plus 1 month"
 
 # X-Content-Type-Options
 <IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
+  Header always set X-Content-Type-Options "nosniff"
 </IfModule>
 
 # Referrer Policy
