@@ -29,6 +29,11 @@ RewriteRule ^(.*)/index\.html$ /$1 [R=301,L]
 
 ErrorDocument 404 /404.html
 
+# Markdown source endpoints — serve .md files with correct MIME type
+<IfModule mod_mime.c>
+  AddType text/markdown .md
+</IfModule>
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -67,6 +72,7 @@ ExpiresDefault "access plus 1 month"
   AddOutputFilterByType DEFLATE text/html
   AddOutputFilterByType DEFLATE text/javascript
   AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/markdown
   AddOutputFilterByType DEFLATE text/xml
 
   # Remove browser bugs (only needed for really old browsers)
@@ -109,4 +115,11 @@ ExpiresDefault "access plus 1 month"
 # No-Vary-Search (Performance spec - ignores tracking params like utm_*, fbclid, gclid for instant cache hits)
 <IfModule mod_headers.c>
   Header set No-Vary-Search 'key-order, params=("utm_source" "utm_medium" "utm_campaign" "utm_term" "utm_content" "fbclid" "gclid" "ref")'
+</IfModule>
+
+# Markdown source endpoints — Vary: Accept so caches don't conflate HTML and Markdown representations
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html?)$">
+    Header append Vary Accept
+  </FilesMatch>
 </IfModule>

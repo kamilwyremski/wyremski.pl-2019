@@ -2,6 +2,15 @@
 
 > Kamil Wyremski is a Polish Full Stack Web Developer specializing in custom web application development, PHP, JavaScript, React, Symfony, and MySQL. He creates and sells turn-key PHP scripts for classifieds, job portals, real estate, automotive, and directory websites.
 
+## Markdown Source Endpoints
+This site exposes raw Markdown at predictable URLs (Content-Type: text/markdown):
+- Full overview (this file): https://wyremski.pl/llms.txt
+- Full documentation: https://wyremski.pl/llms-full.txt
+- Agent instructions: https://wyremski.pl/agents.md
+
+All `.md` files are served with `Content-Type: text/markdown; charset=utf-8`.
+HTML pages include `<link rel="alternate" type="text/markdown">` discovery hints in `<head>`.
+
 ## Core Services & Expertise
 - Full Stack Web Development (PHP, React.js, JavaScript ES6+, Symfony, HTML5/CSS3/SASS, MySQL)
 - Turn-key Web Scripts & CMS Solutions
