@@ -91,6 +91,20 @@ class Home extends Component {
               <p>
                 <FormattedMessage id="home.about_me.brand" />
               </p>
+              <a
+                href="https://www.credly.com/badges/2ce9f52a-5b5f-40b7-80f1-226f744a4f5d/email"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png"
+                  alt="Credly badge"
+                  className="home--certificate--image"
+                  loading="lazy"
+                  width="120"
+                  height="120"
+                />
+              </a>
             </hgroup>
           </section>
           <section className="background-light" aria-labelledby="skills-title">

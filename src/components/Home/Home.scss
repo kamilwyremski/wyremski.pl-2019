@@ -35,18 +35,24 @@
   color: $color-light;
   text-align: center;
   p {
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 10px auto 24px;
+    max-width: 600px;
   }
   a {
     color: #fff;
-    margin: 0 12px 12px 0;
     transition: all 0.1s;
-    font-size: 1.6em;
   }
   a:hover {
     color: $color-primary;
   }
+}
+.home--certificate--image {
+  width: 120px;
+  height: 120px;
+  transition: transform 0.2s ease;
+}
+.home--certificate--image:hover {
+  transform: scale(1.05);
 }
 .home--skill {
   background-color: #000;
