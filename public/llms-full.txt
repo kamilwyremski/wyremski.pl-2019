@@ -1,63 +1,78 @@
-# Kamil Wyremski - Full Stack Web Developer (Full Documentation)
+# Kamil Wyremski - Full Stack Web Developer
 
-## Overview
-Kamil Wyremski is an experienced Full Stack Web Developer based in Poland. With expertise in PHP, MySQL, JavaScript, React.js, and Symfony, he offers custom web application development, responsive website design, and pre-built, ready-to-deploy web scripts for startups, entrepreneurs, and businesses.
+> Polish Full Stack Web Developer. Builds custom web applications and sells turn-key PHP scripts for classifieds, job boards, real estate, automotive, and directory websites.
 
-## Key Technical Skills & Technologies
-- **Backend**: PHP (7.x / 8.x), Symfony, Node.js, REST APIs, Service Workers
-- **Frontend**: JavaScript (ES6+), React.js, HTML5, CSS3, SASS/SCSS, Responsive Web Design
+Kamil Wyremski is based in Poland and has been building web applications since the early 2010s. He specialises in PHP, Symfony, React.js, and MySQL. The site is available in Polish and English.
+
+## Technical Skills
+
+- **Backend**: PHP 7.x / 8.x, Symfony, Node.js, REST APIs
+- **Frontend**: JavaScript ES6+, React.js, Vue.js, HTML5, CSS3, SASS/SCSS, Bootstrap
 - **Database**: MySQL, MariaDB
-- **Tools & DevOps**: Git, npm, Composer, Docker, Webpack, CRA (Create React App), PWA (Progressive Web Apps)
+- **Tools**: Git, Composer, npm, Webpack, Docker, PWA
 
-## Pre-Built PHP Scripts Portfolio
+## Web Scripts
 
-### 1. Notice3 - Classifieds Portal Script
-- **URL**: https://wyremski.pl/skrypt/notice3
-- **Description**: Feature-rich PHP classifieds script allowing users to post, manage, and promote local or national advertisements.
-- **Key Features**: Paid ads support, interactive map search, multi-language support, responsive design, SEO friendly.
+### Notice3 — Classifieds Portal Script
+- English: https://wyremski.pl/en/script/notice3
+- Polish: https://wyremski.pl/skrypt/notice3
+- Framework: Symfony + Vue.js + Bootstrap 5
+- Payments: Przelewy24, HotPay, PayPal, Tpay, PayU, Paynow, Autopay, Paybylink, Revolut Pay, bank transfer
+- Features: multi-language, paid ad promotion, map search (Google Maps), social login (Facebook, Google), internal messaging, newsletter module, voice search, commenting, user wallet, YouTube embeds
 
-### 2. Demoty2 - Entertainment & Meme Website Script
-- **URL**: https://wyremski.pl/skrypt/demoty2
-- **Description**: CMS script designed for viral entertainment websites, demotivators, and user-generated media portals.
-- **Key Features**: Media upload (images/videos), voting & commenting system, moderation panel, social media sharing.
+### Motonotice — Automotive Classifieds Script
+- English: https://wyremski.pl/en/script/motonotice
+- Polish: https://wyremski.pl/skrypt/motonotice
+- Features: vehicle parameter filters (mileage, engine size, year, body type), photo galleries, contact forms, map integration
 
-### 3. Motonotice - Automotive Classifieds Script
-- **URL**: https://wyremski.pl/skrypt/motonotice
-- **Description**: Dedicated automotive classifieds script for car dealers and auto marketplace sites.
-- **Key Features**: Vehicle parameter filters (mileage, engine size, year, body type), photo galleries, contact forms.
+### Jobnotice — Job Board Script
+- English: https://wyremski.pl/en/script/jobnotice
+- Polish: https://wyremski.pl/skrypt/jobnotice
+- Features: employer profiles, CV uploads, category and location filtering, paid job postings
 
-### 4. Jobnotice - Job Portal & Employment Script
-- **URL**: https://wyremski.pl/skrypt/jobnotice
-- **Description**: Modern job board script for employers to post job offers and job seekers to submit resumes.
-- **Key Features**: CV uploads, employer profiles, category/location filtering, paid job postings.
+### Cuadro — Real Estate Portal Script
+- English: https://wyremski.pl/en/script/cuadro
+- Polish: https://wyremski.pl/skrypt/cuadro
+- Features: property listings with details (sqm, rooms, floor, amenities), map integration, lead contact forms
 
-### 5. Cuadro - Real Estate Portal Script
-- **URL**: https://wyremski.pl/skrypt/cuadro
-- **Description**: Complete real estate software for property listings, realtors, and property portals.
-- **Key Features**: Property features breakdown (sqm, rooms, floor, amenities), map integration, lead contact forms.
+### Festa2 — Events & Directory Script
+- English: https://wyremski.pl/en/script/festa2
+- Polish: https://wyremski.pl/skrypt/festa2
+- Features: business listings, regional events, category management
 
-### 6. Festa2 - Directory & Event Listings Script
-- **URL**: https://wyremski.pl/skrypt/festa2
-- **Description**: Comprehensive directory and events management script for business listings or regional events.
+### Holmes2 — Business Directory Script
+- English: https://wyremski.pl/en/script/holmes2
+- Polish: https://wyremski.pl/skrypt/holmes2
+- Features: business profiles, ratings, map search
 
-### 7. Corta - URL Shortener Script
-- **URL**: https://wyremski.pl/skrypt/corta
-- **Description**: Fast, lightweight URL shortener with analytics and click tracking.
+### Demoty2 — Meme & Viral Media Script
+- English: https://wyremski.pl/en/script/demoty2
+- Polish: https://wyremski.pl/skrypt/demoty2
+- Features: media upload (images/videos), voting and commenting, moderation panel, social sharing
 
-### 8. Holmes2 - Business Directory Script
-- **URL**: https://wyremski.pl/skrypt/holmes2
-- **Description**: Local business search directory script with business profiles, ratings, and map search.
+### Corta — URL Shortener Script
+- English: https://wyremski.pl/en/script/corta
+- Polish: https://wyremski.pl/skrypt/corta
+- Features: analytics, click tracking, custom short URLs
 
-## Services Provided
-1. Custom PHP & React Web Application Development
-2. Script Installation, Customization, and Server Deployment
-3. SEO Optimization & Performance Tuning
-4. Bug Fixing & Code Refactoring
+## Services
 
-## Contact Information
-- **Website**: https://wyremski.pl
-- **Email**: kamil@wyremski.pl
-- **GitHub**: https://github.com/kamilwyremski
-- **LinkedIn**: https://linkedin.com/in/kamil-wyremski
-- **Facebook**: https://www.facebook.com/wyremskipl/
-- **X / Twitter**: https://x.com/kamil_wyremski
+- Custom PHP and React web application development
+- Script installation, configuration, and server deployment
+- SEO optimisation and performance tuning
+- Bug fixing and code refactoring
+
+## Key Pages
+
+- Homepage (English): https://wyremski.pl/en
+- Scripts portfolio (English): https://wyremski.pl/en/scripts
+- Custom projects (English): https://wyremski.pl/en/projects
+- Contact (English): https://wyremski.pl/en/contact
+
+## Contact
+
+- Email: kamil@wyremski.pl
+- GitHub: https://github.com/kamilwyremski
+- LinkedIn: https://linkedin.com/in/kamil-wyremski
+- Facebook: https://www.facebook.com/wyremskipl/
+- X / Twitter: https://x.com/kamil_wyremski

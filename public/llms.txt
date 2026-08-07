@@ -1,45 +1,24 @@
-# Kamil Wyremski - Full Stack Web Developer
+# Kamil Wyremski
 
-> Kamil Wyremski is a Polish Full Stack Web Developer specializing in custom web application development, PHP, JavaScript, React, Symfony, and MySQL. He creates and sells turn-key PHP scripts for classifieds, job portals, real estate, automotive, and directory websites.
+> Polish Full Stack Web Developer. Builds custom web applications and sells turn-key PHP scripts for classifieds, job boards, real estate, automotive, and directory websites.
 
-## Markdown Source Endpoints
-This site exposes raw Markdown at predictable URLs (Content-Type: text/markdown):
-- Full overview (this file): https://wyremski.pl/llms.txt
-- Full documentation: https://wyremski.pl/llms-full.txt
-- Agent instructions: https://wyremski.pl/agents.md
+## Web Scripts
 
-All `.md` files are served with `Content-Type: text/markdown; charset=utf-8`.
-HTML pages include `<link rel="alternate" type="text/markdown">` discovery hints in `<head>`.
+- [Notice3](https://wyremski.pl/en/script/notice3): PHP & Symfony classifieds portal script with payments, social login, internal messaging, and map search.
+- [Motonotice](https://wyremski.pl/en/script/motonotice): Automotive classifieds script with vehicle filters, photo galleries, and map integration.
+- [Jobnotice](https://wyremski.pl/en/script/jobnotice): Job board script for employers and job seekers with CV uploads and paid postings.
+- [Cuadro](https://wyremski.pl/en/script/cuadro): Real estate portal script with property listings, map integration, and contact forms.
+- [Festa2](https://wyremski.pl/en/script/festa2): Events and directory listings script for business directories and regional events.
+- [Holmes2](https://wyremski.pl/en/script/holmes2): Business directory script with profiles, ratings, and map search.
+- [Demoty2](https://wyremski.pl/en/script/demoty2): Meme and viral media site script with voting, comments, and moderation.
+- [Corta](https://wyremski.pl/en/script/corta): URL shortener script with analytics and click tracking.
 
-## Core Services & Expertise
-- Full Stack Web Development (PHP, React.js, JavaScript ES6+, Symfony, HTML5/CSS3/SASS, MySQL)
-- Turn-key Web Scripts & CMS Solutions
-- Custom Web Application Development
-- API Integration & SEO Optimization
+## Services
 
-## Featured Web Scripts & Software (English & Polish)
-- [Notice3](https://wyremski.pl/en/script/notice3): Classifieds portal script in PHP & MySQL (PL: https://wyremski.pl/skrypt/notice3)
-- [Demoty2](https://wyremski.pl/en/script/demoty2): Portal script for viral images and meme sites (PL: https://wyremski.pl/skrypt/demoty2)
-- [Motonotice](https://wyremski.pl/en/script/motonotice): Automotive classifieds portal script (PL: https://wyremski.pl/skrypt/motonotice)
-- [Jobnotice](https://wyremski.pl/en/script/jobnotice): Job board & employment portal script (PL: https://wyremski.pl/skrypt/jobnotice)
-- [Cuadro](https://wyremski.pl/en/script/cuadro): Real estate & property listings script (PL: https://wyremski.pl/skrypt/cuadro)
-- [Festa2](https://wyremski.pl/en/script/festa2): Events & directory listings portal script (PL: https://wyremski.pl/skrypt/festa2)
-- [Corta](https://wyremski.pl/en/script/corta): URL shortener script with analytics (PL: https://wyremski.pl/skrypt/corta)
-- [Holmes2](https://wyremski.pl/en/script/holmes2): Business & company directory script (PL: https://wyremski.pl/skrypt/holmes2)
+- [Custom Projects](https://wyremski.pl/en/projects): Custom PHP and React web application development, script customization, SEO optimization.
+- [Contact](https://wyremski.pl/en/contact): How to get in touch for a quote or collaboration.
 
-## Important Links (English)
-- Homepage (English): https://wyremski.pl/en
-- Web Scripts Portfolio (English): https://wyremski.pl/en/scripts
-- Custom Web Projects (English): https://wyremski.pl/en/projects
-- Contact Kamil Wyremski (English): https://wyremski.pl/en/contact
+## Optional
 
-## Important Links (Polish)
-- Homepage (Polish): https://wyremski.pl
-- Web Scripts Portfolio (Polish): https://wyremski.pl/skrypty
-- Custom Web Projects (Polish): https://wyremski.pl/projekty
-- Contact Kamil Wyremski (Polish): https://wyremski.pl/kontakt
-
-## Developer Links
-- GitHub: https://github.com/kamilwyremski
-- LinkedIn: https://linkedin.com/in/kamil-wyremski
-- Email: kamil@wyremski.pl
+- [Full LLM documentation](https://wyremski.pl/llms-full.txt): Detailed descriptions of all scripts and services.
+- [Agent instructions](https://wyremski.pl/agents.md): Instructions for AI agents interacting with this site.
