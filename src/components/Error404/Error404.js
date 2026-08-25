@@ -11,6 +11,15 @@ const Error404  = () => {
         <h3>Error 404</h3>
         <br />
         <p>The page you are looking for has been moved, deleted, or simply never existed.</p>
+        <br />
+        <nav aria-label="Site navigation" className="error404--nav">
+          <ul>
+            <li><a href="/en">Homepage</a></li>
+            <li><a href="/en/scripts">Web Scripts</a></li>
+            <li><a href="/en/projects">My Projects</a></li>
+            <li><a href="/en/contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </section>
   </main>

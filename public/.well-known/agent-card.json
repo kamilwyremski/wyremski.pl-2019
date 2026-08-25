@@ -1,0 +1,25 @@
+{
+  "name": "Kamil Wyremski — Web Developer Agent",
+  "description": "Agent providing information about PHP web scripts, custom web development services, pricing, and contact details for wyremski.pl.",
+  "url": "https://wyremski.pl",
+  "contact": {
+    "name": "Kamil Wyremski",
+    "email": "kamil@wyremski.pl"
+  },
+  "version": "1.0",
+  "skills": [
+    {
+      "identifier": "urn:air:wyremski.pl:skill-web-developer",
+      "displayName": "Web Developer — Scripts & Custom Dev",
+      "description": "Answers questions about available PHP scripts, custom development services, installation, licensing, and pricing.",
+      "when-to-use": "Use when a user asks about PHP web scripts (classifieds, job boards, real estate, automotive), custom web development, licensing, pricing, installation, or contacting Kamil Wyremski.",
+      "url": "https://wyremski.pl/.well-known/agent-skills"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "documentationUrl": "https://wyremski.pl/agents.md",
+  "llmsTxt": "https://wyremski.pl/llms.txt"
+}

@@ -1,10 +1,10 @@
-# Agent Skills — machine-readable list (YAML)
 ---
 - id: skill-web-developer
   name: Web Developer Skill
   entity: "Kamil Wyremski"
   url: "https://wyremski.pl"
   short_description: "Provide information about available web scripts, custom development services, and how to contact the developer."
+  when-to-use: "Use this skill when a user asks for ready-made PHP web scripts (classifieds, job boards, real estate, automotive, directory), custom web development (PHP, Symfony, React), licensing, pricing, installation, or troubleshooting help."
   when_to_use: |
     Use this skill when a user asks for:
     - ready-made PHP web scripts for classifieds, job portals, real-estate, automotive, or directory sites
