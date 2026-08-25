@@ -5,12 +5,6 @@
   url: "https://wyremski.pl"
   short_description: "Provide information about available web scripts, custom development services, and how to contact the developer."
   when-to-use: "Use this skill when a user asks for ready-made PHP web scripts (classifieds, job boards, real estate, automotive, directory), custom web development (PHP, Symfony, React), licensing, pricing, installation, or troubleshooting help."
-  when_to_use: |
-    Use this skill when a user asks for:
-    - ready-made PHP web scripts for classifieds, job portals, real-estate, automotive, or directory sites
-    - custom web development (PHP, Symfony, React)
-    - licensing, or support information for scripts
-    - installation, customization, or troubleshooting help for provided scripts
   examples:
     - "How can I buy and install Notice3 on my hosting?"
     - "I need a job board script with social login and payments — which product fits?"
@@ -23,6 +17,5 @@
     - query_catalog
     - explain_product
     - contact_sales
-  limitations: |
-    This skill cannot perform purchases or access customer accounts directly. For payments, redirect to https://wyremski.pl/en/contact or provide guidance for payment methods.
+  limitations: "This skill cannot perform purchases or access customer accounts directly. For payments, redirect to https://wyremski.pl/en/contact or provide guidance for payment methods."
 ...

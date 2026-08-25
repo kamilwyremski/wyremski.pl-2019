@@ -36,6 +36,13 @@ ErrorDocument 404 /404.html
   AddType text/plain .txt
 </IfModule>
 
+# Serve agent-skills (no extension) as application/yaml
+<IfModule mod_headers.c>
+  <Files "agent-skills">
+    Header set Content-Type "application/yaml"
+  </Files>
+</IfModule>
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
