@@ -103,6 +103,33 @@
               "@id": "https://wyremski.pl/#person"
             },
             "inLanguage": ["pl", "en"]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://wyremski.pl/#scripts-list",
+            "name": "Web Scripts by Kamil Wyremski",
+            "description": "Ready-to-use PHP web scripts for classifieds, job boards, real estate, automotive, events, and directory portals.",
+            "url": "https://wyremski.pl/en/scripts",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Notice3 — Classifieds Portal Script", "url": "https://wyremski.pl/en/script/notice3" },
+              { "@type": "ListItem", "position": 2, "name": "Motonotice — Automotive Classifieds Script", "url": "https://wyremski.pl/en/script/motonotice" },
+              { "@type": "ListItem", "position": 3, "name": "Jobnotice — Job Board Script", "url": "https://wyremski.pl/en/script/jobnotice" },
+              { "@type": "ListItem", "position": 4, "name": "Cuadro — Real Estate Portal Script", "url": "https://wyremski.pl/en/script/cuadro" },
+              { "@type": "ListItem", "position": 5, "name": "Festa2 — Events & Directory Script", "url": "https://wyremski.pl/en/script/festa2" },
+              { "@type": "ListItem", "position": 6, "name": "Holmes2 — Business Directory Script", "url": "https://wyremski.pl/en/script/holmes2" },
+              { "@type": "ListItem", "position": 7, "name": "Demoty2 — Meme & Viral Media Script", "url": "https://wyremski.pl/en/script/demoty2" },
+              { "@type": "ListItem", "position": 8, "name": "Corta — URL Shortener Script", "url": "https://wyremski.pl/en/script/corta" }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://wyremski.pl/#service",
+            "name": "Custom Web Development by Kamil Wyremski",
+            "description": "Custom PHP and React web application development, script installation and configuration, SEO optimisation, performance tuning, and bug fixing.",
+            "url": "https://wyremski.pl/en/projects",
+            "provider": { "@id": "https://wyremski.pl/#person" },
+            "areaServed": "Worldwide",
+            "serviceType": "Web Development"
           }
         ]
       }
@@ -127,19 +154,62 @@
 </head>
 
 <body>
+  <!-- Static content for crawlers/agents that don't execute JS. Hidden visually when JS is active. -->
+  <div id="static-content" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+    <h1>Kamil Wyremski — Full Stack Web Developer</h1>
+    <p>Full Stack Web Developer from Poland. Builds custom PHP and React web applications. Offers ready-to-run PHP scripts for classifieds, job boards, real estate, automotive portals, and custom development services.</p>
+
+    <section id="about">
+      <h2>About Kamil Wyremski</h2>
+      <p>Kamil Wyremski is a Polish Full Stack Web Developer based in Poland, building web applications since the early 2010s. He specialises in PHP 8, Symfony, React.js, Vue.js, and MySQL. The site is available in Polish and English.</p>
+      <p>Skills: PHP, Symfony, Node.js, JavaScript ES6+, React.js, Vue.js, HTML5, CSS3, SASS, Bootstrap, MySQL, MariaDB, Git, Docker, PWA.</p>
+    </section>
+
+    <section id="scripts">
+      <h2>Web Scripts</h2>
+      <ul>
+        <li><a href="/en/script/notice3">Notice3</a> — PHP &amp; Symfony classifieds portal script with payments (PayPal, Przelewy24, PayU and more), social login, map search, internal messaging, newsletter, and multi-language support.</li>
+        <li><a href="/en/script/motonotice">Motonotice</a> — Automotive classifieds script with vehicle filters, photo galleries, and map integration.</li>
+        <li><a href="/en/script/jobnotice">Jobnotice</a> — Job board script with employer profiles, CV uploads, category and location filtering, and paid postings.</li>
+        <li><a href="/en/script/cuadro">Cuadro</a> — Real estate portal script with property listings, map integration, and lead contact forms.</li>
+        <li><a href="/en/script/festa2">Festa2</a> — Events and directory listing script for business directories and regional events.</li>
+        <li><a href="/en/script/holmes2">Holmes2</a> — Business directory script with profiles, ratings, and map search.</li>
+        <li><a href="/en/script/demoty2">Demoty2</a> — Meme and viral media site script with voting, comments, and moderation.</li>
+        <li><a href="/en/script/corta">Corta</a> — URL shortener script with analytics and click tracking.</li>
+      </ul>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Custom PHP and React web application development</li>
+        <li>Script installation, configuration, and server deployment</li>
+        <li>SEO optimisation and performance tuning</li>
+        <li>Bug fixing and code refactoring</li>
+      </ul>
+      <p>See <a href="/en/projects">custom projects</a> or <a href="/en/contact">contact for a quote</a>.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kamil@wyremski.pl">kamil@wyremski.pl</a></p>
+      <p>GitHub: <a href="https://github.com/kamilwyremski">github.com/kamilwyremski</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/kamil-wyremski">linkedin.com/in/kamil-wyremski</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/wyremskipl/">facebook.com/wyremskipl</a></p>
+      <p>Use the <a href="/en/contact">contact form</a> to request a quote, ask about licensing, or get installation support.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>This site collects minimal personal data. Contact form submissions (name, email, message) are used solely to respond to inquiries and are not shared with third parties. The site uses Google reCAPTCHA to prevent spam. Analytics data may be collected to improve site performance. For data removal requests, contact <a href="mailto:kamil@wyremski.pl">kamil@wyremski.pl</a>.</p>
+    </section>
+  </div>
+
   <noscript>
-    <header>
-      <h1>Kamil Wyremski — Full Stack Web Developer</h1>
-      <p>Full Stack Web Developer building custom PHP and React web applications. Offers ready-to-run scripts for classifieds, job boards, real estate, automotive portals, and custom development services.</p>
-    </header>
-    <main>
-      <section>
-        <h2>What I offer</h2>
-        <p>Custom web development, PHP scripts (classifieds, job boards), maintenance, and consulting. See <a href="/en/scripts">available scripts</a> and <a href="/en/contact">contact</a> for quotes.</p>
-      </section>
-    </main>
+    <style>#static-content { position: static !important; left: auto !important; top: auto !important; width: auto !important; height: auto !important; overflow: visible !important; }</style>
     <p>You need to enable JavaScript to run this app.</p>
   </noscript>
+  <script>document.getElementById('static-content').setAttribute('aria-hidden','true');</script>
   <div id="app"></div>
 </body>
 
