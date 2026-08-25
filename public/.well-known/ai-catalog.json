@@ -9,10 +9,12 @@
   },
   "entries": [
     {
-      "id": "skill-web-developer",
-      "name": "Web Developer Skill",
-      "description": "Skill describing available scripts, services, pricing and contact information.",
-      "url": "https://wyremski.pl/.well-known/agent-skills"
+      "identifier": "skill-web-developer",
+      "displayName": "Web Developer — Scripts & Custom Dev",
+      "mediaType": "text/yaml",
+      "description": "Skill describing available PHP web scripts, custom development services, pricing and contact information for wyremski.pl.",
+      "url": "https://wyremski.pl/.well-known/agent-skills",
+      "when-to-use": "Use when a user asks about PHP web scripts (classifieds, job boards, real estate, automotive), custom web development, licensing, pricing, installation, or contacting Kamil Wyremski."
     }
   ]
 }

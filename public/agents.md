@@ -1,3 +1,7 @@
+---
+when-to-use: "Use when a user asks about PHP web scripts (classifieds, job boards, real estate, automotive, events, directory), custom web development, licensing, pricing, installation support, or contacting Kamil Wyremski."
+---
+
 # Agent Instructions for wyremski.pl
 
 Welcome, AI Agent!
