@@ -35,6 +35,7 @@
             "@type": "Person",
             "@id": "https://wyremski.pl/#person",
             "name": "Kamil Wyremski",
+            "description": "Full Stack Web Developer with a focus on PHP and JavaScript, creating custom web applications and scalable digital solutions for classifieds, job boards, real estate and automotive platforms.",
             "email": "kamil@wyremski.pl",
             "url": "https://wyremski.pl",
             "jobTitle": "Full Stack Web Developer",
@@ -62,7 +63,36 @@
               "https://twitter.com/kamil_wyremski",
               "https://linkedin.com/in/kamil-wyremski",
               "https://github.com/kamilwyremski"
-            ]
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "kamil@wyremski.pl"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "(available on request)",
+              "addressLocality": "Poland",
+              "addressCountry": "PL"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://wyremski.pl/#software",
+            "name": "Wyremski Web Scripts",
+            "description": "Collection of PHP web scripts and web application services: classifieds, job boards, real estate, automotive portals and related tools.",
+            "url": "https://wyremski.pl/en/scripts",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://wyremski.pl/en/contact",
+              "priceCurrency": "EUR",
+              "price": "Contact",
+              "availability": "https://schema.org/InStock"
+            }
           },
           {
             "@type": "WebSite",
@@ -78,6 +108,17 @@
       }
     </script>
 
+  <!-- Register minimal modelContext for WebMCP / agent discovery -->
+  <script>
+    try {
+      if (typeof document !== 'undefined') {
+        document.modelContext = { "domain": "wyremski.pl", "supports": ["discovery", "skills"] };
+        if (typeof navigator !== 'undefined') navigator.modelContext = document.modelContext;
+      }
+    } catch (e) { /* ignore */ }
+  </script>
+
+
   <!-- Markdown source endpoints (https://specification.website/spec/agent-readiness/markdown-source-endpoints/) -->
   <link rel="alternate" type="text/markdown" href="/llms.txt" title="Kamil Wyremski — LLM-readable overview" />
   <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Kamil Wyremski — full LLM documentation" />
@@ -87,7 +128,17 @@
 
 <body>
   <noscript>
-    You need to enable JavaScript to run this app.
+    <header>
+      <h1>Kamil Wyremski — Full Stack Web Developer</h1>
+      <p>Full Stack Web Developer building custom PHP and React web applications. Offers ready-to-run scripts for classifieds, job boards, real estate, automotive portals, and custom development services.</p>
+    </header>
+    <main>
+      <section>
+        <h2>What I offer</h2>
+        <p>Custom web development, PHP scripts (classifieds, job boards), maintenance, and consulting. See <a href="/en/scripts">available scripts</a> and <a href="/en/contact">contact</a> for quotes.</p>
+      </section>
+    </main>
+    <p>You need to enable JavaScript to run this app.</p>
   </noscript>
   <div id="app"></div>
 </body>

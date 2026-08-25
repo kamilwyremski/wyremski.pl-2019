@@ -1,0 +1,18 @@
+{
+  "name": "wyremski.pl AI Catalog",
+  "description": "Catalog of agent skills and discovery information for wyremski.pl",
+  "version": "1.0",
+  "contact": {
+    "name": "Kamil Wyremski",
+    "email": "kamil@wyremski.pl",
+    "url": "https://wyremski.pl"
+  },
+  "items": [
+    {
+      "id": "skill-web-developer",
+      "name": "Web Developer Skill",
+      "description": "Skill describing available scripts, services, pricing and contact information.",
+      "url": "https://wyremski.pl/.well-known/agent-skills"
+    }
+  ]
+}
