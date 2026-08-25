@@ -161,14 +161,69 @@
       }
     </script>
 
-  <!-- Register minimal modelContext for WebMCP / agent discovery -->
+
+  <!-- WebMCP — expose site tools to AI agents via navigator.modelContext.registerTool() -->
   <script>
-    try {
-      if (typeof document !== 'undefined') {
-        document.modelContext = { "domain": "wyremski.pl", "supports": ["discovery", "skills"] };
-        if (typeof navigator !== 'undefined') navigator.modelContext = document.modelContext;
-      }
-    } catch (e) { /* ignore */ }
+    (function () {
+      if (typeof navigator === 'undefined' || !navigator.modelContext || typeof navigator.modelContext.registerTool !== 'function') return;
+      var ac = new AbortController();
+      var signal = ac.signal;
+
+      navigator.modelContext.registerTool({
+        name: 'get_scripts',
+        description: 'Returns a list of all PHP web scripts available at wyremski.pl with names, descriptions, and URLs.',
+        inputSchema: { type: 'object', properties: {}, required: [] },
+        execute: function () {
+          return fetch('/api/scripts/notice3.json').then(function () {
+            return {
+              scripts: [
+                { name: 'Notice3', description: 'Classifieds portal script', url: 'https://wyremski.pl/en/script/notice3', api: 'https://wyremski.pl/api/scripts/notice3.json' },
+                { name: 'Motonotice', description: 'Automotive classifieds script', url: 'https://wyremski.pl/en/script/motonotice', api: 'https://wyremski.pl/api/scripts/motonotice.json' },
+                { name: 'Jobnotice', description: 'Job board script', url: 'https://wyremski.pl/en/script/jobnotice', api: 'https://wyremski.pl/api/scripts/jobnotice.json' },
+                { name: 'Cuadro', description: 'Real estate portal script', url: 'https://wyremski.pl/en/script/cuadro', api: 'https://wyremski.pl/api/scripts/cuadro.json' },
+                { name: 'Festa2', description: 'Events & directory script', url: 'https://wyremski.pl/en/script/festa2', api: 'https://wyremski.pl/api/scripts/festa2.json' },
+                { name: 'Holmes2', description: 'Business directory script', url: 'https://wyremski.pl/en/script/holmes2', api: 'https://wyremski.pl/api/scripts/holmes2.json' },
+                { name: 'Demoty2', description: 'Meme & viral media script', url: 'https://wyremski.pl/en/script/demoty2', api: 'https://wyremski.pl/api/scripts/demoty2.json' },
+                { name: 'Corta', description: 'URL shortener script', url: 'https://wyremski.pl/en/script/corta', api: 'https://wyremski.pl/api/scripts/corta.json' }
+              ]
+            };
+          });
+        }
+      }, { signal: signal });
+
+      navigator.modelContext.registerTool({
+        name: 'get_script_details',
+        description: 'Returns detailed information about a specific PHP web script by name.',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            script: {
+              type: 'string',
+              description: 'Script name slug: notice3, motonotice, jobnotice, cuadro, festa2, holmes2, demoty2, or corta',
+              enum: ['notice3', 'motonotice', 'jobnotice', 'cuadro', 'festa2', 'holmes2', 'demoty2', 'corta']
+            }
+          },
+          required: ['script']
+        },
+        execute: function (params) {
+          return fetch('/api/scripts/' + params.script + '.json').then(function (r) { return r.json(); });
+        }
+      }, { signal: signal });
+
+      navigator.modelContext.registerTool({
+        name: 'get_contact_info',
+        description: 'Returns contact information for Kamil Wyremski for quotes, custom development inquiries, or support.',
+        inputSchema: { type: 'object', properties: {}, required: [] },
+        execute: function () {
+          return Promise.resolve({
+            email: 'kamil@wyremski.pl',
+            contact_form: 'https://wyremski.pl/en/contact',
+            github: 'https://github.com/kamilwyremski',
+            linkedin: 'https://linkedin.com/in/kamil-wyremski'
+          });
+        }
+      }, { signal: signal });
+    })();
   </script>
 
 
