@@ -119,6 +119,15 @@ ExpiresDefault "access plus 1 month"
   Header set No-Vary-Search 'key-order, params=("utm_source" "utm_medium" "utm_campaign" "utm_term" "utm_content" "fbclid" "gclid" "ref")'
 </IfModule>
 
+# Agent discovery Link headers (RFC 8288) — advertise catalogs and agent resources
+<IfModule mod_headers.c>
+  Header add Link '<https://wyremski.pl/.well-known/ai-catalog.json>; rel="api-catalog"'
+  Header add Link '<https://wyremski.pl/.well-known/agent-skills>; rel="agent-skills"'
+  Header add Link '<https://wyremski.pl/llms.txt>; rel="alternate"; type="text/markdown"'
+  Header add Link '<https://wyremski.pl/agents.md>; rel="agent-instructions"; type="text/markdown"'
+  Header add Link '<https://wyremski.pl/.well-known/security.txt>; rel="security"'
+</IfModule>
+
 # Markdown source endpoints — Vary: Accept so caches don't conflate HTML and Markdown representations
 <IfModule mod_headers.c>
   <FilesMatch "\.(html?)$">
