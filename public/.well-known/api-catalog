@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://wyremski.pl/api/scripts",
+      "https://www.iana.org/assignments/link-relations/service-desc": [
+        {
+          "href": "https://wyremski.pl/.well-known/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        {
+          "href": "https://wyremski.pl/llms-full.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}

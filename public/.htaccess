@@ -44,9 +44,13 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # Serve agent-skills (no extension) as application/yaml
+# Serve api-catalog (no extension) as application/linkset+json per RFC 9727
 <IfModule mod_headers.c>
   <Files "agent-skills">
     Header set Content-Type "application/yaml"
+  </Files>
+  <Files "api-catalog">
+    Header set Content-Type "application/linkset+json"
   </Files>
 </IfModule>
 
@@ -144,7 +148,8 @@ ExpiresDefault "access plus 1 month"
 # Agent discovery Link headers (RFC 8288) — advertise catalogs and agent resources
 <IfModule mod_headers.c>
   Header add Link '<https://wyremski.pl/.well-known/ai-catalog.json>; rel="api-catalog"'
-  Header add Link '<https://wyremski.pl/.well-known/agent-skills>; rel="agent-skills"'
+  Header add Link '<https://wyremski.pl/.well-known/api-catalog>; rel="https://www.iana.org/assignments/link-relations/api-catalog"'
+  Header add Link '<https://wyremski.pl/.well-known/agent-skills/index.json>; rel="agent-skills"'
   Header add Link '<https://wyremski.pl/llms.txt>; rel="alternate"; type="text/markdown"'
   Header add Link '<https://wyremski.pl/agents.md>; rel="agent-instructions"; type="text/markdown"'
   Header add Link '<https://wyremski.pl/.well-known/security.txt>; rel="security"'

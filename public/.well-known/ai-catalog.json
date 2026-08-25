@@ -14,7 +14,7 @@
       "mediaType": "application/yaml",
       "type": "application/yaml",
       "description": "Skill describing available PHP web scripts, custom development services, pricing and contact information for wyremski.pl.",
-      "url": "https://wyremski.pl/.well-known/agent-skills",
+      "url": "https://wyremski.pl/.well-known/agent-skills/skill-web-developer.yaml",
       "when-to-use": "Use when a user asks about PHP web scripts (classifieds, job boards, real estate, automotive), custom web development, licensing, pricing, installation, or contacting Kamil Wyremski."
     }
   ]

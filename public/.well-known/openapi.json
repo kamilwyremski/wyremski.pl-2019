@@ -1,0 +1,106 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "wyremski.pl Scripts API",
+    "description": "Read-only JSON API providing product data for PHP web scripts sold at wyremski.pl.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Kamil Wyremski",
+      "email": "kamil@wyremski.pl",
+      "url": "https://wyremski.pl/en/contact"
+    },
+    "license": {
+      "name": "Proprietary"
+    }
+  },
+  "servers": [
+    { "url": "https://wyremski.pl", "description": "Production" }
+  ],
+  "paths": {
+    "/api/scripts/notice3.json": {
+      "get": {
+        "summary": "Notice3 — Classifieds Portal Script",
+        "description": "Returns product data for Notice3, a PHP & Symfony classifieds portal script.",
+        "operationId": "getNotice3",
+        "responses": {
+          "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } }
+        }
+      }
+    },
+    "/api/scripts/motonotice.json": {
+      "get": {
+        "summary": "Motonotice — Automotive Classifieds Script",
+        "operationId": "getMotonotice",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    },
+    "/api/scripts/jobnotice.json": {
+      "get": {
+        "summary": "Jobnotice — Job Board Script",
+        "operationId": "getJobnotice",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    },
+    "/api/scripts/cuadro.json": {
+      "get": {
+        "summary": "Cuadro — Real Estate Portal Script",
+        "operationId": "getCuadro",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    },
+    "/api/scripts/festa2.json": {
+      "get": {
+        "summary": "Festa2 — Events & Directory Script",
+        "operationId": "getFesta2",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    },
+    "/api/scripts/holmes2.json": {
+      "get": {
+        "summary": "Holmes2 — Business Directory Script",
+        "operationId": "getHolmes2",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    },
+    "/api/scripts/demoty2.json": {
+      "get": {
+        "summary": "Demoty2 — Meme & Viral Media Script",
+        "operationId": "getDemoty2",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    },
+    "/api/scripts/corta.json": {
+      "get": {
+        "summary": "Corta — URL Shortener Script",
+        "operationId": "getCorta",
+        "responses": { "200": { "description": "Product data", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Script" } } } } }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Script": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "functions": { "type": "integer", "description": "Number of features" },
+              "buy_url": { "type": "string", "format": "uri", "description": "Purchase URL" },
+              "photos": { "type": "integer", "description": "Number of screenshots" }
+            }
+          },
+          "pl": { "$ref": "#/components/schemas/ScriptLang" },
+          "en": { "$ref": "#/components/schemas/ScriptLang" }
+        }
+      },
+      "ScriptLang": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@
       "displayName": "Web Developer — Scripts & Custom Dev",
       "description": "Answers questions about available PHP scripts, custom development services, installation, licensing, and pricing.",
       "when-to-use": "Use when a user asks about PHP web scripts (classifieds, job boards, real estate, automotive), custom web development, licensing, pricing, installation, or contacting Kamil Wyremski.",
-      "url": "https://wyremski.pl/.well-known/agent-skills"
+      "url": "https://wyremski.pl/.well-known/agent-skills/skill-web-developer.yaml"
     }
   ],
   "capabilities": {

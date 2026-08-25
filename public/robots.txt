@@ -29,3 +29,6 @@ Allow: /
 
 Sitemap: https://wyremski.pl/sitemap.xml
 Link: https://wyremski.pl/llms.txt
+
+# Content Signals (https://contentsignals.org/)
+Content-Signal: ai-train=no, search=yes, ai-input=yes

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "skill-web-developer",
+      "type": "application/yaml",
+      "description": "Skill providing information about PHP web scripts, custom web development services, pricing, installation, and contact details for wyremski.pl.",
+      "url": "https://wyremski.pl/.well-known/agent-skills/skill-web-developer.yaml",
+      "sha256": "dce233fe7e12e47bc8e7d2a26400671bbbbcd6f44f7bdd7455eb2b06f335822b"
+    }
+  ]
+}
