@@ -1,6 +1,6 @@
 # Kamil Wyremski
 
-> Polish Full Stack Web Developer. Builds custom web applications and sells turn-key PHP scripts for classifieds, job boards, real estate, automotive, and directory websites.
+> Full Stack Web Developer. Builds custom web applications and sells turn-key PHP scripts for classifieds, job boards, real estate, automotive, and directory websites.
 
 ## Web Scripts
 

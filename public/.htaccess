@@ -1,5 +1,12 @@
 RewriteEngine On
 
+# Markdown content negotiation — return llms-full.txt when Accept: text/markdown
+RewriteCond %{HTTP_ACCEPT} text/markdown
+RewriteCond %{REQUEST_URI} !^/llms
+RewriteCond %{REQUEST_URI} !^/.well-known
+RewriteCond %{REQUEST_URI} !\.(md|txt|json|xml|css|js|png|jpg|jpeg|gif|webp|svg|ico|woff|woff2|ttf)$
+RewriteRule ^ /llms-full.md [L]
+
 RewriteRule ^skrypt/demoty/?$ https://wyremski.pl/skrypt/demoty2 [L,R=301]
 RewriteRule ^en/script/demotivators/?$ https://wyremski.pl/en/script/demoty2 [L,R=301]
 RewriteRule ^skrypt/notice/?$ https://wyremski.pl/skrypt/notice3 [L,R=301]
@@ -41,6 +48,14 @@ ErrorDocument 404 /404.html
   <Files "agent-skills">
     Header set Content-Type "application/yaml"
   </Files>
+</IfModule>
+
+# Markdown content negotiation — add token count to .md response
+<IfModule mod_headers.c>
+  <FilesMatch "llms-full\.md$">
+    Header set x-markdown-tokens "550"
+    Header set Vary "Accept"
+  </FilesMatch>
 </IfModule>
 
 ## EXPIRES CACHING ##
